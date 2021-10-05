@@ -1,0 +1,51 @@
+{
+    "@context": {
+        "xsd":"http://www.w3.org/2001/XMLSchema#",
+        "as2":"http://oeg.fi.upm.es/Assignment2"
+    },
+    "@graph":   [
+        {
+            "@id":"http://oeg.fi.upm.es/Assignment2/Class01",
+            "as2:includes": [
+                {
+                    "@id":"http://oeg.fi.upm.es/Assignment2/Sensor029"
+                },
+                {
+                    "@id":"http://oeg.fi.upm.es/Assignment2/Computer101"
+                }
+            ]
+        },
+        {
+            "@id":"http://oeg.fi.upm.es/Assignment2/Sensor029",
+            "as2:hasMeasurement":   {
+                "@id":"http://oeg.fi.upm.es/Assignment2/Measurement8401"
+            }
+        },
+        {
+            "@id":"http://oeg.fi.upm.es/Assignment2/Computer101",
+            "as2:hasOwner": {
+                "@id":"http://oeg.fi.upm.es/Assignment2/User10A"
+            }
+        },
+        {
+            "@id":"http://oeg.fi.upm.es/Assignment2/Measurement8401",
+            "as2:hasTemperature":   {
+                "@type":"xsd:integer",
+                "@value":"29"
+            },
+            "as2:atTime":   {
+                "@type":"xsd:date",
+                "@value":"2010-06-12T12:00:12"
+            }
+        },
+        {
+            "@id":"http://oeg.fi.upm.es/Assignment2/User10A",
+            "as2:hasName":  {
+                "@type":"xsd:string",
+                "@value":"Pedro"
+            }
+        }   
+    ]
+
+
+}

@@ -1,0 +1,53 @@
+{
+    "@context":
+    {
+      "base":"http://oeg.fi.upm.es/",
+      "t2":"base:Tarea2#",
+      "xsd":"http://www.w3.org/2001/XMLSchema#",
+      "atTime":{
+         "@id":"t2:atTime",
+	 "@type":"xsd:dateTime"
+
+      },
+      "hasName":{
+         "@id":"t2:hasName"
+
+      },
+      "hasMeasurement":{
+         "@id":"t2:atTime",
+	 "@type":"xsd:integer"
+
+      },
+      "hasTemp":{
+        "@id":"a2:hasTemp",
+        "@type":"xsd:integer"
+      }
+	
+	
+    },
+    "@id":"base:Class01",
+    "t2:includes":
+     [
+
+	{
+	  "@id":"base:Sensor029",
+	  "@type":"base:sensor",
+      "t2:hasMeasurement8401":{
+        "@id":"base:hasMeasurement",
+	    "hasTemp":"29",
+	    "atTime":"2010-06-12T12"
+       }
+    },
+    {
+	"@id":"base:Comuter101",
+	"@type":"base:computer",
+	"t2:hasOwner":{
+	   "@id":"base:User10A",
+	   "@type":"base:user",
+	   "hasName":"Pedro"
+	}
+	
+	}
+       
+    ]
+}

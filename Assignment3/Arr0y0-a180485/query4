@@ -1,0 +1,17 @@
+SELECT ?p ?y
+WHERE 
+{
+ ?x rdf:type <http://dbpedia.org/ontology/Politician> .
+ ?x ?p ?y .
+ FILTER (?p != rdf:type)
+}
+
+
+SELECT DISTINCT ?p ?y
+WHERE {
+ ?pol wdt:P31 wd:Q82955.
+ ?pol ?p ?y
+ FILTER(?p !=rdf:type)
+}LIMIT 100
+
+

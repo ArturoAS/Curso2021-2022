@@ -1,0 +1,59 @@
+{
+  "@context":{
+    "person":"http://oeg.fi.upm.es/people/person/",
+    "name":"person:name",
+    "secondName":"person:secondName",
+    "DOB":"person:dateOfBirth",
+    "birthPlace":"person:birthPlace",
+    "parents":"person:parents",
+    "university":"http://oeg.fi.upm.es/organisations/academic/university",
+    "subjects":"university:subjects",
+    "teacher":"university:teacher",
+    "city":"http://oeg.fi.upm.es/city" 
+  },
+  "@id":"person:miguelArroyo",
+  "@type":"person",
+  "name":"Miguel",
+  "secondName":"Arroyo",
+  "DOB":"10-02-2000",
+  "birthplace":"Bridgend",
+  "university":"Universidad Politecncia de Madrid",
+  "parents":[
+    {
+      "@id":"person:mum",
+      "@type":"person",
+      "name":"best",
+      "secondName":"mum"
+    },
+    {
+      "@id":"person:dad",
+      "@type":"person",
+      "name":"best",
+      "secondName":"dad"
+    }
+  ],
+  
+  "subjects":[
+    {
+      "@id":"SW",
+      "@type":"subject",
+      "name": "Semantic Web",
+      "teachers":[
+        {
+          "@id":"person:RaGa",
+          "type":"teacher",
+          "name":"Raul",
+          "secondName":"Garcia"
+        },
+        {
+          "@id":"person:OscCor",
+          "@type":"teacher",
+          "name": "Oscar",
+          "secondName":"Corcho"
+        }
+      ],
+      "description":"El objetivo de esta asignatura es proporcionar la base teórica y práctica sobre los fundamentos metodológicos y tecnológicos implicados en la generación y publicación de vocabularios y datos de la Web de datos enlazados.",
+      "credits":"3"
+    }
+  ]
+}

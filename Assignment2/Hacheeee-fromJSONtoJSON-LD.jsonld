@@ -1,0 +1,43 @@
+{
+    "@context": {
+        "student":"http://oeg.fi.upm.es/Student",
+        "fullName":"person:fullName",
+        "hometown":"person:hometown",
+        "age":"person:age",
+        "almaMater":"person:almaMater",
+        "parentsName":"person:parentsName",
+        "subjects":"http://oeg.fi.upm.es/Subject",
+        "subjectName":"subjects:subjectName",
+        "description":"subjects:description ",
+        "teachers":"subject:teacher"
+    },
+    "@id":"https://fi.upm.es/Hacheeee",
+    "@type":"student",
+    "fullName":"Javier Hernández Contreras",
+    "hometown":"Madrid",
+    "age":22,
+    "almaMater":"ETSIINF",
+    "parentsName":  ["Jaime Hernández", "Florencia Contreras"],
+    "subjects": [
+        {
+            "subjectName":"Ingeniería del Software II",
+            "description":"La asignatura de Ingeniería del Software II se enfoca en aplicar los aspectos de gestión al desarrollo software. La asignatura se basa en el desarrollo de un proyecto software, donde los estudiantes deberán aplicar los aspectos aprendidos tanto en asignaturas previas del grado como en la propia asignatura.",
+            "teachers":["Jose A. Calvo-Manzano Villalón", "Ana Maria Moreno Sanchez-Capuchino", "Tomás San Feliu Gilabert"]
+        },
+        {
+            "subjectName":"Semantic Web, Linked Data and Knowledge Graphs",
+            "description":"Providing a quick overview of what the Semantic Web, Linked Data and Knowledge Graphs are",
+            "teachers":["Óscar Corcho", "Raúl García"]
+        },
+        {
+            "subjectName":"Administración de Sistemas Informáticos",
+            "description":"Los objetivos de esta asignatura son, por un lado mostrar al alumno los fundamentos generales de las tareas y responsabilidades del administrador de sistemas e ilustrarlo con la administración de sistemas Unix y sistemas Windows. Adicionalmente, se presentarán temas de carácter transversal de la administración de sistemas.",
+            "teachers":["Gabriel Cebrián Márquez", "Fernando Pérez Costoya", "Francisco Rosales García", "Víctor Robles Forcada"]
+        },
+        {
+            "subjectName":"Gestión de procesos de tecnologías de la información",
+            "description":"En  esta  asignatura  se  tratan  los  elementos  de  una  organización,  la  gestión  por  procesos,  y  modelos  de  calidad aplicados a organizaciones de TI",
+            "teachers":["Oscar Dieste Tubio", "Edmundo Tovar Caro", "Maria Pilar Rodriguez"]
+        }
+    ]
+}
