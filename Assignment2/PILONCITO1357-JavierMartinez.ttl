@@ -1,0 +1,45 @@
+<<<<<<< HEAD:Assignment2/PILONCITO1357-JavierMartinez.ttl
+@base <http://www.ontologies.org/ontologies/>.
+
+@prefix vocabC: <http://www.ontologies.org/ontologies/class#>.
+@prefix vocabS: <http://www.ontologies.org/ontologies/sensor#>.
+@prefix vocabM: <http://www.ontologies.org/ontologies/measurement#>.
+@prefix vocabCo: <http://www.ontologies.org/ontologies/computer#>.
+@prefix vocabU: <http://www.ontologies.org/ontologies/user#>.
+
+@prefix subC: <class/>.
+@prefix subS: <sensor/>.
+@prefix subM: <measurement/>.
+@prefix subCo: <computer/>.
+@prefix subU: <user/>.
+
+:subC:class01 		vocabC:includes :subS:sensor029;
+			vocabC:includes :subCo:computer101.
+:subS:sensor029		vocabS:hasMeasurement :subM:measurement8401.
+:subCo:computer101	vocabCo:hasOwner :subU:user10A.
+:subU:user10A		vocabU:hasName "Pedro".
+:subM:measurement8401	vocabM:hasTemperature 29.
+			vocabM:atTime "2010-06-12T12:00:12"^^xsd:dateTime.
+=======
+@base <http://www.ontologies.org/ontologies/>.
+
+@prefix vocabC: <http://www.ontologies.org/ontologies/class#>.
+@prefix vocabS: <http://www.ontologies.org/ontologies/sensor#>.
+@prefix vocabM: <http://www.ontologies.org/ontologies/measurement#>.
+@prefix vocabCo: <http://www.ontologies.org/ontologies/computer#>.
+@prefix vocabU: <http://www.ontologies.org/ontologies/user#>.
+
+@prefix subC: <class/>.
+@prefix subS: <sensor/>.
+@prefix subM: <measurement/>.
+@prefix subCo: <computer/>.
+@prefix subU: <user/>.
+
+:subC:class01 		vocabC:includes :subS:sensor029;
+			vocabC:includes :subCo:computer101.
+:subS:sensor029		vocabS:hasMeasurement :subM:measurement8401.
+:subCo:computer101	vocabCo:hasOwner :subU:user10A.
+:subU:user10A		vocabU:hasName "Pedro".
+:subM:measurement8401	vocabM:hasTemperature 29.
+			vocabM:atTime "2010-06-12T12:00:12"^^xsd:dateTime.
+>>>>>>> ddef78c5dc6b3e58b18a08a933c16a54f052e36f:Assignment2/GrafoTortugaJavierMartinezCuadrado.ttl

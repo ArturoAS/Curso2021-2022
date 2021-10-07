@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>analisis</title>
+    <style>
+        table{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Analisis y Resource naming strategy</h1><br>
+    <div>
+        <h2>Licencia aplicado para los datasets generados</h2>
+        <p>vamos a utilizar la misma licencia(fin de comercial y no comercial) para los datasets generados</p>
+    </div>
+    <br>
+    <div>
+        <h2>Papeleras solares inteligentes</h2>
+        <div>
+            <h3>licencia</h3>
+            <p>rightsholder: el gobierno de madrid</p>
+            <p>licencia: Las condiciones generales permiten la reutilización de los documentos para fines comerciales y no comerciales. Se entiende por reutilización el uso de documentos que obran en poder del Ayuntamiento de Madrid, siempre que dicho uso no constituya una actividad administrativa pública.</p>
+        </div>
+        <div>
+            <h3>analisis del datasets</h3>
+            <table width="100%" border="1" cellspacing="0" cellpadding="4">
+                <tr bgcolor="#60bfd7" >
+                    <td width = 25% align="center"><font size="5">Column</font></td>
+                    <td width = 15% align="center"><font size="5">Type</font></td>
+                    <td width = 30% align="center"><font size="5">Comments/Range(rounded)</font></td>
+                    <td width = 30% align="center"><font size="5">Problems</font></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">id</td>
+                    <td>String</td>
+                    <td>Unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">tipoResidio</td>
+                    <td>String</td>
+                    <td>Not unique, resto/envase</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">direccion</td>
+                    <td>String</td>
+                    <td>Not unique, Site types + name</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">longitud</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">latitud</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">nivelLlenado</td>
+                    <td>String</td>
+                    <td>Not Unique, range: 0,2,4,6,8,10</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">alerta</td>
+                    <td>String</td>
+                    <td>Not Unique, Error/LLENA/blank</td>
+                    <td>What means error?</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">fecha</td>
+                    <td>String</td>
+                    <td>Unique?</td>
+                    <td>De qué es esa fecha? instalación?</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>Puntos de recarga de vehículos eléctricos</h2>
+        <div>
+            <h3>licencia</h3>
+            <p>rightsholder: el gobierno de madrid</p>
+            <p>licencia: Las condiciones generales permiten la reutilización de los documentos para fines comerciales y no comerciales. Se entiende por reutilización el uso de documentos que obran en poder del Ayuntamiento de Madrid, siempre que dicho uso no constituya una actividad administrativa pública.</p>
+        </div>
+        <div>
+            <h3>analisis del datasets</h3>
+            <table width="100%" border="1" cellspacing="0" cellpadding="4">
+                <tr bgcolor="#60bfd7" >
+                    <td width = 25% align="center"><font size="5">Column</font></td>
+                    <td width = 15% align="center"><font size="5">Type</font></td>
+                    <td width = 30% align="center"><font size="5">Comments/Range(rounded)</font></td>
+                    <td width = 30% align="center"><font size="5">Problems</font></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">DISTRITO</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">EDIFICIO</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">UBICACIÓN</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">COORDENADA X</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Valor raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">COORDENADA Y</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Valor raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">TERMINALES</td>
+                    <td>String</td>
+                    <td>Not Unique, range: 1,2,blank</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">CONECTORES</td>
+                    <td>String</td>
+                    <td>Not Unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">POTENCIA</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">CÓDIGO</td>
+                    <td>String</td>
+                    <td>Unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">AÑO INSTALACIÓN</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>Bases del servicio público de bicicleta eléctrica</h2>
+        <div>
+            <h3>licencia</h3>
+            <p>rightsholder: el gobierno de madrid</p>
+            <p>licencia: Las condiciones generales permiten la reutilización de los documentos para fines comerciales y no comerciales. Se entiende por reutilización el uso de documentos que obran en poder del Ayuntamiento de Madrid, siempre que dicho uso no constituya una actividad administrativa pública.</p>
+        </div>
+        <div>
+            <h3>analisis del datasets</h3>
+            <table width="100%" border="1" cellspacing="0" cellpadding="4">
+                <tr bgcolor="#60bfd7" >
+                    <td width = 25% align="center"><font size="5">Column</font></td>
+                    <td width = 15% align="center"><font size="5">Type</font></td>
+                    <td width = 30% align="center"><font size="5">Comments/Range(rounded)</font></td>
+                    <td width = 30% align="center"><font size="5">Problems</font></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Número</td>
+                    <td>String</td>
+                    <td>Unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Gis_X</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>valor raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Gis_Y</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>valor raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Fecha de Alta</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Valor raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Distrito</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Barrio</td>
+                    <td>String</td>
+                    <td>Not Unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Calle</td>
+                    <td>String</td>
+                    <td>Not Unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Nº Finca</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Tipo de Reserva</td>
+                    <td>String</td>
+                    <td>Not Unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Número de Plazas</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Longitud</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Latitud</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">Direccion</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>Aparcamiento de las bicicletas</h2>
+        <div>
+            <h3>licencia</h3>
+            <p>rightsholder: el gobierno de madrid</p>
+            <p>licencia: Las condiciones generales permiten la reutilización de los documentos para fines comerciales y no comerciales. Se entiende por reutilización el uso de documentos que obran en poder del Ayuntamiento de Madrid, siempre que dicho uso no constituya una actividad administrativa pública.</p>
+        </div>
+        <div>
+            <h3>analisis del datasets</h3>
+            <table width="100%" border="1" cellspacing="0" cellpadding="4">
+                <tr bgcolor="#60bfd7" >
+                    <td width = 25% align="center"><font size="5">Column</font></td>
+                    <td width = 15% align="center"><font size="5">Type</font></td>
+                    <td width = 30% align="center"><font size="5">Comments/Range(rounded)</font></td>
+                    <td width = 30% align="center"><font size="5">Problems</font></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">MXASSETNUM,C,12</td>
+                    <td>String</td>
+                    <td>Unique</td>
+                    <td>Nombre del campo raro y no se entiende</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">DESCRIPTIO,C,105</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">MINTDISTRI,C,20</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">NOMBRE_DIS,C,20</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">MINTBARRIO,C,10</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">NOMBRE_BAR,C,50</td>
+                    <td>String</td>
+                    <td>Not Unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">ESTADO,C,50</td>
+                    <td>String</td>
+                    <td>Not Unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">INSTALLDAT,D</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">MINTTIPOVI,C,15</td>
+                    <td>String</td>
+                    <td>Not Unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">MINTNOMBRE,C,254</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">MINTNUMERO,C,25</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">MINTNDP,C,20</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9faff">MODELO,C,254</td>
+                    <td>String</td>
+                    <td>Not unique</td>
+                    <td>Nombre del campo raro</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>Resource naming strategys</h2>
+        <p> 
+            <font style="font-weight: bold;">Domain:</font> http://smartcity.linkeddata.es/<br>
+            <font style="font-weight: bold;">Path:</font>   transport/<br>
+            <font style="font-weight: bold;">&emsp;Ontology:</font>   ontology/<br>
+            <font style="font-weight: bold;">&emsp;&emsp;Class:</font>   [ontologyName]/[className]<br>
+            <font style="font-weight: bold;">&emsp;&emsp;Property:</font>   [ontologyName]/[propertyName]<br>
+            <font style="font-weight: bold;">&emsp;Data:</font>   resource/<br>
+            <font style="font-weight: bold;">&emsp;&emsp;Individual:</font>   [className]/[identifier]<br>
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
