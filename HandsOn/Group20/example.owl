@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://localizalocales.es#"
+     xml:base="http://localizalocales.es"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://localizalocales.es#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localizalocales.es#tieneCodigoPostal -->
+
+    <owl:ObjectProperty rdf:about="http://localizalocales.es#tieneCodigoPostal">
+        <rdfs:domain rdf:resource="http://localizalocales.es#Edificio"/>
+        <rdfs:range rdf:resource="http://localizalocales.es#CodigoPostal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localizalocales.es#tieneCoordenadas -->
+
+    <owl:ObjectProperty rdf:about="http://localizalocales.es#tieneCoordenadas">
+        <rdfs:domain rdf:resource="http://localizalocales.es#Edificio"/>
+        <rdfs:range rdf:resource="http://localizalocales.es#Coordenadas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localizalocales.es#tieneDistrito -->
+
+    <owl:ObjectProperty rdf:about="http://localizalocales.es#tieneDistrito">
+        <rdfs:domain rdf:resource="http://localizalocales.es#Local"/>
+        <rdfs:range rdf:resource="http://localizalocales.es#Distrito"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localizalocales.es#tieneEdificio -->
+
+    <owl:ObjectProperty rdf:about="http://localizalocales.es#tieneEdificio">
+        <rdfs:domain rdf:resource="http://localizalocales.es#Distrito"/>
+        <rdfs:range rdf:resource="http://localizalocales.es#Edificio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localizalocales.es#tieneRotulo -->
+
+    <owl:ObjectProperty rdf:about="http://localizalocales.es#tieneRotulo">
+        <rdfs:domain rdf:resource="http://localizalocales.es#Local"/>
+        <rdfs:range rdf:resource="http://localizalocales.es#Rotulo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localizalocales.es#tieneTerraza -->
+
+    <owl:ObjectProperty rdf:about="http://localizalocales.es#tieneTerraza">
+        <rdfs:domain rdf:resource="http://localizalocales.es#Local"/>
+        <rdfs:range rdf:resource="http://localizalocales.es#Terraza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localizalocales.es#tipoVia -->
+
+    <owl:ObjectProperty rdf:about="http://localizalocales.es#tipoVia">
+        <rdfs:domain rdf:resource="http://localizalocales.es#Edificio"/>
+        <rdfs:range rdf:resource="http://localizalocales.es#Via"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localizalocales.es#Identificador -->
+
+    <owl:DatatypeProperty rdf:about="http://localizalocales.es#Identificador">
+        <rdfs:domain rdf:resource="http://localizalocales.es#CodigoPostal"/>
+        <rdfs:domain rdf:resource="http://localizalocales.es#Distrito"/>
+        <rdfs:domain rdf:resource="http://localizalocales.es#Terraza"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localizalocales.es#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://localizalocales.es#nombre">
+        <rdfs:domain rdf:resource="http://localizalocales.es#Rotulo"/>
+        <rdfs:domain rdf:resource="http://localizalocales.es#Via"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localizalocales.es#numero -->
+
+    <owl:DatatypeProperty rdf:about="http://localizalocales.es#numero">
+        <rdfs:domain rdf:resource="http://localizalocales.es#Coordenadas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localizalocales.es#CodigoPostal -->
+
+    <owl:Class rdf:about="http://localizalocales.es#CodigoPostal"/>
+    
+
+
+    <!-- http://localizalocales.es#Coordenadas -->
+
+    <owl:Class rdf:about="http://localizalocales.es#Coordenadas"/>
+    
+
+
+    <!-- http://localizalocales.es#Distrito -->
+
+    <owl:Class rdf:about="http://localizalocales.es#Distrito"/>
+    
+
+
+    <!-- http://localizalocales.es#Edificio -->
+
+    <owl:Class rdf:about="http://localizalocales.es#Edificio"/>
+    
+
+
+    <!-- http://localizalocales.es#Local -->
+
+    <owl:Class rdf:about="http://localizalocales.es#Local"/>
+    
+
+
+    <!-- http://localizalocales.es#Rotulo -->
+
+    <owl:Class rdf:about="http://localizalocales.es#Rotulo"/>
+    
+
+
+    <!-- http://localizalocales.es#Terraza -->
+
+    <owl:Class rdf:about="http://localizalocales.es#Terraza"/>
+    
+
+
+    <!-- http://localizalocales.es#Via -->
+
+    <owl:Class rdf:about="http://localizalocales.es#Via"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,448 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGO",
+    "description": "Remove column CODIGO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESTACION",
+    "newColumnName": "NOMBRE",
+    "description": "Rename column ESTACION to NOMBRE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CODIGO_CORTO",
+    "newColumnName": "ESTACION_ID",
+    "description": "Rename column CODIGO_CORTO to ESTACION_ID"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LONGITUD_ETRS89",
+    "description": "Remove column LONGITUD_ETRS89"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "LATITUD_ETRS89",
+    "description": "Remove column LATITUD_ETRS89"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ALTITUD",
+    "description": "Remove column ALTITUD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_TIPO",
+    "description": "Remove column COD_TIPO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOM_TIPO",
+    "description": "Remove column NOM_TIPO"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "NO2",
+    "index": 18,
+    "description": "Move column NO2 to position 18"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "SO2",
+    "index": 18,
+    "description": "Move column SO2 to position 18"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "CO",
+    "index": 18,
+    "description": "Move column CO to position 18"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "PM10",
+    "index": 18,
+    "description": "Move column PM10 to position 18"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "PM2_5",
+    "index": 18,
+    "description": "Move column PM2_5 to position 18"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "O3",
+    "index": 18,
+    "description": "Move column O3 to position 18"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "BTX",
+    "index": 18,
+    "description": "Move column BTX to position 18"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_VIA",
+    "description": "Remove column COD_VIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "VIA_CLASE",
+    "description": "Remove column VIA_CLASE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "VIA_PAR",
+    "description": "Remove column VIA_PAR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "VIA_NOMBRE",
+    "description": "Remove column VIA_NOMBRE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha alta",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Fecha alta using expression value.toDate()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA_X_ETRS89",
+    "description": "Remove column COORDENADA_X_ETRS89"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COORDENADA_Y_ETRS89",
+    "description": "Remove column COORDENADA_Y_ETRS89"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LONGITUD using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LATITUD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LATITUD using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NO2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "X"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": true
+      }
+    ],
+    "description": "Mass edit cells in column NO2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SO2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "X"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": true
+      }
+    ],
+    "description": "Mass edit cells in column SO2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SO2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": false
+      }
+    ],
+    "description": "Mass edit cells in column SO2"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "X"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": true
+      }
+    ],
+    "description": "Mass edit cells in column CO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": false
+      }
+    ],
+    "description": "Mass edit cells in column CO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PM10",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": false
+      }
+    ],
+    "description": "Mass edit cells in column PM10"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PM10",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "X"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": true
+      }
+    ],
+    "description": "Mass edit cells in column PM10"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PM2_5",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": false
+      }
+    ],
+    "description": "Mass edit cells in column PM2_5"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PM2_5",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "X"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": true
+      }
+    ],
+    "description": "Mass edit cells in column PM2_5"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "O3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": false
+      }
+    ],
+    "description": "Mass edit cells in column O3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "O3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "X"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": true
+      }
+    ],
+    "description": "Mass edit cells in column O3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BTX",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": false
+      }
+    ],
+    "description": "Mass edit cells in column BTX"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BTX",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "X"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "true"
+      }
+    ],
+    "description": "Mass edit cells in column BTX"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BTX",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "true"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": true
+      }
+    ],
+    "description": "Mass edit cells in column BTX"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTACION_ID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ESTACION_ID using expression value.toNumber()"
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿MXASSETNUM,C,12",
+    "newColumnName": "Identificador",
+    "description": "Rename column ﻿MXASSETNUM,C,12 to Identificador"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DESCRIPTIO,C,105",
+    "newColumnName": "Descripction",
+    "description": "Rename column DESCRIPTIO,C,105 to Descripction"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Descripction",
+    "newColumnName": "Description",
+    "description": "Rename column Descripction to Description"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Identificador",
+    "newColumnName": "Identifier",
+    "description": "Rename column Identificador to Identifier"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTDISTRI,C,20",
+    "newColumnName": "District Code",
+    "description": "Rename column MINTDISTRI,C,20 to District Code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE_DIS,C,20",
+    "newColumnName": "District Name",
+    "description": "Rename column NOMBRE_DIS,C,20 to District Name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTBARRIO,C,10",
+    "newColumnName": "Neighborhood code",
+    "description": "Rename column MINTBARRIO,C,10 to Neighborhood code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE_BAR,C,50",
+    "newColumnName": "Neighborhood Name",
+    "description": "Rename column NOMBRE_BAR,C,50 to Neighborhood Name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESTADO,C,50",
+    "newColumnName": "Operative Status",
+    "description": "Rename column ESTADO,C,50 to Operative Status"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "INSTALLDAT,D",
+    "newColumnName": "Installation Date",
+    "description": "Rename column INSTALLDAT,D to Installation Date"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTTIPOVI,C,15 using expression join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTNOMBRE,C,254",
+    "description": "Remove column MINTNOMBRE,C,254"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "MINTNUMERO,C,25",
+          "columnName": "MINTNUMERO,C,25",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO,C,25",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNUMERO,C,25 using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTNDP,C,20",
+    "description": "Remove column MINTNDP,C,20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MODELO,C,254",
+    "description": "Remove column MODELO,C,254"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "MINTNUMERO,C,25",
+          "columnName": "MINTNUMERO,C,25",
+          "query": "AM",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "range",
+          "name": "MINTNUMERO,C,25",
+          "expression": "value",
+          "columnName": "MINTNUMERO,C,25",
+          "from": 0,
+          "to": 800,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO,C,25",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column MINTNUMERO,C,25"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "MINTNUMERO,C,25",
+          "columnName": "MINTNUMERO,C,25",
+          "query": "AM",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "range",
+          "name": "MINTNUMERO,C,25",
+          "expression": "value",
+          "columnName": "MINTNUMERO,C,25",
+          "from": 0,
+          "to": 800,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO,C,25",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "8:00 AM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column MINTNUMERO,C,25"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "MINTNUMERO,C,25",
+          "columnName": "MINTNUMERO,C,25",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "range",
+          "name": "MINTNUMERO,C,25",
+          "expression": "value",
+          "columnName": "MINTNUMERO,C,25",
+          "from": 0,
+          "to": 800,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO,C,25",
+    "expression": "value.replace(\"s/n\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNUMERO,C,25 using expression value.replace(\"s/n\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "MINTNUMERO,C,25",
+          "columnName": "MINTNUMERO,C,25",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "range",
+          "name": "MINTNUMERO,C,25",
+          "expression": "value",
+          "columnName": "MINTNUMERO,C,25",
+          "from": 0,
+          "to": 800,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO,C,25",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNUMERO,C,25 using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO,C,25",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNUMERO,C,25 using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNUMERO,C,25'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTTIPOVI,C,15 using expression join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNUMERO,C,25'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTNUMERO,C,25",
+    "description": "Remove column MINTNUMERO,C,25"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTTIPOVI,C,15",
+    "newColumnName": "Address",
+    "description": "Rename column MINTTIPOVI,C,15 to Address"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Installation Date",
+    "description": "Remove column Installation Date"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Address",
+          "columnName": "Address",
+          "query": " ",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "text",
+          "name": "MINTNUMERO,C,25",
+          "columnName": "MINTNUMERO,C,25",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Address",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Address using expression value.toString()"
+  }
+]

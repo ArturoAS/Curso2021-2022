@@ -1,0 +1,54 @@
+@prefix a: <http://smartcity.linkeddata.es/transport/resource/Aparcamiento>.
+@prefix b: <http://smartcity.linkeddata.es/transport/Ontology/Bici>.
+@prefix pc: <http://smartcity.linkeddata.es/transport/Ontology/PCarga>.
+@prefix p:  <http://smartcity.linkeddata.es/transport/Ontology/Papelera>.
+@prefix  : <http://smartcity.linkeddata.es/transport/Ontology/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+p:1 :tipoResiduo "resto"^^xsd:string;
+	:direccion "Pza. Mercurio FTE. Junta Municpal De Barajas"^^xsd:string;
+	:longitud  "-3.57796317595808"^^xsd:string;
+	:latitud "40.4745326748698"^^xsd:string;
+	:nivelLlenado "0"^^xsd:string;
+	:alerta ""^^xsd:string;
+	:fecha "2021-10-02T09:25:52.000+0200"^^xsd:string.
+	
+pc:2 :distrito "Arganzuela"^^xsd:string;
+	 :edificio "A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades"^^xsd:string;
+	 :ubicacion "C/ Bustamante 16"^^xsd:string;
+	 :coordenadaX "441594.53"^^xsd:string;
+	 :coordenadaY "4472432.48"^^xsd:string;
+	 :terminales "1"^^xsd:string;
+	 :conectores "Mennekes"^^xsd:string;
+	 :potencia "7,3 KW  32 A mono"^^xsd:string;
+	 :codigo "PRM-AG07-10a"^^xsd:string;
+	 :anyo "2017"^^xsd:string.
+	 
+b:3  :numero "001 a"^^xsd:string;
+	 :gis_x "440443,61"^^xsd:string;
+	 :gis_y "4474290,65"^^xsd:string;
+	 :fecha_alta "43803"^^xsd:string;
+	 :distrito "01  CENTRO"^^xsd:string;
+	 :barrio "01-06 SOL"^^xsd:string;
+	 :calle "ALCALA, CALLE, DE"^^xsd:string;
+	 :finca "2"^^xsd:string;
+	 :reserva "BiciMAD"^^xsd:string;
+	 :plaza "30"^^xsd:string;
+	 :longitud  "-3.701998"^^xsd:string;
+	 :latitud "40.4171107"^^xsd:string;
+	 :direccion "ALCALA, CALLE, DE, 2"^^xsd:string.
+	 
+a:4  :mxassetnum "120312"^^xsd:string;
+	 :descriptio "SITUADO APARCABICICLETAS - ESPACIO DE IGUALDAD RETIRO (ELENA ARNEDO SORIANO)"^^xsd:string;
+	 :mintdistri "3"^^xsd:string;
+	 :nombre_dis "RETIRO"^^xsd:string;
+	 :mintbarrio "32"^^xsd:string;
+	 :nombre_bar "ADELFAS"^^xsd:string;
+	 :estado "OPERATIVO"^^xsd:string;
+	 :installdat ""^^xsd:string;
+	 :minttipovi "CALLE"^^xsd:string;
+	 :mintnombre "VALDERRIBAS"^^xsd:string;
+	 :mintnumero  "99"^^xsd:string;
+	 :mintndp "40.20045674"^^xsd:string;
+	 :modelo ""^^xsd:string.
+	 
+	

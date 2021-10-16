@@ -1,0 +1,218 @@
+
+@prefix b: <http://smartcity.linkeddata.es/>.
+@prefix  : <http://smartcity.linkeddata.es/transport/Ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix	r: <http://smartcity.linkeddata.es/transport/resource/>.
+@prefix t: <http://www.ordnancesurvey.co.uk/ontology/Topography/v0.1/Topography.owl#Transport/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+### definicion de classes 
+
+ :Bici	rdf:type owl:Class.
+ :PCarga rdf:type	owl:Class.
+ :Papelera rdf:type	owl:Class.
+ :Aparcamiento rdf:type owl:Class.
+ 
+ 
+### definicion de DatatypeProperty
+##Papelera
+ :id rdf:type rdf:Property;
+		rdfs:domain :Papelera;
+        rdfs:range xsd:string.
+
+ :tipoResiduo rdf:type rdf:Property;
+		rdfs:domain :Papelera;
+        rdfs:range xsd:string.
+		
+ :direccion rdf:type rdf:Property;
+		rdfs:domain :Papelera;
+        rdfs:range xsd:string.
+		
+ :longitud rdf:type rdf:Property;
+		rdfs:domain :Papelera;
+        rdfs:range xsd:string.
+		
+ :latitud rdf:type rdf:Property;
+		rdfs:domain :Papelera;
+        rdfs:range xsd:string.
+		
+ :nivelLlenado rdf:type rdf:Property;
+		rdfs:domain :Papelera;
+        rdfs:range xsd:string.
+		
+ :alerta rdf:type rdf:Property;
+		rdfs:domain :Papelera;
+        rdfs:range xsd:string.
+		
+ :fecha rdf:type rdf:Property;
+		rdfs:domain :Papelera;
+        rdfs:range xsd:string.
+		
+###Punto de Carga
+
+ :distrito rdf:type rdf:Property;
+		rdfs:domain :PCarga;
+        rdfs:range xsd:string.
+
+ :edificio rdf:type rdf:Property;
+		rdfs:domain :PCarga;
+        rdfs:range xsd:string.
+		
+ :ubicacion rdf:type rdf:Property;
+		rdfs:domain :PCarga;
+        rdfs:range xsd:string.
+		
+ :coordenadaX rdf:type rdf:Property;
+		rdfs:domain :PCarga;
+        rdfs:range xsd:string.
+		
+ :coordenadaY rdf:type rdf:Property;
+		rdfs:domain :PCarga;
+        rdfs:range xsd:string.
+		
+ :terminales rdf:type rdf:Property;
+		rdfs:domain :PCarga;
+        rdfs:range xsd:string.
+		
+ :conectores rdf:type rdf:Property;
+		rdfs:domain :PCarga;
+        rdfs:range xsd:string.
+		
+ :potencia rdf:type rdf:Property;
+		rdfs:domain :PCarga;
+        rdfs:range xsd:string.
+		
+ :codigo rdf:type rdf:Property;
+		rdfs:domain :PCarga;
+        rdfs:range xsd:string.
+### año de instalacion
+ :anyo rdf:type rdf:Property;
+		rdfs:domain :PCarga;
+        rdfs:range xsd:string.
+ 
+### bici
+
+
+
+ :numero rdf:type rdf:Property;
+		rdfs:domain :Papelera;
+        rdfs:range xsd:string.
+
+ :gis_x rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+		
+ :gis_y rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+		
+ :fecha_alta rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+		
+ :distrito rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+		
+ :barrio rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+		
+ :calle rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+### n finca		
+ :finca rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+### tipo reserva		
+ :reserva rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+### n de plaza	
+ :plaza rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+		
+ :longitud rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+		
+ :latitud rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+		
+ :direccion rdf:type rdf:Property;
+		rdfs:domain :Bici;
+        rdfs:range xsd:string.
+		
+### Aparcamiento de bicicletas
+
+ :mxassetnum rdf:type rdf:Property;
+		rdfs:domain :Papelera;
+        rdfs:range xsd:string.
+
+ :descriptio rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+ :mintdistri rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+ :nombre_dis rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+ :mintbarrio rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+ :nombre_bar rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+ :estado rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+ :installdat rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+ :minttipovi rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+ :mintnombre rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+ :mintnumero rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+ 
+ :mintndp rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+ :modelo rdf:type rdf:Property;
+		rdfs:domain :Aparcamiento;
+        rdfs:range xsd:string.
+		
+
+
+
+
+
+		
+ 
+ 
+
+
+
+
+
+
+

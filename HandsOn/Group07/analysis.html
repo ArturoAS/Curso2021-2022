@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis</title>
+</head>
+
+<body>
+  <div>
+    <h1 style="background-color: #FFA07A" align="center">
+           Analysis
+     </h1>
+
+  </div>
+
+  <div>
+    <h1>License of the dataset</h1>
+      <p>&bull; The general condition of the lincence allows the reutilization of them for any use, either comercial or non comercial.</p>
+      <p>&bull; The Madrid City Council will not be held responsible for the use made of the information of anyone who reuses the data, and will not
+      compensate them for any kind of economical lose.</p>
+      <p>&bull; It doen't guarantee the cointinuity in making reusable documents available nor does it   assume responsability for any error or
+      omission contained in them.</p>
+      <p>&bull; The resulting lincense will have the same characteristics as the ones previously mentioned.</p>
+  </div>
+
+  <div>
+    <table border="1">
+      <h1>Data Analysing districts and neighborhoods</h1>
+      <tr style="background-color:#FADBD8">
+        <th>Column</th>
+        <th>Type</th>
+        <th>Comments / Range(rounded)</th>
+        <th>Problems</th>
+      </tr>
+      <tr>
+        <td>district code</td>
+        <td>int</td>
+        <td>Empty values, 1-21</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>district name</td>
+        <td>String</td>
+        <td>Empty values, not unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>neighborhoods code</td>
+        <td>int</td>
+        <td>Empty values, 10-220</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>neighborhoods name</td>
+        <td>String</td>
+        <td>Empty values, not unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>year</td>
+        <td>int</td>
+        <td>2008-2021</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table border="1">
+      <h1>Data Analysing drinking water sources</h1>
+      <tr style="background-color:#FADBD8">
+        <th>Column</th>
+        <th>Type</th>
+        <th>Comments / Range(rounded)</th>
+        <th>Problems</th>
+      </tr>
+      <tr>
+        <td>code</td>
+        <td>int</td>
+        <td>Unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>green zone/public street</td>
+        <td>String</td>
+        <td>ZV/VP</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>district</td>
+        <td>String</td>
+        <td>not unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>address</td>
+        <td>String</td>
+        <td>not unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>status</td>
+        <td>String</td>
+        <td>In service/out of service/temporally closed</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>longitude</td>
+        <td>Double</td>
+        <td>not unique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>latitude</td>
+        <td>Double</td>
+        <td>not unique</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <div>
+    <h1>Resource naming strategy</h1>
+    <h2>Domain</h2>
+    <p>http://www.smartCityParks.es/</p>
+
+    <h2>Path</h2>
+    <p>http://www.smartCityParks.es/group07</p>
+
+    <h2>Ontological terms path</h2>
+    <p>http://www.smartCityParks.es/group07/ontology/Parks#</p>
+    <h3>Example</h3>
+    <p>http://www.smartCityParks.es/group07/ontology/Parks#hasDistrictName</p>
+
+    <h2>Individuals path</h2>
+    <p>http://www.smartCityParks.es/group07/resource/</p>
+    <h3>Example</h3>
+    <p>http://www.smartCityParks.es/group07/resource/Fountain/centro</p>
+  </div>
+</body>
+</html>

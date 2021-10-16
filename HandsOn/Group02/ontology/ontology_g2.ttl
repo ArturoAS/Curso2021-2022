@@ -1,0 +1,185 @@
+@prefix : <http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident> .
+
+<http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :Address ;
+           rdfs:range :District .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#crossIn
+:crossIn rdf:type owl:ObjectProperty ;
+         rdfs:domain :Crossing ;
+         rdfs:range :District .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasAddress
+:hasAddress rdf:type owl:ObjectProperty ;
+            rdfs:domain :Crossing ;
+            rdfs:range :Address .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasGeo
+:hasGeo rdf:type owl:ObjectProperty ;
+        rdfs:domain :Crossing ;
+        rdfs:range :Geometry .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasPlace
+:hasPlace rdf:type owl:ObjectProperty ;
+          rdfs:domain :Accident ;
+          rdfs:range :Address .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasVictim
+:hasVictim rdf:type owl:ObjectProperty ;
+           rdfs:domain :Accident ;
+           rdfs:range :Person .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#isLocated
+:isLocated rdf:type owl:ObjectProperty ;
+           rdfs:domain :TrafficLight ;
+           rdfs:range :Crossing .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#causedBy
+:causedBy rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Accident ;
+          rdfs:range xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#gradeOfInjury
+:gradeOfInjury rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Accident ;
+               rdfs:range xsd:int .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasAddressName
+:hasAddressName rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Address ;
+                rdfs:range xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasCode
+:hasCode rdf:type owl:DatatypeProperty ;
+         rdfs:domain :District ;
+         rdfs:range xsd:int .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasDate
+:hasDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Accident ;
+         rdfs:range xsd:dateTime .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasDistrictName
+:hasDistrictName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :District ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasGender
+:hasGender rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasLat
+:hasLat rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Geometry ;
+        rdfs:range xsd:float .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasLong
+:hasLong rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Geometry ;
+         rdfs:range xsd:float .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasNumber
+:hasNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Address ;
+           rdfs:range xsd:int .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasRangeAge
+:hasRangeAge rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Person ;
+             rdfs:range xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasRole
+:hasRole rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Person ;
+         rdfs:range xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#hasWeather
+:hasWeather rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Accident ;
+            rdfs:range xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#typeBicycle
+:typeBicycle rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#typeTrafficLight
+:typeTrafficLight rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TrafficLight ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#wasInstalled
+:wasInstalled rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TrafficLight ;
+              rdfs:range xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Accident
+:Accident rdf:type owl:Class .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Address
+:Address rdf:type owl:Class .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Crossing
+:Crossing rdf:type owl:Class .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#District
+:District rdf:type owl:Class .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Geometry
+:Geometry rdf:type owl:Class .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#TrafficLight
+:TrafficLight rdf:type owl:Class .

@@ -1,0 +1,480 @@
+[
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "longitud",
+        "expression": "value.toNumber()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column longitud using expression value.toNumber()"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "latitud",
+        "expression": "value.toNumber()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column latitud using expression value.toNumber()"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "nivelLlenado",
+        "expression": "value.toNumber()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column nivelLlenado using expression value.toNumber()"
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "fecha",
+        "expression": "grel:value[0,19]",
+        "onError": "set-to-blank",
+        "newColumnName": "date",
+        "columnInsertIndex": 8,
+        "description": "Create column date at index 8 based on column fecha using expression grel:value[0,19]"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "date",
+        "expression": "value.toDate()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column date using expression value.toDate()"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "fecha",
+        "description": "Remove column fecha"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "alerta",
+        "expression": "value.toString()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column alerta using expression value.toString()"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "id",
+        "expression": "value.toNumber()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column id using expression value.toNumber()"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "direccion",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Villablanca (Centro  De Salud)",
+                    "Villablanca (Centro De Salud)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Villablanca (Centro  De Salud)"
+            },
+            {
+                "from": [
+                    "Pendiente Reubicar. Av. De Las Águilas FTE. N°110",
+                    "Pendiente reubicar. Av. De Las Águilas Fte. N°110"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Pendiente Reubicar. Av. De Las Águilas FTE. N°110"
+            },
+            {
+                "from": [
+                    "Carretas FTE. Cadiz",
+                    "Carretas FTE. Cádiz"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Carretas FTE. Cadiz"
+            },
+            {
+                "from": [
+                    "Marroquina Posterior N°11 (Galeria Efe)",
+                    "Marroquina Posterior N°11 (Galería Efe)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Marroquina Posterior N°11 (Galeria Efe)"
+            },
+            {
+                "from": [
+                    "Gta. Santa M.ª De La Cabeza 8 (Pasillo Verde)",
+                    "Gta. Santa M.ª De La Cabeza 8 (Pasillo verde)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Gta. Santa M.ª De La Cabeza 8 (Pasillo Verde)"
+            },
+            {
+                "from": [
+                    "Av. Monforte De Lemos CV Av. Betanzos",
+                    "Av. Monforte De  Lemos CV Av. Betanzos"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Av. Monforte De Lemos CV Av. Betanzos"
+            },
+            {
+                "from": [
+                    "Princesa  Cv Alberto Aguilera",
+                    "Princesa CV Alberto Aguilera"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Princesa  Cv Alberto Aguilera"
+            },
+            {
+                "from": [
+                    "Pz Colon FTE. Fla.37",
+                    "Pz Colón FTE. Fla.37"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Pz Colon FTE. Fla.37"
+            },
+            {
+                "from": [
+                    "C° De Vinateros CV Arroyo Belincoso (Metro Vinateros",
+                    "C° De Vinateros CV Arroyo Belincoso (Metro Vinateros)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "C° De Vinateros CV Arroyo Belincoso (Metro Vinateros"
+            },
+            {
+                "from": [
+                    "Plaza Manuel Gomez Moreno FTE. N°6 (Entrada Por Orense)",
+                    "Plaza Manuel Gómez Moreno FTE. N°6 (Entrada Por Orense)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plaza Manuel Gomez Moreno FTE. N°6 (Entrada Por Orense)"
+            },
+            {
+                "from": [
+                    "Plaza Arturo Barea (Al lado Estatua)",
+                    "Plaza Arturo Barea (Al lado estatua)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plaza Arturo Barea (Al lado Estatua)"
+            },
+            {
+                "from": [
+                    "Plaza Tirso De Molina",
+                    "Plaza De Tirso De Molina"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plaza Tirso De Molina"
+            },
+            {
+                "from": [
+                    "Marques Viudo De Pontejos FTE.1 CV Plaza Marques De Pontejos",
+                    "Marques Viudo de Pontejos FTE.1 CV Plaza Marques De Pontejos"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Marques Viudo De Pontejos FTE.1 CV Plaza Marques De Pontejos"
+            },
+            {
+                "from": [
+                    "Serrano 47",
+                    "Serrano 47."
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Serrano 47"
+            },
+            {
+                "from": [
+                    "Plaza De Armeria Entre Palacio Y Catedral",
+                    "Plaza De Armería Entre Palacio Y Catedral"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plaza De Armeria Entre Palacio Y Catedral"
+            },
+            {
+                "from": [
+                    "Plaza  De Jacinto Benanvente",
+                    "Plaza De Jacinto Benanvente"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plaza  De Jacinto Benanvente"
+            },
+            {
+                "from": [
+                    "Santa Engracia Con Calle María De Guzman",
+                    "Santa Engracia Con calle María De Guzman"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Santa Engracia Con Calle María De Guzman"
+            },
+            {
+                "from": [
+                    "Méndez Alvaro 1",
+                    "Méndez Álvaro 1"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Méndez Alvaro 1"
+            },
+            {
+                "from": [
+                    "Av. De Guadalajara Junto Fla. 16-18 (C.C Las Rosas)",
+                    "Av. De Guadalajara Junto. Fla. 16-18 (C.C Las Rosas)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Av. De Guadalajara Junto Fla. 16-18 (C.C Las Rosas)"
+            },
+            {
+                "from": [
+                    "Calle Isaac Peral Con Calle Francisco De Sales (FTE. Clinico)",
+                    "Calle Isaac Peral Con calle Francisco De Sales (FTE. Clinico)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Calle Isaac Peral Con Calle Francisco De Sales (FTE. Clinico)"
+            },
+            {
+                "from": [
+                    "Plaza De Legazpi Con Maestro Arbos (Parada Bus",
+                    "Plaza De Legazpi Con Maestro Arbos (Parada De Bus)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plaza De Legazpi Con Maestro Arbos (Parada Bus"
+            },
+            {
+                "from": [
+                    "Av Mendez Pelayo Frente Av. De Nazaret",
+                    "Av. Mendez Pelayo Frente Av. De Nazaret"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Av Mendez Pelayo Frente Av. De Nazaret"
+            },
+            {
+                "from": [
+                    "Aquitania CV Hungria (Centro Salud Aquitania)",
+                    "Aquitania CV Hungría (Centro Salud Aquitania)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Aquitania CV Hungria (Centro Salud Aquitania)"
+            },
+            {
+                "from": [
+                    "Puerta Del Sol (Metro/Cercanias)",
+                    "Puerta Del Sol (Metro/Cercanías)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Puerta Del Sol (Metro/Cercanias)"
+            },
+            {
+                "from": [
+                    "Alcala 237 (Pz Toros) Metro",
+                    "Alcalá 237 (Pz Toros) Metro"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Alcala 237 (Pz Toros) Metro"
+            },
+            {
+                "from": [
+                    "P° De La Florida  Estación Príncipe Pio Junto Fla.29",
+                    "P° De La Florida Estación Príncipe Pio Junto Fla.29"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "P° De La Florida  Estación Príncipe Pio Junto Fla.29"
+            },
+            {
+                "from": [
+                    "P° De La Florida Estacion Príncipe Pio",
+                    "P° De La Florida Estación Príncipe Pio"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "P° De La Florida Estacion Príncipe Pio"
+            },
+            {
+                "from": [
+                    "Plaza Nelson Mandela Junto Fla.14 Y Arbol",
+                    "Plaza Nelson Mandela Junto Fla.14 Y Árbol"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plaza Nelson Mandela Junto Fla.14 Y Arbol"
+            },
+            {
+                "from": [
+                    "Av. De Mendez Pelayo (Entrada/Salida Retiro Mariano De Cavia)",
+                    "Av. Mendez Pelayo (Entrada/Salida Retiro Mariano De Cavia)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Av. De Mendez Pelayo (Entrada/Salida Retiro Mariano De Cavia)"
+            },
+            {
+                "from": [
+                    "Gran Via 61",
+                    "Gran Vía 61"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Gran Via 61"
+            },
+            {
+                "from": [
+                    "Av. Pablo Iglesias 96 (Metro Francos Rodriguez)",
+                    "Av. Pablo Iglesias 96 (Metro Francos Rodríguez)"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Av. Pablo Iglesias 96 (Metro Francos Rodriguez)"
+            },
+            {
+                "from": [
+                    "Intermedia Sur CV Transversal Sexta",
+                    "Intermedia Sur CV Transversal Sexta,"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Intermedia Sur CV Transversal Sexta"
+            },
+            {
+                "from": [
+                    "Serrano 54",
+                    "Serrano 54."
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Serrano 54"
+            },
+            {
+                "from": [
+                    "Plaza De Oriente FTE. Carlos III FLA.48",
+                    "Plaza De Oriente fte. Carlos III FLA.48"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plaza De Oriente FTE. Carlos III FLA.48"
+            },
+            {
+                "from": [
+                    "Blas Cabrera CV José De Cadalso",
+                    "Blas Cabrera CV José de Cadalso"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Blas Cabrera CV José De Cadalso"
+            }
+        ],
+        "description": "Mass edit cells in column direccion"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "tipoResiduo",
+        "newColumnName": "WasteType",
+        "description": "Rename column tipoResiduo to WasteType"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "direccion",
+        "newColumnName": "Place",
+        "description": "Rename column direccion to Place"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "longitud",
+        "newColumnName": "Lon",
+        "description": "Rename column longitud to Lon"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "Lon",
+        "newColumnName": "lon",
+        "description": "Rename column Lon to lon"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "latitud",
+        "newColumnName": "lat",
+        "description": "Rename column latitud to lat"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "nivelLlenado",
+        "newColumnName": "levelOfFullnes",
+        "description": "Rename column nivelLlenado to levelOfFullnes"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "alerta",
+        "newColumnName": "alarm",
+        "description": "Rename column alerta to alarm"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "Place",
+        "expression": "value.trim()",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column Place using expression value.trim()"
+    }
+]

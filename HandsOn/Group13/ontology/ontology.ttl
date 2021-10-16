@@ -1,0 +1,100 @@
+@prefix : <http://www.smartcity.madrid.es/mobility/ontology/> .
+@prefix res: <http://www.smartcity.madrid.es/mobility/resource/> .
+@prefix smartcity: <http://www.smartcity.madrid.es/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#Object
+
+:hasBus rdf:type owl:ObjectProperty;
+        rdfs:domain class:Wards;
+        rdfs:range class:Bus;
+        
+:hasMetro rdf:type owl:ObjectProperty;
+        rdfs:domain class:Wards;
+        rdfs:range class:Metro;
+
+:hasTrafficLight rdf:type owl:ObjectProperty;
+        rdfs:domain class:Wards;
+        rdfs:range class:Trafficlight;
+
+#Data
+
+:NOMDIS rdf:type owl:DataTypeProperty
+        rdfs:domain :Wards;
+        rdfs:range xsd:string.
+
+:COD_DIS_TX rdf:type owl:DataTypeProperty
+            rdfs:domain :Wards;
+            rdfs:range xsd:integer.
+
+:SHAPE_LENG rdf:type owl:DataTypeProperty
+        rdfs:domain :Wards;
+        rdfs:range xsd:float.
+
+:SHAPE_AREA rdf:type owl:DataTypeProperty
+        rdfs:domain :Wards;
+        rdfs:range xsd:float.
+
+:DENOMINACION rdf:type owl:DataTypeProperty
+        rdfs:range xsd:string.
+
+:BARRIO rdf:type owl:DataTypeProperty
+        rdfs:range xsd:string.
+        
+:DISTRITO rdf:type owl:DataTypeProperty
+        rdfs:range xsd:string.
+
+:TIPOVIA rdf:type owl:DataTypeProperty
+        rdfs:domain :Bus;
+        rdfs:range xsd:string.
+
+:NOMBREVIA rdf:type owl:DataTypeProperty
+        rdfs:domain :Bus;
+        rdfs:range xsd:string.
+
+:LINEAS rdf:type owl:DataTypeProperty
+        rdfs:domain :Bus;
+        rdfs:range xsd:string.
+
+:X rdf:type owl:DataTypeProperty
+        rdfs:domain :Bus;
+        rdfs:range xsd:integer.
+
+:Y rdf:type owl:DataTypeProperty
+        rdfs:domain :Bus;
+        rdfs:range xsd:integer.
+
+:INDICADORSENTIDO1 rdf:type owl:DataTypeProperty
+        rdfs:domain :Metro;
+        rdfs:range xsd:string.
+
+:id rdf:type owl:DataTypeProperty
+        rdfs:domain :Trafficlight;
+        rdfs:range xsd:string.
+        
+:utm_x rdf:type owl:DataTypeProperty
+        rdfs:domain :Trafficlight;
+        rdfs:range xsd:float.
+
+:utm_y rdf:type owl:DataTypeProperty
+        rdfs:domain :Trafficlight;
+        rdfs:range xsd:float.
+
+:longitud rdf:type owl:DataTypeProperty
+        rdfs:domain :Trafficlight;
+        rdfs:range xsd:float.
+
+:latitud rdf:type owl:DataTypeProperty
+        rdfs:domain :Trafficlight;
+        rdfs:range xsd:float.
+        
+#Classes
+
+:Wards rdf:type owl:Class.
+:Metro rdf:type owl:Class.
+:Bus rdf:type owl:Class.
+:Trafficlight rdf:type owl:Class.

@@ -1,0 +1,38 @@
+@prefix : <http://www.reciclamadrid.es/recycle/ontology/> .
+@prefix resource: <http://www.reciclamadrid.es/recycle/resources/> .
+@prefix recicla: <http://www.reciclamadrid.es/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:"Punto Limpio Galileo 39" rdf:type class:RecyclePoint;
+    :DATA_TYPE "Punto Limpio de Proximidad";
+    :CENTER "Centro Cultural Galileo";
+    :SCHEDULE "Lunes a Viernes 8:30 a 21:30. Sábados y Domingos 9:30 a 20:30.";
+    :WASTE "Aceite vegetal de cocina (5 Litros)\n
+        Ropa y calzado usado (producción doméstica)\n
+        Cápsulas de café (producción doméstica)\n
+        Radiografías (50 unidades)\n
+        Aerosoles (5 unidades)\n
+        Pilas alcalinas, salinas y baterías usadas (producción doméstica)\n
+        Cartuchos de tinta y tóner (4 unidades)\n
+        Bombillas de bajo consumo y tubos fluorescentes (3 unidades)\n
+        CD´s, DVD´s, casetes... y sus embalajes (20 unidades)\n
+        Cintas de video (20 unidades)\n
+        Pequeños aparatos elécrtricos y electrónicos (RAEE´s): ebooks, MP3, MP4, MP5, Ipods, tablets, mandos de televisión, USB´s y teléfonos móviles, lectores de DVDs y CDs… (1 unidad)";
+    :hasAddress "Calle Galileo 39";
+    :hasCoordinates "(439737,14, 4476140,05)".
+
+:"Calle Galileo 39" rdf:type class:Address;
+    :ROAD_TYPE "Calle";
+    :ROAD_NAME "Galileo";
+    :NUM_TYPE "numero"           
+    :NUM "39"^^xsd:integer;
+    :DISTRICT_CODE "7"^^xsd:integer;
+    :DISTRICT "Chamberí".
+
+:"(439737,14, 4476140,05)" rdf:type class:Coordinates;
+    :UTMX "439737,14"^^xsd:float;
+    :UTMY "4476140,05"^^xsd:float.

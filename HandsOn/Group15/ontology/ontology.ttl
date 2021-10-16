@@ -1,0 +1,70 @@
+@base <http://parquimetrosdemadrid.com/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix prop: <http://parquimetrosdemadrid.com/Properties#>.
+@prefix class: <http://parquimetrosdemadrid.com/Classes/>.
+#@prefix indiv: <http://parquimetrosdemadrid.com/IndTerms#>.
+
+<http://parquimetrosdemadrid.com/> rdf:type owl:Ontology.
+
+
+## Object 
+
+prop:locatedDistrict rdf:type owl:ObjectProperty;
+                     rdfs:domain class:ParkingMeter;
+                     rdfs:range class:District.
+
+prop:locatedNeighborhood rdf:type owl:ObjectProperty;
+                         rdfs:domain class:ParkingMeter;
+                         rdfs:range class:Neighborhood.
+
+prop:locatedVia rdf:type owl:ObjectProperty;
+                rdfs:domain class:ParkingMeter;
+                rdfs:range class:Via.
+
+## Data
+
+prop:licensePlate rdf:type owl:DatatypeProperty;
+                  rdfs:domain class:ParkingMeter;
+                  rdfs:range xsd:int.
+
+prop:gis_X  rdf:type owl:DatatypeProperty;
+            rdfs:domain class:ParkingMeter;
+            rdfs:range xsd:float.
+
+prop:gis_Y  rdf:type owl:DatatypeProperty;
+            rdfs:domain class:ParkingMeter;
+            rdfs:range xsd:float.
+
+prop:releaseDate rdf:type owl:DatatypeProperty;
+                 rdfs:domain class:ParkingMeter;
+                 rdfs:range xsd:string.
+
+prop:districtName rdf:type owl:DatatypeProperty;
+                  rdfs:domain class:District;
+                  rdfs:range xsd:string.
+
+prop:neighborhoodName rdf:type owl:DatatypeProperty;
+                      rdfs:domain class:Neighborhood;
+                      rdfs:range xsd:string.
+
+prop:viaName rdf:type owl:DatatypeProperty;
+             rdfs:domain class:Via;
+             rdfs:range xsd:string.
+
+
+## Classes 
+
+# http://parquimetrosdemadrid.com/ParkingMeter
+class:ParkingMeter rdf:type owl:Class.
+
+# http://parquimetrosdemadrid.com/District
+class:District rdf:type owl:Class.
+
+# http://parquimetrosdemadrid.com/Neighborhood
+class:Neighborhood rdf:type owl:Class.
+
+# http://parquimetrosdemadrid.com/Via
+class:Via rdf:type owl:Class.

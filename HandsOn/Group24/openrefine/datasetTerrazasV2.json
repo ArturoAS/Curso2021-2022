@@ -1,0 +1,785 @@
+[
+  {
+    "op": "core/fill-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "desc_barrio_local",
+    "description": "Fill down cells in column desc_barrio_local"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_terraza",
+    "description": "Remove column id_terraza"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_distrito_local",
+    "description": "Remove column id_distrito_local"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_barrio_local",
+    "description": "Remove column id_barrio_local"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_ndp_edificio",
+    "description": "Remove column id_ndp_edificio"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_clase_ndp_edificio",
+    "description": "Remove column id_clase_ndp_edificio"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_vial_edificio",
+    "description": "Remove column id_vial_edificio"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "nom_edificio",
+    "description": "Remove column nom_edificio"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_tipo_acceso_local",
+    "description": "Remove column id_tipo_acceso_local"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "desc_tipo_acceso_local",
+    "description": "Remove column desc_tipo_acceso_local"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_situacion_local",
+    "description": "Remove column id_situacion_local"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "secuencial_local_PC",
+    "description": "Remove column secuencial_local_PC"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Escalera",
+    "description": "Remove column Escalera"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_planta_agrupado",
+    "description": "Remove column id_planta_agrupado"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_local_agrupado",
+    "description": "Remove column id_local_agrupado"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "coordenada_x_agrupacion",
+    "description": "Remove column coordenada_x_agrupacion"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "coordenada_y_agrupacion",
+    "description": "Remove column coordenada_y_agrupacion"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_periodo_terraza",
+    "description": "Remove column id_periodo_terraza"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_situacion_terraza",
+    "description": "Remove column id_situacion_terraza"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Fecha_confir_ult_decreto_resol",
+    "description": "Remove column Fecha_confir_ult_decreto_resol"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_ndp_terraza",
+    "description": "Remove column id_ndp_terraza"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_clase_ndp_terraza",
+    "description": "Remove column id_clase_ndp_terraza"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ID_VIAL",
+    "description": "Remove column ID_VIAL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESC_CLASE",
+    "description": "Remove column DESC_CLASE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESC_NOMBRE",
+    "description": "Remove column DESC_NOMBRE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "nom_terraza",
+    "description": "Remove column nom_terraza"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "num_terraza",
+    "description": "Remove column num_terraza"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "cal_terraza",
+    "description": "Remove column cal_terraza"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "mesas_aux_es",
+    "description": "Remove column mesas_aux_es"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "mesas_aux_ra",
+    "description": "Remove column mesas_aux_ra"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "sillas_es",
+    "description": "Remove column sillas_es"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "sillas_ra",
+    "description": "Remove column sillas_ra"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "num_edificio",
+    "expression": "join ([cells['num_edificio'].value,cells['clase_vial_edificio'].value,cells['desc_vial_edificio'].value],' ')",
+    "onError": "keep-original",
+    "newColumnName": "direccion",
+    "columnInsertIndex": 6,
+    "description": "Create column direccion at index 6 based on column num_edificio using expression join ([cells['num_edificio'].value,cells['clase_vial_edificio'].value,cells['desc_vial_edificio'].value],' ')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "id_local",
+      "desc_distrito_local",
+      "desc_barrio_local",
+      "direccion",
+      "Cod_Postal",
+      "coordenada_x_local",
+      "coordenada_y_local",
+      "desc_situacion_local",
+      "rotulo",
+      "desc_periodo_terraza",
+      "desc_situacion_terraza",
+      "Superficie_ES",
+      "Superficie_RA",
+      "desc_ubicacion_terraza",
+      "hora_ini_LJ_es",
+      "hora_fin_LJ_es",
+      "hora_ini_LJ_ra",
+      "hora_fin_LJ_ra",
+      "hora_ini_VS_es",
+      "hora_fin_VS_es",
+      "hora_ini_VS_ra",
+      "hora_fin_VS_ra",
+      "mesas_es",
+      "mesas_ra"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "desc_distrito_local",
+          "columnName": "desc_distrito_local",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_x_local",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column coordenada_x_local using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "desc_distrito_local",
+          "columnName": "desc_distrito_local",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "range",
+          "name": "coordenada_x_local",
+          "expression": "value",
+          "columnName": "coordenada_x_local",
+          "from": 0,
+          "to": 1,
+          "selectNumeric": true,
+          "selectNonNumeric": false,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_y_local",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column coordenada_y_local using expression value.toNumber()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "coordenada_x_local",
+          "expression": "value",
+          "columnName": "coordenada_x_local",
+          "from": 0,
+          "to": 1,
+          "selectNumeric": true,
+          "selectNonNumeric": false,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_ini_LJ_es",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ":",
+    "regex": false,
+    "maxColumns": 3,
+    "description": "Split column hora_ini_LJ_es by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_ini_LJ_es 2",
+    "newColumnName": "min_ini_LJ_es",
+    "description": "Rename column hora_ini_LJ_es 2 to min_ini_LJ_es"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "hora_ini_LJ_es 3",
+    "description": "Remove column hora_ini_LJ_es 3"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_fin_LJ_es",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ":",
+    "regex": false,
+    "maxColumns": 3,
+    "description": "Split column hora_fin_LJ_es by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_fin_LJ_es 2",
+    "newColumnName": "min_fin_LJ_es",
+    "description": "Rename column hora_fin_LJ_es 2 to min_fin_LJ_es"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "hora_fin_LJ_es 3",
+    "description": "Remove column hora_fin_LJ_es 3"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_ini_LJ_ra",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ":",
+    "regex": false,
+    "maxColumns": 3,
+    "description": "Split column hora_ini_LJ_ra by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_ini_LJ_es 1",
+    "newColumnName": "hora_ini_LJ_es",
+    "description": "Rename column hora_ini_LJ_es 1 to hora_ini_LJ_es"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_ini_LJ_ra 1",
+    "newColumnName": "hora_ini_LJ_ra",
+    "description": "Rename column hora_ini_LJ_ra 1 to hora_ini_LJ_ra"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_ini_LJ_ra 2",
+    "newColumnName": "min_ini_LJ_ra",
+    "description": "Rename column hora_ini_LJ_ra 2 to min_ini_LJ_ra"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "hora_ini_LJ_ra 3",
+    "description": "Remove column hora_ini_LJ_ra 3"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_fin_LJ_ra",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ":",
+    "regex": false,
+    "maxColumns": 3,
+    "description": "Split column hora_fin_LJ_ra by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_fin_LJ_ra 1",
+    "newColumnName": "hora_fin_LJ_ra",
+    "description": "Rename column hora_fin_LJ_ra 1 to hora_fin_LJ_ra"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_fin_LJ_ra 2",
+    "newColumnName": "min_fin_LJ_ra",
+    "description": "Rename column hora_fin_LJ_ra 2 to min_fin_LJ_ra"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "hora_fin_LJ_ra 3",
+    "description": "Remove column hora_fin_LJ_ra 3"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_ini_VS_es",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ":",
+    "regex": false,
+    "maxColumns": 3,
+    "description": "Split column hora_ini_VS_es by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_ini_VS_es 1",
+    "newColumnName": "hora_ini_VS_es",
+    "description": "Rename column hora_ini_VS_es 1 to hora_ini_VS_es"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_ini_VS_es 2",
+    "newColumnName": "min_ini_VS_es",
+    "description": "Rename column hora_ini_VS_es 2 to min_ini_VS_es"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "hora_ini_VS_es 3",
+    "description": "Remove column hora_ini_VS_es 3"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_fin_VS_es",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ":",
+    "regex": false,
+    "maxColumns": 3,
+    "description": "Split column hora_fin_VS_es by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_fin_VS_es 1",
+    "newColumnName": "hora_fin_VS_es",
+    "description": "Rename column hora_fin_VS_es 1 to hora_fin_VS_es"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_fin_VS_es 2",
+    "newColumnName": "min_fin_VS_es",
+    "description": "Rename column hora_fin_VS_es 2 to min_fin_VS_es"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "hora_fin_VS_es 3",
+    "description": "Remove column hora_fin_VS_es 3"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_ini_VS_ra",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ":",
+    "regex": false,
+    "maxColumns": 3,
+    "description": "Split column hora_ini_VS_ra by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_ini_VS_ra 1",
+    "newColumnName": "hora_ini_VS_ra",
+    "description": "Rename column hora_ini_VS_ra 1 to hora_ini_VS_ra"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_ini_VS_ra 2",
+    "newColumnName": "min_ini_VS_ra",
+    "description": "Rename column hora_ini_VS_ra 2 to min_ini_VS_ra"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "hora_ini_VS_ra 3",
+    "description": "Remove column hora_ini_VS_ra 3"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_fin_VS_ra",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ":",
+    "regex": false,
+    "maxColumns": 3,
+    "description": "Split column hora_fin_VS_ra by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_fin_VS_ra 1",
+    "newColumnName": "hora_fin_VS_ra",
+    "description": "Rename column hora_fin_VS_ra 1 to hora_fin_VS_ra"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "hora_fin_VS_ra 2",
+    "newColumnName": "min_fin_VS_ra",
+    "description": "Rename column hora_fin_VS_ra 2 to min_fin_VS_ra"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "hora_fin_VS_ra 3",
+    "description": "Remove column hora_fin_VS_ra 3"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_ini_LJ_es",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hora_ini_LJ_es using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "min_ini_LJ_es",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column min_ini_LJ_es using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_fin_LJ_es 1",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hora_fin_LJ_es 1 using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "min_fin_LJ_es",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column min_fin_LJ_es using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_ini_LJ_ra",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hora_ini_LJ_ra using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "min_ini_LJ_ra",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column min_ini_LJ_ra using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_fin_LJ_ra",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hora_fin_LJ_ra using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "min_fin_LJ_ra",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column min_fin_LJ_ra using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_ini_VS_es",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hora_ini_VS_es using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "min_ini_VS_es",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column min_ini_VS_es using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_fin_VS_es",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hora_fin_VS_es using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "min_fin_VS_es",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column min_fin_VS_es using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_ini_VS_ra",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hora_ini_VS_ra using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "min_ini_VS_ra",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column min_ini_VS_ra using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hora_fin_VS_ra",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hora_fin_VS_ra using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "min_fin_VS_ra",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column min_fin_VS_ra using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coordenada_x_local",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column coordenada_x_local using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "desc_distrito_local",
+    "expression": "grel:value.replace(' ','-')",
+    "onError": "keep-original",
+    "repeat": true,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column desc_distrito_local using expression grel:value.replace(' ','-')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "desc_barrio_local",
+    "expression": "grel:value.replace(' ','-')",
+    "onError": "keep-original",
+    "repeat": true,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column desc_barrio_local using expression grel:value.replace(' ','-')"
+  }
+]

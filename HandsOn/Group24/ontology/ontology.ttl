@@ -1,0 +1,176 @@
+@prefix admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/#> .
+@prefix dc: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#> .
+@prefix ns: <http://www.example.org/TerrazasMadrid#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs1: <http://www.owl-ontologies.com/rdfs#> .
+@prefix schema: <https://schema.org#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/#> .
+@prefix time: <https://www.w3.org/TR/owl-time/#time:#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+admingeo:District a owl:Class ;
+    rdfs1:label "District" .
+
+admingeo:district a owl:ObjectProperty ;
+    rdfs1:label "district" .
+
+ns: a owl:Ontology ;
+    owl:versionInfo "0.0.1" ;
+    dc:creator "Carlos Ferrero Manauta" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Template Ontology" .
+
+ns:WeekdaySeasonalClose a owl:Class ;
+    rdfs1:label "Weekday Seasonal Close" ;
+    rdfs1:subClassOf time:GeneralDateTimeDescription .
+
+ns:WeekdaySeasonalOpen a owl:Class ;
+    rdfs1:label "Weekday Seasonal Open" ;
+    rdfs1:subClassOf time:GeneralDateTimeDescription .
+
+ns:WeekdayUnseasonalClose a owl:Class ;
+    rdfs1:label "Weekday Unseasonal Close" ;
+    rdfs1:subClassOf time:GeneralDateTimeDescription .
+
+ns:WeekdayUnseasonalOpen a owl:Class ;
+    rdfs1:label "Weekday Unseasonal Open" ;
+    rdfs1:subClassOf time:GeneralDateTimeDescription .
+
+ns:WeekendSeasonalClose a owl:Class ;
+    rdfs1:label "Weekend Seasonal Close" ;
+    rdfs1:subClassOf time:GeneralDateTimeDescription .
+
+ns:WeekendSeasonalOpen a owl:Class ;
+    rdfs1:label "Weekend Seasonal Open" ;
+    rdfs1:subClassOf time:GeneralDateTimeDescription .
+
+ns:WeekendUnseasonalClose a owl:Class ;
+    rdfs1:label "Weekend Unseasonal Close" ;
+    rdfs1:subClassOf time:GeneralDateTimeDescription .
+
+ns:WeekendUnseasonalOpen a owl:Class ;
+    rdfs1:label "Weekend Unseasonal Open" ;
+    rdfs1:subClassOf time:GeneralDateTimeDescription .
+
+ns:seasonalTime a owl:DatatypeProperty ;
+    rdfs1:label "seasonal time" ;
+    rdfs1:range xsd:string .
+
+ns:status a owl:DatatypeProperty ;
+    rdfs1:label "status" ;
+    rdfs1:range xsd:string .
+
+ns:tablesSeasonal a owl:DatatypeProperty ;
+    rdfs1:label "tables seasonal" ;
+    rdfs1:range xsd:string .
+
+ns:tablesUnseasonal a owl:DatatypeProperty ;
+    rdfs1:label "tables unseasonal" ;
+    rdfs1:range xsd:string .
+
+ns:terraceUbication a owl:DatatypeProperty ;
+    rdfs1:label "terrace ubication" ;
+    rdfs1:range xsd:string .
+
+rdfs1:label a owl:DatatypeProperty ;
+    rdfs1:label "label" ;
+    rdfs1:range xsd:string .
+
+ssn:Observation a owl:Class ;
+    rdfs1:label "Observation" .
+
+ssn:Property a owl:Class ;
+    rdfs1:label "Property" .
+
+ssn:featureOfInterest a owl:ObjectProperty ;
+    rdfs1:label "feature of interest" .
+
+ssn:observationSamplingTime a owl:ObjectProperty ;
+    rdfs1:label "observation sampling time" .
+
+ssn:observedProperty a owl:ObjectProperty ;
+    rdfs1:label "observed property" .
+
+schema:City a owl:Class ;
+    rdfs1:label "City" ;
+    rdfs1:subClassOf schema:AdministrativeArea .
+
+schema:GeoCoordinates a owl:Class ;
+    rdfs1:label "Geo Coordinates" .
+
+schema:LocalBusiness a owl:Class ;
+    rdfs1:label "Local Business" ;
+    rdfs1:subClassOf ssn:FeatureOfInterest,
+        schema:Organization .
+
+schema:PostalAddress a owl:Class ;
+    rdfs1:label "Postal Address" .
+
+schema:addressRegion a owl:DatatypeProperty ;
+    rdfs1:label "address region" ;
+    rdfs1:range xsd:string .
+
+schema:adress a owl:ObjectProperty ;
+    rdfs1:label "adress" .
+
+schema:containedIn a owl:ObjectProperty ;
+    rdfs1:label "contained in" .
+
+schema:geo a owl:ObjectProperty ;
+    rdfs1:label "geo" .
+
+schema:latitude a owl:DatatypeProperty ;
+    rdfs1:label "latitude" ;
+    rdfs1:range xsd:string .
+
+schema:longitude a owl:DatatypeProperty ;
+    rdfs1:label "longitude" ;
+    rdfs1:range xsd:string .
+
+schema:postalCode a owl:DatatypeProperty ;
+    rdfs1:label "postal code" ;
+    rdfs1:range xsd:string .
+
+schema:streetAdress a owl:DatatypeProperty ;
+    rdfs1:label "street adress" ;
+    rdfs1:range xsd:string .
+
+dc:title a owl:DatatypeProperty ;
+    rdfs1:label "title" ;
+    rdfs1:range xsd:string .
+
+time:Instant a owl:Class ;
+    rdfs1:label "Instant" .
+
+time:Interval a owl:Class ;
+    rdfs1:label "Interval" .
+
+time:hour a owl:DatatypeProperty ;
+    rdfs1:label "hour" ;
+    rdfs1:range xsd:string .
+
+time:inDateTtime a owl:ObjectProperty ;
+    rdfs1:label "in date ttime" .
+
+time:inside a owl:ObjectProperty ;
+    rdfs1:label "inside" .
+
+time:minute a owl:DatatypeProperty ;
+    rdfs1:label "minute" ;
+    rdfs1:range xsd:string .
+
+ssn:FeatureOfInterest a owl:Class ;
+    rdfs1:label "Feature Of Interest" .
+
+schema:AdministrativeArea a owl:Class ;
+    rdfs1:label "Administrative Area" ;
+    rdfs1:subClassOf schema:Place .
+
+schema:Organization a owl:Class ;
+    rdfs1:label "Organization" .
+
+schema:Place a owl:Class ;
+    rdfs1:label "Place" .
+
+time:GeneralDateTimeDescription a owl:Class ;
+    rdfs1:label "General Date Time Description" .

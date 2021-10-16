@@ -1,0 +1,66 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "fecha_inst",
+    "description": "Remove column fecha_inst"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_cruce",
+    "description": "Remove column id_cruce"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "id",
+    "index": 1,
+    "description": "Move column id to position 1"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "id",
+    "index": 0,
+    "description": "Move column id to position 0"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "id",
+    "newColumnName": "TafficLight_ID",
+    "description": "Rename column id to TafficLight_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "tipo_elem",
+    "newColumnName": "Elem_Type",
+    "description": "Rename column tipo_elem to Elem_Type"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "distrito",
+    "newColumnName": "District_ID",
+    "description": "Rename column distrito to District_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "utm_x",
+    "newColumnName": "X",
+    "description": "Rename column utm_x to X"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "utm_y",
+    "newColumnName": "Y",
+    "description": "Rename column utm_y to Y"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "longitud",
+    "newColumnName": "Lenght",
+    "description": "Rename column longitud to Lenght"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "latitud",
+    "newColumnName": "Latitude",
+    "description": "Rename column latitud to Latitude"
+  }
+]

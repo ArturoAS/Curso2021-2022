@@ -1,0 +1,104 @@
+@prefix base: <http://www.ontologies.org/ontologies/Group06/ontology> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:AdministrativeArea a owl:Class ;
+rdfs:label "Administrative Area" .
+
+schema:City a owl:Class ;
+rdfs:label "City" .
+
+schema:address a owl:DatatypeProperty ;
+rdfs:label "address" ;
+rdfs:range xsd:postalAddress .
+
+schema:containsPlace a owl:ObjectProperty ;
+rdfs:label "contains place" .
+
+schema:description a owl:DatatypeProperty ;
+rdfs:label "description" ;
+rdfs:range xsd:string .
+
+schema:latitude a owl:DatatypeProperty ;
+rdfs:label "latitude" ;
+rdfs:range xsd:double .
+
+schema:longitude a owl:DatatypeProperty ;
+rdfs:label "longitude" ;
+rdfs:range xsd:double .
+
+base: a owl:Ontology ;
+dc:creator "Group06" ;
+dc:description "Ontology code created by Chowlk" ;
+dc:title "BiciSem Ontology" ;
+owl:versionInfo "0.0.1" .
+
+base:Address a owl:Class ;
+rdfs:label "Address" .
+
+base:BaseBiciMad a owl:Class ;
+rdfs:label "Base Bici Mad" .
+
+base:BycicleParking a owl:Class ;
+rdfs:label "Bycicle Parking" .
+
+base:Cross a owl:Class ;
+rdfs:label "Cross" .
+
+base:Neighborhood a owl:Class ;
+rdfs:label "Neighborhood" .
+
+base:TrafficLight a owl:Class ;
+rdfs:label "Traffic Light" .
+
+base:biciMadAt a owl:ObjectProperty ;
+rdfs:label "bici mad at" .
+
+base:bycicleParkingAt a owl:ObjectProperty ;
+rdfs:label "bycicle parking at" .
+
+base:hasIdBiciMad a owl:DatatypeProperty ;
+rdfs:label "has id bici mad" ;
+rdfs:range xsd:string .
+
+base:hasIdBycicleParking a owl:DatatypeProperty ;
+rdfs:label "has id bycicle parking" ;
+rdfs:range xsd:integer .
+
+base:hasIdCity a owl:DatatypeProperty ;
+rdfs:label "has id city" ;
+rdfs:range xsd:integer .
+
+base:hasIdCross a owl:DatatypeProperty ;
+rdfs:label "has id cross" ;
+rdfs:range xsd:integer .
+
+base:hasIdDistrict a owl:DatatypeProperty ;
+rdfs:label "has id district" ;
+rdfs:range xsd:integer .
+
+base:hasIdNeighborhood a owl:DatatypeProperty ;
+rdfs:label "has id neighborhood" ;
+rdfs:range xsd:integer .
+
+base:hasIdTrafficLight a owl:DatatypeProperty ;
+rdfs:label "has id traffic light" ;
+rdfs:range xsd:integer .
+
+base:installDate a owl:DatatypeProperty ;
+rdfs:label "install date" ;
+rdfs:range xsd:date .
+
+base:numPlaces a owl:DatatypeProperty ;
+rdfs:label "num places" ;
+rdfs:range xsd:integer .
+
+base:state a owl:DatatypeProperty ;
+rdfs:label "state" ;
+rdfs:range xsd:boolean .
+
+base:trafficLightAt a owl:ObjectProperty ;
+rdfs:label "traffic light at" .

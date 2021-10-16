@@ -1,0 +1,97 @@
+@prefix : <http://smartcity.smartbins.es/lcc/ontology/recycle#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://smartcity.smartbins.es/lcc/ontology/recycle> rdf:type owl:Ontology .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#locatedIn
+:locatedIn rdf:type owl:ObjectProperty;
+  rdfs:domain :Bin;
+  rdfs:range :Place .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#recycledIn
+:recycledIn rdf:type owl:ObjectProperty;
+  rdfs:domain :Product;
+  rdfs:range :Bin .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#hasAlarm
+:hasAlarm rdf:type owl:DatatypeProperty;
+  rdfs:domain :Bin;
+  rdfs:range xsd:string .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#hasDate
+:hasDate rdf:type owl:DatatypeProperty;
+  rdfs:domain :Bin;
+  rdfs:range xsd:dateTime;
+  rdfs:subPropertyOf owl:topDataProperty .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#hasLat
+:hasLat rdf:type owl:DatatypeProperty;
+  rdfs:domain :Place;
+  rdfs:range xsd:decimal .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#hasLon
+:hasLon rdf:type owl:DatatypeProperty;
+  rdfs:domain :Place;
+  rdfs:range xsd:decimal .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#levelOfFullnes
+:levelOfFullnes rdf:type owl:FunctionalProperty,
+    owl:DatatypeProperty;
+  rdfs:domain :Bin;
+  rdfs:range xsd:integer .
+
+#################################################################
+#    Classes                                                    #
+#################################################################
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#General
+:General rdf:type owl:Class;
+  rdfs:subClassOf :WasteType;
+  owl:equivalentClass [
+    rdf:type owl:Restriction;
+    owl:allValuesFrom :BinGeneral;
+    owl:onProperty :recycledIn
+  ] .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#BinPlastic
+:BinPlastic rdf:type owl:Class;
+  rdfs:subClassOf :Bin .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#Product
+:Product rdf:type owl:Class .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#Place
+:Place rdf:type owl:Class .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#WasteType
+:WasteType rdf:type owl:Class;
+  rdfs:subClassOf :Product .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#bin
+:Bin rdf:type owl:Class .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#BinGeneral
+:BinGeneral rdf:type owl:Class;
+  rdfs:subClassOf :Bin .
+
+###  http://smartcity.smartbins.es/lcc/ontology/recycle#Plastic
+:Plastic rdf:type owl:Class;
+  rdfs:subClassOf :WasteType;
+  owl:disjointWith :General;
+  owl:equivalentClass [
+    rdf:type owl:Restriction;
+    owl:allValuesFrom :BinPlastic;
+    owl:onProperty :recycledIn
+  ] .

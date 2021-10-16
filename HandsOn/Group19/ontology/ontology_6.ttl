@@ -1,0 +1,55 @@
+ @prefix aq: <http://spainaq.linkeddata.com#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aq: a owl:Ontology ;
+    dc:creator "Group 11" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Air Quality Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+aq:Date a owl:Class ;
+    rdfs:label "Date" .
+
+aq:Emisiones a owl:Class ;
+    rdfs:label "Emisiones" .
+
+aq:Estación a owl:Class ;
+    rdfs:label "Estación" .
+
+aq:Municipio a owl:Class ;
+    rdfs:label "Municipio" .
+
+aq:Provincia a owl:Class ;
+    rdfs:label "Provincia" .
+
+aq:hasDate a owl:ObjectProperty ;
+    rdfs:label "has date" .
+
+aq:hasEmisiones a owl:ObjectProperty ;
+    rdfs:label "has emisiones" .
+
+aq:hasEstacion a owl:ObjectProperty ;
+    rdfs:label "has estacion" .
+
+aq:hasFecha a owl:DatatypeProperty ;
+    rdfs:label "has fecha" ;
+    rdfs:range xsd:date .
+
+aq:hasMagnitud a owl:DatatypeProperty ;
+    rdfs:label "has magnitud" ;
+    rdfs:range xsd:integer .
+
+aq:hasMedida a owl:DatatypeProperty ;
+    rdfs:label "has medida" ;
+    rdfs:range xsd:integer .
+
+aq:hasName a owl:DatatypeProperty ;
+    rdfs:label "has name" ;
+    rdfs:range xsd:string .
+
+aq:hasProvincia a owl:ObjectProperty ;
+    rdfs:label "has provincia" .
+

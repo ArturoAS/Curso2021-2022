@@ -1,0 +1,158 @@
+[
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "D02",
+      "expression": "join ([coalesce(cells['D02'].value,''),coalesce(cells['V02'].value,''),coalesce(cells['D03'].value,''),coalesce(cells['V03'].value,''),coalesce(cells['D04'].value,''),coalesce(cells['V04'].value,''),coalesce(cells['D05'].value,''),coalesce(cells['V05'].value,''),coalesce(cells['D06'].value,''),coalesce(cells['V06'].value,''),coalesce(cells['D07'].value,''),coalesce(cells['V07'].value,''),coalesce(cells['D08'].value,''),coalesce(cells['V08'].value,''),coalesce(cells['D09'].value,''),coalesce(cells['V09'].value,''),coalesce(cells['D10'].value,''),coalesce(cells['V10'].value,''),coalesce(cells['D11'].value,''),coalesce(cells['V11'].value,''),coalesce(cells['D12'].value,''),coalesce(cells['V12'].value,''),coalesce(cells['D13'].value,''),coalesce(cells['V13'].value,''),coalesce(cells['D14'].value,''),coalesce(cells['V14'].value,''),coalesce(cells['D15'].value,''),coalesce(cells['V15'].value,''),coalesce(cells['D16'].value,''),coalesce(cells['V16'].value,''),coalesce(cells['D17'].value,''),coalesce(cells['V17'].value,''),coalesce(cells['D18'].value,''),coalesce(cells['V18'].value,''),coalesce(cells['D19'].value,''),coalesce(cells['V19'].value,''),coalesce(cells['D20'].value,''),coalesce(cells['V20'].value,''),coalesce(cells['D21'].value,''),coalesce(cells['V21'].value,''),coalesce(cells['D22'].value,''),coalesce(cells['V22'].value,''),coalesce(cells['D23'].value,''),coalesce(cells['V23'].value,''),coalesce(cells['D24'].value,''),coalesce(cells['V24'].value,''),coalesce(cells['D25'].value,''),coalesce(cells['V25'].value,''),coalesce(cells['D26'].value,''),coalesce(cells['V26'].value,''),coalesce(cells['D27'].value,''),coalesce(cells['V27'].value,''),coalesce(cells['D28'].value,''),coalesce(cells['V28'].value,''),coalesce(cells['D29'].value,''),coalesce(cells['V29'].value,''),coalesce(cells['D30'].value,''),coalesce(cells['V30'].value,''),coalesce(cells['D31'].value,''),coalesce(cells['V31'].value,'')],'')",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column D02 using expression join ([coalesce(cells['D02'].value,''),coalesce(cells['V02'].value,''),coalesce(cells['D03'].value,''),coalesce(cells['V03'].value,''),coalesce(cells['D04'].value,''),coalesce(cells['V04'].value,''),coalesce(cells['D05'].value,''),coalesce(cells['V05'].value,''),coalesce(cells['D06'].value,''),coalesce(cells['V06'].value,''),coalesce(cells['D07'].value,''),coalesce(cells['V07'].value,''),coalesce(cells['D08'].value,''),coalesce(cells['V08'].value,''),coalesce(cells['D09'].value,''),coalesce(cells['V09'].value,''),coalesce(cells['D10'].value,''),coalesce(cells['V10'].value,''),coalesce(cells['D11'].value,''),coalesce(cells['V11'].value,''),coalesce(cells['D12'].value,''),coalesce(cells['V12'].value,''),coalesce(cells['D13'].value,''),coalesce(cells['V13'].value,''),coalesce(cells['D14'].value,''),coalesce(cells['V14'].value,''),coalesce(cells['D15'].value,''),coalesce(cells['V15'].value,''),coalesce(cells['D16'].value,''),coalesce(cells['V16'].value,''),coalesce(cells['D17'].value,''),coalesce(cells['V17'].value,''),coalesce(cells['D18'].value,''),coalesce(cells['V18'].value,''),coalesce(cells['D19'].value,''),coalesce(cells['V19'].value,''),coalesce(cells['D20'].value,''),coalesce(cells['V20'].value,''),coalesce(cells['D21'].value,''),coalesce(cells['V21'].value,''),coalesce(cells['D22'].value,''),coalesce(cells['V22'].value,''),coalesce(cells['D23'].value,''),coalesce(cells['V23'].value,''),coalesce(cells['D24'].value,''),coalesce(cells['V24'].value,''),coalesce(cells['D25'].value,''),coalesce(cells['V25'].value,''),coalesce(cells['D26'].value,''),coalesce(cells['V26'].value,''),coalesce(cells['D27'].value,''),coalesce(cells['V27'].value,''),coalesce(cells['D28'].value,''),coalesce(cells['V28'].value,''),coalesce(cells['D29'].value,''),coalesce(cells['V29'].value,''),coalesce(cells['D30'].value,''),coalesce(cells['V30'].value,''),coalesce(cells['D31'].value,''),coalesce(cells['V31'].value,'')],'')"
+    },
+    {
+      "op": "core/column-reorder",
+      "columnNames": [
+        "PROVINCIA",
+        "MUNICIPIO",
+        "ESTACION",
+        "MAGNITUD",
+        "PUNTO_MUESTREO",
+        "ANO",
+        "MES",
+        "D01",
+        "V01",
+        "D02"
+      ],
+      "description": "Reorder columns"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "D02",
+      "description": "Remove column D02"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "PUNTO_MUESTREO",
+      "description": "Remove column PUNTO_MUESTREO"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "PROVINCIA",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column PROVINCIA using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "MUNICIPIO",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column MUNICIPIO using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "ESTACION",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column ESTACION using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "MAGNITUD",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column MAGNITUD using expression value.toNumber()"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "ANO",
+      "expression": "join ([coalesce(cells['ANO'].value,''),coalesce(cells['MES'].value,'')],'-')",
+      "onError": "keep-original",
+      "newColumnName": "DATE",
+      "columnInsertIndex": 5,
+      "description": "Create column DATE at index 5 based on column ANO using expression join ([coalesce(cells['ANO'].value,''),coalesce(cells['MES'].value,'')],'-')"
+    },
+    {
+      "op": "core/column-reorder",
+      "columnNames": [
+        "PROVINCIA",
+        "MUNICIPIO",
+        "ESTACION",
+        "MAGNITUD",
+        "DATE",
+        "D01",
+        "V01"
+      ],
+      "description": "Reorder columns"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DATE",
+      "expression": "value.toDate()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column DATE using expression value.toDate()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "D01",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column D01 using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "V01",
+      "expression": "value.toString()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column V01 using expression value.toString()"
+    }
+  ]

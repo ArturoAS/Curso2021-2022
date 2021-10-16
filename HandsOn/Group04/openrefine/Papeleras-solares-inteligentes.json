@@ -1,0 +1,509 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "direccion",
+    "newColumnName": "Direccion",
+    "description": "Rename column direccion to Direccion"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "(",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Direccion by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "expression": "value.replace(\")\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 2 using expression value.replace(\")\",\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Direccion 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Plaza Manuel Gomez Moreno FTE. N°6 ",
+          "Plaza Manuel Gómez Moreno FTE. N°6 "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza Manuel Gomez Moreno FTE. N°6 "
+      },
+      {
+        "from": [
+          "Pendiente Reubicar. Av. De Las Águilas FTE. N°110",
+          "Pendiente reubicar. Av. De Las Águilas Fte. N°110"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pendiente Reubicar. Av. De Las Águilas FTE. N°110"
+      },
+      {
+        "from": [
+          "Av. Monforte De Lemos CV Av. Betanzos",
+          "Av. Monforte De  Lemos CV Av. Betanzos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Av. Monforte De Lemos CV Av. Betanzos"
+      },
+      {
+        "from": [
+          "Princesa  Cv Alberto Aguilera",
+          "Princesa CV Alberto Aguilera"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Princesa  Cv Alberto Aguilera"
+      },
+      {
+        "from": [
+          "Av. De Guadalajara Junto Fla. 16-18 ",
+          "Av. De Guadalajara Junto. Fla. 16-18 "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Av. De Guadalajara Junto Fla. 16-18 "
+      },
+      {
+        "from": [
+          "Plaza Tirso De Molina",
+          "Plaza De Tirso De Molina"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza Tirso De Molina"
+      },
+      {
+        "from": [
+          "Marques Viudo De Pontejos FTE.1 CV Plaza Marques De Pontejos",
+          "Marques Viudo de Pontejos FTE.1 CV Plaza Marques De Pontejos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Marques Viudo De Pontejos FTE.1 CV Plaza Marques De Pontejos"
+      },
+      {
+        "from": [
+          "Plaza De Armeria Entre Palacio Y Catedral",
+          "Plaza De Armería Entre Palacio Y Catedral"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza De Armeria Entre Palacio Y Catedral"
+      },
+      {
+        "from": [
+          "Plaza  De Jacinto Benanvente",
+          "Plaza De Jacinto Benanvente"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza  De Jacinto Benanvente"
+      },
+      {
+        "from": [
+          "Santa Engracia Con Calle María De Guzman",
+          "Santa Engracia Con calle María De Guzman"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Santa Engracia Con Calle María De Guzman"
+      },
+      {
+        "from": [
+          "Calle Isaac Peral Con Calle Francisco De Sales ",
+          "Calle Isaac Peral Con calle Francisco De Sales "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Isaac Peral Con Calle Francisco De Sales "
+      },
+      {
+        "from": [
+          "Fernández De Los Ríos CV Isaac Peral",
+          "Fernández De Los Ríos CV Isaac Peral "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fernández De Los Ríos CV Isaac Peral"
+      },
+      {
+        "from": [
+          "Av. Monforte De Lemos CV Ginzo De Limia ",
+          "Av. Monforte De Lemos CV Ginzo De Limia"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Av. Monforte De Lemos CV Ginzo De Limia "
+      },
+      {
+        "from": [
+          "Av Mendez Pelayo Frente Av. De Nazaret",
+          "Av. Mendez Pelayo Frente Av. De Nazaret"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Av Mendez Pelayo Frente Av. De Nazaret"
+      },
+      {
+        "from": [
+          "P° De La Florida  Estación Príncipe Pio Junto Fla.29",
+          "P° De La Florida Estación Príncipe Pio Junto Fla.29"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "P° De La Florida  Estación Príncipe Pio Junto Fla.29"
+      },
+      {
+        "from": [
+          "P° De La Florida Estacion Príncipe Pio",
+          "P° De La Florida Estación Príncipe Pio"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "P° De La Florida Estacion Príncipe Pio"
+      },
+      {
+        "from": [
+          "Av. De Las Águilas Junto Fla. 26",
+          "Av. De Las Águilas Junto Fla. 26 "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Av. De Las Águilas Junto Fla. 26"
+      },
+      {
+        "from": [
+          "Plaza Nelson Mandela Junto Fla.14 Y Arbol",
+          "Plaza Nelson Mandela Junto Fla.14 Y Árbol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza Nelson Mandela Junto Fla.14 Y Arbol"
+      },
+      {
+        "from": [
+          "Bulevar Indalecio Prieto CV Parra",
+          "Bulevar Indalecio Prieto CV Parra "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bulevar Indalecio Prieto CV Parra"
+      },
+      {
+        "from": [
+          "Intermedia Sur CV Transversal Sexta",
+          "Intermedia Sur CV Transversal Sexta,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Intermedia Sur CV Transversal Sexta"
+      },
+      {
+        "from": [
+          "Plaza De Oriente FTE. Carlos III FLA.48",
+          "Plaza De Oriente fte. Carlos III FLA.48"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza De Oriente FTE. Carlos III FLA.48"
+      },
+      {
+        "from": [
+          "Blas Cabrera CV José De Cadalso",
+          "Blas Cabrera CV José de Cadalso"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Blas Cabrera CV José De Cadalso"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Direccion 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Carretas FTE. Cadiz",
+          "Carretas FTE. Cádiz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carretas FTE. Cadiz"
+      },
+      {
+        "from": [
+          "Av. Mendez Pelayo",
+          "Av. Mendez Pelayo "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Av. Mendez Pelayo"
+      },
+      {
+        "from": [
+          "Pz Colon FTE. Fla.37",
+          "Pz Colón FTE. Fla.37"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pz Colon FTE. Fla.37"
+      },
+      {
+        "from": [
+          "Alcalá 237 ",
+          "Alcala 237 "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alcalá 237 "
+      },
+      {
+        "from": [
+          "Serrano 47",
+          "Serrano 47."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Serrano 47"
+      },
+      {
+        "from": [
+          "Méndez Alvaro 1",
+          "Méndez Álvaro 1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Méndez Alvaro 1"
+      },
+      {
+        "from": [
+          "Gran Via 61",
+          "Gran Vía 61"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gran Via 61"
+      },
+      {
+        "from": [
+          "Aquitania CV Hungria ",
+          "Aquitania CV Hungría "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aquitania CV Hungria "
+      },
+      {
+        "from": [
+          "Serrano 54",
+          "Serrano 54."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Serrano 54"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Direccion 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Al lado Estatua",
+          "Al lado estatua"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Al lado Estatua"
+      },
+      {
+        "from": [
+          "Galeria Efe",
+          "Galería Efe"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Galeria Efe"
+      },
+      {
+        "from": [
+          "Metro Francos Rodriguez",
+          "Metro Francos Rodríguez"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro Francos Rodriguez"
+      },
+      {
+        "from": [
+          "Centro De Salud",
+          "Centro  De Salud"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Centro De Salud"
+      },
+      {
+        "from": [
+          "Metro/Cercanias",
+          "Metro/Cercanías"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metro/Cercanias"
+      },
+      {
+        "from": [
+          "Pasillo Verde",
+          "Pasillo verde"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pasillo Verde"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "id",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column id using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "longitud",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitud using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "latitud",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column latitud using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "nivelLlenado",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column nivelLlenado using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "fecha",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column fecha using expression value.toDate()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "fecha",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ".",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column fecha by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "fecha 1",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column fecha 1 using expression value.toDate()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "fecha 1",
+    "newColumnName": "fecha",
+    "description": "Rename column fecha 1 to fecha"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "fecha 2",
+    "description": "Remove column fecha 2"
+  }
+]

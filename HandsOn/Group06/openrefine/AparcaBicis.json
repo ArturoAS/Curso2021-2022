@@ -1,0 +1,106 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTDISTRI,C,20",
+    "description": "Remove column MINTDISTRI,C,20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTBARRIO,C,10",
+    "description": "Remove column MINTBARRIO,C,10"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTNUMERO,C,25",
+    "description": "Remove column MINTNUMERO,C,25"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTNDP,C,20",
+    "description": "Remove column MINTNDP,C,20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MODELO,C,254",
+    "description": "Remove column MODELO,C,254"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MXASSETNUM,C,12",
+    "newColumnName": "hasIDaparcaBicis",
+    "description": "Rename column MXASSETNUM,C,12 to hasIDaparcaBicis"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DESCRIPTIO,C,105",
+    "newColumnName": "hasDescription",
+    "description": "Rename column DESCRIPTIO,C,105 to hasDescription"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "INSTALLDAT,D",
+    "newColumnName": "installDate",
+    "description": "Rename column INSTALLDAT,D to installDate"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESTADO,C,50",
+    "newColumnName": "state",
+    "description": "Rename column ESTADO,C,50 to state"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE_DIS,C,20",
+    "expression": "join ([coalesce(cells['NOMBRE_DIS,C,20'].value,''),coalesce(cells['NOMBRE_BAR,C,50'].value,''),coalesce(cells['MINTTIPOVI,C,15'].value,'')],', ')",
+    "onError": "keep-original",
+    "newColumnName": "address",
+    "columnInsertIndex": 3,
+    "description": "Create column address at index 3 based on column NOMBRE_DIS,C,20 using expression join ([coalesce(cells['NOMBRE_DIS,C,20'].value,''),coalesce(cells['NOMBRE_BAR,C,50'].value,''),coalesce(cells['MINTTIPOVI,C,15'].value,'')],', ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "address",
+    "expression": "join ([coalesce(cells['address'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column address using expression join ([coalesce(cells['address'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "hasIDaparcaBicis",
+      "hasDescription",
+      "NOMBRE_DIS,C,20",
+      "address",
+      "NOMBRE_BAR,C,50",
+      "state",
+      "installDate",
+      "MINTTIPOVI,C,15"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOMBRE_DIS,C,20",
+    "description": "Remove column NOMBRE_DIS,C,20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOMBRE_BAR,C,50",
+    "description": "Remove column NOMBRE_BAR,C,50"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTTIPOVI,C,15",
+    "description": "Remove column MINTTIPOVI,C,15"
+  }
+]

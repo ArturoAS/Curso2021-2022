@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Analysis</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <h2>Analyse Data Set</h2>
+    <table>
+        <thead>
+            <td>Column</td>
+            <td>Type</td>
+            <td>Comments/Range(rounded)</td>
+            <td>Problems</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>Integer</td>
+                <td>Unique, required</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tipo Residuo</td>
+                <td>String</td>
+                <td>Not unique, (Resto/Envases)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Direccion</td>
+                <td>String</td>
+                <td>Not unique</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Longitud</td>
+                <td>Decimal</td>
+                <td>Empty values, (-3.8) - (-3.5)</td>
+                <td>Negative values</td>
+            </tr>
+            <tr>
+                <td>Latitud</td>
+                <td>Decimal</td>
+                <td>Empty values, 40.3 - 40.6</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nivel de llenado</td>
+                <td>Integer</td>
+                <td>0-8</td>
+                <td>Saltos de 2</td>
+            </tr>
+            <tr>
+                <td>Alerta</td>
+                <td>String</td>
+                <td>Empty values, (Llena/Error)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Fecha</td>
+                <td>Date</td>
+                <td>12/08/21 - 16/08/21</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Analyse Licensing of the Data Source</h2>
+    <ul>
+        <li>Publisher: Carlos Marchena</li>
+        <li>License: CC0 1.0 Universal (CC0 1.0):</li>
+        <ul>
+            <li>This type of license is of Public Domain Dedication</li>
+        </ul>
+        <li>License to be used: CC0 1.0 Universal (CC0 1.0)</li>
+    </ul>
+
+    <h2>Define Resource Naming Strategy</h2>
+    <ul>
+        <li>Domain: http://smartcity.smartbins.es/</li>
+        <li>Path: lcc/</li>
+        <li>Ontology Extension: ontology/</li>
+        <li>Data Extension: resource/</li>
+        <br>
+        <li>Ontological terms path (separated by #): http://smartcity.smartbins.es/lcc/ontology/recycle#</li>
+        <li>Individuals path (separated by /): http://smartcity.smartbins.es/lcc/resource/</li>
+    </ul>
+</body>
+
+</html>

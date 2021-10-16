@@ -1,0 +1,22 @@
+@prefix : <http://smartcity.smartbins.es/lcc/ontology/recycle#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://smartcity.smartbins.es/lcc/ontology/recycle> rdf:type owl:Ontology .
+
+:Puerta_del_Angel rdf:type owl:Place;
+    :hasLon "-3.4"^^xsd:integer;
+    :hasLat "1.2"^^xsd:integer .
+
+:Bin_25425 rdf:type owl:BinGeneral;
+    :hasAlarm "Full"^^xsd:string;
+    :levelOfFullnes "8"^^xsd:integer;
+    :hasDate "2021-08-21T12:00:12"^^xsd:dateTime
+    :locatedIn :Puerta_del_Angel .
+
+
+<http://smartcity.smartbins.es/lcc/ontology/recycle#202125425> rdf:type owl:General;
+                                                               :recycledIn :Bin_25425 .
+

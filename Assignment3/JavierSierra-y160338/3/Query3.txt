@@ -1,0 +1,6 @@
+select ?value
+where 
+{  
+?politician rdf:type <http://dbpedia.org/ontology/Politician> .
+?politician ?property ?value filter( ?property != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) 
+ } 

@@ -1,0 +1,103 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_DIS",
+    "description": "Remove column COD_DIS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BARRIO_MAY",
+    "description": "Remove column BARRIO_MAY"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_DISBAR",
+    "description": "Remove column COD_DISBAR"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "NOMBRE",
+    "index": 1,
+    "description": "Move column NOMBRE to position 1"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NUM_BAR",
+    "description": "Remove column NUM_BAR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BARRIO_MT",
+    "description": "Remove column BARRIO_MT"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_DISB",
+    "description": "Remove column COD_DISB"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "COD_BAR",
+    "index": 5,
+    "description": "Move column COD_BAR to position 5"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "COD_BAR",
+    "index": 4,
+    "description": "Move column COD_BAR to position 4"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "COD_BAR",
+    "index": 3,
+    "description": "Move column COD_BAR to position 3"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "COD_DIS_TX",
+    "index": 5,
+    "description": "Move column COD_DIS_TX to position 5"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "COD_DIS_TX",
+    "index": 4,
+    "description": "Move column COD_DIS_TX to position 4"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_BAR",
+    "description": "Remove column COD_BAR"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "OBJECTID_1",
+    "newColumnName": "Ward_ID",
+    "description": "Rename column OBJECTID_1 to Ward_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE",
+    "newColumnName": "Name",
+    "description": "Rename column NOMBRE to Name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMDIS",
+    "newColumnName": "District_Name",
+    "description": "Rename column NOMDIS to District_Name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COD_DIS_TX",
+    "newColumnName": "District_ID",
+    "description": "Rename column COD_DIS_TX to District_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Name",
+    "newColumnName": "Ward_Name",
+    "description": "Rename column Name to Ward_Name"
+  }
+]

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analisis del Dataset Group06 - Aparca bicis 2021 en la Comunidad de Madrid.</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
+    }
+    h2 {
+      text-decoration: underline;
+    }
+    .li-title {
+      font-weight: bold;
+      font-style: italic;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    a {
+      color: dodgerblue;
+    }
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    </style>
+</head>
+
+<body>
+  <h1>Análisis</h1>
+
+  <h2>Análisis de la licencia</h2>
+
+  <p>La licencia de este dataset permite la reutilizacion de los documentos y datos sometidos a ellas para fines comerciales y no comerciales, entenidendo que la reutilizacion de los mismos no constituya una actividad administrativa publica. La
+    licencia se encuentra en el siguiente <a href="https://datos.madrid.es/egob/catalogo/aviso-legal">enlace</a>.
+  </p>
+  <p>
+    Esta licencia es publicada por el Ayuntamiento de Madrid que ademas tiene los derechos de autor sobre la misma .
+    El conjunto de datos de nuestra aplicacion, tampoco tiene fines comerciales y podran usarse siempre que se nos acredite a nosotros asi como a la fuente de datos original.
+  </p>
+
+  <h2>Análisis de los datos</h2>
+
+  <p>Para cada fuente tenemos los siguientes datos:</p>
+
+  <table>
+    <tr>
+      <th>Campo</th>
+      <th>Tipo</th>
+      <th>Length</th>
+      <th>Comentarios</th>
+    </tr>
+
+    <!-- Ciudad -->
+    <tr>
+      <th>hasIdCity</th>
+      <th>Integer</th>
+      <th>3</th>
+      <th>Identificador de la ciudad</th>
+    </tr>
+
+    <!-- Distrito -->
+    <tr>
+      <th>hasIddistrict</th>
+      <th>Integer</th>
+      <th>3</th>
+      <th>Identificador del distrito</th>
+    </tr>
+    
+    <!-- Barrio -->
+    <tr>
+      <th>hasIdNeighborhood</th>
+      <th>Integer</th>
+      <th>3</th>
+      <th>Identificador del barrio</th>
+    </tr>
+    
+    <!-- Cruce -->
+    <tr>
+      <th>hasIdCross</th>
+      <th>Integer</th>
+      <th>3</th>
+      <th>Identificador del cruce</th>
+    </tr>
+
+    <!-- Direccion -->
+    <tr>
+      <th>address</th>
+      <th>PostalAddress</th>
+      <th>200</th>
+      <th>Direccion postal</th>
+    </tr>
+
+    <!-- AparcaBicis -->
+    <tr>
+      <th>hasIdBycicleParking</th>
+      <th>Integer</th>
+      <th>3</th>
+      <th>Identificador del estacionamiento de la bici</th>
+    </tr>
+    <tr>
+      <th>description</th>
+      <th>String</th>
+      <th>150</th>
+      <th>Descripcion del lugar donde esta aparcada la bicicleta</th>
+    </tr>
+    <tr>
+      <th>installDate</th>
+      <th>Date</th>
+      <th>50</th>
+      <th>Fecha de instauración de la bici</th>
+    </tr>
+    <tr>
+      <th>state</th>
+      <th>Boolean</th>
+      <th>20</th>
+      <th>Indica el estado del servicio, puede tomar los valores: "OPERATIVO" o "NO OPERATIVO"</th>
+    </tr>
+
+    <!-- baseBiciMad -->
+    <tr>
+      <th>hasIdBiciMad</th>
+      <th>String</th> <!-- TODO: Deberia ser Integer -->
+      <th>150</th> <!-- En caso de integer poner 3 -->
+      <th>Identificador del estacionamiento de la bici en BiciMad</th>
+    </tr>
+    <tr>
+      <th>numPlaces</th>
+      <th>Integer</th>
+      <th>3</th>
+      <th>Numero de plazas para estacionar la bici</th>
+    </tr>
+    <tr>
+      <th>latitude</th>
+      <th>Double</th>
+      <th>20</th>
+      <th>Latitud de las coordenadas</th>
+    </tr>
+    <tr>
+      <th>longitude</th>
+      <th>Double</th>
+      <th>20</th>
+      <th>Longitud de las coordenadas</th>
+    </tr>
+
+    <!-- Semaforo -->
+    <tr>
+      <th>hasIdTrafficLight</th>
+      <th>Integer</th>
+      <th>3</th>
+      <th>Identificador del semaforo</th>
+    </tr>
+  </table>
+
+  <h2>Estrategia de los Nombres del Recurso</h2>
+  <div class="list">
+    <ul>
+      <li><span class="li-title">Dominio:</span> http://www.ontologies.org</li>
+      <li><span class="li-title">Definición de los terminos de la ontología:</span> http://www.ontologies.org/ontologies/Group06/ontology</li>
+      <li><span class="li-title">Definición del path de las clases:</span> http://www.ontologies.org/ontologies/Group06/ontology/[Clase]</li>
+      <li><span class="li-title">Definición del path de los individuos:</span> http://www.ontologies.org/ontologies/Group06/resource/[Clase]/[IDindividuo]</li>
+      <li><span class="li-title">Definición del path de las propiedades:</span> http://www.ontologies.org/ontologies/Group06/ontology/[propiedad]</li>
+    </ul>
+  </div>
+
+</body>
+
+</html>

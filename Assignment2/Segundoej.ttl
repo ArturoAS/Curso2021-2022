@@ -1,0 +1,19 @@
+ base <http://www.ontologies.org/ontologies/assignment2/>
+@prefix assig2: <http://www.ontologies.org/ontologies/assignment2#>
+
+<Class01>
+	assig2:includes :Sensor029;
+    assig2:includes :Computer101.
+
+<Sensor029> 
+	assig2:hasMeasurement :Measurement8401.
+
+<Measurement8401> 
+	assig2:hasTemperature "29";
+    assig2:atTime "2010-06-12T12:00:12".
+
+<Computer101> 
+	assig2:hasOwner :User10A.
+
+<User10A> 
+	assig2:hasName "Pedro".

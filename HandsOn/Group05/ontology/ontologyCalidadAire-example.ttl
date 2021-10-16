@@ -1,0 +1,36 @@
+@prefix p: <http://calidadAire.com#Provincia>.
+@prefix m: <http://calidadAire.com#Municipio>.
+@prefix me: <http://calidadAire.com#Medicion>.
+@prefix ma:  <http://calidadAire.com#Magnitud>.
+@prefix e:  <http://calidadAire.com#Estacion>.
+@prefix pm:  <http://calidadAire.com#PuntoMuestreo>.
+@prefix  : <http://calidadAire.com#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+p:1 :Provincia "Provincia";
+	:refProvincia "28"^^xsd:integer;
+	:tieneMunicipio "Municipio".
+
+m:2 :Municipio "Municipio";
+	:refMunicipio "102"^^xsd:integer;
+	:tieneEstacion "Estacion".
+	
+e:3 :Estacion "Estacion";
+	:refEstacion "1"^^xsd:integer;
+	:mide "Magnitud";
+	:tienePuntoMuestreo "PuntoMuestreo".
+	
+ma:4 :Magnitud "Magnitud";
+	:refMagnitud "1"^^xsd:integer.
+	
+pm:5 :PuntoMuestreo "PuntoMuestreo";
+	:refPunto "28102001_1_38"^^xsd:string;
+	:ano "2021"^^xsd:integer;
+	:mes "10"^^xsd:integer;
+	:dia "1"^^xsd:integer;
+	:tieneMedicion "Medicion".
+	
+me:6 :Medicion "Medicion";
+	:refHora "01"^^xsd:integer;
+	:validacion "V"^^xsd:char;
+	:medicion "3"^^xsd:double.

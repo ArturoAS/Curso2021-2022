@@ -1,0 +1,64 @@
+{
+  "@context": {
+    "person": "http://xmlns.com/foaf/0.1/Person/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "name": "http://xmlns.com/foaf/0.1/name/",
+    "hometown": "rdfs:label",
+    "age": "rdfs:label",
+    "university": "rdfs:label",
+    "alma_mater":"rdfs:label",
+    "parents": "rdfs:label",
+    "subject": "http://www.w3.org/subject/",
+    "description":"rdf:label",
+  },
+  "@id": "http://web.com/PaulaBlanco",
+  "@type": "person",
+  "name": "Paula Blanco",
+  "hometown": "Madrid",
+  "age": 20,
+  "university": "UPM",
+  "parents": [
+    {
+      "@type": "person",
+      "name": "Victoria Eugenia"
+    },
+    {
+      "@type": "person",
+      "name": "Marcelino Enrique"
+    }
+  ],
+  "subjects": [
+    {
+      "@id": "https://moodle.upm.es/titulaciones/oficiales/course/view.php?id=689",
+      "@type": "subject",
+      "name": "Semantic Web",
+      "teachers": [
+        {
+          "@type": "person",
+          "name": "Oscar Corcho"
+        },
+        {
+          "@type": "person",
+          "name": "Raul Garcia"
+        }
+      ],
+      "Description": "---"
+    },
+    {
+      "@id": "https://moodle.upm.es/titulaciones/oficiales/course/view.php?id=494",
+      "@type": "subject",
+      "name": "Sistemas de planificacion",
+      "teachers": [
+        {
+          "@type": "person",
+          "name": "Vicente Martinez"
+        },
+        {
+          "@type": "person",
+          "name": "Miguel Garcia"
+        }
+      ],
+      "Description": "---"
+    },
+  ]
+}

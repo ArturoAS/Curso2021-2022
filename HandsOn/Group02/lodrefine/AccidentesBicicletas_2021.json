@@ -1,0 +1,190 @@
+[
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "Nº  EXPEDIENTE",
+    "keyColumnName": "Nº  EXPEDIENTE",
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "description": "Split multi-valued cells in column Nº  EXPEDIENTE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NÚMERO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NÚMERO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LESIVIDAD*",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LESIVIDAD* using expression value.toNumber()"
+  },
+  {
+    "op": "core/multivalued-cell-join",
+    "columnName": "Nº  EXPEDIENTE",
+    "keyColumnName": "Nº  EXPEDIENTE",
+    "separator": ", ",
+    "description": "Join multi-valued cells in column Nº  EXPEDIENTE"
+  },
+  {
+    "op": "core/blank-down",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº  EXPEDIENTE",
+    "description": "Blank down cells in column Nº  EXPEDIENTE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "TIPO ACCIDENTE",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO ACCIDENTE using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRITO using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "HORA",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column HORA using expression value.toDate()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "FECHA",
+    "expression": "join ([coalesce(cells['FECHA'].value,''),coalesce(cells['HORA'].value,'')],'')",
+    "onError": "keep-original",
+    "newColumnName": "DateTime",
+    "columnInsertIndex": 2,
+    "description": "Create column DateTime at index 2 based on column FECHA using expression join ([coalesce(cells['FECHA'].value,''),coalesce(cells['HORA'].value,'')],'')"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "DateTime",
+    "index": 3,
+    "description": "Move column DateTime to position 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DateTime",
+    "description": "Remove column DateTime"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "HORA",
+    "expression": "grel:value.substring(11,19)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column HORA using expression grel:value.substring(11,19)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "HORA",
+    "expression": "grel:value.substring(0,5)",
+    "onError": "set-to-blank",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column HORA using expression grel:value.substring(0,5)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "FECHA",
+    "expression": "join ([coalesce(cells['FECHA'].value,''),coalesce(cells['HORA'].value,'')],' ')",
+    "onError": "keep-original",
+    "newColumnName": "DateTime",
+    "columnInsertIndex": 2,
+    "description": "Create column DateTime at index 2 based on column FECHA using expression join ([coalesce(cells['FECHA'].value,''),coalesce(cells['HORA'].value,'')],' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "DateTime",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DateTime using expression value.toDate()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHA",
+    "description": "Remove column FECHA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "HORA",
+    "description": "Remove column HORA"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DateTime",
+    "newColumnName": "DATE TIME",
+    "description": "Rename column DateTime to DATE TIME"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LESIVIDAD*",
+    "newColumnName": "LESIVIDAD",
+    "description": "Rename column LESIVIDAD* to LESIVIDAD"
+  }
+]

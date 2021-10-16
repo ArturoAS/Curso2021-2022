@@ -4,7 +4,7 @@
 
 **The “README.md” file:**
 
-- [] Includes the names and GitHub users of all the members of the group
+- [x] Includes the names and GitHub users of all the members of the group
 
 **The "csv" directory:**
 
@@ -20,7 +20,3 @@
 **The "applicationRequirements.html” file:**
 
 - [x] Includes a description of the application user interface
-
-## Comments on the self-assessment
-The readme is yet to be completed as well as a proper and completed dataset in order to allow us to complete our project. 
-,,,

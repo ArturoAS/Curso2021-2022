@@ -1,0 +1,467 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHAACTUAL",
+    "description": "Remove column FECHAACTUAL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MODO",
+    "description": "Remove column MODO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "IDESTACION",
+    "description": "Remove column IDESTACION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGOESTACION",
+    "description": "Remove column CODIGOESTACION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "OBSERVACIONES",
+    "description": "Remove column OBSERVACIONES"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "SITUACION",
+    "description": "Remove column SITUACION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGOCTMESTACIONREDMETRO",
+    "description": "Remove column CODIGOCTMESTACIONREDMETRO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGOEMPRESA",
+    "description": "Remove column CODIGOEMPRESA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DENOMINACIONABREVIADA",
+    "description": "Remove column DENOMINACIONABREVIADA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MODOINTERCAMBIADOR",
+    "description": "Remove column MODOINTERCAMBIADOR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGOINTERCAMBIADOR",
+    "description": "Remove column CODIGOINTERCAMBIADOR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO",
+    "description": "Remove column TIPO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGOPROVINCIA",
+    "description": "Remove column CODIGOPROVINCIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGOMUNICIPIO",
+    "description": "Remove column CODIGOMUNICIPIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGOENTIDAD",
+    "description": "Remove column CODIGOENTIDAD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGONUCLEO",
+    "description": "Remove column CODIGONUCLEO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CODIGOVIA",
+    "description": "Remove column CODIGOVIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CALIFICADORPORTAL",
+    "description": "Remove column CALIFICADORPORTAL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CARRETERA",
+    "description": "Remove column CARRETERA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "SECCIONCENSAL",
+    "description": "Remove column SECCIONCENSAL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TESELA",
+    "description": "Remove column TESELA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "SECTORURBANO",
+    "description": "Remove column SECTORURBANO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "SECTOR",
+    "description": "Remove column SECTOR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CORREDOR",
+    "description": "Remove column CORREDOR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BARRIO",
+    "description": "Remove column BARRIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CORONATARIFARIA",
+    "description": "Remove column CORONATARIFARIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CORONA123",
+    "description": "Remove column CORONA123"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ZONATRANSPORTE",
+    "description": "Remove column ZONATRANSPORTE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ENCUESTADOMICILIARIA",
+    "description": "Remove column ENCUESTADOMICILIARIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ENCUESTAAFOROS",
+    "description": "Remove column ENCUESTAAFOROS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "HOJA25000",
+    "description": "Remove column HOJA25000"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ACONDICIONAMIENTOVIAJEROS",
+    "description": "Remove column ACONDICIONAMIENTOVIAJEROS"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHAALTA",
+    "description": "Remove column FECHAALTA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHAINICIO",
+    "description": "Remove column FECHAINICIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHAFIN",
+    "description": "Remove column FECHAFIN"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "GRADOACCESIBILIDAD",
+    "description": "Remove column GRADOACCESIBILIDAD"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "SITUACIONCALLE",
+    "description": "Remove column SITUACIONCALLE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DENOMINACION_SAE",
+    "description": "Remove column DENOMINACION_SAE"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "INTERURBANOS_CODIGOEMT_CRTM",
+    "description": "Remove column INTERURBANOS_CODIGOEMT_CRTM"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "INTERURBANOS_CODIGOEMT_EMPRESA",
+    "description": "Remove column INTERURBANOS_CODIGOEMT_EMPRESA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUMEROPORTAL",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "S/N"
+      }
+    ],
+    "description": "Mass edit cells in column NUMEROPORTAL"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "02"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "03"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "6"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "8"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "9"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ACONDICIONAMIENTOVEHICULOS",
+    "description": "Remove column ACONDICIONAMIENTOVEHICULOS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿OBJECTID",
+    "newColumnName": "Metro_ID",
+    "description": "Rename column ﻿OBJECTID to Metro_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DENOMINACION",
+    "newColumnName": "Underground_Name",
+    "description": "Rename column DENOMINACION to Underground_Name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Metro_ID",
+    "newColumnName": "Underground_ID",
+    "description": "Rename column Metro_ID to Underground_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPOVIA",
+    "newColumnName": "Street_Type",
+    "description": "Rename column TIPOVIA to Street_Type"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "PARTICULA",
+    "newColumnName": "Preposition",
+    "description": "Rename column PARTICULA to Preposition"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBREVIA",
+    "newColumnName": "Street_Name",
+    "description": "Rename column NOMBREVIA to Street_Name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPONUMERO",
+    "newColumnName": "Number_Type",
+    "description": "Rename column TIPONUMERO to Number_Type"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NUMEROPORTAL",
+    "newColumnName": "Portal_Number",
+    "description": "Rename column NUMEROPORTAL to Portal_Number"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CODIGOPOSTAL",
+    "newColumnName": "Postal_Code",
+    "description": "Rename column CODIGOPOSTAL to Postal_Code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DISTRITO",
+    "newColumnName": "District_ID",
+    "description": "Rename column DISTRITO to District_ID"
+  }
+]

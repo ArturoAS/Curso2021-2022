@@ -1,0 +1,43 @@
+@prefix : <http://www.smartcity.madrid.es/mobility/ontology/> .
+@prefix res: <http://www.smartcity.madrid.es/mobility/resource/> .
+@prefix smartcity: <http://www.smartcity.madrid.es/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:"Embajadores" rdf:type class:Wards;
+    :NOMDIS "Centro";
+    :COD_DIS_TX "1"^^xsd:integer;
+    :SHAPE_LENG "1.03"^^xsd:float;
+    :SHAPE_AREA "43345.63"^^xsd:float;
+    :hasBus "EMBAJADORES-PQUE.LINEAL MANZANARES";
+    :hasMetro "EMBAJADORES";
+    :hasTrafficLight "19731".
+
+:"EMBAJADORES-PQUE.LINEAL MANZANARES" rdf:type class:Bus;
+    :DENOMINACION ;
+    :BARRIO "Embajadores";
+    :DISTRITO "Centro";
+    :TIPOVIA "Calle";
+    :NOMBREVIA "Embajadores";
+    :LINEAS "T32";
+    :X "442286"^^xsd:integer;
+    :Y "4469511"^^xsd:integer.
+
+:"EMBAJADORES" rdf:type class:Metro;
+    :DENOMINACION ;
+    :INDICADORSENTIDO1 "Sentido MONCLOA";
+    :BARRIO "Embajadores";
+    :DISTRITO "Centro".
+
+:"19731" rdf:type class:Trafficlight;
+    :id ;
+    :distrito "1"^^xsd:float;
+    :utm_x "440113.117094007"^^xsd:float;
+    :utm_y "4475636.25296785"^^xsd:float;
+    :longitud "-3.70602003815598"^^xsd:float;
+    :latitud "40.4292087583627"^^xsd:float.
+
+

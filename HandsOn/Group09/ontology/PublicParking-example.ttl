@@ -1,0 +1,61 @@
+@prefix : <https://publicparkingmad.com/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix pp: <https://publicparkingmad.com/PublicParking>.
+@prefix pl: <https://publicparkingmad.com/location>.
+@prefix pcoord: <https://publicparkingmad.com/coordinates>.
+@prefix pgeocoord: <https://publicparkingmad.com/geographiccoord>.
+@prefix padd: <https://publicparkingmad.com/postalAddress>.
+
+
+pp:1 :hasPk "11483771"^^xsd:integer;
+    :hasName "Aparcamiento disuasorio Aviación Española"^^xsd:string;
+    :hasSchedule "Open 24 hours"^^xsd:string;
+    :hasTransport "Buses...EMT..."^^xsd:string ;
+    :hasDescripcion "Plazas:  para automóviles: 344 (de las cuales, 10 para coche eléctrico) para motocicletas: 25 para bicicletas: 10   Código del aparcamiento: 1024"^^xsd:string ;
+    :hasAccesibility "true"^^xsd:boolean;
+    :hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=1ec084bc6763c710VgnVCM1000001d4a900aRCRD"^^xsd:string;
+    :hasLocation pl:1;
+    :isPublic "true"^^xsd:boolean.
+
+pl:1 :hasPostalAddress padd:1;
+        :hasCoordinates pcoord:1;
+        :hasGeographicCoordinates pgeocoord:1.
+
+pcoord:1 :hasCoorX "4334"^^xsd:float  ;
+        :hasCoorY "44706"^^xsd:float .
+
+pgeocoord:1 :hasLatitude "40.383353"^^xsd:float ;
+            :hasLongitude "-3.783593"^^xsd:float.
+
+padd:1 :hasPostalCode "28024"^^xsd:integer ;
+    :hasStreetNumber "5"^^xsd:integer ;
+    :hasStreetName "FUENTE DE LIMA"^^xsd:string ;
+    :hasNeighborhood "LAS AGUILAS"^^xsd:string ;
+    :hasDistrict "LATINA"^^xsd:string.
+
+pp:2 :hasPk "11413620"^^xsd:integer;
+     :hasName "Aparcamiento disuasorio Pitis"^^xsd:string;
+     :hasSchedule "Abierto 24 horas"^^xsd:string;
+     :hasTransport "Autobuses:EMT:64, 82...."^^xsd:string ;
+     :hasDescripcion "Plazas:  para automóviles: 402 (de las cuales, 10 para coche eléctrico y 12 para coches adaptados PMR) para motocicletas: 34   Código del aparcamiento: 828"^^xsd:string ;
+     :hasAccesibility "true"^^xsd:boolean;
+     :hasUrl "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=1642e9887f9f9710VgnVCM2000001f4a900aRCRD%22%5E%5Exsd:string;
+        :hasLocation pl:2;
+    :isPublic "true"^^xsd:boolean.
+
+pl:2 :hasPostalAddress padd:2;
+     :hasGeographicCoordinates pgeocoord:2.
+
+
+pgeocoord:2 :hasLatitude "40.494192950973726"^^xsd:float ;
+            :hasLongitude "-3.727236000896534"^^xsd:float.
+
+padd:2 :hasPostalCode "28049"^^xsd:integer ;
+       :hasStreetNumber "V"^^xsd:integer ;
+       :hasStreetName "GLORIA FUERTES"^^xsd:string ;
+       :hasNeighborhood "FUENTELARREINA"^^xsd:string ;
+       :hasDistrict "FUENCARRAL-EL PARDO"^^xsd:string.
+

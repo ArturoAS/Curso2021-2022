@@ -1,0 +1,69 @@
+ @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix locales: <http://localizalocales.es#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+locales: a owl:Ontology ;
+    dc:creator "Grupo20" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "HandsOn 2" ;
+    owl:versionInfo "0.0.1" .
+
+locales:CodigoPostal a owl:Class ;
+    rdfs:label "Codigo Postal" .
+
+locales:Coordenadas a owl:Class ;
+    rdfs:label "Coordenadas" .
+
+locales:Distrito a owl:Class ;
+    rdfs:label "Distrito" .
+
+locales:Edificio a owl:Class ;
+    rdfs:label "Edificio" .
+
+locales:Local a owl:Class ;
+    rdfs:label "Local" .
+
+locales:Rotulo a owl:Class ;
+    rdfs:label "Rotulo" .
+
+locales:Terraza a owl:Class ;
+    rdfs:label "Terraza" .
+
+locales:Via a owl:Class ;
+    rdfs:label "Via" .
+
+locales:hasCodigoPostal a owl:ObjectProperty ;
+    rdfs:label "has codigo postal" .
+
+locales:hasCoordenadas a owl:ObjectProperty ;
+    rdfs:label "has coordenadas" .
+
+locales:hasDistritos a owl:ObjectProperty ;
+    rdfs:label "has distritos" .
+
+locales:hasEdificio a owl:ObjectProperty ;
+    rdfs:label "has edificio" .
+
+locales:hasIdentifier a owl:DatatypeProperty ;
+    rdfs:label "has identifier" ;
+    rdfs:range xsd:string .
+
+locales:hasName a owl:DatatypeProperty ;
+    rdfs:label "has name" ;
+    rdfs:range xsd:string .
+
+locales:hasNumber a owl:DatatypeProperty ;
+    rdfs:label "has number" ;
+    rdfs:range xsd:decimal .
+
+locales:hasRotulo a owl:ObjectProperty ;
+    rdfs:label "has rotulo" .
+
+locales:hasTerraza a owl:ObjectProperty ;
+    rdfs:label "has terraza" .
+
+locales:tipoVia a owl:ObjectProperty ;
+    rdfs:label "tipo via" .
+

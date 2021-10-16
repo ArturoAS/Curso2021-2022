@@ -1,0 +1,22 @@
+:"Bicimad Spot Atocha" rdf:type dbo:TransportSpot ;
+    :hasNumberOfSeats 30 ;
+    :hasDischargeDate 40055 ;
+    :hasType "BiciMad" ;
+    :hasId 78945 ;
+    :hasAddress "Calle Aristóteles" ;
+    :hasGis "(456, 243)" ;
+    :hasCoordinates "(45.6º, -2.43º)"  .
+
+:"Calle Aristóteles" rdf:type dbo:Address ;
+    :hasStreetName "Calle Aristóteles" ;
+    :hasStreetNumber 23 ;
+    :hasAdditionalInformation "" .
+
+:"(456, 243)" rdf:type dbo:Gis ;
+    :hasGisX 456 ;
+    :hasGisY 243 .
+
+:"(45.6º, -2.43º)" rdf:type dbo:Coordinates ;
+    :hasLatitude 45.6º ;
+    :hasLongitude -2.43º .
+

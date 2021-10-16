@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyses of the selected data</title>
+</head>
+<body>
+<h1>Analyses of the selected data</h1>
+<p>At the csv file, we can see 30 different types of values</p>
+<ol>
+    -<li><h4>"PK":</h4> Number that identifies the parking</li>
+    <li><h4> "NOMBRE"</h4> Name that specifies type of parking and the location of it</li>
+    <li> <h4>"DESCRIPCION-ENTIDAD"</h4> Extra description of the parking</li>
+    <li> <h4>"HORARIO"</h4> Schedule of the parking</li>
+    <li> <h4>"EQUIPAMIENTO"</h4> All the fields are empty</li>
+    <li> <h4>"TRANSPORTE"</h4> All the different near public transport media</li>
+    <li> <h4>"DESCRIPCION"</h4> Number and type of parking places</li>
+    <li> <h4>"ACCESIBILIDAD"</h4> Tt can be 0 or 1 depending on if it allows people with reduced mobility to use it</li>
+    <li> <h4>"CONTENT-URL"</h4> The URL in madrid.es domain</li>
+    -<li> <h4>"NOMBRE-VIA"</h4>The name of the via where the parking is in</li>
+    -<li> <h4>"CLASE-VIAL"</h4> Determinates if the "NOMBRE-VIA" field is a street, an avenue or a square</li>
+    -<li> <h4>"TIPO-NUM"</h4> Type of number the "NUM" uses</li>
+    -<li> <h4>"NUM"</h4>Number of the street of the parking entrance</li>
+    <li> <h4>"PLANTA" "PUERTA" or "ESCALERAS"</h4> all empty</li>
+    -<li> <h4>"ORIENTACION"</h4>Where the parking is looking at</li>
+    -<li> <h4>"LOCALIDAD"</h4>Town where the parking is</li>
+    -<li> <h4>"PROVINCIA"</h4> Province where the parking is</li>
+    -<li> <h4>"CODIGO-POSTAL"</h4> Postal code of the locality or disctrict where the parking is</li>
+    <li> <h4>"BARRIO"</h4>Neighborhood where the parking is</li>
+    <li> <h4>"DISTRITO"</h4> District of the parking</li>
+    <li> <h4>"COORDENADA-X"</h4> Parking position at the X coordinate</li>
+    <li> <h4>"COORDENADA-Y"</h4> Parking position at the Y coordinate</li>
+    <li> <h4>"LATITUD"</h4> Latitude of the parking</li>
+    <li> <h4>"LONGITUD"</h4> Longitude of the parking</li>
+    <li> <h4>"TELEFONO"</h4> Telephone number of the parking</li>
+    <li> <h4>"FAX"</h4> FAX number of the parking</li>
+    <li> <h4>"EMAIL"</h4> Email address of the parking</li>
+    <li> <h4>"TIPO"</h4> Describes if the parking is public or for residents</li>
+</ol>
+
+<h2>Appropriated License</h2>
+The license we think might be the most appropriate is the Open Data Commons Attribution License.
+This is because the open data of Madrid requires the attribution of the source to the city of Madrid.
+<h2>Naming strategy</h2>
+Since there are some fields always empty we will ignore them. Also since thedata only comes from Madrid, we will ignore Localidad and Provincia fields.
+<p>The main domain would be https://publicparkingmad.com/</p>
+
+<ul>
+    <li><h5>https://publicparkingmad.com/[PK]</h5>PK is the resource that a parking represents</li>
+    <li><h5>https://publicparkingmad.com/[Location]</h5> Location represents where the parking is located</li>
+    <li><h5>https://publicparkingmad.com/[Location]/[coordinates]</h5>Represents the coords in the map</li>
+    <li><h5>https://publicparkingmad.com/[Location]/[geographiccoord]</h5>Represents the coords in terms of Latitude and Longitude</li>
+    <li><h5>https://publicparkingmad.com/[Location]/[postalAdress]</h5>Represents postal adress of a location.</li>
+
+    <li><h5>https://publicparkingmad.com/[Transport]</h5> Transport represents the distinct public transports near the parking</li>
+
+    <!-- TODO : more naming spaces and fix if needed the ones before -->
+</ul>
+
+</body>
+</html>

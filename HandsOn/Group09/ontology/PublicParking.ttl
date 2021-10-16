@@ -1,0 +1,144 @@
+@prefix : <https://publicparkingmad.com/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix  rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+:PublicParking rdf:type  owl:Class.
+
+
+:hasPK rdf:type owl:ObjectProperty ;
+        rdfs:domain :PublicParking;
+        rdfs:range xsd:integer.
+:hasLocation rdf:type owl:ObjectProperty ;
+            rdfs:domain :PublicParking ;
+            rdfs:range :location.
+
+:location rdf:type owl:Class.
+
+:hasCoordinates rdf:type owl:ObjectProperty ;
+                rdfs:domain :location;
+                rdfs:range :coordinates.
+
+:coordinates rdf:type owl:Class.
+
+:hasCoorX rdf:type owl:ObjectProperty ;
+                rdfs:domain :coordinates;
+                rdfs:range xsd:float.
+:hasCoorY rdf:type owl:ObjectProperty ;
+          rdfs:domain :coordinates;
+          rdfs:range xsd:float.
+
+:hasGeographicCoordinates    rdf:type owl:ObjectProperty ;
+                             rdfs:domain :location ;
+                             rdfs:range :geographiccoord.
+
+:geographiccoord    rdf:type    owl:Class.
+
+:hasLongitude    rdf:type owl:ObjectProperty ;
+                 rdfs:domain :geographiccoord ;
+                 rdfs:range  xsd:float .
+
+:hasLatitude    rdf:type owl:ObjectProperty ;
+                rdfs:domain :geographiccoord ;
+                rdfs:range  xsd:float .
+:hasPostalAddress rdf:type owl:ObjectProperty;
+        rdfs:domain :location;
+        rdfs:range :postalAddress.
+
+:postalAddress rdf:type owl:Class.
+
+:hasStreetName rdf:type owl:ObjectProperty;
+        rdfs:domain :postalAddress;
+        rdfs:range xsd:string.
+:hasStreetNumber rdf:type owl:ObjectProperty;
+               rdfs:domain :postalAddress;
+               rdfs:range xsd:integer .
+:hasStreetType rdf:type owl:ObjectProperty;
+                 rdfs:domain :postalAddress;
+                 rdfs:range xsd:string.
+:hasPostalCode rdf:type owl:ObjectProperty ;
+                rdfs:domain :postalAddress ;
+                rdfs:range xsd:integer.
+
+:hasNeighborhood rdf:type owl:ObjectProperty ;
+        rdfs:domain :postalAddress ;
+        rdfs:range xsd:string .
+:hasDistrict rdf:type owl:ObjectProperty ;
+                         rdfs:domain :postalAddress ;
+                         rdfs:range xsd:string.
+
+
+:hasAccesibility    rdf:type owl:ObjectProperty ;
+                    rdfs:domain :PublicParking ;
+                    rdfs:range xsd:boolean.
+
+:hasName    rdf:type owl:ObjectProperty ;
+            rdfs:domain :PublicParking ;
+            rdfs:range xsd:string.
+
+:hasDescripcion    rdf:type owl:ObjectProperty ;
+                   rdfs:domain :PublicParking ;
+                   rdfs:range xsd:string.
+
+:hasTelephone    rdf:type owl:ObjectProperty ;
+                 rdfs:domain :PublicParking ;
+                 rdfs:range xsd:string.
+
+:hasEmail    rdf:type owl:ObjectProperty ;
+             rdfs:domain :PublicParking ;
+             rdfs:range xsd:string.
+
+:hasSchedule    rdf:type owl:ObjectProperty ;
+                rdfs:domain :PublicParking ;
+                rdfs:range xsd:string.
+
+:hasFax    rdf:type owl:ObjectProperty ;
+           rdfs:domain :PublicParking ;
+           rdfs:range xsd:string.
+:hasMetroNear rdf:type owl:ObjectProperty ;
+               rdfs:domain :PublicParking ;
+            rdfs:range xsd:string.
+
+
+:hasBusNear rdf:type owl:ObjectProperty ;
+               rdfs:domain :PublicParking ;
+            rdfs:range xsd:string.
+
+:hasCercaniasNear rdf:type owl:ObjectProperty ;
+               rdfs:domain :PublicParking ;
+            rdfs:range xsd:string.
+:hasTranviaNear rdf:type owl:ObjectProperty ;
+               rdfs:domain :PublicParking ;
+            rdfs:range xsd:string.
+
+
+
+:hasUrl rdf:type owl:ObjectProperty ;
+    rdfs:domain :PublicParking ;
+    rdfs:range xsd:string .
+:isPublic rdf:type owl:ObjectProperty ;
+          rdfs:domain :PublicParking ;
+          rdfs:range xsd:boolean .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

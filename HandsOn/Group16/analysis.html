@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Analysis</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <link href="requirements/Template/bootstrap.css" rel="stylesheet">
+
+    <link href="requirements/Template/jumbotron.css" rel="stylesheet">
+</head>
+
+<body>
+<main role="main">
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Análisis del conjunto de datos</h1>
+            <p>A continuación vamos a describir el conjunto de datos sobre el que se va a apoyar la aplicación que vamos a desarrollar; para 
+                este análisis de los datos hemos usado la herramienta OpenRefine, que nos permite tener una visión global de los archivos CSV
+                que contienen el conjunto de datos. Por otro lado, hemos seguido las directrices marcadas en el proyecto <a href="https://goo.gl/ivrBss">READY4SmartCities</a>
+                sobre cómo analizar la licencia y la estructura del conjunto de datos.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            <div class="row-md-4 card w-100">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Fuente de datos</h2>
+                    <p class="card-text">
+                        En primer lugar, vamos a analizar la estructura de la fuente de datos, observando que campos tienen los diferentes ficheros CSV
+                        destacando su tipo, rango de valores, etc. 
+                    </p>
+                        <h3 class="card-title text-center">Fichero Contenedores</h3>
+                            <ul>
+                                <li>
+                                    Código Interno: identificador de cada contenedor; puede contener solo números o
+                                    letras y números.
+                                </li>
+                                <li>
+                                    Tipo contenedor: residuo que almacena el contenedor; es un campo de texto, que puede tener los
+                                    valores {<b>ENVASES</b>,<b>ORGANICA</b>,<b>PAPEL-CARTON</b>,<b>RESTO</b> y <b>VIDRIO</b>}.
+                                </li>
+                                <li>
+                                    Modelo: modelo del contenedor; es un campo de texto.
+                                </li>
+                                <li>
+                                    Cantidad: cantidad de contenedores que se encuentran en una dirección de un tipo determinado; es un valor numérico que es normalmente 1 y a veces 2.
+                                </li>
+                                <li>
+                                    Distrito: distrito donde se encuentra el contenedor; es un campo de texto con valores como <b>CHAMBERI</b> o <b>LATINA</b>.
+                                </li>
+                                <li>
+                                    Tipo Vía: tipo de vía donde se sitúa el contenedor; es un campo de texto con valores como <b>AVENIDA</b> o <b>PLAZA</b>.
+                                </li>
+                                <li>
+                                    Número: número dentro del tipo de vía en que se sitúa el contenedor; es un valor numérico que va desde 0 a 5300.
+                                </li>
+                                <li>
+                                    Coordenada_X: indica la coordenada X del contenedor; este parámetro nos ayudará a situar el contenedor en el mapa
+                                </li>
+                                <li>
+                                    Coordenada_Y: indica la coordenada Y del contenedor; este parámetro nos ayudará a situar el contenedor en el mapa
+                                </li>
+                                <li>
+                                    Longitud: indica la Longitud del contenedor; este parámetro nos ayudará a situar el contenedor en el mapa
+                                </li>
+                                <li>
+                                    Latitud: indica la Latitud del contenedor; este parámetro nos ayudará a situar el contenedor en el mapa
+                                </li>
+                                <li>
+                                    Direccion: dirección completa de la situación del contenedor; es un campo de texto
+                            </ul>
+                            <h3 class="card-title text-center">Fichero Papeleras Solares</h3>
+                            <ul>
+                                <li>
+                                    id: identificador de cada papelera; el rango de valores va desde {<b>1,517,300.00</b> a <b>1,525,800.00</b>}
+                                </li>
+                                <li>
+                                    Tipo residuo: residuo que almacena la papelera; es un campo de texto, que puede tener los
+                                    valores {<b>ENVASES</b> o <b>RESTO</b>}.
+                                </li>
+                                <li>
+                                    Direccion: dirección completa de la situación de la papelera; es un campo de texto
+                                </li>
+                                <li>
+                                    Longitud: indica la Longitud de la papelera; este parámetro nos ayudará a situar el contenedor en el mapa
+                                </li>
+                                <li>
+                                    Latitud: indica la Latitud de la papelera; este parámetro nos ayudará a situar el contenedor en el mapa
+                                </li>
+                                <li>
+                                    Nivel de llenado: medición del estado de llenado de la papelera; valor numérico que va desde {<b>0</b> a <b>10.10</b>}
+                                </li>
+                                <li>
+                                    Alerta: aviso que puede indicar bien que la papelera está llena o que ha habido algún error; campo de texto que toma los valores {<b>ERROR</b> o <b>LLENA</b>}
+                                </li>
+                                <li>
+                                    Fecha: fecha de la última actualizacióndel estado del contenedor; es un campo de tipo fecha-hora
+                                </li>
+                                
+                                </ul>
+                            <h3 class="card-title text-center">Fichero Puntos Limpios Fijos</h3>
+                            <ul>
+                                <li>
+                                    PK: identificador de cada punto limpio; está formado por números en el rango {<b>13,890</b> a <b>5,600,000.00</b>}
+                                </li>
+                                <li>
+                                    Nombre: nombre del punto limpio; es un campo de texto.
+                                </li>
+                                <li>
+                                    Horario: descripción de los horarios del punto limpio; es un campo de texto.
+                                </li>
+                                <li>
+                                    Transporte: indica los métodos de transporte (público) que se pueden usar para llegar al punto limpio; es un campo de texto.
+                                </li>
+                                <li>
+                                    Descripcion: descripción de el funcionamiento del punto limpio; es un campo de texto.
+                                </li>
+                                <li>
+                                    Content-url: url que te lleva a la página perteneciente al punto limpio; es un campo de texto que contiene una url
+                                </li>
+                                <li>
+                                    Nombre-via: nombre de la vía donde se sitúa el punto limpio; es un campo de texto.
+                                </li>
+                                <li>
+                                    Clase Vial: tipo de vía donde se sitúa el punto limpio; es un campo de texto con valores como <b>AVENIDA</b> o <b>PASEO</b>.
+                                </li>
+                                <li>
+                                    Número: número dentro del tipo de vía en que se sitúa el punto limpio; es un valor numérico que va desde 0 a 250.
+                                </li>
+                                <li>
+                                    Orientación: orientación de la zona donde se encuentra el punto limpio; es un campo de texto que contiene una dirección.
+                                </li>
+                                <li>
+                                    Código Postal: código postal de la zona donde se encuentra el punto limpio; es un campo de texto (a pesar de estar representado por números, no es un número, es un identificador).
+                                </li>
+                                <li>
+                                    Barrio: barrio donde se encuentra el punto limpio; es un campo de texto con valores como <b>SIMANCAS</b> o <b>VENTAS</b>.
+                                </li>
+                                <li>
+                                    Distrito: distrito donde se encuentra el punto limpio; es un campo de texto con valores como <b>CHAMARTIN</b> o <b>LATINA</b>.
+                                </li>
+                                <li>
+                                    Coordenada_X: indica la coordenada X del punto limpio; este parámetro nos ayudará a situar el contenedor en el mapa.
+                                </li>
+                                <li>
+                                    Coordenada_Y: indica la coordenada Y del punto limpio; este parámetro nos ayudará a situar el contenedor en el mapa.
+                                </li>
+                                <li>
+                                    Longitud: indica la Longitud del punto limpio; este parámetro nos ayudará a situar el contenedor en el mapa.
+                                </li>
+                                <li>
+                                    Latitud: indica la Latitud del punto limpio; este parámetro nos ayudará a situar el contenedor en el mapa.
+                                </li>
+                                
+                            </ul>
+
+                            <h3 class="card-title text-center">Fichero Puntos Limpios Móviles</h3>
+                            <ul>
+                                <li>
+                                    Direccion completa: dirección completa de la situación del punto limpio; es un campo de texto.
+                                </li>
+                                <li>
+                                    Direccion auxiliar: dirección auxiliar de la situación de la papelera; es un campo de texto que ,cabe destacar, no tienen todos los elementos.
+                                </li>
+                                <li>
+                                    Nombre-vial: nombre de la vía donde se sitúa el punto limpio; es un campo de texto con valores como <b>Príncipe de Vergara</b> o <b>Alcalá</b>..
+                                </li>
+                                <li>
+                                    Número: número dentro del tipo de vía en que se sitúa el punto limpio; es un valor numérico que va desde 0 a 370.
+                                </li>
+                                <li>
+                                    Distrito: distrito donde se encuentra el punto limpio; es un campo de texto con valores como <b>CHAMARTIN</b> o <b>RETIRO</b>.
+                                </li>
+                                <li>
+                                    UTMX: indica la coordenada X del punto limpio; este parámetro nos ayudará a situar el contenedor en el mapa.
+                                </li>
+                                <li>
+                                    UTMY: indica la coordenada Y del punto limpio; este parámetro nos ayudará a situar el contenedor en el mapa.
+                                </li>
+                                <li>
+                                    Longitud: indica la Longitud del punto limpio; este parámetro nos ayudará a situar el contenedor en el mapa.
+                                </li>
+                                <li>
+                                    Latitud: indica la Latitud del punto limpio; este parámetro nos ayudará a situar el contenedor en el mapa.
+                                </li>
+                                <li>
+                                    Dia Semana: día de la semana que está activo el punto limpio; es un campo de texto.
+                                </li>
+                                <li>
+                                    Hora inicio: hora de inicio de las actividades del punto limpio; es un campo de hora.
+                                </li>
+                                <li>
+                                    Hora final: hora de fin de las actividades del punto limpio; es un campo de hora.
+                                </li>
+                                
+                            </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row-md-4 card w-100">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Análisis de la licencia de la fuente de datos</h2>
+                    <h4>Publicador del conjunto de datos</h4>
+                    <p class="card-text">
+                        El organismo que publicó todos los datos referidos anteriormente fue el Ayuntamiento de Madrid.<br>
+                    </p>
+                    <h4>Licencia</h4>
+                    <p class="card-text">
+                        La licencia es Creative Commons Reconocimiento (CC BY).
+                    </p>
+                    <h4>Uso de la licencia</h4>
+                    <p class="card-text">
+                        La página a la que pertenecen los datos dice lo siguiente:
+                        <p>
+                            <i>Son de aplicación las siguientes condiciones generales para la reutilización de los documentos sometidos a ellas:
+                                <ol>
+                                    <li>
+                                        Está prohibido desnaturalizar el sentido de la información.
+                                    </li>
+                                    <li>
+                                        Debe citarse la fuente de los documentos objeto de la reutilización. Esta cita podrá realizarse de la siguiente manera: “Origen de los datos: Secretaría de Estado de Digitalización e Inteligencia Artificial del Ministerio de Asuntos Económicos y Transformación Digital".
+                                    </li>
+                                    <li>
+                                        Debe mencionarse la fecha de la última actualización de los documentos objeto de la reutilización, siempre cuando estuviera incluida en el documento original.
+                                    </li>
+                                    <li>
+                                        No se podrá indicar, insinuar o sugerir que la Secretaría de Estado de Digitalización e Inteligencia Artificial del Ministerio de Asuntos Económicos y Transformación Digital  titular de la información reutilizada participa, patrocina o apoya la reutilización que se lleve a cabo con ella.
+                                    </li>
+                                    <li>
+                                        Deben conservarse, no alterarse ni suprimirse los metadatos sobre la fecha de actualización y las condiciones de reutilización aplicables incluidos, en su caso, en el documento puesto a disposición para su reutilización.
+                                    </li>
+                                </ol>
+                            </i>
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row-md-4 card w-100">
+                <div class="card-body text-center">
+                    <h2 class="card-title">Estrategia de nombrado</h2>
+
+                </div>
+                <ul>
+                        <li>
+                            <p>Dominio:
+                                <a href="">http://www.reciclajemadrid.com</a>
+                            </p>
+                        </li>
+                        <li>
+                             <p>Class Path:
+                                 <a href="">http://www.reciclajemadrid.com/{Class}</a>
+                             </p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <hr>
+
+    </div> <!-- /container -->
+
+</main>
+</body>
+</html>

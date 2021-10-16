@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Analysis</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <link href="requirements/Template/bootstrap.css" rel="stylesheet">
+
+    <link href="requirements/Template/jumbotron.css" rel="stylesheet">
+</head>
+
+<body>
+<main role="main">
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Análisis</h1>
+            <p>En esta página se mostrará el análisis pedido para la tarea 2</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            <div class="row-md-4 card w-100">
+                <div class="card-body">
+                    <h2 class="card-title text-center">The analyses performed over the data source</h2>
+                    <p class="card-text">
+                        Los datos que hemos analizado han sido obtenidos de 2 CSV.<br>
+                        En primer lugar tenemos los datos de <b>Centros Educativos de Madrid:</b>
+                    </p>
+                        <ul>
+                            <li>
+                                Identificador: valor String de 8 cifras, empieza por 28
+                            </li>
+                            <li>
+                                Nombre: valor de tipo String
+                            </li>
+                            <li>
+                                Tipo: valor String, los distintos tipos que tenemos en este apartado son
+                                centros privados, públicos o concertados que pueden tener formación Infantil, Primaria,
+                                Secundaria o Bachillerato.
+                            </li>
+                            <li>
+                                Titularidad: valor String, pueden ser [PRIVADO, PRIVADO CONCERTADO, PÚBLICO, PÚBLICO-TITULARIDAD PRIVADA]
+                            </li>
+
+                            <li>
+                                Municipio: valor String de [001-183]
+                            </li>
+                            <li>
+                                Coordenada_X: valor String de 6 cifras
+                            </li>
+                            <li>
+                                Coordenada_Y: valor String de 7 cifras
+                            </li>
+                            <li>
+                                Página Web: valor anyURI. Ejemplo: "http://www.w3.org/TR/xmlschema-0"
+                            </li>
+                            <li> Dirección:
+                                <ul>
+                        <li>
+                            Nombre: valor String
+                        </li>
+                        <li>
+                             Número: valor String. En el caso de que no tenga número toma el valor de "s/n"
+                        </li>
+                       <li>
+                           Código Postal: valor String que empieza por 28
+                       </li>
+                        <li>
+                            Tipo de vía: valor String
+                        </li>
+                    </ul>
+                            </li>
+
+                        </ul>
+                    <p class="card-text">
+                        Por último, tenemos los datos de los <b>Los Residentes de la Comunidad de Madrid por Edades:</b>
+                    </p>
+                    <ul>
+                        <li>
+                            Identificador: valor String de [001-183]. Es el del municipio al que pertenecen
+                        </li>
+                        <li>
+                            Nombre: valor String. Es el del municipio al que pertenecen
+                        </li>
+                        <li>
+                            Sexo: valor String, puede ser [Mujer, Hombre]
+                        </li>
+                        <li>
+                            Edad mínima: valor numérico entero siendo el mínimo valor el 0
+                        </li>
+                        <li>
+                            Edad máxima: valor numérico entero siendo el máximo valor el 199
+                        </li>
+                        <li>
+                            Población: valor numérico entero, de [0-98949]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row-md-4 card w-100">
+                <div class="card-body">
+                    <h2 class="card-title text-center">The licensing of the data source and the potential license</h2>
+                    <h4>Titular de los derechos</h4>
+                    <p class="card-text">
+                        La conserjería de Educación e Investigación de la Comunidad de Madrid
+                        son el titular de los derechos .<br>
+                    </p>
+                    <h4>Licencia</h4>
+                    <p class="card-text">
+                        La licencia es Creative Commons Corporation.
+                    </p>
+                    <h4>Uso de la licencia</h4>
+                    <p class="card-text">
+                        La licencia se utiliza para proporcionar un conjunto estándar de términos y condiciones
+                        que los creadores y otros titulares de derechos pueden utilizar para compartir obras originales
+                        de su autoría y cualquier otro material sujeto a derechos de autor.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row-md-4 card w-100">
+                <div class="card-body text-center">
+                    <h2 class="card-title">The resource naming strategy defined</h2>
+
+                </div>
+                <ul>
+                        <li>
+                            <p>Dominio:
+                                <a href="http://www.colegiosapp.org">http://www.colegiosapp.org</a>
+                            </p>
+                        </li>
+                        <li>
+                             <p>Class Path:
+                                 <a href="http://www.colegiosapp.org/ontology#[className]">http://www.colegiosapp.org/ontology#[className]</a>
+                             </p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <hr>
+
+    </div> <!-- /container -->
+
+</main>
+</body>
+</html>

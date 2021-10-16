@@ -1,0 +1,496 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "coordenada_x_local",
+    "expression": "grel:substring(value,0,lastIndexOf(value,\",\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "coordenada_sindecimales_x_local",
+    "columnInsertIndex": 15,
+    "description": "Create column coordenada_sindecimales_x_local at index 15 based on column coordenada_x_local using expression grel:substring(value,0,lastIndexOf(value,\",\"))"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "desc_vial_edificio",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column desc_vial_edificio by separator"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "rotulo",
+    "keyColumnName": "id_terraza",
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "description": "Split multi-valued cells in column rotulo"
+  },
+  {
+    "op": "core/multivalued-cell-join",
+    "columnName": "rotulo",
+    "keyColumnName": "id_terraza",
+    "separator": " ",
+    "description": "Join multi-valued cells in column rotulo"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rotulo",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DOMINO'S PIZZA",
+          "DOMINOS PIZZA",
+          "DOMINO`S PIZZA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOMINO'S PIZZA"
+      },
+      {
+        "from": [
+          "BAR RESTAURANTE",
+          "BAR - RESTAURANTE",
+          "BAR- RESTAURANTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAR RESTAURANTE"
+      },
+      {
+        "from": [
+          "RESTAURANTE CAZORLA",
+          "CAZORLA RESTAURANTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RESTAURANTE CAZORLA"
+      },
+      {
+        "from": [
+          "CAFETERIA CALERO CERVECERIA",
+          "CERVECERIA CALERO CAFETERIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAFETERIA CALERO CERVECERIA"
+      },
+      {
+        "from": [
+          "LA TABERNITA DE DOMINGUEZ",
+          "LA TABERNITA DE DOMÍNGUEZ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LA TABERNITA DE DOMINGUEZ"
+      },
+      {
+        "from": [
+          "MAS Q MENOS",
+          "MAS Q. MENOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MAS Q MENOS"
+      },
+      {
+        "from": [
+          "HELADERIA",
+          "HELADERÍA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HELADERIA"
+      },
+      {
+        "from": [
+          "KILOMETROS DE PIZZA",
+          "KILÓMETROS DE PIZZA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "KILOMETROS DE PIZZA"
+      },
+      {
+        "from": [
+          "CHACIN",
+          "CHACÍN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHACIN"
+      },
+      {
+        "from": [
+          "RESTAURANTE LIZARRAN",
+          "RESTAURANTE LIZARRÁN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RESTAURANTE LIZARRAN"
+      },
+      {
+        "from": [
+          "OLE TÚ",
+          "OLÉ TÚ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OLE TÚ"
+      },
+      {
+        "from": [
+          "BAR CAFETERIA",
+          "CAFETERÍA BAR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAR CAFETERIA"
+      },
+      {
+        "from": [
+          "GINOS RISTORANTE",
+          "RISTORANTE GINOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GINOS RISTORANTE"
+      },
+      {
+        "from": [
+          "FOSTERS HOLLYWOOD",
+          "FOSTER'S HOLLYWOOD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FOSTERS HOLLYWOOD"
+      },
+      {
+        "from": [
+          "CERVECERIA RESTAURANTE",
+          "RESTAURANTE CERVECERIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CERVECERIA RESTAURANTE"
+      },
+      {
+        "from": [
+          "QUEEN - FOOD AND MUSIC",
+          "QUEEN FOOD AND MUSIC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "QUEEN - FOOD AND MUSIC"
+      },
+      {
+        "from": [
+          "EL RINCÓN",
+          "EL RINCON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EL RINCÓN"
+      },
+      {
+        "from": [
+          "CERVECERIA BURGOS",
+          "BURGOS CERVECERIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CERVECERIA BURGOS"
+      },
+      {
+        "from": [
+          "DONER KEBAP ANTEP",
+          "ANTEP DONER KEBAP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DONER KEBAP ANTEP"
+      },
+      {
+        "from": [
+          "RÓTULO NO INFORMADO",
+          "ROTULO NO INFORMADO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RÓTULO NO INFORMADO"
+      },
+      {
+        "from": [
+          "ROTULO",
+          "RÓTULO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ROTULO"
+      },
+      {
+        "from": [
+          "BAR MADRILES",
+          "MADRILES BAR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAR MADRILES"
+      },
+      {
+        "from": [
+          "TAO 3.6.9",
+          "TAO 369"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TAO 3.6.9"
+      },
+      {
+        "from": [
+          "CAFETERIA",
+          "CAFETERÍA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAFETERIA"
+      },
+      {
+        "from": [
+          "CAFETERIA BLANCO Y NEGRO CERVECERIA",
+          "CAFETERIA CERVECERÍA BLANCO Y NEGRO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAFETERIA BLANCO Y NEGRO CERVECERIA"
+      },
+      {
+        "from": [
+          "VIENA CAPELLANES",
+          "VIENA CAPELLANES."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VIENA CAPELLANES"
+      },
+      {
+        "from": [
+          "LA MAQUINA",
+          "LA MÁQUINA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LA MAQUINA"
+      },
+      {
+        "from": [
+          "ENSALADAS Y MAS",
+          "ENSALADAS Y MÁS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ENSALADAS Y MAS"
+      },
+      {
+        "from": [
+          "CAFETERIA CERVECERIA TORMES",
+          "CAFETERIA TORMES CERVECERIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAFETERIA CERVECERIA TORMES"
+      },
+      {
+        "from": [
+          "CERVECERIA 100 MONTADITOS",
+          "CERVECERÍA 100 MONTADITOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CERVECERIA 100 MONTADITOS"
+      },
+      {
+        "from": [
+          "LIZARRAN",
+          "LIZARRÁN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LIZARRAN"
+      },
+      {
+        "from": [
+          "VOLAPIE",
+          "VOLAPIÉ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VOLAPIE"
+      },
+      {
+        "from": [
+          "CAFETERIA NUMAR",
+          "CAFETERÍA NUMAR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAFETERIA NUMAR"
+      },
+      {
+        "from": [
+          "CERVECERIA ALTO TAJO",
+          "CERVECERÍA ALTO TAJO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CERVECERIA ALTO TAJO"
+      },
+      {
+        "from": [
+          "DELINAS",
+          "DELINA'S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DELINAS"
+      },
+      {
+        "from": [
+          "SIN ROTULO",
+          "SIN RÓTULO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SIN ROTULO"
+      },
+      {
+        "from": [
+          "TATE'S",
+          "TATES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TATE'S"
+      },
+      {
+        "from": [
+          "HELADOS ITALIANOS PALAZZO",
+          "HELADOS PALAZZO ITALIANOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HELADOS ITALIANOS PALAZZO"
+      },
+      {
+        "from": [
+          "PIZZERIA DI CARLO",
+          "PIZZERÍA DI CARLO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PIZZERIA DI CARLO"
+      },
+      {
+        "from": [
+          "CAFETERIA-PASTELERIA-PANADERIA",
+          "CAFETERÍA-PASTELERÍA/PANADERÍA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAFETERIA-PASTELERIA-PANADERIA"
+      },
+      {
+        "from": [
+          "OVEN",
+          "ÔVEN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OVEN"
+      },
+      {
+        "from": [
+          "PIZZERIA",
+          "PIZZERÍA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PIZZERIA"
+      },
+      {
+        "from": [
+          "ALIMENTACION",
+          "ALIMENTACIÓN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALIMENTACION"
+      },
+      {
+        "from": [
+          "LA CAÑERIA",
+          "LA CAÑERÍA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LA CAÑERIA"
+      },
+      {
+        "from": [
+          "CAFE Y TE",
+          "CAFÉ Y TÉ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CAFE Y TE"
+      }
+    ],
+    "description": "Mass edit cells in column rotulo"
+  },
+  {
+    "op": "core/transpose-columns-into-rows",
+    "startColumnName": "id_terraza",
+    "columnCount": -1,
+    "ignoreBlankCells": true,
+    "fillDown": false,
+    "separator": null,
+    "keyColumnName": "id",
+    "valueColumnName": "Value",
+    "description": "Transpose cells in columns starting with id_terraza into rows in two new columns named id and Value"
+  },
+  {
+    "op": "core/key-value-columnize",
+    "keyColumnName": "id",
+    "valueColumnName": "Value",
+    "noteColumnName": "",
+    "description": "Columnize by key column id and value column Value with note column "
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "nom_edificio",
+    "expression": "grel:value+\" \"+cells[\"num_edificio\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "nombreCompleto",
+    "columnInsertIndex": 12,
+    "description": "Create column nombreCompleto at index 12 based on column nom_edificio using expression grel:value+\" \"+cells[\"num_edificio\"].value"
+  }
+]

@@ -1,0 +1,6 @@
+select ?property
+where 
+{  
+?politician rdf:type <http://dbpedia.org/ontology/Politician> .
+?politician ?property ?value
+} 

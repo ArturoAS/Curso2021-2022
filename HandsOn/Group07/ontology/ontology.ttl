@@ -1,0 +1,104 @@
+@prefix : <http://www.smartCityParks.es/group07/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.smartCityParks.es/group07/ontology> .
+
+
+<http://www.smartCityParks.es/group07/ontology> rdf:type owl:Ontology .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+###  http://www.smartCityParks.es/group07/District#hasFountains 
+<http://www.smartCityParks.es/group07/District#hasFountains> 
+                                                         rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://www.smartCityParks.es/group07/District> ;
+                                                         rdfs:range <http://www.smartCityParks.es/group07/Fountain> ;
+                                                         rdfs:label "hasFountains"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.smartCityParks.es/group07/District#inhabitantsNum
+<http://www.smartCityParks.es/group07/inhabitantsNum>    rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://www.smartCityParks.es/group07/District> ;
+                                                         rdfs:range xsd:double ;
+                                                         rdfs:label "inhabitantsNum"@en .
+
+
+###  http://www.smartCityParks.es/group07/Fountain#hasID
+<http://www.smartCityParks.es/group07/Fountain#hasID>    rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://www.smartCityParks.es/group07/Fountain> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:label "hasID"@en .
+
+###  http://www.smartCityParks.es/group07/Fountain#isInDistrict
+<http://www.smartCityParks.es/group07/Fountain#isInDistrict>    
+                                                         rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://www.smartCityParks.es/group07/Fountain> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:label "isInDistrict"@en .
+
+
+###  http://www.smartCityParks.es/group07/Fountain#hasStatus
+http://www.smartCityParks.es/group07/Fountain#hasStatus  rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://www.smartCityParks.es/group07/Fountain> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:label "hasStatus"@en .
+
+
+###  http://www.smartCityParks.es/group07/Fountain#hasLatitude
+<http://www.smartCityParks.es/group07/Fountain#hasLatitude> 
+                                                        rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.smartCityParks.es/group07/Fountain> ;
+                                                        rdfs:range xsd:double ;
+                                                        rdfs:label "hasLatitude"@en .
+
+
+###  http://www.smartCityParks.es/group07/Fountain#hasLongitude
+<http://www.smartCityParks.es/group07/Fountain#hasLongitude> 
+                                                         rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://www.smartCityParks.es/group07/Fountain> ;
+                                                         rdfs:range xsd:double ;
+                                                         rdfs:label "hasLongitude"@en .
+
+
+###  http://www.smartCityParks.es/group07/Fountain#hasAddress
+<http://www.smartCityParks.es/group07/Fountain#hasAddress> 
+                                                         rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://www.smartCityParks.es/group07/Fountain> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:label "hasAddress"@en .
+
+
+###  http://www.smartCityParks.es/group07/District#hasName
+<http://www.smartCityParks.es/group07/District#hasName>  rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://www.smartCityParks.es/group07/District> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:label "hasName"@en .
+
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.smartCityParks.es/group07/District
+<http://www.smartCityParks.es/group07/District>          rdf:type owl:Class ;
+                                                         rdfs:label "District"@en .
+
+
+###  http://www.smartCityParks.es/group07/Fountain
+<http://www.smartCityParks.es/group07/Fountain>          rdf:type owl:Class ;
+                                                         rdfs:label "Fountain"@en .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi

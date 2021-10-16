@@ -1,0 +1,42 @@
+An HTML document that includes the analyses performed over the data source and 
+the licensing of the data source, as well as the resource naming strategy defined 
+("analysis.html" in the root of the group directory).
+
+El dataset se ha obtenido de la pagina datos.org.es, dentro del cual se han establecido algunos
+de los siguientes terminos y sus conceptos asociados que nos han permitido construirla ontologia:
+Termino       | Concepto
+
+Sitio         | schema:Place
+Ciudad        | schema:City
+Organización  | schema:Organization
+Distrito      | admingeo:District
+Terraza/Local | schema:LocalBusiness
+Horarios      | time:Duration & time:GeneralDurationDescription
+Coordenadas   | schema:GeoCoordinates
+
+Este dataset esta bajo los terminos de la https://datos.madrid.es/egob/catalogo/aviso-legal
+
+Las condiciones generales permiten la reutilización de los documentos para fines comerciales
+y no comerciales. Se entiende por reutilización el uso de documentos que obran en poder del
+Ayuntamiento de Madrid, siempre que dicho uso no constituya una actividad administrativa
+pública.
+
+Sin embargo para nuestro propio proyecto, este estará enmarcado bajo una licencia de 
+uso Creative Commons Attribution de la cual entre otros para la utilizacion de los datos
+provenientes en esta fuente se deben respetar los siguientes preceptos: 
+
+Compartir — Se puede copiar y redistribuir el material en cualquier medio o formato.
+Adaptar — Se permite remezclar, transformar y construir a partir del material
+para cualquier propósito, incluso comercialmente.
+Atribución — Se debe dar crédito de manera adecuada, brindar un enlace a la licencia,
+e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, 
+pero no de forma tal que sugiera que usted o su uso tienen el apoyo de la licenciante.
+
+
+Resource Naming Strategy
+Para la identificacion de las clases y propiedadesde nuestra ontologia se utilizara la siguiente URI:
+- http://smartcity.linkeddata.es/ontology/TerrazasMadrid#
+Para la identificacion de los recursos de nuestra ontologia se utilizara la siguiente URI:
+- http://smartcity.linkeddata.es/resource/[className]#
+Algun ejemplo que representa este tipo de notacion:
+- http://smartcity.linkeddata.es/resource/LocalBusiness#WAGABOO

@@ -1,0 +1,20 @@
+ "0301110056" rdf:type class:ParkingMeter ;
+ 	:locatedDistrict "District_01-CENTRO" ;
+ 	:locatedNeighborhood "Neighborhood_01-01-PALACIO" ;
+ 	:locatedVia "Via_CALLE-DE-LAS-AGUAS" ;
+ 	:licensePlate "0301110056"^^xsd:integer ;
+ 	:gis_X "439608,1907882330"^^xsd:float ;
+ 	:gis_Y "4473550,0278627100"^^xsd:float ;
+ 	:releaseDate "2014-05-28"^^xsd:string .
+
+"District_01-CENTRO" rdf:type class:District ;
+	:districtName "01-CENTRO"^^xsd:string .
+
+
+"Neighborhood_01-01-PALACIO" rdf:type class:Neighborhood ; 
+	:neighborhoodName "01-01-PALACIO"^^xsd:string .
+
+"Via_CALLE-DE-LAS-AGUAS" rdf:type class:Via ; 
+	:ViaName "CALLE-DE-LAS-AGUAS"^^xsd:string .
+
+

@@ -1,0 +1,201 @@
+@prefix : <http://calidadAire.com#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix calidadAire: <http://calidadAire.com#> .
+@base <http://calidadAire.com#> .
+
+<http://calidadAire.com#> rdf:type owl:Ontology ;
+                           dc:creator "Group05" ;
+                           dc:description "Ontology code created by Chowlk" ;
+                           dc:title "Ontologia Calidad Aire" ;
+                           owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://calidadAire.com#mide
+calidadAire:mide rdf:type owl:ObjectProperty ;
+                 rdfs:domain calidadAire:Estacion ;
+                 rdfs:range calidadAire:Magnitud ;
+                 rdfs:label "mide" .
+
+
+###  http://calidadAire.com#tieneEstacion
+calidadAire:tieneEstacion rdf:type owl:ObjectProperty ;
+                          rdfs:domain calidadAire:Municipio ;
+                          rdfs:range calidadAire:Estacion ;
+                          rdfs:label "tiene estacion" .
+
+
+###  http://calidadAire.com#tieneMedicion
+calidadAire:tieneMedicion rdf:type owl:ObjectProperty ;
+                          rdfs:domain calidadAire:PuntoMuestreo ;
+                          rdfs:range calidadAire:Medicion ;
+                          rdfs:label "tiene medicion" .
+
+
+###  http://calidadAire.com#tieneMunicipio
+calidadAire:tieneMunicipio rdf:type owl:ObjectProperty ;
+                           rdfs:domain calidadAire:Provincia ;
+                           rdfs:range calidadAire:Municipio ;
+                           rdfs:label "tiene municipio" .
+
+
+###  http://calidadAire.com#tienePuntoMuestreo
+calidadAire:tienePuntoMuestreo rdf:type owl:ObjectProperty ;
+                               rdfs:domain calidadAire:Estacion ;
+                               rdfs:range calidadAire:PuntoMuestreo ;
+                               rdfs:label "tiene punto muestreo" .
+
+
+###  http://calidadAire.com#validacion
+calidadAire:validacion rdf:type owl:ObjectProperty ;
+                       rdfs:domain calidadAire:Medicion ;
+                       rdfs:range xsd:char .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://calidadAire.com#ano
+calidadAire:ano rdf:type owl:DatatypeProperty ;
+                rdfs:domain calidadAire:PuntoMuestreo ;
+                rdfs:range xsd:integer ;
+                rdfs:label "ano" .
+
+
+###  http://calidadAire.com#dia
+calidadAire:dia rdf:type owl:DatatypeProperty ;
+                rdfs:domain calidadAire:PuntoMuestreo ;
+                rdfs:range xsd:integer ;
+                rdfs:label "dia" .
+
+
+###  http://calidadAire.com#medicion
+calidadAire:medicion rdf:type owl:DatatypeProperty ;
+                     rdfs:domain calidadAire:Medicion ;
+                     rdfs:range xsd:double ;
+                     rdfs:label "medicion" .
+
+
+###  http://calidadAire.com#mes
+calidadAire:mes rdf:type owl:DatatypeProperty ;
+                rdfs:domain calidadAire:PuntoMuestreo ;
+                rdfs:range xsd:integer ;
+                rdfs:label "mes" .
+
+
+###  http://calidadAire.com#refEstacion
+calidadAire:refEstacion rdf:type owl:DatatypeProperty ;
+                        rdfs:domain calidadAire:Estacion ;
+                        rdfs:range xsd:integer ;
+                        rdfs:label "ref estacion" .
+
+
+###  http://calidadAire.com#refHora
+calidadAire:refHora rdf:type owl:DatatypeProperty ;
+                    rdfs:domain calidadAire:Medicion ;
+                    rdfs:range xsd:integer ;
+                    rdfs:label "ref hora" .
+
+
+###  http://calidadAire.com#refMagnitud
+calidadAire:refMagnitud rdf:type owl:DatatypeProperty ;
+                        rdfs:domain calidadAire:Magnitud ;
+                        rdfs:range xsd:integer ;
+                        rdfs:label "ref magnitud" .
+
+
+###  http://calidadAire.com#refMunicipio
+calidadAire:refMunicipio rdf:type owl:DatatypeProperty ;
+                         rdfs:domain calidadAire:Municipio ;
+                         rdfs:range xsd:integer ;
+                         rdfs:label "ref municipio" .
+
+
+###  http://calidadAire.com#refProvincia
+calidadAire:refProvincia rdf:type owl:DatatypeProperty ;
+                         rdfs:domain calidadAire:Provincia ;
+                         rdfs:range xsd:integer ;
+                         rdfs:label "ref provincia" .
+
+
+###  http://calidadAire.com#refPunto
+calidadAire:refPunto rdf:type owl:DatatypeProperty ;
+                     rdfs:domain calidadAire:PuntoMuestreo ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "ref punto" .
+
+
+###  http://calidadAire.com#validacion
+calidadAire:validacion rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://calidadAire.com#Estacion
+calidadAire:Estacion rdf:type owl:Class ;
+                     rdfs:label "Estacion" .
+
+
+###  http://calidadAire.com#Magnitud
+calidadAire:Magnitud rdf:type owl:Class ;
+                     rdfs:label "Magnitud" .
+
+
+###  http://calidadAire.com#Medicion
+calidadAire:Medicion rdf:type owl:Class ;
+                     rdfs:label "Medicion" .
+
+
+###  http://calidadAire.com#Municipio
+calidadAire:Municipio rdf:type owl:Class ;
+                      rdfs:label "Municipio" .
+
+
+###  http://calidadAire.com#Provincia
+calidadAire:Provincia rdf:type owl:Class ;
+                      rdfs:label "Provincia" .
+
+
+###  http://calidadAire.com#PuntoMuestreo
+calidadAire:PuntoMuestreo rdf:type owl:Class ;
+                          rdfs:label "Punto Muestreo" .
+
+
+###  http://www.w3.org/2001/XMLSchema#char
+xsd:char rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+calidadAire:validacion rdfs:label "validacion" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

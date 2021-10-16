@@ -1,0 +1,192 @@
+<html>
+<head>
+<style>
+ table,th, td {border:1px solid black;}
+</style>
+</head>
+<body>
+<p>Table Analysis for Aparcabicis dataset</p>
+<table class="default">
+	<tr>
+    	<td>Column</td>
+	<td>Type</td>
+	<td>Comments/Range</td>
+	<td>Problems</td>
+	</tr>
+	<tr>
+    	<td>MXASSETNUM, C, 12</td>
+	<td>String</td>
+	<td>Unique?</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>DESCRIPTIO, C, 105</td>
+	<td>String</td>
+	<td></td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>MINTDISTRIC, C,20</td>
+	<td>Integer</td>
+	<td>Natural numbers 1-22</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>NOMBRE_DISC, C, 20</td>
+	<td>String</td>
+	<td>It goes together with MINTDISTRIC, C,20</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>MINTBARRIO, C, 10</td>
+	<td>Integer</td>
+	<td>Natural numbers 1-</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>NOMBRE_BAR, C, 50</td>
+	<td>String</td>
+	<td>It goes together with MINTBARRIO, C, 10</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>ESTADO, C, 50</td>
+	<td>String</td>
+	<td>All of them have the value, operative</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>INSTALLDAT, D</td>
+	<td>Date</td>
+	<td>Some of them don't have a date</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>MINTTIPOVI, C, 15</td>
+	<td>String</td>
+	<td></td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>MINTNOMBRE, C, 254</td>
+	<td>String</td>
+	<td>It goes together with MINTTIPOVI, C, 15</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>MINTNUMERO, C, 25</td>
+	<td>Integer</td>
+	<td>Natural numbers 0-5700</td>
+	<td>Some of the cells cannot be transform to integer, they are hours</td>
+	</tr>
+	<tr>
+    	<td>MINTNDP, C, 20</td>
+	<td>String</td>
+	<td>Unique?, we don't know what it represents</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>MODELO, C, 254</td>
+	<td></td>
+	<td></td>
+	<td>All of the cells are empty</td>
+	</tr>
+</table>
+<p>Table Analysis for Bases Bicimad dataset</p>
+<table class="default">
+	<tr>
+    	<td>Column</td>
+	<td>Type</td>
+	<td>Comments/Range</td>
+	<td>Problems</td>
+	</tr>
+	<tr>
+    	<td>Número</td>
+	<td>String</td>
+	<td>Unique?</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Gis_X</td>
+	<td>Double</td>
+	<td>Geographical Information 438100.00-439900.00</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Gis_Y</td>
+	<td>Double</td>
+	<td>Geographical Information 4474890.00-4475070.00</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Fecha de Alta</td>
+	<td>Date</td>
+	<td>Identifier of construction date type of date format 22/07/2014 -29/12/2020 </td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Distrito</td>
+	<td>String</td>
+	<td>District where the station is at</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Barrio</td>
+	<td>String</td>
+	<td>Identifier for the neighbourhood</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Calle</td>
+	<td>String</td>
+	<td>Street for the station</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Nº Finca</td>
+	<td>String</td>
+	<td></td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Tipo de Reserva</td>
+	<td>String</td>
+	<td>Booking company</td>
+	<td>Not really necessary</td>
+	</tr>
+	<tr>
+    	<td>Número de plazas</td>
+	<td>Integer</td>
+	<td>Number of spaces 3 to 30</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Longitud</td>
+	<td>Double</td>
+	<td>Coordinate Latitude -3.73 to -3.63</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Latitud</td>
+	<td>Double</td>
+	<td>Coordinate Longitude 40.39 to 40.48</td>
+	<td></td>
+	</tr>
+	<tr>
+    	<td>Dirección</td>
+	<td>String</td>
+	<td>Address, combination of street and house number</td>
+	<td>Not really necessary</td>
+	</tr>
+</table>
+<p>License: Our license will be the same as the license the datasets have, 
+<a href="https://datos.madrid.es/portal/site/egob/menuitem.400a817358ce98c34e937436a8a409a0/?vgnextoid=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD">license</a>
+</p>
+<p>Resource Naming: </p>
+<p>Domain: http://www.BiciWhere-Madrid.es/</p>
+<p>Path: http://www.BiciWhere-Madrid.es/bwm</p>
+<p>Path: http://www.BiciWhere-Madrid.es/bwm/ontology</p>
+<p>Path: http://www.BiciWhere-Madrid.es/bwm/ontology/class#className</p>
+<p>Path: http://www.BiciWhere-Madrid.es/bwm/ontology/property#propertyName</p>
+</body>
+</html>

@@ -1,0 +1,124 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Calle",
+    "description": "Remove column Calle"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número de Plazas",
+    "newColumnName": "Puestos",
+    "description": "Rename column Número de Plazas to Puestos"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿Número",
+    "newColumnName": "Identificador",
+    "description": "Rename column ﻿Número to Identificador"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "File",
+    "description": "Remove column File"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPCION",
+    "description": "Remove column DESCRIPCION"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿ CÓDIGO",
+    "expression": "join ([coalesce(cells['﻿ CÓDIGO'].value,''),coalesce(cells['Identificador'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿ CÓDIGO using expression join ([coalesce(cells['﻿ CÓDIGO'].value,''),coalesce(cells['Identificador'].value,'')],'')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Identificador",
+    "description": "Remove column Identificador"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿ CÓDIGO",
+    "newColumnName": "Identificador",
+    "description": "Rename column ﻿ CÓDIGO to Identificador"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Identificador",
+    "index": 0,
+    "description": "Move column Identificador to position 0"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LATITUD",
+    "expression": "join ([coalesce(cells['LATITUD'].value,''),coalesce(cells['Latitud'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LATITUD using expression join ([coalesce(cells['LATITUD'].value,''),coalesce(cells['Latitud'].value,'')],'')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Latitud",
+    "description": "Remove column Latitud"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "join ([coalesce(cells['LONGITUD'].value,''),coalesce(cells['Longitud'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LONGITUD using expression join ([coalesce(cells['LONGITUD'].value,''),coalesce(cells['Longitud'].value,'')],'')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Longitud",
+    "description": "Remove column Longitud"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCIÓN",
+    "expression": "join ([coalesce(cells['DIRECCIÓN'].value,''),coalesce(cells['Direccion'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DIRECCIÓN using expression join ([coalesce(cells['DIRECCIÓN'].value,''),coalesce(cells['Direccion'].value,'')],'')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Direccion",
+    "description": "Remove column Direccion"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Column",
+    "newColumnName": "Horario",
+    "description": "Rename column Column to Horario"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Túneles lavado",
+    "description": "Remove column Túneles lavado"
+  }
+]

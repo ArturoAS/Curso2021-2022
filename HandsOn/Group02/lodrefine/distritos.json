@@ -1,0 +1,38 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "DISTRI_MAY",
+    "description": "Remove column DISTRI_MAY"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DISTRI_MT",
+    "description": "Remove column DISTRI_MT"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_DIS_TX",
+    "description": "Remove column COD_DIS_TX"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Shape_Leng",
+    "description": "Remove column Shape_Leng"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Shape_Area",
+    "description": "Remove column Shape_Area"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_DIS",
+    "description": "Remove column COD_DIS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "OBJECTID",
+    "newColumnName": "ID_DISTRICT",
+    "description": "Rename column OBJECTID to ID_DISTRICT"
+  }
+]

@@ -1,0 +1,91 @@
+@prefix : <http://www.transporte.madrid.org> .
+@prefix dbo: <http://dbpedia.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.transporte.madrid.org> .
+
+# Object properties
+
+:hasAddress rdf:type owl:ObjectProperty ;
+            rdfs:domain :TransportSpot ;
+            rdfs:range :Address .
+
+:hasGis rdf:type owl:ObjectProperty ;
+        rdfs:domain :TransportSpot ;
+        rdfs:range :Gis
+
+:hasCoordinates rdf:type owl:ObjectProperty ;
+                rdfs:domain :TransportSpot ;
+                rdfs:range :Coordinates
+
+# Datatype properties
+
+:hasGisX rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Gis ;
+            rdfs:range xsd:int .
+
+
+:hasGisY rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Gis ;
+            rdfs:range xsd:int .
+
+:hasLatitude rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Coordinates ;
+            rdfs:range xsd:int .
+
+:hasNeighborhood rdf:type owl:ObjectProperty ;
+            rdfs:domain :TransportSpot ;
+            rdfs:range  xsd:string.
+
+:hasLongitude rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Coordinates ;
+            rdfs:range xsd:int .
+
+:hasStreetName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Address ;
+               rdfs:range xsd:string .
+
+:hasStreetNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Address ;
+               rdfs:range xsd:number .
+
+:hasAdditionalInformation rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Address ;
+               rdfs:range xsd:number .
+
+:hasDischargeDate   rdf:type owl:DatatypeProperty ;
+                    rdfs:domain dbo:TransportSpot ;
+                    rdfs:range xsd:int .
+
+:hasNumberOfSeats   rdf:type owl:DatatypeProperty ;
+                    rdfs:domain dbo:TransportSpot ;
+                    rdfs:range xsd:int .
+
+:hasType            rdf:type owl:DatatypeProperty ;
+                    rdfs:domain dbo:TransportSpot ;
+                    rdfs:range xsd:string .
+
+:hasUri             rdf:type owl:DatatypeProperty ;
+                    rdfs:domain dbo:TransportSpot ;
+                    rdfs:range xsd:anyURI .
+
+:hasID              rdf:type owl:DatatypeProperty ;
+                    rdfs:domain dbo:TransportSpot ;
+                    rdfs:range xsd:string .
+
+# Classes
+
+# http://www.transporte.madrid.org#TransportSpot
+:TransportSpot rdf:type owl:Class .
+
+# http://www.transporte.madrid.org#Gis
+:Gis rdf:type owl:Class .
+
+# http://www.transporte.madrid.org#Coordinates
+:Coordinates rdf:type owl:Class .
+
+# http://www.transporte.madrid.org#Address
+:Address rdf:type owl:Class .

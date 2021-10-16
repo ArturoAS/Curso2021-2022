@@ -1,0 +1,32 @@
+:"SAN BLAS" rdf:type dbo:School ;
+    :hasTypeSchool "COLEGIO DE EDUCACIÓN INFANTIL, PRIMARIA Y SECUNDARIA" ;
+    :ownership "PÚBLICO" ;
+    :hasAddress :"schoolDirCol_SanBlas" ;
+    :xCoordinate 458832;
+    :yCoordinate 4487797 ;
+    :ownMunicipality :"Ajalvir" .
+
+:"schoolDirCol_SanBlas" rdf:type :Address ;
+    :hasTypeAddress "CALLE" ;
+    :hasNameAddress "Victor Hurtado" ;
+    :hasNumber 0 ;
+    :hasPostalCode 28864 .
+
+:"Ajalvir" rdf:type dbo:Municipality ;
+    :hasNameMunicipality "Ajalvir" .
+
+:"ResidentGroup_Aljavir_0_4_Hombre" rdf:type :ResidentGroup ;
+    :hasNameMunicipality "Ajalvir" ;
+    :minAge 0 ;
+    :maxAge 4 ;
+    :numPeople 15 ;
+    :hasGender "Hombre" ;
+    :liveIn :"Ajalvir" .
+
+:"ResidentGroup_Aljavir_0_4_Mujer" rdf:type :ResidentGroup ;
+    :hasNameMunicipality "Ajalvir" ;
+    :minAge 0 ;
+    :maxAge 4 ;
+    :numPeople 17 ;
+    :hasGender "Mujer" ;
+    :liveIn :"Ajalvir" .

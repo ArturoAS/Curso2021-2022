@@ -1,0 +1,8 @@
+   
+select ?properties 
+where
+{
+ ?x rdf:type <http://dbpedia.org/ontology/Politician> .
+ ?x ?properties ?y
+ filter (?properties != rdf:type).
+}

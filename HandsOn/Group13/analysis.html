@@ -1,0 +1,356 @@
+<! DOCTYPE html>
+
+<html>
+
+<body>
+
+<h1> Dataset Analysis </h1>
+
+    <h2> Wards of the municipality of Madrid </h2>
+
+    <style>
+       table{border-collapse:collapse;}
+        th,tr,td{
+	        border:2px solid #FFFFFF;
+	        width:415px;
+	        height:30px;
+	        vertical-align:middle;
+	        text-align:center;
+            }
+        th{
+	        color:#FFFFFF;
+	        background-color: #0096d2;
+            }
+
+        tr:nth-child(odd) td{
+	    background-color:#d1ebf7;
+            }
+    </style>
+        
+        <p style="padding-left:20px;">
+            File name: barrios.csv
+        </p>
+
+        <h3> Data Analyse </h3>
+
+            <table>
+                <tr style>
+                    <th>Column</th>
+                    <th>Type</th>
+                    <th>Comment</th>
+                </tr>
+
+                <tr><td>OBJECTID_1</td> <td>string</td><td>Identifier.</td></tr>
+                <tr><td>NOMDIS</td> <td>string</td> <td>District name.</td></tr>
+                <tr><td>NOMBRE</td><td>string</td><td>Ward name.</td></tr>
+                <tr><td>Shape_Leng</td><td>decimal</td><td>District length.</td></tr>
+                <tr><td>Shape_Area</td><td>decimal</td><td>District area.</td></tr>
+                <tr><td>COD_DIS</td><td>string</td><td>Code district.</td></tr>
+                <tr><td>COD_DIS_TX</td><td>string</td><td>Code district.</td></tr>
+                <tr><td>BARRIO_MAY</td><td>string</td><td>Ward name.</td></tr>
+                <tr><td>COD_DISBAR</td><td>string</td><td>Ward code.</td></tr>
+                <tr><td>COD_BAR</td><td>string</td><td>Ward code.</td></tr>
+                <tr><td>NUM_BAR</td><td>string</td><td>Ward number.</td></tr>
+                <tr><td>BARRIO_MT</td><td>string</td><td>Ward name.</td></tr>
+                <tr><td>COD_DISB</td><td>string</td><td>Ward and district code.</td></tr>
+            </table>
+            
+        <h3> License </h3>
+            <p style="padding-left:20px;">
+                <b>Rightsholder:</b> Community of Madrid.
+            </p>
+            <p style="padding-left:20px;">
+                <b>License:</b> Creative commons attribution with open license that allows free use.
+            </p>
+
+    <h2> Traffic lights of the municipality of Madrid </h2>
+
+        <p style="padding-left:20px;">
+            File name: Cabezas_semaforos.csv
+        </p>
+
+        <h3> Data Analyse </h3>
+
+        <table>
+            <tr style>
+                <th>Column</th>
+                <th>Type</th>
+                <th>Comment</th>
+            </tr>
+
+            <tr><td>tipo_elem</td><td>string</td><td>Indicates the semaphore head type.</td></tr>
+            <tr><td>distrito</td><td>string</td> <td>District identifier.</td></tr>
+            <tr><td>id</td><td>string</td><td>Semaphore identifier.</td></tr>
+            <tr><td>id_cruce</td><td>number</td><td>Crosswalk identifier where the semaphore it's placed.</td></tr>
+            <tr><td>fecha_inst</td><td>timestamp</td><td>When the semaphore installation happened.</td></tr>
+            <tr><td>utm_x</td><td>decimal</td><td>Universal Transverse Mercator coordinate x.</td></tr>
+            <tr><td>utm_y</td><td>decimal</td><td> Universal Transverse Mercator coordinate y.</td></tr>
+            <tr><td>longitud</td><td>decimal</td><td>Longitude coordinate.</td></tr>
+            <tr><td>latitud</td><td>decimal</td><td>Latitude coordinate.</td></tr>
+        </table>
+
+        <h3> License </h3>
+            <p style="padding-left:20px;">
+                <b>Rightsholder:</b> Community of Madrid
+            </p>
+            <p style="padding-left:20px;">
+                <b>License:</b> The general conditions allow the reuse of documents for commercial and non-commercial purposes.
+            </p>
+   
+    <h2> Stations of the urban bus network </h2>
+
+        <p style="padding-left:20px;">
+            File name: DatosAbiertos_ElementosdelaRedAutobusesUrbanos.csv
+        </p>
+
+        <h3> Data Analyse </h3>
+
+        <table>
+            <tr style>
+                <th>Column</th>
+                <th>Type</th>
+                <th>Comment</th>
+            </tr>
+            
+            <tr><td>OBJECTID</td><td>string</td><td>Identifier.</td></tr>
+            <tr><td>IDESTACION</td><td>string</td> <td>Station identifier.</td></tr>
+            <tr><td>FECHAACTUAL</td><td>date</td><td>The date when the data was taken.</td></tr>
+            <tr><td>MODO</td><td>number</td><td>Station mode.</td></tr>
+            <tr><td>CODIGOESTACION</td><td>string</td><td>Station code.</td></tr>
+            <tr><td>DENOMINACION</td><td> string</td><td>Station name.</td></tr>
+            <tr><td>OBSERVACIONES</td><td>string</td><td> Indicates a commentary.</td></tr>
+            <tr><td>SITUACION</td><td>string</td><td>Station status.</td></tr>
+            <tr><td>CODIGOCTMESTACIONREDMETRO</td><td>string</td><td>Nearby metro station code.</td></tr>
+            <tr><td>CODIGOEMPRESA</td><td>string</td><td>Company code.</td></tr>
+            <tr><td>DENOMINACIONABREVIADA</td><td>string</td> <td> Address where the station is located.</td></tr>
+            <tr><td>MODOINERCAMBIADOR</td><td>number</td><td>Station mode.</td></tr>
+            <tr><td>CODIGOINTERCAMBIADOR</td><td>string</td><td>Station code.</td></tr>
+            <tr><td>TIPO</td><td>string</td><td>Station type.</td></tr>
+            <tr><td>CODIGOPROVINCIA</td><td>string</td><td>Province code.</td></tr>
+            <tr><td>CODIGOMUNICIPIO</td><td>string</td><td> Municipality code.</td></tr>
+            <tr><td>CODIGOENTIDAD</td><td>string</td><td>Entity code.</td></tr>
+            <tr><td>CODIGONUCLEO</td><td>string</td><td>Core code.</td></tr>
+            <tr><td>CODIGOVIA</td><td>string</td><td>Road code.</td></tr>
+            <tr><td>TIPOVIA</td><td>string</td> <td>Type of road.</td></tr>
+            <tr><td>PARTICULA</td><td>string</td><td>Preposition.</td></tr>
+            <tr><td>NOMBREVIA</td><td>string</td><td>Station name.</td></tr>
+            <tr><td>TIPONUMERO</td><td>string</td><td>Portal number type.</td></tr>
+            <tr><td>NUMEROPORTAL</td><td>number</td><td>Portal number of the station.</td></tr>
+            <tr><td>CALIFICADORPORTAL</td><td>string</td><td></td></tr>
+            <tr><td>CARRETERA</td><td>string</td><td>Road where the station is located.</td></tr>
+            <tr><td>CODIGOPOSTAL</td><td>string</td><td>Postal Code where the station is located.</td></tr>
+            <tr><td>DISTRITO</td><td>string</td> <td> District which the station belongs.</td></tr>
+            <tr><td>SECCIONCENSAL</td><td>string</td><td> Censun section which the station belongs to.</td></tr>
+            <tr><td>BARRIO</td><td>string</td><td>Ward which the station belongs.</td></tr>
+            <tr><td>TESELA</td><td>string</td><td></td></tr>
+            <tr><td>SECTORURBANO</td><td>string</td><td>Urban sector which the station belongs to.</td></tr>
+            <tr><td>SECTOR</td><td>number</td><td>Sector which the station belongs.</td></tr>
+            <tr><td>CORREDOR</td><td>string</td><td></td></tr>
+            <tr><td>CORONATARIFARIA</td><td>string</td><td>Core code.</td></tr>
+            <tr><td>CORONA12</td><td>string</td><td></td></tr>
+            <tr><td>ZONATRANSPORTE</td><td>string</td><td>Area where the station is located.</td></tr>
+            <tr><td>ENCUESTADOMICILIARIA</td><td>string</td><td></td></tr>
+            <tr><td>ENCUESTADOMICILIARIA</td><td>string</td><td></td></tr>
+            <tr><td>HOJA25000</td><td>string</td><td></td></tr>
+            <tr><td>ACONDICIONAMIENTOVIAJEROS</td><td>string</td><td></td></tr>
+            <tr><td>ACONDICIONAMIENTOVEHICULOS</td><td>string</td><td></td></tr>
+            <tr><td>FECHAALTA</td><td>date</td><td>Date when the station was registered.</td></tr>
+            <tr><td>FECHAINICIO</td><td>date</td><td>Date when the urban bus network was created.</td></tr>
+            <tr><td>FECHAFIN</td><td>date</td><td>Date when the station stops working.</td></tr>
+            <tr><td>X</td><td>integer</td><td>Latitude X.</td></tr>
+            <tr><td>Y</td><td>integer</td><td>Latitude Y.</td></tr>
+            <tr><td>GRADOACCESIBILIDAD</td><td>string</td><td>Type of accessibility to the station.</td></tr>
+            <tr><td>SITUACIONCALLE</td><td>string</td><td>Street status.</td></tr>
+            <tr><td>DENOMINACION_SAE</td><td>string</td><td>Denomination of the line.</td></tr>
+            <tr><td>INTERURBANOS_CODIGOEMT_CRTM</td><td>string</td><td>Bus CRTM (Consorcio Regional de Transportes de Madrid) code.</td></tr>
+            <tr><td>INTERURBANOS_CODIGOEMT_EMPRESA</td><td>string</td><td>Bus company code.</td></tr>
+            <tr><td>LINEAS</td><td>string</td><td>Bus number that stop at the station.</td></tr>
+        </table>
+
+        <h3> License </h3>
+            <p style="padding-left:20px;">
+                <b>Rightsholder:</b> Community of Madrid
+            </p>
+            <p style="padding-left:20px;">
+                <b>License:</b> The general conditions allow the reuse of documents for commercial and non-commercial purposes.
+            </p>
+            
+    <h2> Stations of the underground network </h2>
+
+        <p style="padding-left:20px;">
+            File name: Datos_abiertos__Elementos_de_la_Red_de_Metro.csv
+        </p>
+
+        <h3> Data Analyse </h3>
+
+        <table>
+            <tr style>
+                <th>Column</th>
+                <th>Type</th>
+                <th>Comment</th>
+            </tr>
+            
+            <tr><td>OBJECTID</td><td>string</td><td>Indicates the data identifier.</td></tr>
+            <tr><td>IDESTACION</td><td>string</td> <td>Indicates the platform identifier.</td></tr>
+            <tr><td>FECHAACTUAL</td><td>date</td><td>The date when the data was taken.</td></tr>
+            <tr><td>MODO</td><td>number</td><td>Station mode.</td></tr>
+            <tr><td>CODIGOESTACION</td><td>string</td><td>Indicates the station identifier.</td></tr>
+            <tr><td>DENOMINACION</td><td> string</td><td>Indicates the direction of travel.</td></tr>
+            <tr><td>OBSERVACIONES</td><td>string</td><td> Indicates a commentary.</td></tr>
+            <tr><td>SITUACION</td><td>string</td><td>Station status.</td></tr>
+            <tr><td>CODIGOCTMESTACIONREDMETRO</td><td>string</td><td>Nearby metro station code.</td></tr>
+            <tr><td>CODIGOEMPRESA</td><td>string</td><td>Company code.</td></tr>
+            <tr><td>DENOMINACIONABREVIADA</td><td>string</td> <td> Address where the station is located.</td></tr>
+            <tr><td>MODOINERCAMBIADOR</td><td>number</td><td>Station mode.</td></tr>
+            <tr><td>CODIGOINTERCAMBIADOR</td><td>string</td><td>Station code.</td></tr>
+            <tr><td>TIPO</td><td>string</td><td>Station type.</td></tr>
+            <tr><td>CODIGOPROVINCIA</td><td>string</td><td>Province code.</td></tr>
+            <tr><td>CODIGOMUNICIPIO</td><td>string</td><td> Municipality code.</td></tr>
+            <tr><td>CODIGOENTIDAD</td><td>string</td><td>Entity code.</td></tr>
+            <tr><td>CODIGONUCLEO</td><td>string</td><td>Core code.</td></tr>
+            <tr><td>CODIGOVIA</td><td>string</td><td>Road code.</td></tr>
+            <tr><td>TIPOVIA</td><td>string</td> <td>Type of road.</td></tr>
+            <tr><td>PARTICULA</td><td>string</td><td>Preposition.</td></tr>
+            <tr><td>NOMBREVIA</td><td>string</td><td>Station name.</td></tr>
+            <tr><td>TIPONUMERO</td><td>string</td><td>Portal number type.</td></tr>
+            <tr><td>NUMEROPORTAL</td><td>number</td><td>Portal number of the station.</td></tr>
+            <tr><td>CALIFICADORPORTAL</td><td>string</td><td></td></tr>
+            <tr><td>CARRETERA</td><td>string</td><td>Road where the station is located.</td></tr>
+            <tr><td>CODIGOPOSTAL</td><td>string</td><td>Postal Code where the station is located.</td></tr>
+            <tr><td>DISTRITO</td><td>string</td> <td> District which the station belongs.</td></tr>
+            <tr><td>SECCIONCENSAL</td><td>string</td><td> Censun section which the station belongs to.</td></tr>
+            <tr><td>BARRIO</td><td>string</td><td>Ward which the station belongs.</td></tr>
+            <tr><td>TESELA</td><td>string</td><td></td></tr>
+            <tr><td>SECTORURBANO</td><td>string</td><td>Urban sector which the station belongs to.</td></tr>
+            <tr><td>SECTOR</td><td>number</td><td>Sector which the station belongs.</td></tr>
+            <tr><td>CORREDOR</td><td>string</td><td></td></tr>
+            <tr><td>CORONATARIFARIA</td><td>string</td><td>Core code.</td></tr>
+            <tr><td>CORONA12</td><td>string</td><td></td></tr>
+            <tr><td>ZONATRANSPORTE</td><td>string</td><td>Area where the station is located.</td></tr>
+            <tr><td>ENCUESTADOMICILIARIA</td><td>string</td><td></td></tr>
+            <tr><td>ENCUESTADOMICILIARIA</td><td>string</td><td></td></tr>
+            <tr><td>HOJA25000</td><td>string</td><td></td></tr>
+            <tr><td>ACONDICIONAMIENTOVIAJEROS</td><td>string</td><td></td></tr>
+            <tr><td>ACONDICIONAMIENTOVEHICULOS</td><td>string</td><td></td></tr>
+            <tr><td>FECHAALTA</td><td>date</td><td>Date when the station was registered.</td></tr>
+            <tr><td>FECHAINICIO</td><td>date</td><td>Date when the station was created.</td></tr>
+            <tr><td>FECHAFIN</td><td>date</td><td> Date when the station stops working.</td></tr>
+            <tr><td>X</td><td>integer</td><td>Latitude X.</td></tr>
+            <tr><td>Y</td><td>integer</td><td>Latitude Y.</td></tr>
+            <tr><td>GRADOACCESIBILIDAD</td><td>string</td><td>Type of accessibility to the station.</td></tr>
+            <tr><td>SITUACIONCALLE</td><td>string</td><td>Street status.</td></tr>
+            <tr><td>DENOMINACION_SAE</td><td>string</td><td>Denomination of the line.</td></tr>
+            <tr><td>INTERURBANOS_CODIGOEMT_CRTM</td><td>string</td><td>Bus CRTM (Consorcio Regional de Transportes de Madrid) code.</td></tr>
+            <tr><td>INTERURBANOS_CODIGOEMT_EMPRESA</td><td>string</td><td>Bus company code.</td></tr>
+        </table>
+
+        <h3> License </h3>
+            <p style="padding-left:20px;">
+                <b>Rightsholder:</b> Community of Madrid
+            </p>
+            <p style="padding-left:20px;">
+                <b>License:</b> The general conditions allow the reuse of documents for commercial and non-commercial purposes.
+            </p>
+
+    <h2> Light rail system of the municipality of Madrid </h2>
+
+        <p style="padding-left:20px;">
+            File name: Datos_abiertos__Elementos_de_la_Red_de_Metro_Ligero.csv
+        </p>
+
+        <h3> Data Analyse </h3>
+        <table>
+            <tr style>
+                <th>Column</th>
+                <th>Type</th>
+                <th>Comment</th>
+            </tr>
+            
+            <tr><td>OBJECTID</td><td>string</td><td>Identifier.</td></tr>
+            <tr><td>IDESTACION</td><td>string</td> <td>Station identifier.</td></tr>
+            <tr><td>FECHAACTUAL</td><td>date</td><td>The date when the data was taken.</td></tr>
+            <tr><td>MODO</td><td>number</td><td>Station mode.</td></tr>
+            <tr><td>CODIGOESTACION</td><td>string</td><td>Station code.</td></tr>
+            <tr><td>DENOMINACION</td><td> string</td><td>Station name.</td></tr>
+            <tr><td>OBSERVACIONES</td><td>string</td><td> Indicates a commentary.</td></tr>
+            <tr><td>SITUACION</td><td>string</td><td>Station status.</td></tr>
+            <tr><td>CODIGOCTMESTACIONREDMETRO</td><td>string</td><td>Neraby metro station code.</td></tr>
+            <tr><td>CODIGOEMPRESA</td><td>string</td><td>Company code.</td></tr>
+            <tr><td>DENOMINACIONABREVIADA</td><td>string</td> <td> Address where the station is located.</td></tr>
+            <tr><td>MODOINERCAMBIADOR</td><td>number</td><td>Station mode.</td></tr>
+            <tr><td>CODIGOINTERCAMBIADOR</td><td>string</td><td>Station code.</td></tr>
+            <tr><td>TIPO</td><td>string</td><td>Station type.</td></tr>
+            <tr><td>CODIGOPROVINCIA</td><td>string</td><td>Province code.</td></tr>
+            <tr><td>CODIGOMUNICIPIO</td><td>string</td><td> Municipality code.</td></tr>
+            <tr><td>CODIGOENTIDAD</td><td>string</td><td>Entity code.</td></tr>
+            <tr><td>CODIGONUCLEO</td><td>string</td><td>Core code.</td></tr>
+            <tr><td>CODIGOVIA</td><td>string</td><td>Road code.</td></tr>
+            <tr><td>TIPOVIA</td><td>string</td> <td>Type of road.</td></tr>
+            <tr><td>PARTICULA</td><td>string</td><td>Preposition.</td></tr>
+            <tr><td>NOMBREVIA</td><td>string</td><td>Station name.</td></tr>
+            <tr><td>TIPONUMERO</td><td>string</td><td>Portal number type.</td></tr>
+            <tr><td>NUMEROPORTAL</td><td>number</td><td>Portal number of the station.</td></tr>
+            <tr><td>CALIFICADORPORTAL</td><td>string</td><td></td></tr>
+            <tr><td>CARRETERA</td><td>string</td><td>Road where the station is located.</td></tr>
+            <tr><td>CODIGOPOSTAL</td><td>string</td><td>Postal Code where the station is located.</td></tr>
+            <tr><td>DISTRITO</td><td>string</td> <td> District which the station belongs.</td></tr>
+            <tr><td>SECCIONCENSAL</td><td>string</td><td> Censun section which the station belongs to.</td></tr>
+            <tr><td>BARRIO</td><td>string</td><td>Ward which the station belongs.</td></tr>
+            <tr><td>TESELA</td><td>string</td><td></td></tr>
+            <tr><td>SECTORURBANO</td><td>string</td><td>Urban sector which the station belongs to.</td></tr>
+            <tr><td>SECTOR</td><td>number</td><td>Sector which the station belongs.</td></tr>
+            <tr><td>CORREDOR</td><td>string</td><td></td></tr>
+            <tr><td>CORONATARIFARIA</td><td>string</td><td>Fare zone which the station belongs.</td></tr>
+            <tr><td>CORONA12</td><td>string</td><td></td></tr>
+            <tr><td>ZONATRANSPORTE</td><td>string</td><td>Area where the station is located.</td></tr>
+            <tr><td>ENCUESTADOMICILIARIA</td><td>string</td><td></td></tr>
+            <tr><td>ENCUESTADOMICILIARIA</td><td>string</td><td></td></tr>
+            <tr><td>HOJA25000</td><td>string</td><td></td></tr>
+            <tr><td>ACONDICIONAMIENTOVIAJEROS</td><td>string</td><td></td></tr>
+            <tr><td>ACONDICIONAMIENTOVEHICULOS</td><td>string</td><td></td></tr>
+            <tr><td>FECHAALTA</td><td>date</td><td>Date when the station was registered.</td></tr>
+            <tr><td>FECHAINICIO</td><td>date</td><td>Date when the light rail system was created.</td></tr>
+            <tr><td>FECHAFIN</td><td>date</td><td>Date when the light rail system was created.</td></tr>
+            <tr><td>X</td><td>integer</td><td>Latitude X.</td></tr>
+            <tr><td>y</td><td>integer</td><td>Latitude Y.</td></tr>
+            <tr><td>GRADOACCESIBILIDAD</td><td>string</td><td>Type of accessibility to the station.</td></tr>
+            <tr><td>SITUACIONCALLE</td><td>string</td><td>Street status.</td></tr>
+            <tr><td>DENOMINACION_SAE</td><td>string</td><td>Denomination of the line.</td></tr>
+            <tr><td>INTERURBANOS_CODIGOEMT_CRTM</td><td>string</td><td>Light rail CRTM (Consorcio Regional de Transportes de Madrid) code.</td></tr>
+            <tr><td>INTERURBANOS_CODIGOEMT_EMPRESA</td><td>string</td><td>Light rail company code.</td></tr>
+        </table>
+
+        <h3> License </h3>
+            <p style="padding-left:20px;">
+                <b>Rightsholder:</b> Community of Madrid
+            </p>
+            <p style="padding-left:20px;">
+                <b>License:</b> The general conditions allow the reuse of documents for commercial and non-commercial purposes.
+            </p>
+            
+    <h2> Resource Naming Strategy </h2>
+        <p style="padding-left:20px;">
+            <b>Domain: </b> <a href= "http://www.smartcity.madrid.es/"> http://www.smartcity.madrid.es/</a> 
+        </p>
+        <p style="padding-left:40px;">
+            <b>Path: </b> <a href= "http://www.smartcity.madrid.es/mobility/"> http://www.smartcity.madrid.es/mobility </a>
+        </p>
+        <p style="padding-left:60px;">
+            <b>Ontology: </b> <a href= "http://www.smartcity.madrid.es/mobility/ontology/"> http://www.smartcity.madrid.es/mobility/ontology/ </a>
+        </p>
+        <p style="padding-left:80px;">
+            <b>Class: </b> <a href= "http://www.smartcity.madrid.es/mobility/[ontologyName]#[className]"> http://www.smartcity.madrid.es/mobility/[ontologyName]#[className] </a>
+        </p>
+        <p style="padding-left:80px;">
+            <b>Property: </b> <a href = "http://www.smartcity.madrid.es/mobility/ontology/[ontologyName]#[propertyName]"> http://www.smartcity.madrid.es/mobility/ontology/[ontologyName]#[propertyName] </a>
+        </p>
+        <p style="padding-left:60px;">
+            <b>Data: </b> <a href = "http://www.smartcity.madrid.es/mobility/resource/"> http://www.smartcity.madrid.es/mobility/resource/ </a>
+        </p>
+        <p style="padding-left:80px;">
+            <b>Individual: </b> <a href= "http://www.smartcity.madrid.es/mobility/resource/[className]#[identifier]"> http://www.smartcity.madrid.es/mobility/resource/[className]#[identifier] </a>
+        </p>
+            
+</body>
+
+</html>

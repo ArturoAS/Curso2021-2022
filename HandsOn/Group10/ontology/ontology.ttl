@@ -1,0 +1,77 @@
+@prefix : <http://www.reciclamadrid.es/recycle/ontology/> .
+@prefix resource: <http://www.reciclamadrid.es/recycle/resources/> .
+@prefix recicla: <http://www.reciclamadrid.es/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#Classes
+
+:RecyclePoint rdf:type owl:Class.
+:Address rdf:type owl:Class.
+:Coordinates rdf:type owl:Class.
+
+#Object
+
+:hasAddress rdf:type owl:ObjectProperty;
+        rdfs:domain class:RecyclePoint;
+        rdfs:range class:Address.
+
+:hasCoordinates rdf:type owl:ObjectProperty;
+        rdfs:domain class:RecyclePoint;
+        rdfs:range class:Coordinates.
+
+#Data
+## Recycle Point
+:DATA_TYPE rdf:type owl:DataTypeProperty;
+        rdfs:domain :RecyclePoint;
+        rdfs:range xsd:string.
+
+:CENTER rdf:type owl:DataTypeProperty;
+        rdfs:domain :RecyclePoint;
+        rdfs:range xsd:string.
+
+:SCHEDULE rdf:type owl:DataTypeProperty;
+        rdfs:domain :RecyclePoint;
+        rdfs:range xsd:string.
+
+:WASTE rdf:type owl:DataTypeProperty;
+        rdfs:domain :RecyclePoint;
+        rdfs:range xsd:string.
+
+## Address
+:ROAD_TYPE rdf:type owl:DataTypeProperty;
+        rdfs:domain :Address;
+        rdfs:range xsd:string.
+
+:ROAD_NAME rdf:type owl:DataTypeProperty;
+        rdfs:domain :Address;
+        rdfs:range xsd:string.
+
+:NUM_TYPE rdf:type owl:DataTypeProperty;
+        rdfs:domain :Address;
+        rdfs:range xsd:string.
+        
+:NUM rdf:type owl:DataTypeProperty;
+        rdfs:domain :Address;
+        rdfs:range xsd:integer.
+
+:DISTRICT_CODE rdf:type owl:DataTypeProperty;
+        rdfs:domain :Address;
+        rdfs:range xsd:integer.
+
+:DISTRICT rdf:type owl:DataTypeProperty;
+        rdfs:domain :Address;
+        rdfs:range xsd:string.
+
+## Coordinates
+:UTMX rdf:type owl:DataTypeProperty;
+        rdfs:domain :Coordinates;
+        rdfs:range xsd:float.
+
+:UTMY rdf:type owl:DataTypeProperty;
+        rdfs:domain :Coordinates;
+        rdfs:range xsd:float.
+

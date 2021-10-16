@@ -1,0 +1,18 @@
+"EstacionBicisSol" rdf:type class:Bicimad_stations;
+	wasRelease:"43803"^^xsd:string;
+	hasStationNumber:""^2^xsd:integer;
+	hasReservationType:"1"^^xsd:integer;
+	hasNumberOf:"30"^^xsd:integer;
+	isLocatedIn: "Location1".
+
+"Localización1" rdf:type classLocation;
+	:hasCoordinates "Coordenadas1";
+	:hasGIS "Gis1".
+	
+"Gis1" rdf:type class:GIS;
+	:hasValue_X "440443,61"^^xsd:double ;
+	:hasValue_Y "4474290,65"^^xsd:double .
+	
+"Coordenadas1" rdf:type class:Coordinates;
+	:hasAxis_X "-3.701998"^^xsd:double ;
+	:hasAxis_Y "40.4171107"^^xsd:double .

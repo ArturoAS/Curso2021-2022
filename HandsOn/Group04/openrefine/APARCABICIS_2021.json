@@ -1,0 +1,246 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DESCRIPTIO,C,105",
+    "expression": "grel:substring(value,lastIndexOf(value,\"-\")+1,end)",
+    "onError": "set-to-blank",
+    "newColumnName": "Direccion",
+    "columnInsertIndex": 2,
+    "description": "Create column Direccion at index 2 based on column DESCRIPTIO,C,105 using expression grel:substring(value,lastIndexOf(value,\"-\")+1,end)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPTIO,C,105",
+    "description": "Remove column DESCRIPTIO,C,105"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " PABELLON MUNICIPAL DE DEPORTES CERRO ALMODOVAR",
+          " Pabellón Municipal de Deportes Cerro Almodovar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " PABELLON MUNICIPAL DE DEPORTES CERRO ALMODOVAR"
+      },
+      {
+        "from": [
+          "40",
+          "40)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "40"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALLE",
+          "Calle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE"
+      },
+      {
+        "from": [
+          "PLAZA",
+          "Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLAZA"
+      },
+      {
+        "from": [
+          "AVENIDA",
+          "Avenida"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA"
+      },
+      {
+        "from": [
+          "PASEO",
+          "Paseo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PASEO"
+      }
+    ],
+    "description": "Mass edit cells in column MINTTIPOVI,C,15"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNOMBRE,C,254",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PUERTA DEL SOL",
+          "Puerta del Sol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PUERTA DEL SOL"
+      },
+      {
+        "from": [
+          "POBLADOS",
+          "Poblados"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "POBLADOS"
+      },
+      {
+        "from": [
+          "HACIENDA DE PAVONES",
+          "Hacienda de Pavones"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HACIENDA DE PAVONES"
+      },
+      {
+        "from": [
+          "PLATA Y CASTAÑAR",
+          "Plata y Castanar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLATA Y CASTAÑAR"
+      }
+    ],
+    "description": "Mass edit cells in column MINTNOMBRE,C,254"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MINTTIPOVI,C,15",
+    "expression": "grel:value+\" DE \"+cells[\"Direccion\"].value",
+    "onError": "set-to-blank",
+    "newColumnName": "Direccion2",
+    "columnInsertIndex": 9,
+    "description": "Create column Direccion2 at index 9 based on column MINTTIPOVI,C,15 using expression grel:value+\" DE \"+cells[\"Direccion\"].value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTTIPOVI,C,15",
+    "description": "Remove column MINTTIPOVI,C,15"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTNOMBRE,C,254",
+    "description": "Remove column MINTNOMBRE,C,254"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Direccion",
+    "newColumnName": "Lugar",
+    "description": "Rename column Direccion to Lugar"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Direccion2",
+    "newColumnName": "Direccion",
+    "description": "Rename column Direccion2 to Direccion"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿MXASSETNUM,C,12",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿MXASSETNUM,C,12 using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTDISTRI,C,20",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTDISTRI,C,20 using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTBARRIO,C,10",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTBARRIO,C,10 using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO,C,25",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNUMERO,C,25 using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNDP,C,20",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNDP,C,20 using expression value.toNumber()"
+  }
+]

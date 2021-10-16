@@ -1,0 +1,24 @@
+
+:"ENVASES" rdf:type dbo:Tipo ;
+    :suCalle "SALESAS" ;
+    :suDistrito "CENTRO" ;
+    :tipoVia :"PLAZA" ;
+    :coordX 441062,99;
+    :coordY 4475052,45 ;
+    :descripcion :"Env 3200 CL" .
+	
+:"VIDRIO" rdf:type dbo:Tipo ;
+    :suCalle "SALESAS" ;
+    :suDistrito "CENTRO" ;
+    :tipoVia :"PLAZA" ;
+    :coordX 441062,99;
+    :coordY 4475052,45 ;
+    :descripcion :"V 2200 CL VACRI" .
+	
+:"RESTO" rdf:type dbo:Tipo ;
+    :suCalle "ISLA DE JAVA" ;
+    :suDistrito "FUENCARRAL-ELPARDO" ;
+    :tipoVia :"CALLE" ;
+    :coordX 441852,02;
+    :coordY 4482612,15 ;
+    :descripcion :"Res 800" .

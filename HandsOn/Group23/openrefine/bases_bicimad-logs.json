@@ -1,0 +1,466 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column Distrito by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Distrito 1",
+    "newColumnName": "District Code",
+    "description": "Rename column Distrito 1 to District Code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Distrito 2",
+    "newColumnName": "District Name",
+    "description": "Rename column Distrito 2 to District Name"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Barrio by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio 1",
+    "expression": "value.replace(\"0\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Barrio 1 using expression value.replace(\"0\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio 1",
+    "expression": "value.replace(\"-\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Barrio 1 using expression value.replace(\"-\",\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Barrio 1",
+    "newColumnName": "Neighborhood Code",
+    "description": "Rename column Barrio 1 to Neighborhood Code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Barrio 2",
+    "newColumnName": "Neighborhood Name",
+    "description": "Rename column Barrio 2 to Neighborhood Name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Neighborhood Name",
+    "expression": "join ([coalesce(cells['Neighborhood Name'].value,''),coalesce(cells['Barrio 3'].value,''),coalesce(cells['Barrio 4'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Neighborhood Name using expression join ([coalesce(cells['Neighborhood Name'].value,''),coalesce(cells['Barrio 3'].value,''),coalesce(cells['Barrio 4'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Barrio 3",
+    "description": "Remove column Barrio 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Barrio 4",
+    "description": "Remove column Barrio 4"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Calle",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Calle by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Calle 2",
+    "expression": "join ([coalesce(cells['Calle 2'].value,''),coalesce(cells['Calle 3'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Calle 2 using expression join ([coalesce(cells['Calle 2'].value,''),coalesce(cells['Calle 3'].value,'')],' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Calle 2",
+    "expression": "join ([coalesce(cells['Calle 2'].value,''),coalesce(cells['Calle 1'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Calle 2 using expression join ([coalesce(cells['Calle 2'].value,''),coalesce(cells['Calle 1'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Calle 1",
+    "description": "Remove column Calle 1"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Calle 3",
+    "description": "Remove column Calle 3"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº Finca using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Nº Finca",
+          "columnName": "Nº Finca",
+          "query": "frente",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "value.replace(\"frente\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº Finca using expression value.replace(\"frente\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº Finca using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Nº Finca",
+          "expression": "value",
+          "columnName": "Nº Finca",
+          "from": 0,
+          "to": 350,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Nº Finca",
+          "columnName": "Nº Finca",
+          "query": "al",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "value.replace(\"al\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº Finca using expression value.replace(\"al\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Nº Finca",
+          "expression": "value",
+          "columnName": "Nº Finca",
+          "from": 0,
+          "to": 350,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº Finca using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "S/N"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Nº Finca"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "113 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "113 B"
+      }
+    ],
+    "description": "Mass edit cells in column Nº Finca"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Neighborhood Code",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Neighborhood Code using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Fecha de Alta",
+    "description": "Remove column Fecha de Alta"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Direccion",
+    "description": "Remove column Direccion"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº Finca using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Calle 2",
+    "expression": "join ([coalesce(cells['Calle 2'].value,''),coalesce(cells['Nº Finca'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Calle 2 using expression join ([coalesce(cells['Calle 2'].value,''),coalesce(cells['Nº Finca'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Nº Finca",
+    "description": "Remove column Nº Finca"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Calle 2",
+    "newColumnName": "Address",
+    "description": "Rename column Calle 2 to Address"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Tipo de Reserva",
+    "description": "Remove column Tipo de Reserva"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número de Plazas",
+    "newColumnName": "Capacity",
+    "description": "Rename column Número de Plazas to Capacity"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Longitud",
+    "newColumnName": "Longitude",
+    "description": "Rename column Longitud to Longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Latitud",
+    "newColumnName": "Latitude",
+    "description": "Rename column Latitud to Latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿Número",
+    "newColumnName": "Number",
+    "description": "Rename column ﻿Número to Number"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Number",
+    "newColumnName": "Station Number",
+    "description": "Rename column Number to Station Number"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District Code",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column District Code using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Neighborhood Code",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Neighborhood Code using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Capacity",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Capacity using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Longitude",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Longitude using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Latitude",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Latitude using expression value.toNumber()"
+  }
+]
