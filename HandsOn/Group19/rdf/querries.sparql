@@ -1,0 +1,8 @@
+PREFIX mad: http://spainaq.linkeddata.com/28/#
+SELECT ?date ?medida
+WHERE { 
+    ?magnitud mad:datan ?date.
+    FILTER (?date = xsd:date(2018-05-01))
+    ?magnitud owl:sameAs https://www.wikidata.org/wiki/Q1997 .
+    }
+LIMIT 100

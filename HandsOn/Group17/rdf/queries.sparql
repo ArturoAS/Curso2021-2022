@@ -1,0 +1,7 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?Número
+WHERE { ?x xsd:string ?Número }
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?CÓDIGO
+WHERE { ?x xsd:string ?CÓDIGO }

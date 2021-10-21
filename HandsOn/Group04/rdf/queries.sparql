@@ -1,0 +1,64 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo: <http://smartcity.linkeddata.es/transport/Ontology/>
+PREFIX dboa: <http://smartcity.linkeddata.es/transport/Ontology/Bici>
+SELECT ?s ?d ?d1
+WHERE {
+  ## busqueda los puntos de carga con tipo de conector "Mennekes" mostrando terminales disponibles y pontencia 
+
+  ?s dbo:ubicacion "C/ Sacramento 4".
+  ?s dbo:terminales ?d.
+  ?s dbo:potencia ?d1.
+}
+LIMIT 10
+
+
+SELECT ?s ?d ?d1
+WHERE {
+  ## busqueda los puntos de carga con tipo de conector "Mennekes" mostrando sus distrito y el edificio que esta.
+
+  ?s dbo:conectores "Mennekes".
+  ?s dbo:distrito ?d.
+  ?s dbo:edificio ?d1.
+}
+LIMIT 10
+
+SELECT ?s ?d ?d1
+WHERE {
+  ## busqueda las papeleras con residuos de tipo envase y sus coordenadas
+
+  ?s dbo:residuo "envases".
+  ?s dbo:latitud ?d.
+  ?s dbo:longitud ?d1.
+}
+LIMIT 10
+
+SELECT ?s ?d ?d1
+WHERE {
+  ## busqueda las papeleras llenas
+
+  ?s dbo:alerta "LLENA".
+  ?s dbo:direccion1 ?d.
+  ?s dbo:direccion2 ?d1.
+}
+LIMIT 10
+
+SELECT ?s ?o
+WHERE {
+  ## busqueda de un bici concreto
+  ?s dbo:latitud "24".
+  ?s dbo:barrio "42186".
+  ?s dbo:plazas "63".
+}
+LIMIT 10
+
+SELECT ?s ?p ?o
+WHERE {
+  <http://smartcity.linkeddata.es/transport/Ontology/Aparcamiento/4704621> ?p ?o .
+}
+LIMIT 100
+
+SELECT ?bici
+WHERE {
+  ?bici rdf:type dbo:Bici.
+}
+LIMIT 100

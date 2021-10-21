@@ -1,0 +1,57 @@
+@prefix : <http://www.smartcity.madrid.es/mobility/ontology/> .
+@prefix res: <http://www.smartcity.madrid.es/mobility/resource/> .
+@prefix smartcity: <http://www.smartcity.madrid.es/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:"Embajadores" rdf:type class:Wards;
+    :Ward_Name ;
+    :Ward_ID "50";
+    :Distric_Name "Centro";
+    :District_ID "1";
+    :Shape_Leng "1.03"^^xsd:float;
+    :Shape_Area "43345.63"^^xsd:float;
+    :hasBus "EMBAJADORES-PQUE.LINEAL MANZANARES";
+    :hasMetro "EMBAJADORES";
+    :hasTrafficLight "19731".
+
+:"EMBAJADORES-PQUE.LINEAL MANZANARES" rdf:type class:Bus;
+    :BusStation_Name ;
+    :Bus_ID "283";
+    :Street_Type "Calle";
+    :Preposition "de los";
+    :Street_Name "Embajadores";
+    :Number_Type "N";
+    :Portal_Number "324";
+    :Postal_Code "28053";
+    :District "13";
+    :X "442286"^^xsd:integer;
+    :Y "4469511"^^xsd:integer;
+    :Bus_Lines "T32".
+
+:"EMBAJADORES" rdf:type class:Metro;
+    :Underground_Name ;
+    :Underground_ID "262";
+    :Street_Type "Gta";
+    :Preposition "de";
+    :Street_Name "Embajadores";
+    :Number_Type "N";
+    :Portal_Number "10";
+    :Postal_Code "28012";
+    :District_ID "1";
+    :X "440485"^^xsd:integer;
+    :Y "4473168"^^xsd:integer.
+
+:"19731" rdf:type class:Trafficlight;
+    :TafficLight_ID ;
+    :Elem_Type "SEMAFORO 3/200";
+    :District_ID "1";
+    :X "440113.117094007"^^xsd:float;
+    :Y "4475636.25296785"^^xsd:float;
+    :Lenght "-3.70602003815598"^^xsd:float;
+    :Latitude "40.4292087583627"^^xsd:float.
+
+

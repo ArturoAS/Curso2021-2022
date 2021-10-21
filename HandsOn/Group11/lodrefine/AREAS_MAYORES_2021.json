@@ -1,0 +1,475 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MXASSETNUM,C,12",
+    "newColumnName": "MXASSETNUM",
+    "description": "Rename column MXASSETNUM,C,12 to MXASSETNUM"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DESCRIPTIO,C,105",
+    "newColumnName": "DESCRIPTIO",
+    "description": "Rename column DESCRIPTIO,C,105 to DESCRIPTIO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTDISTRI,C,20",
+    "newColumnName": "MINTDISTRI",
+    "description": "Rename column MINTDISTRI,C,20 to MINTDISTRI"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE_DIS,C,25",
+    "newColumnName": "NOMBRE_DIS",
+    "description": "Rename column NOMBRE_DIS,C,25 to NOMBRE_DIS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DESCRIPTIO",
+    "newColumnName": "DESCRIPTION",
+    "description": "Rename column DESCRIPTIO to DESCRIPTION"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTBARRIO,C,10",
+    "newColumnName": "MINTBARRIO",
+    "description": "Rename column MINTBARRIO,C,10 to MINTBARRIO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE_BAR,C,50",
+    "newColumnName": "NOMBRE_BAR",
+    "description": "Rename column NOMBRE_BAR,C,50 to NOMBRE_BAR"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "INSTALLDAT,D",
+    "newColumnName": "INSTALLDAT",
+    "description": "Rename column INSTALLDAT,D to INSTALLDAT"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTTIPOVI,C,15",
+    "newColumnName": "MINTTIPOVI",
+    "description": "Rename column MINTTIPOVI,C,15 to MINTTIPOVI"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTNOMBRE,C,254",
+    "newColumnName": "MINTNOMBRE,",
+    "description": "Rename column MINTNOMBRE,C,254 to MINTNOMBRE,"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTNOMBRE,",
+    "newColumnName": "MINTNOMBRE",
+    "description": "Rename column MINTNOMBRE, to MINTNOMBRE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTNUMERO,C,25",
+    "newColumnName": "MINTNUMERO",
+    "description": "Rename column MINTNUMERO,C,25 to MINTNUMERO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTNDP,C,20",
+    "newColumnName": "MINTNDP",
+    "description": "Rename column MINTNDP,C,20 to MINTNDP"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPO,C,254",
+    "newColumnName": "TIPO",
+    "description": "Rename column TIPO,C,254 to TIPO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TOTAL_ELEM,N,10,0",
+    "newColumnName": "TOTAL_ELEM",
+    "description": "Rename column TOTAL_ELEM,N,10,0 to TOTAL_ELEM"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESTADO,C,50",
+    "newColumnName": "ESTADO",
+    "description": "Rename column ESTADO,C,50 to ESTADO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MXASSETNUM",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MXASSETNUM using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTDISTRI",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTDISTRI using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTBARRIO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTBARRIO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "INSTALLDAT",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column INSTALLDAT using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNUMERO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPTION",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESCRIPTION using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_DIS",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOMBRE_DIS using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_BAR",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOMBRE_BAR using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTTIPOVI using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNOMBRE",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNOMBRE using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNUMERO using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNDP",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNDP using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TOTAL_ELEM",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TOTAL_ELEM using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTADO",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ESTADO using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MXASSETNUM",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MXASSETNUM using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPTION",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DESCRIPTION using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTDISTRI",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTDISTRI using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_DIS",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOMBRE_DIS using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTBARRIO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTBARRIO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_BAR",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOMBRE_BAR using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "INSTALLDAT",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column INSTALLDAT using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTTIPOVI using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNOMBRE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNOMBRE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNUMERO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNDP",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNDP using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TOTAL_ELEM",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TOTAL_ELEM using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTADO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ESTADO using expression value.trim()"
+  }
+]

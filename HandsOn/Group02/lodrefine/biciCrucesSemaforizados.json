@@ -76,58 +76,6 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "﻿tipo_elem",
-    "expression": "value.toString()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column ﻿tipo_elem using expression value.toString()"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "﻿tipo_elem",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [],
-        "fromBlank": true,
-        "fromError": false,
-        "to": ""
-      }
-    ],
-    "description": "Mass edit cells in column ﻿tipo_elem"
-  },
-  {
-    "op": "core/row-removal",
-    "engineConfig": {
-      "facets": [
-        {
-          "type": "list",
-          "name": "﻿tipo_elem",
-          "expression": "value",
-          "columnName": "﻿tipo_elem",
-          "invert": false,
-          "omitBlank": false,
-          "omitError": false,
-          "selection": [],
-          "selectBlank": true,
-          "selectError": false
-        }
-      ],
-      "mode": "row-based"
-    },
-    "description": "Remove rows"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
     "columnName": "longitud",
     "expression": "value.toNumber()",
     "onError": "keep-original",

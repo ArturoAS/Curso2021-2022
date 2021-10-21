@@ -1,0 +1,542 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix vocab: <http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#> .
+@base <http://example.com/ns#>.
+
+<#TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "AccidentesBicicletas_2021-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Accident/{Nº EXPEDIENTE}";
+    rr:termType rr:IRI;
+	rr:class vocab:Accident
+  ];
+  
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasPlace; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap2>;
+	  rr:joinCondition [
+        rr:child "Nº EXPEDIENTE"; rr:parent "CALLE";
+      ]
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasVictim; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap4>;
+	  rr:joinCondition [
+        rr:child "Nº EXPEDIENTE"; rr:parent "TIPO PERSONA";
+      ]
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasDate; rr:termType rr:IRI
+    ];
+	rr:objectMap [
+      rml:reference "DATE TIME";
+      rr:termType rr:Literal;
+	  rr:dataType <http://www.w3.org/2001/XMLSchema#dateTime>
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:gradeOfInjury; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "LESIVIDAD";
+      rr:termType rr:Literal;
+	  rr:dataType <http://www.w3.org/2001/XMLSchema#int>
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:hasWeather; rr:termType rr:IRI
+    ];
+	rr:objectMap [
+      rml:reference "ESTADO METEREOLÓGICO";
+      rr:termType rr:Literal
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:typeBicycle; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "TIPO VEHÍCULO";
+      rr:termType rr:Literal
+    ]
+  ];
+  
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:causedBy; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "TIPO ACCIDENTE";
+      rr:termType rr:Literal
+    ]
+  ].
+  
+
+
+<#TriplesMap2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "AccidentesBicicletas_2021-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Address/{CALLE}";
+    rr:termType rr:IRI;
+	rr:class vocab:Address
+  ];
+  
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+    rr:constant vocab:hasAddressName; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "CALLE";
+      rr:termType rr:Literal
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:hasNumber; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "NÚMERO";
+      rr:termType rr:Literal
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:belongsTo; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap3>;
+	  rr:joinCondition [
+        rr:child "CALLE"; rr:parent "DISTRITO";
+      ]
+    ]
+  ].
+
+
+  
+<#TriplesMap3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "AccidentesBicicletas_2021-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#District/{DISTRITO}";
+    rr:termType rr:IRI;
+	rr:class vocab:District
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasCode; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap5>;
+	  	rr:joinCondition [
+        rr:child "DISTRITO"; rr:parent "ID_DISTRICT";
+      ]
+    ]
+  ].
+  
+  
+<#TriplesMap4> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "AccidentesBicicletas_2021-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Person/{Nº EXPEDIENTE}";
+    rr:termType rr:IRI;
+	rr:class vocab:Person
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:hasGender; rr:termType rr:IRI
+    ];
+	rr:objectMap [
+      rml:reference "SEXO";
+      rr:termType rr:Literal
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:hasRangeAge; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "RANGO DE EDAD";
+      rr:termType rr:Literal
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:hasRole; rr:termType rr:IRI
+    ];
+	rr:objectMap [
+      rml:reference "TIPO PERSONA";
+      rr:termType rr:Literal
+    ]
+  ].
+  
+
+
+
+<#TriplesMap5> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "distritos-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#District/{ID_DISTRICT}";
+    rr:termType rr:IRI;
+    rr:class vocab:District
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasCode; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "ID_DISTRICT"; rr:termtype rr:Literal
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasDistrictName; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "NOMBRE"; rr:termtype rr:Literal
+    ]
+  ].
+  
+<#TriplesMap6> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "cruces_semaforizados-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicycleaccidents-app.es/group02/ontology/bicycletrafficaccident#Crossing/{id}";
+    rr:class vocab:Crossing
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasAddress; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap7>;
+	  rr:joinCondition [
+        rr:child "id"; rr:parent "descripcion";
+      ]
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:crossIn; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap8>;
+	  rr:joinCondition [
+        rr:child "id"; rr:parent "distrito";
+      ]
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:hasTrafficLight; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap9>;
+	  rr:joinCondition [
+        rr:child "id"; rr:parent "id";
+      ]
+    ]
+  ].
+
+<#TriplesMap7> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "cruces_semaforizados-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Address/{descripcion}";
+    rr:termType rr:IRI;
+	rr:class vocab:Address
+  ];
+  
+  rr:predicateObjectMap [
+  rr:predicateMap [
+      rr:constant vocab:hasAddressName; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "descripcion";
+      rr:termType rr:Literal
+    ]
+  ].
+  
+
+
+
+<#TriplesMap8> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "cruces_semaforizados-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#District/{distrito}";
+    rr:termType rr:IRI;
+	rr:class vocab:District
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasCode; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap5>;
+	  	rr:joinCondition [
+        rr:child "distrito"; rr:parent "ID_DISTRICT";
+      ]
+    ]
+  ].
+  
+<#TriplesMap9> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "cruces_semaforizados-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#TrafficLight/{id}";
+    rr:termType rr:IRI;
+	rr:class vocab:TrafficLight
+  ];  
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:wasInstalled; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "fecha_inst"; rr:termtype rr:Literal
+    ]
+  ];
+  
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:ubicatedIn; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap10>;
+	  rr:joinCondition [
+        rr:child "id"; rr:parent "id";
+      ]
+    ]
+  ].
+  
+  
+ <#TriplesMap10> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "cruces_semaforizados-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Geometry/{id}";
+    rr:termType rr:IRI;
+	rr:class vocab:Geocoder
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasLat; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "latitud"; rr:dataType <http://www.w3.org/2001/XMLSchema#float>
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasLong; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "longitud"; rr:dataType <http://www.w3.org/2001/XMLSchema#float>
+    ]
+  ].
+  
+<#TriplesMap11> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "cabezas_semaforo_bici-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Crossing/{id_cruce}";
+    rr:termType rr:IRI;
+    rr:class vocab:Crossing
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:hasTrafficLight; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap12>;
+	  rr:joinCondition [
+        rr:child "id_cruce"; rr:parent "id";
+      ]
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:crossIn; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap13>;
+	  rr:joinCondition [
+        rr:child "id_cruce"; rr:parent "distrito";
+      ]
+    ]
+  ].
+  
+<#TriplesMap12> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "cabezas_semaforo_bici-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#TrafficLight/{id_cruce}";
+    rr:termType rr:IRI;
+    rr:class vocab:TrafficLight
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasIdTraffic; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "id"; rr:termtype rr:Literal
+    ]
+  ];
+  
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:wasInstalled; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "fecha_inst"; rr:termtype rr:Literal
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:typeTrafficLight; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "tipo_elem"; rr:termtype rr:Literal
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:ubicatedIn; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap14>;
+	  rr:joinCondition [
+        rr:child "id_cruce"; rr:parent "id";
+      ]
+    ]
+  ].
+  
+  
+  <#TriplesMap13> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "cabezas_semaforo_bici-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#District/{distrito}";
+    rr:termType rr:IRI;
+	rr:class vocab:District
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasCode; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rr:parentTriplesMap <#TriplesMap5>;
+	  	rr:joinCondition [
+        rr:child "distrito"; rr:parent "ID_DISTRICT";
+      ]
+    ]
+  ].
+  
+  
+
+  
+  
+<#TriplesMap14> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "cabezas_semaforo_bici-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#Geometry/{id}";
+    rr:termType rr:IRI;
+	rr:class vocab:Geocoder
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasLat; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "latitud"; rr:dataType <http://www.w3.org/2001/XMLSchema#float>
+      ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicateMap [
+	  rr:constant vocab:hasLong; rr:termType rr:IRI
+	];
+    rr:objectMap [
+      rml:reference "longitud"; rr:dataType <http://www.w3.org/2001/XMLSchema#float>
+      ]
+  ].
+

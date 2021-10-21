@@ -1,42 +1,1093 @@
 [
   {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Vicálvaro"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vicalvaro"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿DISTRITO"
+  },
+  {
     "op": "core/column-rename",
     "oldColumnName": "UBICACIÓN",
     "newColumnName": "Direccion",
     "description": "Rename column UBICACIÓN to Direccion"
   },
   {
-    "op": "core/column-split",
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tetuán"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tetuan"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chamberí"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamberi"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chamartín"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamartin"
+      }
+    ],
+    "description": "Mass edit cells in column ﻿DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avda. de Las Águilas, 2A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avda. de Las Aguilas, 2A"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/ Príncipe de Vergara 142"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/ Principe de Vergara 142"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/ Montalbán 1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/ Montalban 1"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/ Ganadería 3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/ Ganaderia 3"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/ Alcalá 45"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/ Alcala 45"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16 A monofásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "16 A monofasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16A monofásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "16A monofasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "3,7 K Plug T2 Monofásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3,7 K Plug T2 Monofasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "3,7 KW Plug T2 monofásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3,7 KW Plug T2 monofasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "32 A modificado a trifásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "32 A modificado a trifasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "32 A trifásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "32 A trifasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "32 A trifásico 22 Kw"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "32 A trifasico 22 Kw"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "32 A monofásio"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "32 A monofasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "32 A monofásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "32 A monofasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column3",
+    "description": "Remove column Column3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column4",
+    "description": "Remove column Column4"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CÓDIGO",
+    "newColumnName": "CODIGO",
+    "description": "Rename column CÓDIGO to CODIGO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column5",
+    "description": "Remove column Column5"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column6",
+    "description": "Remove column Column6"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column7",
+    "description": "Remove column Column7"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column8",
+    "description": "Remove column Column8"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column9",
+    "description": "Remove column Column9"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column10",
+    "description": "Remove column Column10"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column11",
+    "description": "Remove column Column11"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column12",
+    "description": "Remove column Column12"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column13",
+    "description": "Remove column Column13"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column14",
+    "description": "Remove column Column14"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column15",
+    "description": "Remove column Column15"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column16",
+    "description": "Remove column Column16"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "AÑO INSTALACIÓN",
+    "newColumnName": "ANYO INSTALACION",
+    "description": "Rename column AÑO INSTALACIÓN to ANYO INSTALACION"
+  },
+    {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avda. Mediterráneo 62"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avda. Mediterraneo 62"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/ General Díaz Poltier, Cantón"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/ General Díaz Poltier, Canton"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/ Hermanos García Noblejas, 16"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/ Hermanos Garcia Noblejas, 16"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/ Pista, 4 pabellón de Mayorales"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/ Pista, 4 pabellon de Mayorales"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle Federico García Lorca 12"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Federico Garcia Lorca 12"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Plaza Don Antonio de Andrés, 18"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza Don Antonio de Andres, 18"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
     "engineConfig": {
       "facets": [],
       "mode": "row-based"
     },
     "columnName": "EDIFICIO",
-    "guessCellType": true,
-    "removeOriginalColumn": true,
-    "mode": "separator",
-    "separator": "/",
-    "regex": false,
-    "maxColumns": 0,
-    "description": "Split column EDIFICIO by separator"
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Coordinación Territorial y Asociaciones"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Coordinacion Territorial y Asociaciones"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
   },
   {
-    "op": "core/column-removal",
-    "columnName": "EDIFICIO 2",
-    "description": "Remove column EDIFICIO 2"
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Cultura. Almacén municipal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Cultura. Almacen municipal"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
   },
   {
-    "op": "core/column-rename",
-    "oldColumnName": "EDIFICIO 1",
-    "newColumnName": "EDIFICIO",
-    "description": "Rename column EDIFICIO 1 to EDIFICIO"
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Economía y Hacienda"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Economia y Hacienda"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
   },
   {
-    "op": "core/column-removal",
-    "columnName": "EDIFICIO 3",
-    "description": "Remove column EDIFICIO 3"
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Participación Ciudadana, Transparencia y Gobierno Abierto"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Participacion Ciudadana, Transparencia y Gobierno Abierto"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
   },
   {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Portavoz, Coordinación Junta de Gobierno y Relaciones con el Pleno - SGT Coordinación Territorial"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Portavoz, Coordinacion Junta de Gobierno y Relaciones con el Pleno - SGT Coordinacion Territorial"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Portavoz, Coordinación Junta de Gobierno y Relaciones con el Pleno - SGT Portavoz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Portavoz, Coordinacion Junta de Gobierno y Relaciones con el Pleno - SGT Portavoz"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Alcaldía"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alcaldia"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "J.M.D. Chamartín"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "J.M.D. Chamartin"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "J.M.D. Tetuán"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "J.M.D. Tetuan"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "JMD Chamberí"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "JMD Chamberi"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16 A Trifásico 11 kW"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "16 A Trifasico 11 kW"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "22 kW 32 A Trifásico Inteligente Blaudrive"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "22 kW 32 A Trifasico Inteligente Blaudrive"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "3,7 kW PlgT2 Circutor Simple monofásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3,7 kW PlgT2 Circutor Simple monofasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "3,7 kW Plug T2 Circutor simple monofásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3,7 kW Plug T2 Circutor simple monofasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+   {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Alcaldía Aparcamiento Cibeles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alcaldia Aparcamiento Cibeles"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avda. de Asturias nº 68"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Avda. de Asturias n 68"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/ Pedro Heredia nº 36"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/ Pedro Heredia n 36"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/ Rodrigo de Arana nº 50"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/ Rodrigo de Arana n 50"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pº Camoens, s/n PALACETE FERROVIARIOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "P Camoens, s/n PALACETE FERROVIARIOS"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pº Chopera 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "P Chopera 2"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pº Chopera 41"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "P Chopera 41"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pz. Sta Mª Soledad Torres Acosta, 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pz. Sta M Soledad Torres Acosta, 2"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+    {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "33 A gestión potencia plataforma IBIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "33 A gestion potencia plataforma IBIL"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "34 A gestión potencia plataforma IBIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "34 A gestion potencia plataforma IBIL"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "32 A gestión potencia plataforma IBIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "32 A gestion potencia plataforma IBIL"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "C/ Albarracín 33"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "C/ Albarracin 33"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+    {
     "op": "core/column-removal",
     "columnName": "Column",
     "description": "Remove column Column"
@@ -52,99 +1103,19 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "﻿DISTRITO",
+    "columnName": "Direccion",
     "expression": "value",
     "edits": [
       {
         "from": [
-          "Vicálvaro",
-          "Vicalvaro"
+          "C/ General Díaz Poltier, Canton"
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "Vicálvaro"
+        "to": "C/ General Diaz Poltier, Canton"
       }
     ],
-    "description": "Mass edit cells in column ﻿DISTRITO"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "EDIFICIO",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "A.G. Economía y Hacienda ",
-          "A.G. Economia y Hacienda",
-          "A.G. ECONOMIA Y HACIENDA "
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "A.G. Economía y Hacienda "
-      },
-      {
-        "from": [
-          "A.G. Desarrollo Urbano Sostenible",
-          "A.G. Desarrollo Urbano Sostenible "
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "A.G. Desarrollo Urbano Sostenible"
-      },
-      {
-        "from": [
-          "J.M.D Moratalaz",
-          "J.M.D. Moratalaz"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "J.M.D Moratalaz"
-      },
-      {
-        "from": [
-          "A.G. Salud, Seguridad y Emergencias ",
-          "A.G. Salud. Seguridad y Emergencias "
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "A.G. Salud, Seguridad y Emergencias "
-      },
-      {
-        "from": [
-          "J.M.D. Chamartín ",
-          "J.M.D. Chamartín"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "J.M.D. Chamartín "
-      }
-    ],
-    "description": "Mass edit cells in column EDIFICIO"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "CONECTORES",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "Mennekes manguera",
-          "Mennekes Manguera"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "Mennekes manguera"
-      }
-    ],
-    "description": "Mass edit cells in column CONECTORES"
+    "description": "Mass edit cells in column Direccion"
   },
   {
     "op": "core/mass-edit",
@@ -157,55 +1128,367 @@
     "edits": [
       {
         "from": [
-          "3,7 kW",
-          "3,7 Kw"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "3,7 kW"
-      },
-      {
-        "from": [
-          "32 A trifásico",
-          "32 A Trifásico"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "32 A trifásico"
-      },
-      {
-        "from": [
-          "32 A trifásico 22 Kw",
           "22 KW 32 A Trifásico"
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "32 A trifásico 22 Kw"
-      },
-      {
-        "from": [
-          "3,7 KW Plug T2 monofásico",
-          "3,7 kW Plug T2 Monofásico"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "3,7 KW Plug T2 monofásico"
+        "to": "22 KW 32 A Trifasico"
       }
     ],
     "description": "Mass edit cells in column POTENCIA"
   },
   {
-    "op": "core/text-transform",
+    "op": "core/mass-edit",
     "engineConfig": {
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "COORDENADA Y",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column COORDENADA Y using expression value.toNumber()"
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "3,7 kW Plug T2 Monofásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3,7 kW Plug T2 Monofasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POTENCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "32 A Trifásico"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "32 A Trifasico"
+      }
+    ],
+    "description": "Mass edit cells in column POTENCIA"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Economía y Hacienda / Agencia Tributaria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Economia y Hacienda / Agencia Tributaria"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Economía y Hacienda / SGT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Economia y Hacienda / SGT"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Salud, Seguridad y Emergencias / PM / UID Chamberí"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Salud, Seguridad y Emergencias / PM / UID Chamberi"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Alcaldía / IAM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alcaldia / IAM"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "J.M.D. Chamartín / Policia Municipal"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "J.M.D. Chamartin / Policia Municipal"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Coordinación Territorial y Asociaciones / SGT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Coordinacion Territorial y Asociaciones / SGT"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Medio Ambiente y Movilidad / Inspección"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Medio Ambiente y Movilidad / Inspeccion"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Participación Ciudadana, Transparencia y Gobierno Abierto / SGT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Participacion Ciudadana, Transparencia y Gobierno Abierto / SGT"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCIÓN ANIMAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Salud, Seguridad y Emergencias / Madrid Salud / INSTITUTO FABIOLA DE MORA Y ARAGÓN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Salud, Seguridad y Emergencias / Madrid Salud / INSTITUTO FABIOLA DE MORA Y ARAGON"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Salud, Seguridad y Emergencias / Madrid Salud / SEDE DEL ORGANISMO AUTÓNOMO MADRID SALUD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Salud, Seguridad y Emergencias / Madrid Salud / SEDE DEL ORGANISMO AUTONOMO MADRID SALUD"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Salud, Seguridad y Emergencias / PM (Pabellón USA)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Salud, Seguridad y Emergencias / PM (Pabellon USA)"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EDIFICIO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "A.G. Salud, Seguridad y Emergencias / Madrid Salud / LABORATORIO DE SALUD PÚBLICA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.G. Salud, Seguridad y Emergencias / Madrid Salud / LABORATORIO DE SALUD PUBLICA"
+      }
+    ],
+    "description": "Mass edit cells in column EDIFICIO"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "CODIGO",
+    "index": 0,
+    "description": "Move column CODIGO to position 0"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Starred Rows",
+          "expression": "row.starred",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+    {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CODIGO",
+    "expression": "grel:row.index +1",
+    "onError": "set-to-blank",
+    "newColumnName": "id",
+    "columnInsertIndex": 1,
+    "description": "Create column id at index 1 based on column CODIGO using expression grel:row.index +1"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "id",
+    "index": 0,
+    "description": "Move column id to position 0"
   },
   {
     "op": "core/text-transform",
@@ -213,24 +1496,11 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "COORDENADA X",
-    "expression": "value.toNumber()",
+    "columnName": "id",
+    "expression": "value.toString()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column COORDENADA X using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "TERMINALES",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column TERMINALES using expression value.toNumber()"
+    "description": "Text transform on cells in column id using expression value.toString()"
   }
 ]

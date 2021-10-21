@@ -76,19 +76,6 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "Número de Plazas",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column Número de Plazas using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
     "columnName": "Longitud",
     "expression": "value.toNumber()",
     "onError": "keep-original",
@@ -199,5 +186,35 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column Gis_Y using expression value.toString()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿Número",
+    "newColumnName": "id",
+    "description": "Rename column ﻿Número to id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Fecha de Alta",
+    "newColumnName": "FechdeAlta",
+    "description": "Rename column Fecha de Alta to FechdeAlta"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nº Finca",
+    "newColumnName": "NFinca",
+    "description": "Rename column Nº Finca to NFinca"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Tipo de Reserva",
+    "newColumnName": "TipodeReserva",
+    "description": "Rename column Tipo de Reserva to TipodeReserva"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número de Plazas",
+    "newColumnName": "NumerodePlazas",
+    "description": "Rename column Número de Plazas to NumerodePlazas"
   }
 ]

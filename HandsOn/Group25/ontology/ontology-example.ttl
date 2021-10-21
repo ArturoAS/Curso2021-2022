@@ -1,0 +1,36 @@
+@prefix : <http://www.madridDogs.es/info/ontology/dogs#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.madridDogsInfo.es/info/ontology/dogs> .
+
+<http://www.madridDogsInfo.es/ontology/dogs> rdf:type owl:Ontology .
+
+:ParqueEmbajadores1 rdf:type :DogPark ;
+                   :isLocatedIn :Embajadores ;
+                   :hasDogParkId "5003458"^^xsd:int ;
+                   :streetName "Calle Casino 9"^^xsd:string ;
+                   :hasInstallationDate "03-06-2019"^^xsd:date ;
+                   :isActive "true"^^xsd:boolean ;
+                   :totalElements "0"^^xsd:int ;
+                   :hasType "Caninas"^^xsd:string .
+
+:Embajadores rdf:type :Neighborhood
+            :hasAreaID "12"^^xsd:int ;
+            :hasName "Embajadores"^^xsd:string ;
+            :isPartOf :Centro
+
+:Centro rdf:type :District ;
+            :hasAreaID "1"^^xsd:int ;
+            :hasName "Centro"^^xsd:string ;
+            :dogsNumber "16442"^^xsd:int .
+
+:Papelera520067 rdf:type :DispenserRubbish ;
+                :isLocatedIn :Carabanchel ;
+                :hasDispenserRubbishID "520067"^^xsd:int ;
+                :streetName "Avenida Peseta 7"^^xsd:string ;
+                :hasInstallationDate "18-04-2011"^^xsd:date ;
+                :isActive "true"^^xsd:boolean ;
+                :hasModel "50_LTS_EX"^^xsd:string .

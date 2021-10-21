@@ -242,5 +242,65 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column MINTNDP,C,20 using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿MXASSETNUM,C,12",
+    "newColumnName": "ID",
+    "description": "Rename column ﻿MXASSETNUM,C,12 to ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTDISTRI,C,20",
+    "newColumnName": "MINTDISTRI",
+    "description": "Rename column MINTDISTRI,C,20 to MINTDISTRI"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE_DIS,C,20",
+    "newColumnName": "NOMBRE_DIS",
+    "description": "Rename column NOMBRE_DIS,C,20 to NOMBRE_DIS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTBARRIO,C,10",
+    "newColumnName": "MINTBARRIO",
+    "description": "Rename column MINTBARRIO,C,10 to MINTBARRIO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE_BAR,C,50",
+    "newColumnName": "NOMBRE_BAR",
+    "description": "Rename column NOMBRE_BAR,C,50 to NOMBRE_BAR"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESTADO,C,50",
+    "newColumnName": "ESTADO",
+    "description": "Rename column ESTADO,C,50 to ESTADO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "INSTALLDAT,D",
+    "newColumnName": "INSTALLDAT",
+    "description": "Rename column INSTALLDAT,D to INSTALLDAT"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTNUMERO,C,25",
+    "newColumnName": "MINTNUMERO",
+    "description": "Rename column MINTNUMERO,C,25 to MINTNUMERO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTNDP,C,20",
+    "newColumnName": "MINTNDP",
+    "description": "Rename column MINTNDP,C,20 to MINTNDP"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MODELO,C,254",
+    "newColumnName": "MODELO",
+    "description": "Rename column MODELO,C,254 to MODELO"
   }
 ]

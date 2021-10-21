@@ -1,4 +1,4 @@
-Bus_ID,BusStation_Name,Street_Type,Preposition,Street_Name,Number_Type,Portal_Number,Postal_Code,District,X,Y,Bus_Lines
+Bus_ID,BusStation_Name,Street_Type,Preposition,Street_Name,Number_Type,Portal_Number,Postal_Code,District_ID,X,Y,Bus_Lines
 1,OFELIA NIETO-FRANCOS RODRIGUEZ,Calle,de,Ofelia Nieto,N,5,28039,9,439802,4479051,"44, 128"
 2,DR.FEDERICO RUBIO-FCO.DIEGO,Avda,del,Doctor Federico Rubio y Galí,N,67,28040,9,439532,4478792,44
 3,DR.FEDERICO RUBIO Y GALI-AV.PABLO IGLESIAS,Avda,del,Doctor Federico Rubio y Galí,N,82,28040,9,439579,4478530,44

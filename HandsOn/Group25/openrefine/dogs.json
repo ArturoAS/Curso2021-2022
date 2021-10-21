@@ -1,0 +1,44 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTRITO",
+    "expression": "jython:return value",
+    "onError": "set-to-blank",
+    "newColumnName": "IDDistrict",
+    "columnInsertIndex": 2,
+    "description": "Create column IDDistrict at index 2 based on column DISTRITO using expression jython:return value"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "IDDistrict",
+    "index": 0,
+    "description": "Move column IDDistrict to position 0"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿AÑO",
+    "newColumnName": "Year",
+    "description": "Rename column ﻿AÑO to Year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DISTRITO",
+    "newColumnName": "District",
+    "description": "Rename column DISTRITO to District"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESPECIE CANINA",
+    "newColumnName": "DogsNumber",
+    "description": "Rename column ESPECIE CANINA to DogsNumber"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESPECIE FELINA",
+    "description": "Remove column ESPECIE FELINA"
+  }
+]

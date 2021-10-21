@@ -1,0 +1,26 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\
+@prefix owl: <http://www.w3.org/2002/07/owl#> .\
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .\
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .\
+@base <http://www.traffic-accidents.linkeddata.es/Accidentes> .\
+\
+\
+<http://www.traffic-accidents.linkeddata.es> rdf:type owl:Ontology .\
+\
+:CALL. JOSE BERGAMIN / CALL. FLORENCIO CANO CRISTOBAL rdf:type owl:NameIndividual ;\
+         :hasID "b581e0be4929fc2fa1f536d578a57d57";\
+         :"01/01/2021  11:38";^^xsd:dateTime\
+         :hasAddress "CALL. JOSE BERGAMIN / CALL. FLORENCIO CANO CRISTOBAL";^^xsd:string;\
+         :"MORATALAZ";^^xsd:string;\
+         :"2";^^xsd:integer;\
+         :"Ca\'edda";^^xsd:string;\
+         :"Despejado" .^^xsd:string;}

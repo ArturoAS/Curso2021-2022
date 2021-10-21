@@ -1,0 +1,392 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix acc: <http://safemadrid.linkeddata.es/accidentes/ontology/>.
+@prefix inf: <http://safemadrid.linkeddata.es/infantiles/ontology/>.
+@prefix may: <http://safemadrid.linkeddata.es/mayores/ontology/>.
+@prefix barr: <http://safemadrid.linkeddata.es/barrios/ontology/>.
+@base <http://safemadrid.linkeddata.es/>.
+
+
+<#Accidentalidad> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/2021_Accidentalidad-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://safemadrid.linkeddata.es/accidentes/resource/accidentes#NUM_EXPEDIENTE";
+    rr:class acc:accidentes
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate acc:hasFechaHora;
+    rr:objectMap [
+      rml:reference "FECHA/HORA";
+      rr:datatype xsd:date
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate acc:hasCalle;
+    rr:objectMap [
+      rml:reference "CALLE"
+      ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate acc:hasNumero;
+    rr:objectMap [
+      rml:reference "NÚMERO";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate acc:hasDistrito;
+    rr:objectMap [
+      rml:reference "DISTRITO"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate acc:hasTipoAccidente;
+    rr:objectMap [
+      rml:reference "TIPO ACCIDENTE"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate acc:hasEstadoMeteorologico;
+    rr:objectMap [
+      rml:reference "ESTADO METEREOLÓGICO"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate acc:hasTipoVehiculo;
+    rr:objectMap [
+      rml:reference "TIPO VEHÍCULO"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate acc:hasTipoPersona;
+    rr:objectMap [
+      rml:reference "TIPO PERSONA"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate acc:hasRangoEdad;
+    rr:objectMap [
+      rml:reference "RANGO EDAD"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate acc:hasSexo;
+    rr:objectMap [
+      rml:reference "SEXO"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate acc:hasLesividad;
+    rr:objectMap [
+      rml:reference "LESIVIDAD";
+      rr:datatype xsd:integer
+      ]
+  ] .
+
+
+<#Barrios> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/Barrios-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://safemadrid.linkeddata.es/barrios/resource/barrios#OBJECTID_1";
+    rr:class barr:barrios
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate barr:hasNomDis;
+    rr:objectMap [
+      rml:reference "NOMDIS"
+      ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate barr:hasNombre;
+    rr:objectMap [
+      rml:reference "NOMBRE"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate barr:hasShapeLeng;
+    rr:objectMap [
+      rml:reference "Shape_Leng";
+      rr:datatype xsd:decimal
+      ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate barr:hasShapeArea;
+    rr:objectMap [
+      rml:reference "Shape_Area"
+      ]
+  ];
+    
+  rr:predicateObjectMap [
+    rr:predicate barr:hasCodDis;
+    rr:objectMap [
+      rml:reference "COD_DIS";
+      rr:datatype xsd:integer
+      ]
+  ];
+    
+  rr:predicateObjectMap [
+    rr:predicate barr:hasBarrio;
+    rr:objectMap [
+      rml:reference "BARRIO"
+      ]
+  ];
+    
+  rr:predicateObjectMap [
+    rr:predicate barr:hasCodBar;
+    rr:objectMap [
+      rml:reference "COD_BAR";
+      rr:datatype xsd:integer
+      ]
+  ];
+    
+  rr:predicateObjectMap [
+    rr:predicate barr:hasNumBar;
+    rr:objectMap [
+      rml:reference "NUM_BAR";
+      rr:datatype xsd:integer
+      ]
+  ];
+    
+  rr:predicateObjectMap [
+    rr:predicate barr:hasCodDisb;
+      rr:objectMap [
+      rml:reference "COD_DISB"
+      ]
+  ] .
+
+
+<#Mayores> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/AREAS_MAYORES_2021-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://safemadrid.linkeddata.es/mayores/resource/mayores#MXASSETNUM";
+    rr:class may:mayores
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasDescription;
+    rr:objectMap [
+      rml:reference "DESCRIPTION"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasMintdistric;
+    rr:objectMap [
+      rml:reference "MINTDISTRI";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasNombre_dis;
+    rr:objectMap [
+      rml:reference "NOMBRE_DIS"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasMintbarrio;
+    rr:objectMap [
+      rml:reference "MINTBARRIO";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasNombre_barrio;
+    rr:objectMap [
+      rml:reference "NOMBRE_BAR"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasInstalldate;
+    rr:objectMap [
+      rml:reference "INSTALLDAT"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasMinttipovi;
+    rr:objectMap [
+      rml:reference "MINTTIPOVI"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasMintnombre;
+    rr:objectMap [
+      rml:reference "MINTNOMBRE"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasMintnumero;
+    rr:objectMap [
+      rml:reference "MINTNUMERO";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasMintndp;
+    rr:objectMap [
+      rml:reference "MINTNDP";
+      rr:datatype xsd:long
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasTipo;
+    rr:objectMap [
+      rml:reference "TIPO"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasTotal_elem;
+    rr:objectMap [
+      rml:reference "TOTAL_ELEM";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate may:hasEstado;
+    rr:objectMap [
+      rml:reference "ESTADO"
+      ]
+  ] .
+
+  
+<#Infantiles> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/AREAS_INFANTILES_2021-updated.csv" ;
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://safemadrid.linkeddata.es/infantiles/resource/infantiles#MXASSETNUM";
+    rr:class inf:infantiles
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasDescription;
+    rr:objectMap [
+      rml:reference "DESCRIPTION"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasMintdistric;
+    rr:objectMap [
+      rml:reference "MINTDISTRI";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasNombre_dis;
+    rr:objectMap [
+      rml:reference "NOMBRE_DIS"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasMintbarrio;
+    rr:objectMap [
+      rml:reference "MINTBARRIO";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasNombre_barrio;
+    rr:objectMap [
+      rml:reference "NOMBRE_BAR"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasInstalldate;
+    rr:objectMap [
+      rml:reference "INSTALLDAT"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasMinttipovi;
+    rr:objectMap [
+      rml:reference "MINTTIPOVI"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasMintnombre;
+    rr:objectMap [
+      rml:reference "MINTNOMBRE"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasMintnumero;
+    rr:objectMap [
+      rml:reference "MINTNUMERO";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasMintndp;
+    rr:objectMap [
+      rml:reference "MINTNDP";
+      rr:datatype xsd:long
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasTipo;
+    rr:objectMap [
+      rml:reference "TIPO"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasTotal_elem;
+    rr:objectMap [
+      rml:reference "TOTAL_ELEM";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate inf:hasEstado;
+    rr:objectMap [
+      rml:reference "ESTADO"
+      ]
+  ] .

@@ -1,0 +1,147 @@
+@prefix : <http://www.traffic-accidents.linkeddata.es/bikeAccidents#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.traffic-accidents.linkeddata.es/Accidentes> .
+
+<http://www.traffic-accidents.linkeddata.es> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://http://www.traffic-accidents.linkeddata.es/bikeAccidents#hasID
+:hasID rdf:type owl:ObjectProperty ;
+        rdfs:domain :Accident ;
+        rdfs:range :ID .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/bikeAccidents#hasAddress
+:hasAddress rdf:type owl:ObjectProperty ;
+         rdfs:domain :Accident ;
+         rdfs:range :Address .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/bikeAccidents#hasNumber
+:hasNumber rdf:type owl:ObjectProperty ;
+             rdfs:domain :Accident ;
+             rdfs:range :Number .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/bikeAccidents#hasDistrict
+:hasDistrict rdf:type owl:ObjectProperty ;
+           rdfs:domain :Accident ;
+           rdfs:range :District .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/bikeAccidents#hasAccidentType
+:hasAccidentType rdf:type owl:ObjectProperty ;
+              rdfs:domain :Accident ;
+              rdfs:range :AccidentType .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/bikeAccidents#hasLesividad
+:hasLesividad rdf:type owl:ObjectProperty ;
+          rdfs:domain :Accident ;
+          rdfs:range :Lesividad .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/bikeAccidents#hasWeather
+:hasWeather rdf:type owl:ObjectProperty ;
+         rdfs:domain :Accident ;
+         rdfs:range :Weather .
+		 
+		 
+###  http://http://www.traffic-accidents.linkeddata.es/bikeAccidents#hasDate
+:hasDate rdf:type owl:ObjectProperty ;
+         rdfs:domain :Accident ;
+         rdfs:range :Date .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#hasAccidentType
+:hasAccidentType rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :AccidentType ;
+                 rdfs:range xsd:string .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#hasAddress
+:hasAddress rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Address ;
+             rdfs:range xsd:string .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#hasNumber
+:hasNumber rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Number ;
+         rdfs:range xsd:string .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#hasDistrict
+:hasDistrict rdf:type owl:DatatypeProperty ;
+             rdfs:domain :District ;
+             rdfs:range xsd:string .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#hasLesividad
+:hasLesividad rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Lesividad ;
+           rdfs:range xsd:int .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#hasWeather
+:hasWeather rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Weather ;
+              rdfs:range xsd:string .
+			  
+			  
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#hasDate
+:hasDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Date ;
+              rdfs:range xsd:dateTime .
+			  
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#Accident
+:Accident rdf:type owl:Class .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#ID
+:ID rdf:type owl:Class .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#Address
+:Address rdf:type owl:Class .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#District
+:District rdf:type owl:Class .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#Number
+:Number rdf:type owl:Class .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#Lesividad
+:Lesividad rdf:type owl:Class .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#Weather
+:Weather rdf:type owl:Class .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#AccidentType
+:AccidentType rdf:type owl:Class .
+
+
+###  http://http://www.traffic-accidents.linkeddata.es/Accidentes#Date
+:Date rdf:type owl:Class .

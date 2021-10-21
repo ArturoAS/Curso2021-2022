@@ -1,0 +1,88 @@
+  prefixes:
+    xsd: http://www.w3.org/2001/XMLSchema#
+    dogpark: http://www.madridDogs.es/info/resource/dogpark#
+    rubbish: http://www.madridDogs.es/info/resource/rubbish#
+    district: http://www.madridDogs.es/info/resource/district#
+    nb: http://www.madridDogs.es/info/resource/neighborhood#
+    property: http://www.madridDogs.es/info/ontology#
+
+
+  mappings:
+    District:
+      sources: 
+        - [../csv/censo_animales-updated.csv~csv]
+      s: http://www.madridDogs.es/info/resource/district#$(IDDistrict)
+      po:
+        - [a, property:District]
+        - [property:hasAreaID,$(IDDistrict),xsd:integer]
+        - [property:hasName,$(District),xsd:string]
+        - [property:dogsNumber,$(DogsNumber),xsd:integer]
+
+    Neighborhood:
+      sources:
+      - [../csv/AREAS_CANINAS_2021-updated.csv~csv]
+      s: http://www.madridDogs.es/info/resource/neighborhood#$(IDNeighborhood)
+      
+      po:
+        - [a, property:Neighborhood]
+        - [property:hasAreaID,$(IDNeighborhood),xsd:integer]
+        - [property:hasName,$(NeighborhoodName),xsd:string]
+        - p: property:isPartOf
+          o:
+            mapping: District
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(IDDistrict)]
+                - [str2, $(IDDistrict)]
+
+    dogpark:
+      sources:
+      - [../csv/AREAS_CANINAS_2021-updated.csv~csv]
+      s: http://www.madridDogs.es/info/resource/dogpark#$(IDDogPark)
+
+      po:
+        - [a, property:DogPark]
+        - [property:hasDogParkId,$(IDDogPark),xsd:integer]
+        - [property:hasInstallationDate,$(InstallDate)]
+        - [property:streetName,$(Address),xsd:string]
+        - [property:hasType,$(Type),xsd:string]
+        - [property:totalElements,$(TotalElements),xsd:integer]
+        - [property:isActive,$(isActive)]
+        - p: property:isLocatedIn
+          o:
+            mapping: Neighborhood
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(IDNeighborhood)]
+                - [str2, $(IDNeighborhood)]
+        - p: property:hasRubbish
+          o:
+            mapping: Rubbish
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(IDNeighborhood)]
+                - [str2, $(IDNeighborhood)]
+            
+
+    Rubbish:
+      sources: 
+      - [../csv/papeleras_expendedor_bolsas_2021-updated.csv~csv]
+      s: http://www.madridDogs.es/info/resource/rubbish#$(IDDispenserRubbish)
+      po:
+      - [a, property:DispenserRubbish]
+      - [property:hasDispenserRubbishID,$(IDDispenserRubbish),xsd:integer]
+      - [property:isActive,$(Active)]
+      - [property:hasInstallationDate,$(InstallDate)]
+      - [property:streetName,$(Address),xsd:string]
+      - [property:hasModel,$(Model),xsd:string]
+      - p: property:isLocatedIn
+          o:
+            mapping: Neighborhood
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(IDNeighborhood)]
+                - [str2, $(IDNeighborhood)]

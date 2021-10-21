@@ -1,0 +1,32 @@
+PREFIX cap:<http://www.colegiosapp.org/ontology#>
+PREFIX dbo:<http://dbpedia.org/ontology#>
+PREFIX xml:<http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?centro
+    WHERE{
+    ?centro cap:ownership ?tipo
+        FILTER (?tipo="PÚBLICO").
+    ?centro cap:ownMunicipality ?muni.
+    ?muni cap:hasNameMunicipality ?municipio
+        FILTER (?municipio="Madrid") .
+} LIMIT 50
+
+SELECT DISTINCT ?muni
+    WHERE{
+    ?muni cap:numPeople ?emp
+        FILTER (?emp > "200"^^xml:int).
+    ?muni cap:maxAge ?max
+        FILTER (?max = "5"^^xml:int).
+    ?muni cap:minAge ?min
+        FILTER (?min = "9"^^xml:int).
+    ?muni cap:hasGender ?gen
+        FILTER (?gen = "Hombre").
+} LIMIT 100
+
+SELECT DISTINCT ?calle
+    WHERE{
+    ?calle cap:hasType ?tipo
+        FILTER (?tipo = "CALLE").
+    ?calle cap:hasNumber ?num
+        FILTER (?num > "50").
+} LIMIT 100

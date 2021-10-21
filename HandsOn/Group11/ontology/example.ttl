@@ -1,0 +1,24 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix safeMadrid: <http://safemadrid.linkeddata.es/> .
+@prefix a: <http://safemadrid.linkeddata.es/accidentes/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ safeMadrid: a owl:Ontology ;
+     dc:creator "Grupo11" ; 
+     dc:title "HandsOn 2" ;
+
+
+a:Accidente1 "Accidente 1";
+	:hasN_Expediente "2021S000235"^^xsd:string;
+	:hasFecha "01/01/2021"^^xsd:string;
+	:hasHora "23:05"^^xsd:string;
+	:hasCalle "AVDA. RAFAELA YBARRA"^^xsd:string;
+	:hasDistrito "USER"^^xsd:string;
+    :hasTipoAccidente "Alcance"^^xsd:string;
+    :hasEstadoMetereologico "Se desconoce"^^xsd:string;
+    :hasTipoVehiculo "Turismo"^^xsd:string;
+    :hasTipoPersona "Conductor"^^xsd:string;
+    :hasRangoDeEdad "45 a 49"^^xsd:string;
+    :hasSexo "Hombre"^^xsd:string;

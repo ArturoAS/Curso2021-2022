@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aq: a owl:Ontology ;
-    dc:creator "Group 11" ;
+    dc:creator "Group 19" ;
     dc:description "Ontology code created by Chowlk" ;
     dc:title "Air Quality Ontology" ;
     owl:versionInfo "0.0.1" .

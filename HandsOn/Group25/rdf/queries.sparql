@@ -1,0 +1,28 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://www.madridDogs.es/info/ontology#>
+PREFIX dogpark: <http://www.madridDogs.es/info/resource/dogpark/>
+PREFIX rubbish: <http://www.madridDogs.es/info/resource/rubbish#>
+PREFIX district: <http://www.madridDogs.es/info/resource/district#>
+
+SELECT ?nb ?district
+WHERE {
+    ?nb ex:isPartOf ?district
+ }
+
+SELECT ?p ?o
+WHERE {
+    dogpark:4996913 ?p ?o
+}
+
+SELECT ?p ?o
+WHERE {
+    rubbish:517259 ?p ?o
+}
+
+SELECT ?p ?o
+WHERE {
+    district:11 ?p ?o
+}
+ 

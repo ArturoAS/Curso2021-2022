@@ -1,0 +1,36 @@
+PREFIX base: <https://publicparkingmad.com/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  schema: <http://schema.org/>
+PREFIX  ssn: <http://www.w3.org/ns/ssn/#>
+PREFIX  xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?nombre ?descripcion
+WHERE{
+
+     ?elemento  rdfs:type           base:PublicParking ;
+                   base:hasName         ?nombre ;
+               base:hasDescription  ?descripcion
+
+}
+
+SELECT ?PK ?horario
+WHERE{
+
+?elemento  rdfs:type           base:PublicParking ;
+base:hasPK         ?PK ;
+base:hasSchedule  ?horario
+
+}
+
+SELECT  ?PK ?latitud ?longitud
+WHERE{
+
+?elemento  rdfs:type           base:PublicParking ;
+base:hasPK         ?PK ;
+base:hasLocation  ?location.
+?location base:hasGeographiccoords ?geo.
+?geo base:hasLatitude ?latitud;
+    base:hasLongitude ?longitud.
+
+}
+

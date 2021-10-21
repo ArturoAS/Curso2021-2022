@@ -1,8 +1,7 @@
  @prefix base: <http://www.biciwhere-madrid.es/> .
-@prefix class: <http://www.biciwhere-madrid.es/bwm/ontology/class#> .
+@prefix bici: <http://www.biciwhere-madrid.es/bwm/ontology#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix property: <http://www.biciwhere-madrid.es/bwm/ontology/property#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -12,114 +11,104 @@ base: a owl:Ontology ;
     dc:title "BiciWhere-Madrid Ontology" ;
     owl:versionInfo "0.0.1" .
 
-property:hasAddressCode a owl:DatatypeProperty ;
-    rdfs:label "has address code" ;
+bici:hasAddress a owl:DatatypeProperty ;
+    rdfs:label "has address" ;
+    rdfs:domain bici:Address ;
     rdfs:range xsd:string .
 
-property:hasCapacity a owl:DatatypeProperty ;
+bici:hasCapacity a owl:DatatypeProperty ;
     rdfs:label "has capacity" ;
-    rdfs:domain class:Bicimad_Stations ;
+    rdfs:domain bici:Bicimad_Stations ;
     rdfs:range xsd:integer .
 
-property:hasCoordinates a owl:ObjectProperty ;
+bici:hasCoordinates a owl:ObjectProperty ;
     rdfs:label "has coordinates" ;
-    rdfs:domain class:Location ;
-    rdfs:range class:Coordinates .
+    rdfs:domain bici:Location ;
+    rdfs:range bici:Coordinates .
 
-property:hasDescription a owl:DatatypeProperty ;
+bici:hasDescription a owl:DatatypeProperty ;
     rdfs:label "has description" ;
-    rdfs:domain class:BikeStand ;
+    rdfs:domain bici:BikeStand ;
     rdfs:range xsd:string .
 
-property:hasDistrictCode a owl:DatatypeProperty ;
+bici:hasDistrictCode a owl:DatatypeProperty ;
     rdfs:label "has district code" ;
-    rdfs:domain class:Address ;
+    rdfs:domain bici:Address ;
     rdfs:range xsd:string .
 
-property:hasDistrictName a owl:DatatypeProperty ;
+bici:hasDistrictName a owl:DatatypeProperty ;
     rdfs:label "has district name" ;
-    rdfs:domain class:Address ;
+    rdfs:domain bici:Address ;
     rdfs:range xsd:string .
 
-property:hasGIS a owl:ObjectProperty ;
+bici:hasGIS a owl:ObjectProperty ;
     rdfs:label "has g i s" ;
-    rdfs:domain class:Location ;
-    rdfs:range class:GIS .
+    rdfs:domain bici:Location ;
+    rdfs:range bici:GIS .
 
-property:hasIdentifier a owl:DatatypeProperty ;
+bici:hasIdentifier a owl:DatatypeProperty ;
     rdfs:label "has identifier" ;
-    rdfs:domain class:BikeStand ;
+    rdfs:domain bici:BikeStand ;
     rdfs:range xsd:string .
 
-property:hasLatitude a owl:DatatypeProperty ;
+bici:hasLatitude a owl:DatatypeProperty ;
     rdfs:label "has latitude" ;
-    rdfs:domain class:Coordinates ;
+    rdfs:domain bici:Coordinates ;
     rdfs:range xsd:double .
 
-property:hasLocation a owl:ObjectProperty ;
-    rdfs:label "has location" ;
-    rdfs:domain class:Place ;
-    rdfs:range class:Location .
-
-property:hasLongitude a owl:DatatypeProperty ;
+bici:hasLongitude a owl:DatatypeProperty ;
     rdfs:label "has longitude" ;
-    rdfs:domain class:Coordinates ;
+    rdfs:domain bici:Coordinates ;
     rdfs:range xsd:double .
 
-property:hasNeighborhoodCode a owl:DatatypeProperty ;
+bici:hasNeighborhoodCode a owl:DatatypeProperty ;
     rdfs:label "has neighborhood code" ;
+    rdfs:domain bici:Address ;
     rdfs:range xsd:string .
 
-property:hasNeighborhoodName a owl:DatatypeProperty ;
+bici:hasNeighborhoodName a owl:DatatypeProperty ;
     rdfs:label "has neighborhood name" ;
+    rdfs:domain bici:Address ;
     rdfs:range xsd:string .
 
-property:hasOperativeStatus a owl:DatatypeProperty ;
+bici:hasOperativeStatus a owl:DatatypeProperty ;
     rdfs:label "has operative status" ;
-    rdfs:domain class:BikeStand ;
+    rdfs:domain bici:BikeStand ;
     rdfs:range xsd:string .
 
-property:hasStationNumber a owl:DatatypeProperty ;
+bici:hasStationNumber a owl:DatatypeProperty ;
     rdfs:label "has station number" ;
-    rdfs:domain class:Bicimad_Stations ;
+    rdfs:domain bici:Bicimad_Stations ;
     rdfs:range xsd:string .
 
-property:hasValue_X a owl:DatatypeProperty ;
+bici:hasValue_X a owl:DatatypeProperty ;
     rdfs:label "has value_ x" ;
-    rdfs:domain class:GIS ;
+    rdfs:domain bici:GIS ;
     rdfs:range xsd:double .
 
-property:hasValue_Y a owl:DatatypeProperty ;
+bici:hasValue_Y a owl:DatatypeProperty ;
     rdfs:label "has value_ y" ;
-    rdfs:domain class:GIS ;
+    rdfs:domain bici:GIS ;
     rdfs:range xsd:double .
 
-property:locatedIn a owl:DatatypeProperty ;
-    rdfs:label "located in" ;
-    rdfs:domain class:Place ;
-    rdfs:range xsd:string .
+bici:Bicimad_Stations a owl:Class ;
+    rdfs:label "Bicimad_ Stations" ;
+    rdfs:subClassOf bici:Location .
 
-class:Place a owl:Class ;
-    rdfs:label "Place" ;
-    rdfs:subClassOf class:Address,
-        class:Bicimad_Stations,
-        class:BikeStand .
+bici:BikeStand a owl:Class ;
+    rdfs:label "Bike Stand" ;
+    rdfs:subClassOf bici:Location .
 
-class:Address a owl:Class ;
-    rdfs:label "Address" .
-
-class:Bicimad_Stations a owl:Class ;
-    rdfs:label "Bicimad_ Stations" .
-
-class:Coordinates a owl:Class ;
+bici:Coordinates a owl:Class ;
     rdfs:label "Coordinates" .
 
-class:GIS a owl:Class ;
+bici:GIS a owl:Class ;
     rdfs:label "G I S" .
 
-class:Location a owl:Class ;
-    rdfs:label "Location" .
+bici:Address a owl:Class ;
+    rdfs:label "Address" ;
+    rdfs:subClassOf bici:Location .
 
-class:BikeStand a owl:Class ;
-    rdfs:label "Bike Stand" .
+bici:Location a owl:Class ;
+    rdfs:label "Location" .
 

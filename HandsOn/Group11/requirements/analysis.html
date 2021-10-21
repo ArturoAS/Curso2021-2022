@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <title>analysis</title>
+</head>
+
+<body>
+    <h1>Licensing of the Data Source</h1>
+    <div>
+        <p>
+            The license that we are going to use in all our datasets comes from the open data source of
+            Ayuntamiento de Madrid, which have a Creative Commons license and is used for commercial and 
+            non-commercial purposes.
+        </p> 
+        <h2>Accidentes de tráfico de la Ciudad de Madrid (2021)</h2>
+        <ul>
+
+            <li><b>Rightsholder:</b> Dirección General de la Policía Municipal</li>
+            <li><b>Publisher:</b> Ayuntamiento de madrid</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Áreas infantiles municipales</h2>
+        <ul>
+            <li><b>Rightsholder:</b> Dirección General de Servicios de Limpieza y Residuos</li>
+            <li><b>Publisher:</b> Ayuntamiento de Madrid</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Áreas de actividades para mayores</h2>
+        <ul>
+            <li><b>Rightsholder:</b> Dirección General de Servicios de Limpieza y Residuos</li>
+            <li><b>Publisher:</b> Ayuntamiento de Madrid</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Barrios municipales de Madrid</h2>
+        <ul>
+            <li><b>Rightsholder:</b> Dirección General de Planificación Estratégica</li>
+            <li><b>Publisher:</b> Ayuntamiento de Madrid</li>
+        </ul>
+    </div>
+    <h1>Defining our Resource Naming Strategy</h1>
+    <p>
+        First of all, since our datasets are small, we are going to use hash URIs.<br>
+        The URI domain that we are going to use is: 
+        <ul><b>http://safemadrid.linkeddata.es/</b></ul>
+        Next, we are going to have 4 subfolders, one for each dataset:
+        <ul>
+            <li>http://safemadrid.linkeddata.es/accidentes/</li>
+            <li>http://safemadrid.linkeddata.es/infantiles/</li>
+            <li>http://safemadrid.linkeddata.es/mayores/</li>
+            <li>http://safemadrid.linkeddata.es/barrios/</li>
+        </ul>
+    </p>
+    <p>
+        In our ontology, we will have different forms for our classes,properties and instances. These forms are:
+        <ul>
+            <li><b>Classes:</b> http://safemadrid.linkeddata.es/[subfolder]/ontology/&lt;ontologyName&gt;#&lt;className&gt;<br></li>
+            <li><b>Properties:</b> http://safemadrid.linkeddata.es/[subfolder]/ontology/&lt;ontologyName&gt;#&lt;propertyName&gt;<br></li>
+            <li><b>Instances:</b> http://safemadrid.linkeddata.es/[subfolder]/resource/&lt;className&gt;#&lt;identifier&gt;</li>
+        </ul>
+    </p>
+</body>
+</html>

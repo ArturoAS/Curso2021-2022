@@ -1,0 +1,306 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix  vocab: <http://smartcity.linkeddata.es/transport/Ontology/>.
+@base <http://smartcity.linkeddata.es/>.
+
+<#TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/bases_bicimad-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://smartcity.linkeddata.es/transport/Ontology/Bici/{id}";
+    rr:class vocab:Bici
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:gis_X;
+    rr:objectMap [
+      rml:reference "Gis_X"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:gis_Y;
+    rr:objectMap [
+      rml:reference "Gis_Y"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:gis_X;
+    rr:objectMap [
+      rml:reference "Gis_X"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:fecha;
+    rr:objectMap [
+      rml:reference "FechadeAlta"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:distrito;
+    rr:objectMap [
+      rml:reference "Distrito"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:barrio;
+    rr:objectMap [
+      rml:reference "Barrio"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:nFinca;
+    rr:objectMap [
+      rml:reference "NFinca"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:reserva;
+    rr:objectMap [
+      rml:reference "TipodeReserva"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:plazas;
+    rr:objectMap [
+      rml:reference "NumerodePlazas"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:longitud;
+    rr:objectMap [
+      rml:reference "Longitud"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:latitud;
+    rr:objectMap [
+      rml:reference "Latitud"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:direccion;
+    rr:objectMap [
+      rml:reference "Direccion"
+    ]
+  ];
+<#TriplesMap2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/Papeleras-solares-inteligentes-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://smartcity.linkeddata.es/transport/Ontology/Papelera/{id}";
+    rr:class vocab:Papelera
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:residuo;
+    rr:objectMap [
+      rml:reference "tipoResiduo"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:direccion1;
+    rr:objectMap [
+      rml:reference "Direccion 1"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:direccion2;
+    rr:objectMap [
+      rml:reference "Direccion 2"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:longitud;
+    rr:objectMap [
+      rml:reference "longitud"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:latitud;
+    rr:objectMap [
+      rml:reference "latitud"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:nivel;
+    rr:objectMap [
+      rml:reference "nivelLlenado"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:alerta;
+    rr:objectMap [
+      rml:reference "alerta"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:fecha;
+    rr:objectMap [
+      rml:reference "fecha"
+    ]
+  ];
+ <#TriplesMap3> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "./data/APARCABICIS_2021-update.csv";
+		rml:referenceFormulation ql:CSV ];
+	rr:subjectMap [
+		rr:template "http://smartcity.linkeddata.es/transport/Ontology/Aparcamiento/{ID}";
+		rr:class vocab:Aparcamiento	
+		];
+	rr:predicateObjectMap [
+		rr:predicate vocab:mxassetnum;
+		rr:objectMap [ rml:reference "ID";
+		rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:descriptio;
+		rr:objectMap [ rml:reference "Lugar";
+		rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:mintdistri;
+		rr:objectMap [ rml:reference "MINTDISTRI";
+		rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:nombre_dis;
+		rr:objectMap [ rml:reference "NOMBRE_DIS";
+		rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:mintbarrio;
+		rr:objectMap [ rml:reference "MINTBARRIO";
+		rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:nombre_bar;
+		rr:objectMap [ rml:reference "NOMBRE_BAR";
+		rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:estado;
+		rr:objectMap [ rml:reference "ESTADO";
+		rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:installdat;
+		rr:objectMap [ rml:reference "INSTALLDAT"; rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:minttipovi;
+		rr:objectMap [ rml:reference "Direccion";
+		rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:mintnombre;
+		rr:objectMap [ rml:reference "NOMBRE_DIS";
+		rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:mintnumero;
+		rr:objectMap [ rml:reference "MINTNUMERO"; rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:mintndp;
+		rr:objectMap [ rml:reference "MINTNDP"; rr:termType rr:Literal ] 
+	];
+	rr:predicateObjectMap [
+		rr:predicate vocab:modelo;
+		rr:objectMap [ rml:reference "MODELO"; rr:termType rr:Literal ] 
+	];
+<#TriplesMap4> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/Red-recarga-flota-municipal_publicable_20200227-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://smartcity.linkeddata.es/transport/Ontology/PCarga/{id}";
+    rr:class vocab:PCarga
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:codigo;
+    rr:objectMap [
+      rml:reference "CODIGO";
+	  rr:termType rr:Literal
+      ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:distrito;
+    rr:objectMap [
+      rml:reference "DISTRITO";
+	  rr:termType rr:Literal
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:edificio;
+    rr:objectMap [
+      rml:reference "EDIFICIO";
+	  rr:termType rr:Literal
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:ubicacion;
+    rr:objectMap [
+      rml:reference "Direccion";
+	  rr:termType rr:Literal
+      ]
+  ];
+
+    rr:predicateObjectMap [
+    rr:predicate vocab:coordenadaX;
+    rr:objectMap [
+      rml:reference "COORDENADA X";
+	  rr:termType rr:Literal
+      ]
+  ];
+  
+    rr:predicateObjectMap [
+    rr:predicate vocab:coordenadaY;
+    rr:objectMap [
+      rml:reference "COORDENADA Y";
+	  rr:termType rr:Literal
+      ]
+  ];
+  
+      rr:predicateObjectMap [
+    rr:predicate vocab:terminales;
+    rr:objectMap [
+      rml:reference "TERMINALES";
+	  rr:termType rr:Literal
+      ]
+  ];
+  
+      rr:predicateObjectMap [
+    rr:predicate vocab:conectores;
+    rr:objectMap [
+      rml:reference "CONECTORES";
+	  rr:termType rr:Literal
+      ]
+  ];
+  
+      rr:predicateObjectMap [
+    rr:predicate vocab:potencia;
+    rr:objectMap [
+      rml:reference "POTENCIA";
+	  rr:termType rr:Literal
+      ]
+  ];
+  
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:anyo;
+    rr:objectMap [
+      rml:reference "ANYO INSTALACION";
+	  rr:termType rr:Literal
+      ]
+  ].
