@@ -1,0 +1,209 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vocab: <http://www.reciclajemadrid.com/Ontology/> .
+@base <http://www.reciclajemadrid.com/> .
+
+<#Contenedores> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/Contenedores-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.reciclajemadrid.com/Ontology/Contenedor/{codigoInterno}";
+    rr:class vocab:Contenedor
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:codigoInterno;
+    rr:objectMap [
+      rml:reference "codigoInterno",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:coordX;
+    rr:objectMap [
+      rml:reference "COORDENADA X",
+      rr:datatype xsd:double .
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:coordY;
+    rr:objectMap [
+      rml:reference "COORDENADA Y",
+      rr:datatype xsd:double .
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:distrito;
+    rr:objectMap [
+      rml:reference "Distrito",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:nombreVia;
+    rr:objectMap [
+      rml:reference "Nombre",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:numeroVia;
+    rr:objectMap [
+      rml:reference "Número",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:tipoVia;
+    rr:objectMap [
+      rml:reference "Tipo Vía",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:residuo;
+    rr:objectMap [
+      rml:reference "Tipo Contenedor",
+      rr:datatype xsd:string
+    ]
+  ];
+
+
+<#PuntosLimpiosFijos> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/PuntosLimpiosFijos-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.reciclajemadrid.com/Ontology/PuntoLimpioFijo/{PK}";
+    rr:class vocab:PuntoLimpioFijo
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:pk;
+    rr:objectMap [
+      rml:reference "PK",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:coordX;
+    rr:objectMap [
+      rml:reference "COORDENADA-X",
+      rr:datatype xsd:double .
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:coordY;
+    rr:objectMap [
+      rml:reference "COORDENADA-Y",
+      rr:datatype xsd:double .
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:distrito;
+    rr:objectMap [
+      rml:reference "DISTRITO",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:nombreVia;
+    rr:objectMap [
+      rml:reference "NOMBRE-VIA",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:numeroVia;
+    rr:objectMap [
+      rml:reference "NUM",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:tipoVia;
+    rr:objectMap [
+      rml:reference "CLASE-VIAL",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:horario;
+    rr:objectMap [
+      rml:reference "HORARIO",
+      rr:datatype xsd:string
+    ]
+  ];
+
+
+<#PuntosLimpiosMoviles> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/PuntosLimpiosMoviles-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.reciclajemadrid.com/Ontology/PuntoLimpioMovil/{DIRECCION_COMPLETA}";
+    rr:class vocab:PuntoLimpioMovil
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:dirCompleta;
+    rr:objectMap [
+      rml:reference "DIRECCION_COMPLETA",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:coordX;
+    rr:objectMap [
+      rml:reference "UTMX",
+      rr:datatype xsd:double .
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:coordY;
+    rr:objectMap [
+      rml:reference "UTMY",
+      rr:datatype xsd:double .
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:distrito;
+    rr:objectMap [
+      rml:reference "DISTRITO",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:nombreVia;
+    rr:objectMap [
+      rml:reference "NOMBRE_VIAL",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:numeroVia;
+    rr:objectMap [
+      rml:reference "NÚMERO",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:tipoVia;
+    rr:objectMap [
+      rml:reference "CLASE-VIAL",
+      rr:datatype xsd:string
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:horario;
+    rr:objectMap [
+      rml:reference "Horario",
+      rr:datatype xsd:string
+    ]
+  ];

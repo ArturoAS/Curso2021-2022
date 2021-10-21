@@ -1,0 +1,51 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿ CÓDIGO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿ CÓDIGO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "C.P.",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column C.P. using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿ CÓDIGO",
+    "newColumnName": "﻿ CODIGO",
+    "description": "Rename column ﻿ CÓDIGO to ﻿ CODIGO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DIRECCIÓN",
+    "newColumnName": "DIRECCION",
+    "description": "Rename column DIRECCIÓN to DIRECCION"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Túneles lavado",
+    "description": "Remove column Túneles lavado"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿ CODIGO",
+    "newColumnName": "CODIGO",
+    "description": "Rename column ﻿ CODIGO to CODIGO"
+  }
+]

@@ -1,7 +1,26 @@
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT ?Número
-WHERE { ?x xsd:string ?Número }
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbr: <http://transporteMad.example.org#>
+PREFIX dbo: <http://transporteMad.example.org/Ontology/>
+PREFIX res: <http://transporteMad.example.org#>
 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT ?CÓDIGO
-WHERE { ?x xsd:string ?CÓDIGO }
+#Query1
+SELECT ?Numero 
+WHERE {
+    ?Numero rdf:type dbr:EstacionBiciMad.
+    ?Numero dbr:barrio "SOL"
+}
+
+#Query2
+SELECT ?Numero 
+WHERE{
+    ?Numero rdf:type dbr:ParadaTaxi.
+    ?Numero dbr:NumeroPlazas "5"
+}
+
+#Query3
+SELECT ?Codigo 
+WHERE{
+    ?Codigo rdf:type dbr:EstacionCercanias.
+    ?Codigo dbr:Poblacion "Alpedrete"
+}
+

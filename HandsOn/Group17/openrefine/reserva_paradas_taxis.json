@@ -1,0 +1,4317 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿Número",
+    "newColumnName": "ID",
+    "description": "Rename column ﻿Número to ID"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01.11 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "01.11"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01.11 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "01.11.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01.45 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "01.45"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01.45 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "01.45.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01.70 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "01.70"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01.70 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "01.70.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04.15 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "04.15"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04.15 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "04.15.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04.25 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "04.25"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04.25 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "04.25.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04.27 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "04.27"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04.27 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "04.27.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05.05 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "05.05"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05.05 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "05.05.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05.06 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "05.06"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05.06 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "05.06.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05.22 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "05.22"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05.22 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "05.22.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05.28 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "05.28.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05.47 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "05.47"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05.47 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "05.47.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.06 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.06"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.06 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.06.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.13 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.13"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.13 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.13.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.13 c"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.13.2"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.17 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.17"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.17 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.17.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.17 c"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.17.2"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.17 d"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.17.3"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.26 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.26"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06.26 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "06.26.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07.06 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "07.06"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07.06 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "07.06.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07.10 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "07.10"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07.23 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "07.23"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07.23 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "07.23.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.02 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.02"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.02 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.02.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.04 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.04"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.04 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.04.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.14 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.14"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.14 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.14.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.19 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.19"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.19 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.19.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.21 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.21"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.21 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.21.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.28 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.28"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.28 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.28.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.35 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.35"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.35 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.35.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.50 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.50"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08.50 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "08.50.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09.02 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "09.02"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09.02 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "09.02.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09.02 c"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "09.02"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09.11 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "09.11"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09.11 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "09.11.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09.17 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "09.17"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09.17 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "09.17.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "10.20 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10.20"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "10.20 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10.20.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11.21 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "11.21"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11.21 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "11.21.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16.27 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "16.27"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16.27 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "16.27.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18.09 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "18.09"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18.09 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "18.09.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18.09 c"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "18.09.2"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18.12 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "18.12"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18.12 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "18.12.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20.09 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "20.09.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "21.07 a"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "21.07"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "21.07 b"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "21.07.1"
+      }
+    ],
+    "description": "Mass edit cells in column ID"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ID using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha de Alta",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Fecha de Alta using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01  CENTRO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CENTRO"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "02  ARGANZUELA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARGANZUELA"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "03  RETIRO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RETIRO"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04  SALAMANCA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SALAMANCA"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05  CHAMARTÍN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHAMARTÍN"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06  TETUÁN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TETUÁN"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07  CHAMBERÍ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHAMBERÍ"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08  FUENCARRAL-EL PARDO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUENCARRAL-EL PARDO"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09  MONCLOA-ARAVACA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MONCLOA-ARAVACA"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "10  LATINA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LATINA"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11  CARABANCHEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARABANCHEL"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "12  USERA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "USERA"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "13  PUENTE DE VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "14  MORATALAZ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MORATALAZ"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "15  CIUDAD LINEAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LINEAL"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16  HORTALEZA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HORTALEZA"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "17  VILLAVERDE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VILLAVERDE"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18  VILLA DE VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VILLADEVALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "19  VICÁLVARO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VICÁLVARO"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20  SAN BLAS-CANILLEJAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SAN BLAS-CANILLEJAS"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "21  BARAJAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BARAJAS"
+      }
+    ],
+    "description": "Mass edit cells in column Distrito"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Distrito using expression value.toString()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01-01 PALACIO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PALACIO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01-02 EMBAJADORES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EMBAJADORES"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01-03 CORTES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CORTES"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01-04 JUSTICIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "JUSTICIA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01-05 UNIVERSIDAD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "UNIVERSIDAD"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "01-06 SOL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOL"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "02-01 IMPERIAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMPERIAL"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "02-03 CHOPERA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHOPERA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "02-04 LEGAZPI"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LEGAZPI"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "02-05 DELICIAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DELICIAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "02-06 PALOS DE MOGUER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PALOSDEMOGUER"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "02-07 ATOCHA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ATOCHA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "03-01 PACÍFICO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PACÍFICO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "03-03 ESTRELLA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ESTRELLA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "03-04 IBIZA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IBIZA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "03-05 JERÓNIMOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "JERÓNIMOS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "03-06 NIÑO JESÚS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NIÑO JESÚS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04-01 RECOLETOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RECOLETOS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04-02 GOYA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GOYA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04-03 FUENTE DEL BERRO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUENTEDELBERRO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04-04 GUINDALERA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GUINDALERA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04-05 LISTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LISTA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "04-06 CASTELLANA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASTELLANA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05-01 EL VISO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ELVISO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05-02 PROSPERIDAD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PROSPERIDAD"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05-03 CIUDAD JARDÍN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CIUDAD JARDÍN"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NIÑO JESÚS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NIÑOJESÚS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CIUDAD JARDÍN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CIUDADJARDÍN"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05-04 HISPANOAMÉRICA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HISPANOAMÉRICA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05-05 NUEVA ESPAÑA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NUEVAESPAÑA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "05-06 CASTILLA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASTILLA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06-01 BELLAS VISTAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BELLASVISTAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06-02 CUATRO CAMINOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CUATROCAMINOS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06-03 CASTILLEJOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASTILLEJOS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "06-04 ALMENARA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALMENARA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07-01 GAZTAMBIDE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GAZTAMBIDE"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07-02 ARAPILES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARAPILES"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07-03 TRAFALGAR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRAFALGAR"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07-04 ALMAGRO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALMAGRO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07-05 RÍOS ROSAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RÍOSROSAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "07-06 VALLEHERMOSO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VALLEHERMOSO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08-02 FUENTELARREINA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUENTELARREINA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08-03 PEÑAGRANDE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PEÑAGRANDE"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08-04 EL PILAR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ELPILAR"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08-05 LA PAZ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LAPAZ"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08-06 VALVERDE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VALVERDE"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08-07 MIRASIERRA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MIRASIERRA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "08-08 EL GOLOSO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ELGOLOSO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09-01 CASA DE CAMPO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASADECAMPO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09-02 ARGÜELLES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARGÜELLES"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09-03 CIUDAD UNIVERSITARIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CIUDADUNIVERSITARIA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09-04 VALDEZARZA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VALDEZARZA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09-05 VALDEMARÍN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VALDEMARÍN"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09-06 EL PLANTÍO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ELPLANTÍO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "09-07 ARAVACA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARAVACA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "10-02 PUERTA DEL ÁNGEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PUERTADELÁNGEL"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "10-03 LUCERO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LUCERO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "10-04 ALUCHE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALUCHE"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "10-07 ÁGUILAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ÁGUILAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11-01 COMILLA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMILLA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11-02 OPAÑEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OPAÑEL"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11-03 SAN ISIDRO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SAN ISIDRO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11-04 VISTA ALEGRE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VISTA ALEGRE"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11-06 BUENAVISTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BUENAVISTA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11-07 ABRANTES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ABRANTES"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "12-02 ORCASUR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ORCASUR"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "12-03 SAN FERMÍN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SANFERMÍN"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "12-05 MOSCARDÓ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MOSCARDÓ"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "13-01 ENTREVÍAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ENTREVÍAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "13-03 PALOMERAS BAJAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PALOMERASBAJAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "13-04 PALOMERAS SURESTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PALOMERASSURESTE"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "13-05 PORTAZGO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PORTAZGO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "13-06 NUMANCIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NUMANCIA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "14-01 PAVONES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PAVONES"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "14-03 MARROQUINA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MARROQUINA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "14-05 FONTARRÓN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FONTARRÓN"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "15-01 VENTAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VENTAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "15-02 PUEBLO NUEVO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PUEBLO NUEVO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "15-03 QUINTANA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "QUINTANA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "15-04 CONCEPCIÓN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CONCEPCIÓN"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "15-05 SAN PASCUAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SANPASCUAL"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "15-06 SAN JUAN BAUTISTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SANJUANBAUTISTA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "15-09 COSTILLARES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COSTILLARES"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16-01 PALOMAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PALOMAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16-02 PIOVERA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PIOVERA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16-03 CANILLAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CANILLAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16-04 PINAR DEL REY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PINARDELREY"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16-05 APÓSTOL SANTIAGO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "APÓSTOLSANTIAGO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16-06 VALDEFUENTES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VALDEFUENTES"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "17-01 CASCO HISTÓRICO DE VILLAVERDE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASCOHISTÓRICODEVILLAVERDE"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "17-04 LOS ROSALES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LOSROSALES"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "17-05 LOS ÁNGELES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LOSÁNGELES"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18-01 CASCO HISTÓRICO DE VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASCOHISTÓRICODEVALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18-02 SANTA EUGENIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SANTAEUGENIA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18-03 ENSANCHE DE VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ENSANCHEDEVALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "19-01 CASCO HISTÓRICO DE VICÁLVARO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASCOHISTÓRICODEVICÁLVARO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "19-02 VALDEBERNARDO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VALDEBERNARDO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "19-03 VALDERRIVAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VALDERRIVAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20-01 SIMANCAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SIMANCAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20-02 HELLÍN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HELLÍN"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20-03 AMPOSTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMPOSTA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20-04 ARCOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ARCOS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20-05 ROSAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ROSAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20-06 REJAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "REJAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20-07 CANILLEJAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CANILLEJAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20-08 SALVADOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SALVADOR"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "21-01 ALAMEDA DE OSUNA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALAMEDADEOSUNA"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "21-02 AEROPUERTO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AEROPUERTO"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "21-03 CASCO HISTÓRICO DE BARAJAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASCOHISTÓRICODEBARAJAS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "21-04 TIMÓN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TIMÓN"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Barrio",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "21-05 CORRALEJOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CORRALEJOS"
+      }
+    ],
+    "description": "Mass edit cells in column Barrio"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Calle",
+    "description": "Remove column Calle"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº Finca using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "s/n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "S/N"
+      }
+    ],
+    "description": "Mass edit cells in column Nº Finca"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Número de Plazas",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Número de Plazas using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LongitudP",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LongitudP using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TextoCajetines",
+    "description": "Remove column TextoCajetines"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Fecha de Alta",
+    "newColumnName": "FechadeAlta",
+    "description": "Rename column Fecha de Alta to FechadeAlta"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nº Finca",
+    "newColumnName": "NFinca",
+    "description": "Rename column Nº Finca to NFinca"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Tipo de Reserva",
+    "newColumnName": "TipodeReserva",
+    "description": "Rename column Tipo de Reserva to TipodeReserva"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Línea / Batería",
+    "newColumnName": "LíneaBatería",
+    "description": "Rename column Línea / Batería to LíneaBatería"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número de Plazas",
+    "newColumnName": "NúmerodePlazas",
+    "description": "Rename column Número de Plazas to NúmerodePlazas"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NúmerodePlazas",
+    "newColumnName": "NumerodePlazas",
+    "description": "Rename column NúmerodePlazas to NumerodePlazas"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LíneaBatería",
+    "newColumnName": "LineaBateria",
+    "description": "Rename column LíneaBatería to LineaBateria"
+  }
+]
