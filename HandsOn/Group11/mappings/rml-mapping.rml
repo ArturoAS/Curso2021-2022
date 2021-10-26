@@ -1,0 +1,136 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.  
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vocab: <http://safemadrid.linkeddata.es/ontology/accidentalidad#> .
+
+
+<#Accidentes> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "data/2021_Accidentalidad-updated.csv";
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://safemadrid.linkeddata.es/Accidente/{ID}";
+    rr:class vocab:accidente
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasNUM_EXPEDIENTE;
+    rr:objectMap [
+      rml:reference "NUM_EXPEDIENTE";
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasFECHA;
+    rr:objectMap [
+      rml:reference "FECHA/HORA";
+      rr:datatype xsd:dateTime
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasCALLE;
+    rr:objectMap [
+      rml:reference "CALLE"
+      ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasNUMERO;
+    rr:objectMap [
+      rml:reference "NUMERO";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasDISTRITO;
+    rr:objectMap [
+      rml:reference "DISTRITO";
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasTIPO_ACCIDENTE;
+    rr:objectMap [
+      rml:reference "TIPO_ACCIDENTE"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasTIPO_PERSONA;
+    rr:objectMap [
+      rml:reference "TIPO_PERSONA"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasRANGO_EDAD;
+    rr:objectMap [
+      rml:reference "RANGO_EDAD"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasSEXO;
+    rr:objectMap [
+      rml:reference "SEXO"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasLESIVIDAD;
+    rr:objectMap [
+      rml:reference "LESIVIDAD";
+      rr:datatype xsd:integer
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:ocurreEN;
+    rr:objectMap [
+      rr:parentTriplesMap <#Barrios>;
+      rr:joinCondition [
+        rr:child "DISTRITO";
+        rr:parent "DISTRITO";
+      ];
+    ];
+  ].
+
+
+  <#Barrios> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "data/Barrios-updated.csv";
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://safemadrid.linkeddata.es/Barrio/{ID_BARRIO}";
+    rr:class vocab:barrio
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasDISTRITO;
+    rr:objectMap [
+      rml:reference "DISTRITO";
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasBARRIO;
+    rr:objectMap [
+      rml:reference "BARRIO";
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasAREA;
+    rr:objectMap [
+      rml:reference "AREA";
+      rr:datatype xsd:float
+      ]
+  ].

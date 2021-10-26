@@ -1,0 +1,25 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbr: <http://transporteMad.example.org#>
+PREFIX dbo: <http://transporteMad.example.org/Ontology/>
+PREFIX res: <http://transporteMad.example.org#>
+
+#Query1
+SELECT ?playa 
+WHERE {
+    ?playa rdf:type dbr:Provincia.
+    ?playa dbr: CODIGO-PROVINCIA "15"
+}
+
+#Query2
+SELECT ?playa,?tipoPlaya
+WHERE{
+    ?playa,?tipoPlaya rdf:type dbr:Ayuntamiento.
+    ?playa,?tipoPlaya dbr:CODIGO-AYUNTAMIENTO "15058"
+}
+
+#Query3
+SELECT ?playa,?tipoArena 
+WHERE{
+    ?playa,?tipoArena  rdf:type dbr:Ubicacion.
+    ?playa,?tipoArena  dbr:UBICACION "Orzan"
+}

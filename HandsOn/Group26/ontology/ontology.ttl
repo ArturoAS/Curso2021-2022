@@ -1,0 +1,129 @@
+ @prefix admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/#> .
+@prefix base: <http://www.example.org/TerrazasMadrid#> .
+@prefix dc: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#> .
+@prefix ns: <http://smartcity.linkeddata.es/ontology/TerrazasMadrid/#> .
+@prefix nsp: <http://smartcity.linkeddata.es/ontology/TerrazasMadrid##> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf1: <http://www.owl-ontologies.com/rdf#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org#> .
+@prefix ssn: <http://www.owl-ontologies.com/ssn#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+admingeo:District rdfs:label "District" ;
+    rdf1:type owl:Class .
+
+nsp:GeoCoordinatesID rdfs:label "geo coordinates i d" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:WeekdaySeasonalClose rdfs:label "weekday seasonal close" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:WeekdaySeasonalOpen rdfs:label "weekday seasonal open" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:WeekdayUnseasonalClose rdfs:label "weekday unseasonal close" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:WeekdayUnseasonalOpen rdfs:label "weekday unseasonal open" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:WeekendSeasonalClose rdfs:label "weekend seasonal close" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:WeekendSeasonalOpen rdfs:label "weekend seasonal open" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:WeekendUnseasonalOpen rdfs:label "weekend unseasonal open" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:containedIn rdfs:label "contained in" ;
+    rdf1:type owl:ObjectProperty .
+
+nsp:hasID rdfs:label "has i d" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:integer .
+
+nsp:hasLocation rdfs:label "has location" ;
+    rdf1:type owl:ObjectProperty .
+
+nsp:locatedIn rdfs:label "located in" ;
+    rdf1:type owl:ObjectProperty .
+
+nsp:status rdfs:label "status" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:tablesSeasonal rdfs:label "tables seasonal" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:tablesUnseasonal rdfs:label "tables unseasonal" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+nsp:terraceUbication rdfs:label "terrace ubication" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+ns:Neighborhood rdfs:label "Neighborhood" ;
+    rdf1:type owl:Class .
+
+base: rdf1:type owl:Ontology ;
+    owl:versionInfo "0.0.1" ;
+    dc:creator "Carlos Ferrero Manauta" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Template Ontology" .
+
+rdf1:label rdfs:label "label" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+schema:GeoCoordinates rdfs:label "Geo Coordinates" ;
+    rdf1:type owl:Class .
+
+schema:LocalBusiness rdfs:label "Local Business" ;
+    rdf1:type owl:Class ;
+    rdfs:subClassOf ssn:FeatureOfInterest,
+        schema:Organization .
+
+schema:PostalAddress rdfs:label "Postal Address" ;
+    rdf1:type owl:Class .
+
+schema:address rdfs:label "address" ;
+    rdf1:type owl:ObjectProperty .
+
+schema:latitude rdfs:label "latitude" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+schema:longitude rdfs:label "longitude" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+schema:postalCode rdfs:label "postal code" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+schema:streetAddress rdfs:label "street address" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+dc:title rdfs:label "title" ;
+    rdf1:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+ssn:FeatureOfInterest rdfs:label "Feature Of Interest" ;
+    rdf1:type owl:Class .
+
+schema:Organization rdfs:label "Organization" ;
+    rdf1:type owl:Class .
+

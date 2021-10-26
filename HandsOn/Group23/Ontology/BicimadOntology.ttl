@@ -16,6 +16,11 @@ bici:hasAddress a owl:DatatypeProperty ;
     rdfs:domain bici:Address ;
     rdfs:range xsd:string .
 
+bici:hasAddressID a owl:DatatypeProperty ;
+    rdfs:label "has address i d" ;
+    rdfs:domain bici:Address ;
+    rdfs:range xsd:string .
+
 bici:hasCapacity a owl:DatatypeProperty ;
     rdfs:label "has capacity" ;
     rdfs:domain bici:Bicimad_Stations ;
@@ -25,6 +30,11 @@ bici:hasCoordinates a owl:ObjectProperty ;
     rdfs:label "has coordinates" ;
     rdfs:domain bici:Location ;
     rdfs:range bici:Coordinates .
+
+bici:hasCoordinatesID a owl:DatatypeProperty ;
+    rdfs:label "has coordinates i d" ;
+    rdfs:domain bici:Coordinates ;
+    rdfs:range xsd:string .
 
 bici:hasDescription a owl:DatatypeProperty ;
     rdfs:label "has description" ;
@@ -45,6 +55,11 @@ bici:hasGIS a owl:ObjectProperty ;
     rdfs:label "has g i s" ;
     rdfs:domain bici:Location ;
     rdfs:range bici:GIS .
+
+bici:hasGisID a owl:DatatypeProperty ;
+    rdfs:label "has gis i d" ;
+    rdfs:domain bici:GIS ;
+    rdfs:range xsd:string .
 
 bici:hasIdentifier a owl:DatatypeProperty ;
     rdfs:label "has identifier" ;
@@ -105,10 +120,10 @@ bici:Coordinates a owl:Class ;
 bici:GIS a owl:Class ;
     rdfs:label "G I S" .
 
+bici:Location a owl:Class ;
+    rdfs:label "Location" .
+
 bici:Address a owl:Class ;
     rdfs:label "Address" ;
     rdfs:subClassOf bici:Location .
-
-bici:Location a owl:Class ;
-    rdfs:label "Location" .
 

@@ -1,0 +1,24 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#
+  
+mappings:
+
+  triplesmap1:
+    sources:
+      - [calles_tranquilas-updated.csv~csv]
+    s: http://www.preventbicyleaccidents-app.es/group02/resources/Address/CALLE_$(CALLE)~iri]
+    po:
+      - [a, vocab:Address]
+      - [vocab:hasAddressName,$(CALLE)]
+      - [vocab:typeAddress,$(TIPOCALLE)]
+      

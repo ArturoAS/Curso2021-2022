@@ -6,38 +6,6 @@
     "description": "Rename column id to IdTrafficLight"
   },
   {
-    "op": "core/column-rename",
-    "oldColumnName": "fecha_inst",
-    "newColumnName": "installDate",
-    "description": "Rename column fecha_inst to installDate"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "utm_x",
-    "description": "Remove column utm_x"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "utm_y",
-    "description": "Remove column utm_y"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "id_cruce",
-    "newColumnName": "IdCross",
-    "description": "Rename column id_cruce to IdCross"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "tipo_elem",
-    "description": "Remove column tipo_elem"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "distrito",
-    "description": "Remove column distrito"
-  },
-  {
     "op": "core/text-transform",
     "engineConfig": {
       "facets": [],
@@ -49,63 +17,6 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column IdTrafficLight using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "installDate",
-    "expression": "value.toDate()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column installDate using expression value.toDate()"
-  },
-  {
-    "op": "core/column-move",
-    "columnName": "installDate",
-    "index": 1,
-    "description": "Move column installDate to position 1"
-  },
-  {
-    "op": "core/column-move",
-    "columnName": "longitud",
-    "index": 2,
-    "description": "Move column longitud to position 2"
-  },
-  {
-    "op": "core/column-move",
-    "columnName": "latitud",
-    "index": 3,
-    "description": "Move column latitud to position 3"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "IdCross",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column IdCross using expression value.toNumber()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "longitud",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column longitud using expression value.toNumber()"
   },
   {
     "op": "core/text-transform",
@@ -126,64 +37,12 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "installDate",
-    "expression": "value.toDate()",
+    "columnName": "longitud",
+    "expression": "value.toNumber()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column installDate using expression value.toDate()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "installDate",
-    "expression": "value.toDate()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column installDate using expression value.toDate()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "installDate",
-    "expression": "value.toDate()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column installDate using expression value.toDate()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "installDate",
-    "expression": "value.toTitlecase()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column installDate using expression value.toTitlecase()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "installDate",
-    "expression": "value.toDate()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column installDate using expression value.toDate()"
+    "description": "Text transform on cells in column longitud using expression value.toNumber()"
   },
   {
     "op": "core/column-rename",
@@ -196,5 +55,63 @@
     "oldColumnName": "latitud",
     "newColumnName": "latitude",
     "description": "Rename column latitud to latitude"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "utm_x",
+    "description": "Remove column utm_x"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "utm_y",
+    "description": "Remove column utm_y"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "id_cruce",
+    "newColumnName": "IdCross",
+    "description": "Rename column id_cruce to IdCross"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column IdCross using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "﻿tipo_elem",
+    "description": "Remove column ﻿tipo_elem"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "distrito",
+    "description": "Remove column distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "fecha_inst",
+    "newColumnName": "installDate",
+    "description": "Rename column fecha_inst to installDate"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "installDate",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column installDate using expression value.toDate()"
   }
 ]

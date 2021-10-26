@@ -1,51 +1,83 @@
 # -*- coding: utf-8 -*-
-"""
-    Hands-On Assignment 5
-    SPARQL queries for checking WikiData liking
-"""
-
-data_storage = "output.nt"
-
-"Data loading and graph building"
 
 from rdflib import Graph, Namespace, Literal
-from rdflib.namespace import RDF, RDFS, OWL
-from rdflib.plugins.sparql import prepareQuery
-from collections import OrderedDict
+from rdflib.namespace import RDF, RDFS
+
+salida = "./output.nt"
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://www.calidadAire.com#"), override=False)
-g.parse(data_storage, format="nt")
+g.parse(salida, format="nt")
 
 ns = Namespace("http://www.calidadAire.com#")
+
+from rdflib.plugins.sparql import prepareQuery
 
 # ------------------------------------------
 
 # List all the properties used in our dataset
 
-print("------- Properties:")
+print("------- Properties 1:")
 
-q1 = prepareQuery('''
-    SELECT DISTINCT
-        ?Provincia
+q = prepareQuery('''
+    SELECT DISTINCT ?municipio
     WHERE {
-        ?Subject ?Provincia ?Object .
+  		 ?provincia ns:tieneMunicipio ?municipio.
     }
-    ORDER BY asc(?Provincia)
-    '''
+    ''',
+    initNs = {"ns": ns}
 )
 
-for s in g.query(q1):
-    print(s.Provincia.toPython())
+for s in g.query(q):
+    print(s) 
 
-q2 = prepareQuery('''
-    SELECT DISTINCT
-        ?Properties
+print("------- Properties 2:")
+q = prepareQuery('''
+    SELECT DISTINCT ?estacion
     WHERE {
-        ?Properties ?Municipio ?Object .
+  		 ?municipio ns:tieneEstacion ?estacion.
     }
-    ORDER BY asc(?Properties)
-    '''
+    ''',
+    initNs = {"ns": ns}
 )
 
-for s in g.query(q2):
-    print(s.Properties.toPython())
+for s in g.query(q):
+    print(s)
+
+print("------- Properties 3:")   
+q = prepareQuery('''
+    SELECT ?puntoMuestreo
+    WHERE {
+  		 ?estacion ns:tienePuntoMuestreo ?puntoMuestreo.
+    }
+    ''',
+    initNs = {"ns": ns}
+)
+
+for s in g.query(q):
+    print(s)
+
+print("------- Properties 4:")   
+q = prepareQuery('''
+    SELECT DISTINCT ?medicion
+    WHERE {
+  		 ?puntoMuestreo ns:tieneMedicion ?medicion.
+    }
+    ''',
+    initNs = {"ns": ns}
+)
+
+for s in g.query(q):
+    print(s)
+
+print("------- Properties 5:")   
+q = prepareQuery('''
+    SELECT DISTINCT ?magnitud
+    WHERE {
+  		 ?estacion ns:mide ?magnitud.
+    }
+    ''',
+    initNs = {"ns": ns}
+)
+
+for s in g.query(q):
+    print(s)

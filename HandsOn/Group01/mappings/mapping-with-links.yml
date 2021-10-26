@@ -1,0 +1,77 @@
+prefixes:
+  xsd: http://www.w3.org/2001/XMLSchema#
+  cap: http://www.colegiosapp.org/ontology#
+  dbo: http://dbpedia.org/ontology#
+  owl: http://www.w3.org/2002/07/owl#
+
+mappings:
+
+    municipality:
+      source:
+        - [./CSV/poblacion_distritos-with-links.csv~csv]
+      s: http://dbpedia.org/ontology/Municipality/$(municipio_nombre)
+      po:
+        - [ a, dbo:Municipality]
+        - [ cap:hasNameMunicipality, $(municipio_nombre), xsd:string]
+        - [ cap:idMunicipality, $(municipio_codigo), xsd:string]
+        - [ owl:sameAs, $(municipio_wikidata)~iri]
+
+    residentGroup:
+        source:
+        - [./CSV/poblacion_distritos-with-links.csv~csv]
+        s: http://www.colegiosapp.org/ontology/ResidentGroup/$(municipio_nombre)_$(sexo)_$(min_edad)_$(max_edad)
+        po:
+            - [ a, cap:ResidentGroup]
+            - [ cap:hasGender, $(sexo), xsd:string]
+            - [ cap:maxAge, $(min_edad), xsd:int]
+            - [ cap:minAge, $(max_edad), xsd:int]
+            - [ cap:numPeople, $(poblacion_empadronada), xsd:int]
+            - p: cap:liveIn
+              o:
+            - mapping: municipality
+                  condition:
+                    function: equal
+                    parameters:
+                      - [ str1, $(municipio_codigo) ]
+                      - [ str2, $(municipio_codigo) ]
+
+    address:
+        source:
+          - [./CSV/centros_educativos-with-links.csv~csv]
+        s: http://www.colegiosapp.org/ontology/Address/$(direccion_via_tipo)_$(direccion_via_nombre)_$(direccion_numero)_$(direccion_codigo_postal)
+        po:
+          - [ a, cap:Address]
+          - [ cap:hasNameAddress, $(direccion_via_nombre), xsd:string]
+          - [ cap:hasNumber, $(direccion_numero), xsd:string]
+          - [ cap:hasPostalCode, $(direccion_codigo_postal), xsd:string]
+          - [ cap:hasType, $(direccion_via_tipo), xsd:string]
+
+    school:
+      source:
+        - [./CSV/centros_educativos-with-links.csv~csv ]
+      s: http://dbpedia.org/ontology/School/$(centro_codigo)
+      po:
+        - [ a, dbo:ResidentGroup ]
+        - [ cap:hasTypeSchool , $(centro_tipo_descripcion), xsd:string ]
+        - [ cap:idSchool, $(centro_codigo), xsd:string ]
+        - [ cap:ownership, $(centro_titularidad), xsd:string ]
+        - [ cap:urlSchool, $(url_colegio), xsd:anyURI ]
+        - [ cap:xCoordinate, $(direccion_coor_x), xsd:string ]
+        - [ cap:yCoordinate, $(direccion_coor_y), xsd:string ]
+        - p: cap:hasAddress
+          o:
+          - mapping: address
+            condition:
+              function: equal
+              parameters:
+                - [ str1, $(centro_codigo) ]
+                - [ str2, $(centro_codigo) ]
+
+        - p: cap:ownMunicipality
+          o:
+          - mapping: municipality
+            condition:
+              function: equal
+              parameters:
+                - [ str1, $(municipio_codigo) ]
+                - [ str2, $(municipio_codigo) ]

@@ -1,0 +1,35 @@
+PREFIX base: <https://publicparkingmad.com/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+
+
+SELECT ?elemento ?district ?districtwikidata
+WHERE{
+
+    ?elemento  rdf:type           base:PublicParking .
+    ?elemento base:hasLocation ?loc.
+
+    ?loc base:hasPostalAddress ?pa.
+    ?pa base:hasDistrict ?district.
+    ?district owl:sameAs ?districtwikidata.
+
+
+
+}
+
+
+
+SELECT ?elemento ?neigh ?neighwikidata
+WHERE{
+
+?elemento  rdf:type           base:PublicParking .
+?elemento base:hasLocation ?loc.
+
+?loc base:hasPostalAddress ?pa.
+?pa base:hasNeighborhood ?neigh.
+?neigh owl:sameAs ?neighwikidata.
+
+
+}

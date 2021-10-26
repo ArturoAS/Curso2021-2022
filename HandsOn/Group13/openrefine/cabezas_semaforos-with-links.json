@@ -1,0 +1,509 @@
+[
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "TrafficLight_ID",
+      "Elem_Type",
+      "District_ID",
+      "X",
+      "Y",
+      "Lenght",
+      "Latitude"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "District_ID",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "District_Name",
+    "columnInsertIndex": 3,
+    "description": "Create column District_Name at index 3 based on column District_ID using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Centro"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arganzuela"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Retiro"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Salamanca"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "5"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamartín"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "6"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tetuán"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "7"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chamberí"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "8"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral - El Pardo"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "9"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa - Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "10"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Latina"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "11"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carabanchel"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "12"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Usera"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "13"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Puente de Vallecas"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "14"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moratalaz"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "15"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ciudad Lineal"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hortaleza"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "17"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Villaverde"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Villa de Vallecas"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "19"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vicálvaro"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "20"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "San Blas - Canillejas"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "21"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barajas"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "TafficLight_ID",
+      "Elem_Type",
+      "District_Name",
+      "District_ID",
+      "X",
+      "Y",
+      "Lenght",
+      "Latitude"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column District_Name to type Q3032114"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "District_Name",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_As_District_Name",
+    "columnInsertIndex": 3,
+    "description": "Create column same_As_District_Name at index 3 based on column District_Name using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "same_As_District_Name",
+    "newColumnName": "Same_As_District_Name",
+    "description": "Rename column same_As_District_Name to Same_As_District_Name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Same_As_District_Name",
+    "newColumnName": "Same_As_Wikidata_District",
+    "description": "Rename column Same_As_District_Name to Same_As_Wikidata_District"
+  }
+]

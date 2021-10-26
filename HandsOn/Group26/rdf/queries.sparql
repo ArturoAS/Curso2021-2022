@@ -1,0 +1,49 @@
+PREFIX admin: <http://webns.net/mvcb/>
+PREFIX ad: <http://schemas.talis.com/2005/address/schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ns:  <http://smartcity.linkeddata.es/ontology/TerrazasMadrid/>
+PREFIX admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/>
+PREFIX nsp:  <http://smartcity.linkeddata.es/ontology/TerrazasMadrid#>
+
+#Devuelve todos los distritos contenidos en el csv.
+SELECT ?district
+WHERE{
+	?district rdf:type admingeo:District
+}
+
+#Devuelve todos los locales del distrito de salamanca.
+SELECT ?local
+WHERE{
+        ?local rdf:type schema:LocalBusiness.
+	?local nsp:containedIn ?neighborhood.
+	?neighborhood nsp:locatedIn http://smartcity.linkeddata.es/ontology/TerrazasMadrid/District/SALAMANCA
+}
+
+
+#Devuelve el codigo postal del Local Cafeteria Parisiena.
+SELECT ?postalcode
+WHERE{
+	?local dc:title "CAFETERIA PARISIENA".
+        ?local schema:address ?PoltalAdress.
+	?PoltalAdress schema:postalCode ?postalcode
+}
+
+#Devuelve el barrio en que se encuentra un local dado su ID.
+SELECT ?neighborhood
+WHERE{
+	?local nsp:hasID 170000836.
+	?local nsp:containedIn ?neighborhood
+}
+
+#Devuelve las coordenadas de aquellos locales que se encuentran abiertos en Madrid
+
+SELECT ?local ?Geocordinates
+WHERE{
+	?local nsp:status "Abierto".
+	?local nsp:hasLocation ?Geo.
+        ?Geo nsp:GeoCoordinatesID ?Geocordinates
+}
+
+

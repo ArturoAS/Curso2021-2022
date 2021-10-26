@@ -1,172 +1,172 @@
-id,CODIGO,DISTRITO,EDIFICIO,Direccion,COORDENADA Y,COORDENADA X,TERMINALES,CONECTORES,POTENCIA,ANYO INSTALACION
-1,PRM-AG07-10a,Arganzuela,A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-2,PRM-AG07-10b,Arganzuela,A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-3,PRM-AG07-10c,Arganzuela,A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-4,PRM-AG07-10d,Arganzuela,A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-5,PRM-AG07-10e,Arganzuela,A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-6,PRM-AG08-04a,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
-7,PRM-AG08-04b,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
-8,PRM-AG08-04c,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
-9,PRM-AG08-04d,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
-10,PRM-AG08-04e,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
-11,PRM-AG08-04f,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
-12,PRM-AG08-04g,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
-13,PRM-AG08-04h,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
-14,PRM-AG08-04i,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
-15,PRM-AG08-05,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
-16,PRM-AG08-04j,Arganzuela,A.G. Medio Ambiente y Movilidad /,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,22 KW 32 A Trifasico,2018
-17,PRM-AG08-02b,Arganzuela,A.G. Medio Ambiente y Movilidad / Aparcamientos,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-18,PRM-AG08-02a,Arganzuela,A.G. Medio Ambiente y Movilidad / Calidad del aire,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-19,PRM-AG08-03a,Arganzuela,A.G. Medio Ambiente y Movilidad / Control de Calidad,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-20,PRM-AG08-03b,Arganzuela,A.G. Medio Ambiente y Movilidad / Control de Calidad,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-21,PRM-AG08-03c,Arganzuela,A.G. Medio Ambiente y Movilidad / Control de Calidad,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-22,PRM-AG08-03d,Arganzuela,A.G. Medio Ambiente y Movilidad / Control de Calidad,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-23,PRM-AG08-01a,Arganzuela,A.G. Medio Ambiente y Movilidad / Inspeccion,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-24,PRM-AG08-01b,Arganzuela,A.G. Medio Ambiente y Movilidad / Inspeccion,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-25,PRM-AG08-01c,Arganzuela,A.G. Medio Ambiente y Movilidad / Inspeccion,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-26,PRM-AG08-01d,Arganzuela,A.G. Medio Ambiente y Movilidad / Inspeccion,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-27,PRM-AG08-01e,Arganzuela,A.G. Medio Ambiente y Movilidad / Inspeccion,C/ Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
-28,PRM-AG08-06a,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
-29,PRM-AG08-06b,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
-30,PRM-AG08-06c,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
-31,PRM-AG08-06d,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
-32,PRM-AG08-06e,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
-33,PRM-AG08-06f,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
-34,PRM-AG08-06g,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2019
-35,PRM-AG08-06h,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2019
+id,CODIGO,﻿DISTRITO,EDIFICIO,Direccion,COORDENADA Y,COORDENADA X,TERMINALES,CONECTORES,POTENCIA,ANYO INSTALACION
+1,PRM-AG07-10a,Arganzuela,A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+2,PRM-AG07-10b,Arganzuela,A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+3,PRM-AG07-10c,Arganzuela,A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+4,PRM-AG07-10d,Arganzuela,A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+5,PRM-AG07-10e,Arganzuela,A.G. Desarrollo Urbano Sostenible / OA Agencia de Actividades,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+6,PRM-AG08-04a,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
+7,PRM-AG08-04b,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
+8,PRM-AG08-04c,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
+9,PRM-AG08-04d,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
+10,PRM-AG08-04e,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
+11,PRM-AG08-04f,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
+12,PRM-AG08-04g,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
+13,PRM-AG08-04h,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
+14,PRM-AG08-04i,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
+15,PRM-AG08-05,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,2,Mennekes,"7,3 KW  32 A mono",2018
+16,PRM-AG08-04j,Arganzuela,A.G. Medio Ambiente y Movilidad /,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,22 KW 32 A Trifasico,2018
+17,PRM-AG08-02b,Arganzuela,A.G. Medio Ambiente y Movilidad / Aparcamientos,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+18,PRM-AG08-02a,Arganzuela,A.G. Medio Ambiente y Movilidad / Calidad del aire,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+19,PRM-AG08-03a,Arganzuela,A.G. Medio Ambiente y Movilidad / Control de Calidad,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+20,PRM-AG08-03b,Arganzuela,A.G. Medio Ambiente y Movilidad / Control de Calidad,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+21,PRM-AG08-03c,Arganzuela,A.G. Medio Ambiente y Movilidad / Control de Calidad,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+22,PRM-AG08-03d,Arganzuela,A.G. Medio Ambiente y Movilidad / Control de Calidad,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+23,PRM-AG08-01a,Arganzuela,A.G. Medio Ambiente y Movilidad / Inspeccion,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+24,PRM-AG08-01b,Arganzuela,A.G. Medio Ambiente y Movilidad / Inspeccion,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+25,PRM-AG08-01c,Arganzuela,A.G. Medio Ambiente y Movilidad / Inspeccion,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+26,PRM-AG08-01d,Arganzuela,A.G. Medio Ambiente y Movilidad / Inspeccion,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+27,PRM-AG08-01e,Arganzuela,A.G. Medio Ambiente y Movilidad / Inspeccion,Calle de Bustamante 16,4472432.48,441594.53,1,Mennekes,"7,3 KW  32 A mono",2017
+28,PRM-AG08-,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
+29,PRM-AG08-,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
+30,PRM-AG08-,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
+31,PRM-AG08-,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
+32,PRM-AG08-,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
+33,PRM-AG08-,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2018
+34,PRM-AG08-,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2019
+35,PRM-AG08-,Arganzuela,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Pontones 23,4473157.3,439442.4,1,Mennekes manguera,32 A monofasico,2019
 36,PRM-AG01-10a,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo . OA Agencia para el Empleo",Paseo Pontones 10,4473152.8,439377.1,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
 37,PRM-AG01-10b,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo . OA Agencia para el Empleo",Paseo Pontones 10,4473152.8,439377.1,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-38,PRM-AG01-01a,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",P Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2016
-39,PRM-AG01-01b,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",P Chopera 41,4471741.49,440676.52,1,Mennekes,"3,7 kW",2016
-40,PRM-AG01-01b,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",P Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2018
-41,PRM-AG01-01c,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",P Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2018
-42,PRM-AG01-01d,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",P Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2018
-43,PRM-AG01-01e,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",P Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2018
-44,PRM-AG01-01f,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",P Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2018
-45,PRM-AG01-01b,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",P Chopera 41,4471741.49,440676.52,1,mennekes Hembra,32 A trifasico,2019
-46,PRM-AG05-03a,Arganzuela,"A.G. Salud, Seguridad y Emergencias / PM / UID Arganzuela",P Chopera 2,4472146.4,440514.7,1,Mennekes,3.7,2017
-47,PRM-AG05-03b,Arganzuela,"A.G. Salud, Seguridad y Emergencias / PM / UID Arganzuela",P Chopera 2,4472146.4,440514.7,1,Mennekes,3.7,2017
-48,PRM-AG05-03c,Arganzuela,"A.G. Salud, Seguridad y Emergencias / PM / UID Arganzuela",P Chopera 2,4472146.4,440514.7,1,Mennekes conector hembra sin manguera,22 kW,2018
+38,PRM-AG01-01a,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",Paseo Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2016
+39,PRM-AG01-01b,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",Paseo Chopera 41,4471741.49,440676.52,1,Mennekes,"3,7 kW",2016
+40,PRM-AG01-01b,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",Paseo Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2018
+41,PRM-AG01-01c,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",Paseo Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2018
+42,PRM-AG01-01d,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",Paseo Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2018
+43,PRM-AG01-01e,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",Paseo Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2018
+44,PRM-AG01-01f,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",Paseo Chopera 41,4471741.49,440676.52,1,Mennekes manguera,"3,7 kW",2018
+45,PRM-AG01-01b,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo",Paseo Chopera 41,4471741.49,440676.52,1,mennekes Hembra,32 A trifasico,2019
+46,PRM-AG05-03a,Arganzuela,"A.G. Salud, Seguridad y Emergencias / PM / UID Arganzuela",Paseo Chopera 2,4472146.4,440514.7,1,Mennekes,3.7,2017
+47,PRM-AG05-03b,Arganzuela,"A.G. Salud, Seguridad y Emergencias / PM / UID Arganzuela",Paseo Chopera 2,4472146.4,440514.7,1,Mennekes,3.7,2017
+48,PRM-AG05-03c,Arganzuela,"A.G. Salud, Seguridad y Emergencias / PM / UID Arganzuela",Paseo Chopera 2,4472146.4,440514.7,1,Mennekes conector hembra sin manguera,22 kW,2018
 49,PRM-AG01-02a,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo","Ronda de Toledo, 10",4473292,439854.9,1,Mennekes,"3,7 kW",2017
 50,PRM-AG01-02b,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo","Ronda de Toledo, 10",4473292,439854.9,1,Mennekes,"3,7 kW",2017
 51,PRM-AG01-02c,Arganzuela,"A.G. Equidad, Derechos Sociales y Empleo","Ronda de Toledo, 10",4473292,439854.9,1,Mennekes,"3,7 kW",2017
-52,PRM-JM21-10,Barajas,J.M.D. Barajas (Centro Mayores),C/ Acuario 27,4480619.38,450861.59,1,Mennekes,"3,7 kW",2016
-53,PRM-AG07-01a,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,"3,7 kW",2016
-54,PRM-AG07-01b,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,"3,7 kW",2016
-55,PRM-AG07-01c,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,"3,7 kW",2016
-56,PRM-AG07-01d,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,"3,7 kW",2017
-57,PRM-AG07-01e,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,"3,7 kW",2017
-58,PRM-AG07-01f,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,2,Mennekes,16 A Trifasico 11 kW,2018
-59,PRM-AG07-01g,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,16A monofasico,2018
-60,PRM-AG07-01h,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,16A monofasico,2018
-61,PRM-AG07-01i,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,16A monofasico,2018
-62,PRM-AG07-01j,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,16A monofasico,2018
-63,PRM-AG07-01k,Barajas,A.G. Desarrollo Urbano Sostenible,C/ Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,16A monofasico,2018
-64,PRM-AG05-01c,Barajas,"A.G. Salud, Seguridad y Emergencias / PM / DG DE POLICIA MUNICIPAL","Calle Trespaderne, 16",4478363.8,450836.2,1,Yazaki con manguera,16 A monofasico,2019
-65,PRM-JM,Carabanchel,J.M. D. Carabanchel / UID CARABANCHEL,"C/ Albox, 8",4469796.8,436884.1,1,Mennekes Manguera,16 A monofasico,2018
-66,PRM-AG04-02a,Centro,A.G. Economia y Hacienda / SGT,C/ Alcala 45,4474508.52,440929.55,1,Mennekes Manguera,16 A,2015
-67,PRM-AG04-02b,Centro,A.G. Economia y Hacienda / SGT,C/ Alcala 45,4474508.52,440929.55,1,Mennekes Manguera,16 A,2017
-68,PRM-AG04-02c,Centro,A.G. Economia y Hacienda / SGT,C/ Alcala 45,4474508.52,440929.55,1,Mennekes,16 A,2017
-69,PRM-AG06-01,Centro,"A.G. Participacion Ciudadana, Transparencia y Gobierno Abierto / SGT",C/ Alcala 45,4474508.52,440929.55,1,Mennekes,16 A,2016
-70,PRM-AG04-01a,Centro,A.G. Economia y Hacienda,C/ Barquillo 17a,4474797.76,440976.34,1,Mennekes,"3,7 kW",2015
-71,PRM-AG04-01b,Centro,A.G. Economia y Hacienda,C/ Barquillo 17a,4474797.76,440976.34,1,Mennekes,"3,7 kW",2015
-72,PRM-AG04-10a,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes/Schuko,"3,7 kW",2016
-73,PRM-AG04-10B,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes/Schuko,"3,7 kW",2016
-74,PRM-AG04-10C,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes/Schuko,"3,7 kW",2016
-75,PRM-AG04-10d,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
-76,PRM-AG04-10e,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
-77,PRM-AG04-10f,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
-78,PRM-AG04-10g,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
-79,PRM-AG04-10h,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
-80,PRM-AG04-10i,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
-81,PRM-AG04-10j,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
-82,PRM-AG04-10k,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
-83,PRM-AG04-10l,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
-84,PRM-AG04-10m,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
-85,PRM-AG04-10n,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
-86,PRM-AG04-10o,Centro,A.G. Economia y Hacienda / Agencia Tributaria,C/ Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
+52,PRM-JM21-10,Barajas,J.M.D. Barajas (Centro Mayores),Calle de Acuario 27,4480619.38,450861.59,1,Mennekes,"3,7 kW",2016
+53,PRM-AG07-01a,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,"3,7 kW",2016
+54,PRM-AG07-01b,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,"3,7 kW",2016
+55,PRM-AG07-01c,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,"3,7 kW",2016
+56,PRM-AG07-01d,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,"3,7 kW",2017
+57,PRM-AG07-01e,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,"3,7 kW",2017
+58,PRM-AG07-01f,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,2,Mennekes,16 A Trifasico 11 kW,2018
+59,PRM-AG07-01g,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,16A monofasico,2018
+60,PRM-AG07-01h,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,16A monofasico,2018
+61,PRM-AG07-01i,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,16A monofasico,2018
+62,PRM-AG07-01j,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,16A monofasico,2018
+63,PRM-AG07-01k,Barajas,A.G. Desarrollo Urbano Sostenible,Calle de Ribera del Sena 21,4479216.43,447631.57,1,Mennekes,16A monofasico,2018
+64,PRM-AG05-01c,Barajas,"A.G. Salud, Seguridad y Emergencias / PM / DG DE POLICIA MUNICIPAL","Calle de Trespaderne, 16",4478363.8,450836.2,1,Yazaki con manguera,16 A monofasico,2019
+65,PRM-JM,Carabanchel,J.M. D. Carabanchel / UID CARABANCHEL,"Calle de Albox, 8",4469796.8,436884.1,1,Mennekes Manguera,16 A monofasico,2018
+66,PRM-AG04-02a,Centro,A.G. Economia y Hacienda / SGT,Calle de Alcala 45,4474508.52,440929.55,1,Mennekes Manguera,16 A,2015
+67,PRM-AG04-02b,Centro,A.G. Economia y Hacienda / SGT,Calle de Alcala 45,4474508.52,440929.55,1,Mennekes Manguera,16 A,2017
+68,PRM-AG04-02c,Centro,A.G. Economia y Hacienda / SGT,Calle de Alcala 45,4474508.52,440929.55,1,Mennekes,16 A,2017
+69,PRM-AG06-01,Centro,"A.G. Participacion Ciudadana, Transparencia y Gobierno Abierto / SGT",Calle de Alcala 45,4474508.52,440929.55,1,Mennekes,16 A,2016
+70,PRM-AG04-01a,Centro,A.G. Economia y Hacienda,Calle de Barquillo 17a,4474797.76,440976.34,1,Mennekes,"3,7 kW",2015
+71,PRM-AG04-01b,Centro,A.G. Economia y Hacienda,Calle de Barquillo 17a,4474797.76,440976.34,1,Mennekes,"3,7 kW",2015
+72,PRM-AG04-10a,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes/Schuko,"3,7 kW",2016
+73,PRM-AG04-10B,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes/Schuko,"3,7 kW",2016
+74,PRM-AG04-10C,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes/Schuko,"3,7 kW",2016
+75,PRM-AG04-10d,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
+76,PRM-AG04-10e,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
+77,PRM-AG04-10f,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
+78,PRM-AG04-10g,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
+79,PRM-AG04-10h,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
+80,PRM-AG04-10i,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"3,7 kW",2017
+81,PRM-AG04-,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
+82,PRM-AG04-,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
+83,PRM-AG04-,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
+84,PRM-AG04-,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
+85,PRM-AG04-,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
+86,PRM-AG04-,Centro,A.G. Economia y Hacienda / Agencia Tributaria,Calle de Sacramento 4,4474010.51,439687.55,1,Mennekes,"7,3 KW 32 A configuracion  mono",2018
 87,PRM-AG05-04c,Centro,"A.G. Salud, Seguridad y Emergencias / PM / UID Centro Sur",Plaza del Carmen,4474643.6,440446.2,1,Mennekes con manguera,32 A modificado a trifasico,2018
 88,PRM-AG05-04c,Centro,"A.G. Salud, Seguridad y Emergencias / PM / UID Centro Sur",Plaza del Carmen,4474643.6,440446.2,1,Mennekes con manguera,32 A modificado a trifasico,2018
-89,PRM-AG05-04a,Centro,"A.G. Salud, Seguridad y Emergencias / PM / UID CENTRO NORTE","Pz. Sta M Soledad Torres Acosta, 2",4474983,440255.3,1,Mennekes,"3,7 kW",2017
-90,PRM-AG05-04b,Centro,"A.G. Salud, Seguridad y Emergencias / PM / UID CENTRO NORTE","Pz. Sta M Soledad Torres Acosta, 2",4474983,440255.3,1,Mennekes,"3,7 kW",2017
-91,PRM-AG05-04c,Centro,"A.G. Salud, Seguridad y Emergencias / PM / UID CENTRO NORTE","Pz. Sta M Soledad Torres Acosta, 2",4474983,440255.3,1,Mennekes,11 kW,2018
-92,PRM-JM05-01,Chamartin,J.M.D. Chamartin,C/ Principe de Vergara 142,4477359.49,442495.57,1,Mennekes,"3,7 kW",2016
-93,PRM-AG05-03a,Chamartin,J.M.D. Chamartin / Policia Municipal,C/ Principe de Vergara 142,4477359.49,442495.57,1,Mennekes,32 A configurado inteligente,2018
-94,PRM-AG05-03a,Chamartin,J.M.D. Chamartin / Policia Municipal,C/ Principe de Vergara 142,4477359.49,442495.57,1,Mennekes,33 A configurado inteligente,2018
-95,PRM-AG05-03a,Chamartin,J.M.D. Chamartin / Policia Municipal,C/ Principe de Vergara 142,4477359.49,442495.57,1,Schuko,"3,7 kW",2018
-96,PRM-AG05-03a,Chamartin,J.M.D. Chamartin / Policia Municipal,C/ Principe de Vergara 142,4477359.49,442495.57,1,Schuko,"3,7 kW",2018
-97,PRM-AG05-03a,Chamartin,J.M.D. Chamartin / Policia Municipal,C/ Principe de Vergara 142,4477359.49,442495.57,1,Schuko,"3,7 kW",2018
+89,PRM-AG05-04a,Centro,"A.G. Salud, Seguridad y Emergencias / PM / UID CENTRO NORTE","Plaza Santa Maria Soledad Torres Acosta, 2",4474983,440255.3,1,Mennekes,"3,7 kW",2017
+90,PRM-AG05-04b,Centro,"A.G. Salud, Seguridad y Emergencias / PM / UID CENTRO NORTE","Plaza Santa Maria Soledad Torres Acosta, 2",4474983,440255.3,1,Mennekes,"3,7 kW",2017
+91,PRM-AG05-04c,Centro,"A.G. Salud, Seguridad y Emergencias / PM / UID CENTRO NORTE","Plaza Santa Maria Soledad Torres Acosta, 2",4474983,440255.3,1,Mennekes,11 kW,2018
+92,PRM-JM05-01,Chamartin,J.M.D. Chamartin,Calle de Principe de Vergara 142,4477359.49,442495.57,1,Mennekes,"3,7 kW",2016
+93,PRM-AG05-03a,Chamartin,J.M.D. Chamartin / Policia Municipal,Calle de Principe de Vergara 142,4477359.49,442495.57,1,Mennekes,32 A configurado inteligente,2018
+94,PRM-AG05-03a,Chamartin,J.M.D. Chamartin / Policia Municipal,Calle de Principe de Vergara 142,4477359.49,442495.57,1,Mennekes,33 A configurado inteligente,2018
+95,PRM-AG05-03a,Chamartin,J.M.D. Chamartin / Policia Municipal,Calle de Principe de Vergara 142,4477359.49,442495.57,1,Schuko,"3,7 kW",2018
+96,PRM-AG05-03a,Chamartin,J.M.D. Chamartin / Policia Municipal,Calle de Principe de Vergara 142,4477359.49,442495.57,1,Schuko,"3,7 kW",2018
+97,PRM-AG05-03a,Chamartin,J.M.D. Chamartin / Policia Municipal,Calle de Principe de Vergara 142,4477359.49,442495.57,1,Schuko,"3,7 kW",2018
 98,PRM-AG08-,Chamartin,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Calle de Guatemala,4479196.7,442858,1,Mennekes manguera,32 A monofasico,2018
-99,PRM-AG05-0,Chamberi,"A.G. Salud, Seguridad y Emergencias / PM / UID Chamberi",C/ Raimundo Fernandez Villaverde 8,4477772,440516.5,1,Mennekes manguera,32 A limitados a 10 kW,2018
-100,PRM-AG05-0,Chamberi,"A.G. Salud, Seguridad y Emergencias / PM / UID Chamberi",C/ Raimundo Fernandez Villaverde 8,4477772,440516.5,1,Mennekes manguera,32 A limitados a 10 kW,2018
-101,PRM-JM,Chamberi,JMD Chamberi,Calle Palafox 4,4476007.2,440655.9,1,Mennekes Manguera,16 A monofasico,2018
-102,PRM-AG05-20a,Ciudad Lineal,A.G. ECONOMIA Y HACIENDA / Parque Automovilistico,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes/Schuko,,2016
-103,PRM-AG08-05a,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
-104,PRM-AG08-05b,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
-105,PRM-AG08-05c,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
-106,PRM-AG08-05d,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
-107,PRM-AG08-05e,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
-108,PRM-AG08-05f,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
-109,PRM-AG08-05g,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
-110,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
-111,PRM-AG08-05i,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
-112,PRM-AG08-05j,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
-113,PRM-AG08-05k,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
-114,PRM-AG08-05l,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
-115,PRM-AG08-05m,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
-116,PRM-AG08-05n,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
-117,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-118,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-119,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-120,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-121,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-122,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-123,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-124,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-125,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-126,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-127,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-128,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-129,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-130,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-131,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-132,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-133,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-134,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avda. de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
-135,PRM-JM15-01a,Ciudad Lineal,J.M.D. Ciudad Lineal,"C/ Hermanos Garcia Noblejas, 16",4476744.6,446032,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-136,PRM-AG05-,Fuencarral-El Pardo,UID Fuencarral el Pardo,"Avda. Soto Palacios, 2",4482348.5,442150,1,Mennekes con manguera,22 kW 32 A Trifasico Inteligente Blaudrive,2018
-137,PRM-JM,Fuencarral-El Pardo,J.M.D Fuencarral el Pardo,"Avda. de Monforte de Lemos, 40",4481314.2,439945.5,1,Mennekes Manguera,32 A monofasico,2019
-138,PRM-JM08-01a,Fuencarral-El Pardo,J.M.D. Fuencarral-El Pardo,"Avda. Monforte de Lemos, 36-38",4481328.2,439999.7,1,Sucko,"3,7 Kw",2017
-139,PRM-AG05-14a,Hortaleza,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / LABORATORIO DE SALUD PUBLICA",C/ Emigrantes 20 / c/ AREQUIPA,4480152.7,446070.9,1,Mennekes,"3,7 kW Plug T2 Monofasico",2017
-140,PRM-AG05-14b,Hortaleza,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / LABORATORIO DE SALUD PUBLICA",C/ Emigrantes 20 / c/ AREQUIPA,4480152.7,446070.9,1,Mennekes,"3,7 kW Plug T2 Monofasico",2017
-141,PRM-JM16-01a,Hortaleza,J.M.D. Hortaleza,"Ctra. Canillas, 2",4479562.1,444395.8,1,Mennekes,"3,7 kW Plug T2 Monofasico",2017
-142,PRM-JM,Latina,J.M.D. Latina,"Avda. de Las Aguilas, 2A",4470970,435244.9,1,Mennekes,32 A manguera,2018
-143,PRM-JM,Latina,J.M.D. Latina,"Avda. de Las Aguilas, 2A",4470970,435244.9,1,Mennekes,32 A manguera,2018
-144,PRM-AG08-,Latina,A.G. Medio Ambiente y Movilidad / SELUR,Avda. Angel Sanz Briz,4472525.3,436942.7,1,Mennekes manguera,32 A monofasico,2018
-145,PRM-AG08-,Latina,A.G. Medio Ambiente y Movilidad / SELUR,Avda. Angel Sanz Briz,4472525.3,436942.7,1,Mennekes manguera,32 A monofasico,2018
-146,PRM-AG08-,Latina,A.G. Medio Ambiente y Movilidad / SELUR,Avda. Angel Sanz Briz,4472525.3,436942.7,1,Mennekes manguera,32 A monofasico,2018
-147,PRM-AG08-,Latina,A.G. Medio Ambiente y Movilidad / SELUR,Avda. Angel Sanz Briz,4472525.3,436942.7,1,Mennekes manguera,32 A monofasico,2018
-148,PRM-AG05-12a,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","C/ Ctra. del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-149,PRM-AG05-12b,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","C/ Ctra. del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-150,PRM-AG05-12c,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","C/ Ctra. del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-151,PRM-AG05-12d,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","C/ Ctra. del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-152,PRM-AG05-12e,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","C/ Ctra. del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-153,PRM-AG05-12f,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","C/ Ctra. del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-154,PRM-AG05-12g,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","C/ Ctra. del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-155,PRM-AG05-12h,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","C/ Ctra. del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-156,PRM-AG05-07a,Latina,"A.G. Salud, Seguridad y Emergencias / PM / UID Latina",C/ Rodrigo de Arana n 50,4470329.5,435085.1,1,Mennekes,"3,7 kW",2017
-157,PRM-AG05-07b,Latina,"A.G. Salud, Seguridad y Emergencias / PM / UID Latina",C/ Rodrigo de Arana n 50,4470329.5,435085.1,1,Mennekes,"3,7 kW",2017
-158,PRM-AG05-,Latina,A.G. Salud. Seguridad y Emergencias / CIFSE,Calle Sepulveda 153,4472938.8,436338.4,1,Mennekes conector hembra sin manguera,16 A monofasico,2018
-159,PRM-AG05-01c,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / DG DE POLICIA MUNICIPAL","Avda. Principal, 6",4473908.35,437220.72,1,Mennekes con manguera,32 A trifasico,2018
-160,PRM-AG05-01a,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / DG DE POLICIA MUNICIPAL","Avda. Principal, 6",4473908.35,437220.72,1,Mennekes,"7,4 Kw",2016
-161,PRM-AG05-01b,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / DG DE POLICIA MUNICIPAL","Avda. Principal, 6",4473908.35,437220.72,1,Mennekes,"7,4 Kw",2016
-162,PRM-AG05-09,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / Talleres",Avda. Valladolid,4475894.2,438181.5,1,mennekes Hembra/Schuko,3.7 kW monofasico Blaudrive,2018
-163,PRM-AG05-13a,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / INSTITUTO FABIOLA DE MORA Y ARAGON",C/ Dehesa de la Villa c/v Franco Rodriguez s/n,4479076.7,439037.7,1,Mennekes,"3,7 kW PlgT2 Circutor Simple monofasico",2017
-164,PRM-AG05-13b,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / INSTITUTO FABIOLA DE MORA Y ARAGON",C/ Dehesa de la Villa c/v Franco Rodriguez s/n,4479076.7,439037.7,1,Mennekes,"3,7 kW PlgT2 Circutor Simple monofasico",2017
-165,PRM-AG05-02a,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / Unidad Medio Ambiente",C/ Ganaderia 3,4474148.53,438088.56,1,Mennekes,380 V en trifasica,2016
-166,PRM-AG05-02a,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / Unidad Medio Ambiente",C/ Ganaderia 3,4474148.53,438088.56,1,Mennekes,,2016
-167,PRM-AG05-02a,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / Unidad Medio Ambiente",C/ Ganaderia 3,4474148.53,438088.56,1,Chademo - COMBO,22 kW corriente continua,2019
-168,PRM-AG08-01,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Agentes movilidad,"C/ Pista, 4 pabellon de Mayorales",4474354.9,438396.1,1,Mennekes,"3,7 kW",2016
+99,PRM-AG05-0,Chamberi,"A.G. Salud, Seguridad y Emergencias / PM / UID Chamberi",Calle de Raimundo Fernandez Villaverde 8,4477772,440516.5,1,Mennekes manguera,32 A limitados a 10 kW,2018
+100,PRM-AG05-0,Chamberi,"A.G. Salud, Seguridad y Emergencias / PM / UID Chamberi",Calle de Raimundo Fernandez Villaverde 8,4477772,440516.5,1,Mennekes manguera,32 A limitados a 10 kW,2018
+101,PRM-JM,Chamberi,JMD Chamberi,Calle de Palafox 4,4476007.2,440655.9,1,Mennekes Manguera,16 A monofasico,2018
+102,PRM-AG05-20a,Ciudad Lineal,A.G. ECONOMIA Y HACIENDA / Parque Automovilistico,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes/Schuko,,2016
+103,PRM-AG08-05a,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
+104,PRM-AG08-05b,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
+105,PRM-AG08-05c,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
+106,PRM-AG08-05d,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
+107,PRM-AG08-05e,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
+108,PRM-AG08-05f,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
+109,PRM-AG08-05g,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
+110,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2017
+111,PRM-AG08-05i,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
+112,PRM-AG08-05j,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
+113,PRM-AG08-05k,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
+114,PRM-AG08-05l,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
+115,PRM-AG08-05m,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
+116,PRM-AG08-05n,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes,22 Kw Gestion de potencia,2018
+117,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+118,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+119,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+120,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+121,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+122,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+123,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+124,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+125,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+126,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+127,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+128,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+129,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+130,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+131,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+132,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+133,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+134,PRM-AG08-05h,Ciudad Lineal,A.G. Medio Ambiente y Movilidad / Limpieza y residuos,Avenida de las Trece Rosas,4475023.44,445040.54,1,Mennekes con manguera,22 kW,2018
+135,PRM-JM15-01a,Ciudad Lineal,J.M.D. Ciudad Lineal,"Calle de Hermanos Garcia Noblejas, 16",4476744.6,446032,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+136,PRM-AG05-,Fuencarral-El Pardo,UID Fuencarral el Pardo,"Avenida Soto Palacios, 2",4482348.5,442150,1,Mennekes con manguera,22 kW 32 A Trifasico Inteligente Blaudrive,2018
+137,PRM-JM,Fuencarral-El Pardo,J.M.D Fuencarral el Pardo,"Avenida de Monforte de Lemos, 40",4481314.2,439945.5,1,Mennekes Manguera,32 A monofasico,2019
+138,PRM-JM08-01a,Fuencarral-El Pardo,J.M.D. Fuencarral-El Pardo,"Avenida Monforte de Lemos, 36-38",4481328.2,439999.7,1,Sucko,"3,7 Kw",2017
+139,PRM-AG05-14a,Hortaleza,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / LABORATORIO DE SALUD PUBLICA",Calle de Emigrantes 20 / c/ AREQUIPA,4480152.7,446070.9,1,Mennekes,"3,7 kW Plug T2 Monofasico",2017
+140,PRM-AG05-14b,Hortaleza,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / LABORATORIO DE SALUD PUBLICA",Calle de Emigrantes 20 / c/ AREQUIPA,4480152.7,446070.9,1,Mennekes,"3,7 kW Plug T2 Monofasico",2017
+141,PRM-JM16-01a,Hortaleza,J.M.D. Hortaleza,"Carretera. Canillas, 2",4479562.1,444395.8,1,Mennekes,"3,7 kW Plug T2 Monofasico",2017
+142,PRM-JM,Latina,J.M.D. Latina,"Avenida de Las Aguilas, 2A",4470970,435244.9,1,Mennekes,32 A manguera,2018
+143,PRM-JM,Latina,J.M.D. Latina,"Avenida de Las Aguilas, 2A",4470970,435244.9,1,Mennekes,32 A manguera,2018
+144,PRM-AG08-,Latina,A.G. Medio Ambiente y Movilidad / SELUR,Avenida Angel Sanz Briz,4472525.3,436942.7,1,Mennekes manguera,32 A monofasico,2018
+145,PRM-AG08-,Latina,A.G. Medio Ambiente y Movilidad / SELUR,Avenida Angel Sanz Briz,4472525.3,436942.7,1,Mennekes manguera,32 A monofasico,2018
+146,PRM-AG08-,Latina,A.G. Medio Ambiente y Movilidad / SELUR,Avenida Angel Sanz Briz,4472525.3,436942.7,1,Mennekes manguera,32 A monofasico,2018
+147,PRM-AG08-,Latina,A.G. Medio Ambiente y Movilidad / SELUR,Avenida Angel Sanz Briz,4472525.3,436942.7,1,Mennekes manguera,32 A monofasico,2018
+148,PRM-AG05-12a,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","Carretera del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+149,PRM-AG05-12b,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","Carretera del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+150,PRM-AG05-12c,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","Carretera del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+151,PRM-AG05-12d,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","Carretera del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+152,PRM-AG05-12e,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","Carretera del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+153,PRM-AG05-12f,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","Carretera del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+154,PRM-AG05-12g,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","Carretera del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+155,PRM-AG05-12h,Latina,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / CENTRO DE PROTECCION ANIMAL","Carretera del barrio de la Fortuna, 33",4468594.3,434037.9,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+156,PRM-AG05-07a,Latina,"A.G. Salud, Seguridad y Emergencias / PM / UID Latina",Calle de Rodrigo de Arana n 50,4470329.5,435085.1,1,Mennekes,"3,7 kW",2017
+157,PRM-AG05-07b,Latina,"A.G. Salud, Seguridad y Emergencias / PM / UID Latina",Calle de Rodrigo de Arana n 50,4470329.5,435085.1,1,Mennekes,"3,7 kW",2017
+158,PRM-AG05-,Latina,A.G. Salud. Seguridad y Emergencias / CIFSE,Calle de Sepulveda 153,4472938.8,436338.4,1,Mennekes conector hembra sin manguera,16 A monofasico,2018
+159,PRM-AG05-01c,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / DG DE POLICIA MUNICIPAL","Avenida Principal, 6",4473908.35,437220.72,1,Mennekes con manguera,32 A trifasico,2018
+160,PRM-AG05-01a,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / DG DE POLICIA MUNICIPAL","Avenida Principal, 6",4473908.35,437220.72,1,Mennekes,"7,4 Kw",2016
+161,PRM-AG05-01b,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / DG DE POLICIA MUNICIPAL","Avenida Principal, 6",4473908.35,437220.72,1,Mennekes,"7,4 Kw",2016
+162,PRM-AG05-09,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / Talleres",Avenida Valladolid,4475894.2,438181.5,1,mennekes Hembra/Schuko,3.7 kW monofasico Blaudrive,2018
+163,PRM-AG05-13a,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / INSTITUTO FABIOLA DE MORA Y ARAGON",Calle de Dehesa de la Villa c/v Franco Rodriguez s/n,4479076.7,439037.7,1,Mennekes,"3,7 kW PlgT2 Circutor Simple monofasico",2017
+164,PRM-AG05-13b,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / INSTITUTO FABIOLA DE MORA Y ARAGON",Calle de Dehesa de la Villa c/v Franco Rodriguez s/n,4479076.7,439037.7,1,Mennekes,"3,7 kW PlgT2 Circutor Simple monofasico",2017
+165,PRM-AG05-02a,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / Unidad Medio Ambiente",Calle de Ganaderia 3,4474148.53,438088.56,1,Mennekes,380 V en trifasica,2016
+166,PRM-AG05-02a,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / Unidad Medio Ambiente",Calle de Ganaderia 3,4474148.53,438088.56,1,Mennekes,,2016
+167,PRM-AG05-02a,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM / Unidad Medio Ambiente",Calle de Ganaderia 3,4474148.53,438088.56,1,Chademo - COMBO,22 kW corriente continua,2019
+168,PRM-AG08-01,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Agentes movilidad,"Calle de Pista, 4 pabellon de Mayorales",4474354.9,438396.1,1,Mennekes,"3,7 kW",2016
 169,PRM-AG08-,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Centro Municipal de Acustica,"M-30 p.K.21,700, Vivero Migas Calientes",4477226.9,437202.3,1,Mennekes Manguera,32 A monofasico,2018
 170,PRM-AG08-,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Viejo 4 (Casa de Campo),4474468.6,438527.3,1,Mennekes manguera,32 A monofasico,2018
 171,PRM-AG08-,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Viejo 4 (Casa de Campo),4474468.6,438527.3,1,Mennekes manguera,32 A monofasico,2018
@@ -178,73 +178,73 @@ id,CODIGO,DISTRITO,EDIFICIO,Direccion,COORDENADA Y,COORDENADA X,TERMINALES,CONEC
 177,PRM-AG08-,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Viejo 4 (Casa de Campo),4474468.6,438527.3,1,Mennekes manguera,32 A monofasico,2018
 178,PRM-AG08-,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Viejo 4 (Casa de Campo),4474468.6,438527.3,1,Mennekes manguera,32 A monofasico,2019
 179,PRM-AG08-,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Paseo Viejo 4 (Casa de Campo),4474468.6,438527.3,1,Mennekes manguera,32 A monofasico,2019
-180,PRM-AG08-01a,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"P Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
-181,PRM-AG08-01b,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"P Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
-182,PRM-AG08-01c,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"P Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
-183,PRM-AG08-01d,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"P Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
-184,PRM-AG08-01e,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"P Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
-185,PRM-AG08-01f,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"P Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
-186,PRM-JM09-01,Moncloa - Aravaca,J.M.D. Moncloa,"Pz. Moncloa, 1 (C/ Isaac Peral)",4476284.53,439098.58,1,Mennekes,"3,7 kW",2016
+180,PRM-AG08-01a,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"Paseo Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
+181,PRM-AG08-01b,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"Paseo Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
+182,PRM-AG08-01c,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"Paseo Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
+183,PRM-AG08-01d,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"Paseo Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
+184,PRM-AG08-01e,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"Paseo Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
+185,PRM-AG08-01f,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,"Paseo Camoens, s/n PALACETE FERROVIARIOS",4476198.4,438437,1,Mennekes,"3,7 K Plug T2 Monofasico",2017
+186,PRM-JM09-01,Moncloa - Aravaca,J.M.D. Moncloa,"Plaza Moncloa, 1 (Calle de Isaac Peral)",4476284.53,439098.58,1,Mennekes,"3,7 kW",2016
 187,PRM-AG05-08,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM (Pabellon USA)","Ronda Lago, 6",4474148.53,438088.56,1,Mennekes,"3,7 kW",2017
 188,PRM-AG05-08,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM (Pabellon USA)","Ronda Lago, 6",4474148.53,438088.56,1,Mennekes,"3,7 kW",2017
 189,PRM-AG05-08,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM (Pabellon USA)","Ronda Lago, 6",4474148.53,438088.56,1,Mennekes,"3,7 kW",2017
 190,PRM-AG05-08,Moncloa - Aravaca,"A.G. Salud, Seguridad y Emergencias / PM (Pabellon USA)","Ronda Lago, 6",4474148.53,438088.56,1,Mennekes,"3,7 kW",2017
 191,PRM-AG08-06a,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,Rosaleda Parque del Oeste,4475349.9,439051.7,1,Mennekes,"3,7 kW",2017
 192,PRM-AG08-06b,Moncloa - Aravaca,A.G. Medio Ambiente y Movilidad / Rosaleda,Rosaleda Parque del Oeste,4475349.9,439051.7,1,Mennekes,"3,7 kW",2017
-193,PRM-JM,Moratalaz,J.M.D Moratalaz,"C/ Fuente Carrantona, 6",4472194.42,445952.51,1,Mennekes Manguera,32 A monofasico,2019
-194,PRM-JM14-01,Moratalaz,J.M.D. Moratalaz,"C/ Fuente de Carrantona, 8",4472194.42,445952.51,1,Mennekes,"3,7 kW",2016
-195,PRM-AG05-04c,Puente de Vallecas,"A.G. Salud, Seguridad y Emergencias / PM / UID PUENTE DE VALLECAS"," C/ Puerto de Cardoso, 3",4471163.6,444605.6,1,Mennekes / Schuco,32 A monofasico,2019
+193,PRM-JM,Moratalaz,J.M.D Moratalaz,"Calle de Fuente Carrantona, 6",4472194.42,445952.51,1,Mennekes Manguera,32 A monofasico,2019
+194,PRM-JM14-01,Moratalaz,J.M.D. Moratalaz,"Calle de Fuente de Carrantona, 8",4472194.42,445952.51,1,Mennekes,"3,7 kW",2016
+195,PRM-AG05-04c,Puente de Vallecas,"A.G. Salud, Seguridad y Emergencias / PM / UID PUENTE DE VALLECAS"," Calle de Puerto de Cardoso, 3",4471163.6,444605.6,1,Mennekes / Schuco,32 A monofasico,2019
 196,PRM-JM,Puente de Vallecas,J.M.D Puente de Vallecas,Centro Cultural Lope de Vega (Concejo de Teverga 1),4471058.1,443082.6,1,Mennekes Manguera,32 A Trifasico,2018
-197,PRM-JM,Retiro,J.M.D Retito (Aparcamiento de Daoiz y Velarde),"Avda. de la Ciudad de Barcelona, 162",4472846.1,442637.6,1,Mennekes Manguera,16 A monofasico,2018
-198,PRM-AG05-10a,Retiro,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / SEDE DEL ORGANISMO AUTONOMO MADRID SALUD",Avda. Mediterraneo 62,4473257.8,443553.6,1,Mennekes,"3,7 kW Plug T2 circutor",2017
-199,PRM-AG05-10b,Retiro,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / SEDE DEL ORGANISMO AUTONOMO MADRID SALUD",Avda. Mediterraneo 62,4473257.8,443553.6,1,Mennekes,"3,7 kW Plug T2 circutor",2017
-200,PRM-AG02-01a,Retiro,A.G. Coordinacion Territorial y Asociaciones / SGT,C/ Montalban 1,4474415.49,441281.55,1,Mennekes/Schuko,"3,7 kW",2016
-201,PRM-AG02-01b,Retiro,A.G. Coordinacion Territorial y Asociaciones / SGT,C/ Montalban 1,4474415.49,441281.55,1,Mennekes/Schuko,"3,7 kW",2016
-202,PRM-AG08-07a,Retiro,A.G. Medio Ambiente y Movilidad / SGT,C/ Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
-203,PRM-AG08-07b,Retiro,A.G. Medio Ambiente y Movilidad / SGT,C/ Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
-204,PRM-AG08-07c,Retiro,A.G. Medio Ambiente y Movilidad / SGT,C/ Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
-205,PRM-AG08-07d,Retiro,A.G. Medio Ambiente y Movilidad / SGT,C/ Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
-206,PRM-AG08-07e,Retiro,A.G. Medio Ambiente y Movilidad / SGT,C/ Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
-207,PRM-AG08-07f,Retiro,A.G. Medio Ambiente y Movilidad / SGT,C/ Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
-208,PRM-AG03-02a,Retiro,"A.G. Portavoz, Coordinacion Junta de Gobierno y Relaciones con el Pleno - SGT Coordinacion Territorial",C/ Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
-209,PRM-AG03-01c,Retiro,"A.G. Portavoz, Coordinacion Junta de Gobierno y Relaciones con el Pleno - SGT Coordinacion Territorial",C/ Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
-210,PRM-AG03-01a,Retiro,"A.G. Portavoz, Coordinacion Junta de Gobierno y Relaciones con el Pleno - SGT Portavoz",C/ Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
-211,PRM-AL01-01a,Retiro,Alcaldia Aparcamiento Cibeles,C/ Montalban 1,4474415.49,441281.55,1,Mennekes/Schuko,33 A gestion potencia plataforma IBIL,2017
-212,PRM-AL01-01b,Retiro,Alcaldia Aparcamiento Cibeles,C/ Montalban 1,4474415.49,441281.55,1,Mennekes/Schuko,34 A gestion potencia plataforma IBIL,2017
-213,PRM-AG09-01,Retiro,A.G. Cultura y Deportes,C/ Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2019
-214,PRM-AG08-04a,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"C/ General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2017
-215,PRM-AG08-04b,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"C/ General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2017
-216,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"C/ General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2017
-217,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"C/ General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2018
-218,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"C/ General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2018
-219,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"C/ General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2018
-220,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"C/ General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2018
-221,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"C/ General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2018
-222,PRM-AG05-11a,Salamanca,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / MONTESA",C/ Montesa 22,4475781.4,44309.8,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-223,PRM-AG05-11b,Salamanca,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / MONTESA",C/ Montesa 22,4475781.4,44309.8,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-224,PRM-AG05-05a,Salamanca,"A.G. Salud, Seguridad y Emergencias / PM / UID Salamanca",C/ Pedro Heredia n 36,4475898.6,443937.7,1,Mennekes Manguera,32 A gestion potencia,2018
-225,PRM-AG05-05b,Salamanca,"A.G. Salud, Seguridad y Emergencias / PM / UID Salamanca",C/ Pedro Heredia n 36,4475898.6,443937.7,1,Mennekes Manguera,32 A gestion potencia,2018
-226,PRM-AG05-05c,Salamanca,"A.G. Salud, Seguridad y Emergencias / PM / UID Salamanca",C/ Pedro Heredia n 36,4475898.6,443937.7,1,Mennekes Manguera,32 A gestion potencia,2018
-227,PRM-AG05-04c,Salamanca,"A.G. Salud, Seguridad y Emergencias / PM / UID RUFINO BLANCO","Calle Rufino Blanco, 2",4475741.5,443523.4,1,Mennekes / Schuco,32 A monofasico,2019
-228,PRM-JM20-01a,San Blas - Canillejas,J.M.D. San Blas-Canillejas,"Avda. Arcentales, 28",4476358.2,448301.8,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
-229,PRM-JM,San Blas - Canillejas,J.M.D. San Blas-Canillejas,"Avda. Arcentales, 28",4476358.2,448301.8,1,Mennekes,32 A trifasico,2019
-230,PRM-AL01-10,San Blas - Canillejas,Alcaldia / IAM,C/ Albarracin 33,4475949.43,446478.55,1,Mennekes,,2016
-231,PRM-AG05-04c,San Blas - Canillejas,"A.G. Salud, Seguridad y Emergencias / PM / UID SAN BLAS CANILLEJAS","C/ Estocolmo, 91",4476297.1,448810.3,2,Yazaki con manguera,16 A monofasico,2019
-232,PRM-AG08-,San Blas - Canillejas,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Calle Albarracin 33,4475949.43,446478.55,1,Mennekes manguera,32 A monofasico,2018
-233,PRM-AG08-,San Blas - Canillejas,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Calle Albarracin 33,4475949.43,446478.55,1,Mennekes manguera,32 A monofasico,2018
-234,PRM-AG05-06a,Tetuan,"A.G. Salud, Seguridad y Emergencias / PM / UID Tetuan",Avda. de Asturias n 68,4480640.2,440838.4,1,Mennekes,"3,7 kW",2017
-235,PRM-AG05-06b,Tetuan,"A.G. Salud, Seguridad y Emergencias / PM / UID Tetuan",Avda. de Asturias n 68,4480640.2,440838.4,1,Mennekes,"3,7 kW",2017
-236,PRM-JM06-01a,Tetuan,J.M.D. Tetuan,"C/ Bravo Murillo, 357",4479822.4,441300.4,1,Mennekes,"3,7 kW Plug T2 Circutor simple monofasico",2017
-237,PRM-JM,Usera,J.M.D Usera,"Avda. Rafaela Ybarra, 41",4470649.8,439769.8,1,Mennekes Manguera,16 A monofasico,2018
-238,PRM-AG05-,Usera,"A.G. Salud, Seguridad y Emergencias / PM / UID Tetuan","Calle del Dr. Tolosa Latour, 7",4469852.6,440494.4,1,yazaki,16 A manguera Yazaki,2018
-239,PRM-AG05-,Usera,"A.G. Salud, Seguridad y Emergencias / PM / UID Tetuan","Calle del Dr. Tolosa Latour, 7",4469852.6,440494.4,1,Mennekes,32 A manguera,2018
+197,PRM-JM,Retiro,J.M.D Retito (Aparcamiento de Daoiz y Velarde),"Avenida de la Ciudad de Barcelona, 162",4472846.1,442637.6,1,Mennekes Manguera,16 A monofasico,2018
+198,PRM-AG05-10a,Retiro,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / SEDE DEL ORGANISMO AUTONOMO MADRID SALUD",Avenida Mediterraneo 62,4473257.8,443553.6,1,Mennekes,"3,7 kW Plug T2 circutor",2017
+199,PRM-AG05-10b,Retiro,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / SEDE DEL ORGANISMO AUTONOMO MADRID SALUD",Avenida Mediterraneo 62,4473257.8,443553.6,1,Mennekes,"3,7 kW Plug T2 circutor",2017
+200,PRM-AG02-01a,Retiro,A.G. Coordinacion Territorial y Asociaciones / SGT,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes/Schuko,"3,7 kW",2016
+201,PRM-AG02-01b,Retiro,A.G. Coordinacion Territorial y Asociaciones / SGT,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes/Schuko,"3,7 kW",2016
+202,PRM-AG08-07a,Retiro,A.G. Medio Ambiente y Movilidad / SGT,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
+203,PRM-AG08-07b,Retiro,A.G. Medio Ambiente y Movilidad / SGT,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
+204,PRM-AG08-07c,Retiro,A.G. Medio Ambiente y Movilidad / SGT,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
+205,PRM-AG08-07d,Retiro,A.G. Medio Ambiente y Movilidad / SGT,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
+206,PRM-AG08-07e,Retiro,A.G. Medio Ambiente y Movilidad / SGT,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
+207,PRM-AG08-07f,Retiro,A.G. Medio Ambiente y Movilidad / SGT,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
+208,PRM-AG03-02a,Retiro,"A.G. Portavoz, Coordinacion Junta de Gobierno y Relaciones con el Pleno - SGT Coordinacion Territorial",Calle de Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
+209,PRM-AG03-01c,Retiro,"A.G. Portavoz, Coordinacion Junta de Gobierno y Relaciones con el Pleno - SGT Coordinacion Territorial",Calle de Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
+210,PRM-AG03-01a,Retiro,"A.G. Portavoz, Coordinacion Junta de Gobierno y Relaciones con el Pleno - SGT Portavoz",Calle de Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2017
+211,PRM-AL01-01a,Retiro,Alcaldia Aparcamiento Cibeles,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes/Schuko,33 A gestion potencia plataforma IBIL,2017
+212,PRM-AL01-01b,Retiro,Alcaldia Aparcamiento Cibeles,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes/Schuko,34 A gestion potencia plataforma IBIL,2017
+213,PRM-AG09-01,Retiro,A.G. Cultura y Deportes,Calle de Montalban 1,4474415.49,441281.55,1,Mennekes,32 A gestion potencia plataforma IBIL,2019
+214,PRM-AG08-04a,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"Calle de General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2017
+215,PRM-AG08-04b,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"Calle de General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2017
+216,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"Calle de General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2017
+217,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"Calle de General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2018
+218,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"Calle de General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2018
+219,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"Calle de General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2018
+220,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"Calle de General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2018
+221,PRM-AG08-04c,Salamanca,A.G. Medio Ambiente y Movilidad / RESIDUOS,"Calle de General Diaz Poltier, Canton",4475737.2,442681,1,Mennekes,32 A trifasico 22 Kw,2018
+222,PRM-AG05-11a,Salamanca,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / MONTESA",Calle de Montesa 22,4475781.4,44309.8,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+223,PRM-AG05-11b,Salamanca,"A.G. Salud, Seguridad y Emergencias / Madrid Salud / MONTESA",Calle de Montesa 22,4475781.4,44309.8,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+224,PRM-AG05-05a,Salamanca,"A.G. Salud, Seguridad y Emergencias / PM / UID Salamanca",Calle de Pedro Heredia n 36,4475898.6,443937.7,1,Mennekes Manguera,32 A gestion potencia,2018
+225,PRM-AG05-05b,Salamanca,"A.G. Salud, Seguridad y Emergencias / PM / UID Salamanca",Calle de Pedro Heredia n 36,4475898.6,443937.7,1,Mennekes Manguera,32 A gestion potencia,2018
+226,PRM-AG05-05c,Salamanca,"A.G. Salud, Seguridad y Emergencias / PM / UID Salamanca",Calle de Pedro Heredia n 36,4475898.6,443937.7,1,Mennekes Manguera,32 A gestion potencia,2018
+227,PRM-AG05-04c,Salamanca,"A.G. Salud, Seguridad y Emergencias / PM / UID RUFINO BLANCO","Calle de Rufino Blanco, 2",4475741.5,443523.4,1,Mennekes / Schuco,32 A monofasico,2019
+228,PRM-JM20-01a,San Blas - Canillejas,J.M.D. San Blas-Canillejas,"Avenida Arcentales, 28",4476358.2,448301.8,1,Mennekes,"3,7 KW Plug T2 monofasico",2017
+229,PRM-JM,San Blas - Canillejas,J.M.D. San Blas-Canillejas,"Avenida Arcentales, 28",4476358.2,448301.8,1,Mennekes,32 A trifasico,2019
+230,PRM-AL01-10,San Blas - Canillejas,Alcaldia / IAM,Calle de Albarracin 33,4475949.43,446478.55,1,Mennekes,,2016
+231,PRM-AG05-04c,San Blas - Canillejas,"A.G. Salud, Seguridad y Emergencias / PM / UID SAN BLAS CANILLEJAS","Calle de Estocolmo, 91",4476297.1,448810.3,2,Yazaki con manguera,16 A monofasico,2019
+232,PRM-AG08-,San Blas - Canillejas,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Calle de Albarracin 33,4475949.43,446478.55,1,Mennekes manguera,32 A monofasico,2018
+233,PRM-AG08-,San Blas - Canillejas,A.G. Medio Ambiente y Movilidad / Agentes movilidad,Calle de Albarracin 33,4475949.43,446478.55,1,Mennekes manguera,32 A monofasico,2018
+234,PRM-AG05-06a,Tetuan,"A.G. Salud, Seguridad y Emergencias / PM / UID Tetuan",Avenida de Asturias n 68,4480640.2,440838.4,1,Mennekes,"3,7 kW",2017
+235,PRM-AG05-06b,Tetuan,"A.G. Salud, Seguridad y Emergencias / PM / UID Tetuan",Avenida de Asturias n 68,4480640.2,440838.4,1,Mennekes,"3,7 kW",2017
+236,PRM-JM06-01a,Tetuan,J.M.D. Tetuan,"Calle de Bravo Murillo, 357",4479822.4,441300.4,1,Mennekes,"3,7 kW Plug T2 Circutor simple monofasico",2017
+237,PRM-JM,Usera,J.M.D Usera,"Avenida Rafaela Ybarra, 41",4470649.8,439769.8,1,Mennekes Manguera,16 A monofasico,2018
+238,PRM-AG05-,Usera,"A.G. Salud, Seguridad y Emergencias / PM / UID Tetuan","Calle de del Dr. Tolosa Latour, 7",4469852.6,440494.4,1,yazaki,16 A manguera Yazaki,2018
+239,PRM-AG05-,Usera,"A.G. Salud, Seguridad y Emergencias / PM / UID Tetuan","Calle de del Dr. Tolosa Latour, 7",4469852.6,440494.4,1,Mennekes,32 A manguera,2018
 240,PRM-JM,Vicalvaro,J.M.D. Vicalvaro,"Plaza Don Antonio de Andres, 18",4472790.8,448688.9,1,Mennekes Manguera,16 A monofasico,2018
 241,PRM-JM,Vicalvaro,J.M.D. Vicalvaro,"Plaza Don Antonio de Andres, 18",4472790.8,448688.9,1,Mennekes Manguera,16 A monofasico,2019
 242,PRM-AG05-04c,Vicalvaro,"A.G. Salud, Seguridad y Emergencias / PM / UID VICALVARO","Paseo Polideportivo, 138,",4473271.6,449371,1,Mennekes / Schuco,32 A monofasico,2019
-243,PRM-AG05-04c,Villa de Vallecas,"A.G. Salud, Seguridad y Emergencias / PM / UID VILLA  DE VALLECAS","C/ Real de Arganda, 64",4470229.4,447968.9,1,Mennekes / Schuco,32 A monofasico,2019
-244,PRM-AG01-03a,Villa de Vallecas,A.G. Cultura. Almacen municipal,Calle Camino de Hormigueras 133,4469744.2,445455.4,1,Mennekes Manguera,16 A monofasico,2019
-245,PRM-JM,Villa de Vallecas,J.M.D Villa de Vallecas,Calle Federico Garcia Lorca 12,4470206.1,447357,1,Mennekes Manguera,16 A monofasico,2018
+243,PRM-AG05-04c,Villa de Vallecas,"A.G. Salud, Seguridad y Emergencias / PM / UID VILLA  DE VALLECAS","Calle de Real de Arganda, 64",4470229.4,447968.9,1,Mennekes / Schuco,32 A monofasico,2019
+244,PRM-AG01,Villa de Vallecas,A.G. Cultura. Almacen municipal,Calle de Camino de Hormigueras 133,4469744.2,445455.4,1,Mennekes Manguera,16 A monofasico,2019
+245,PRM-JM,Villa de Vallecas,J.M.D Villa de Vallecas,Calle de Federico Garcia Lorca 12,4470206.1,447357,1,Mennekes Manguera,16 A monofasico,2018
 246,PRM-AG08-08,Villa de Vallecas,A.G. Medio Ambiente y Movilidad / VALDEMINGOMEZ,VALDEMINGOMEZ,4467895,452324,1,Mennekes,"3,7 kW",2017
 247,PRM-AG08-09,Villa de Vallecas,A.G. Medio Ambiente y Movilidad / VALDEMINGOMEZ,VALDEMINGOMEZ,4467895,452324,1,Mennekes,16 A monofasico,2018
-248,PRM-JM17-01,Villaverde,J.M.D. Villaverde,C/ Arroyo Bueno 53,4466725.48,439602.47,1,Mennekes,"3,7 kW",2016
+248,PRM-JM17-01,Villaverde,J.M.D. Villaverde,Calle de Arroyo Bueno 53,4466725.48,439602.47,1,Mennekes,"3,7 kW",2016
 249,PRM-AG05-04c,Villaverde,"A.G. Salud, Seguridad y Emergencias / PM / UID VILLAVERDE","Carr. de Carabanchel a Villaverde, 105",4467183.8,440081.4,1,Mennekes / Schuco,32 A monofasico,2019

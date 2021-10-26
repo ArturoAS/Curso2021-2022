@@ -1,0 +1,2194 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q55488",
+        "name": "railway station"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DESCRIPCION to type Q55488"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "AZUQUECA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5845757",
+      "name": "Estación de Azuqueca",
+      "types": [
+        "Q55488"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Azuqueca (Q5845757) for cells containing \"AZUQUECA\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "MADRID-RECOLETOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8841582",
+      "name": "Recoletos Station",
+      "types": [
+        "Q55491"
+      ],
+      "score": 72
+    },
+    "shareNewTopics": false,
+    "description": "Match item Recoletos Station (Q8841582) for cells containing \"MADRID-RECOLETOS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "MADRID-PRINCIPE PIO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2527066",
+      "name": "Príncipe Pío",
+      "types": [
+        "Q928830",
+        "Q41176",
+        "Q55488",
+        "Q22808403"
+      ],
+      "score": 89
+    },
+    "shareNewTopics": false,
+    "description": "Match item Príncipe Pío (Q2527066) for cells containing \"MADRID-PRINCIPE PIO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "ASAMBLEA DE MADRID-ENTREVIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1960376",
+      "name": "Estación de Asamblea de Madrid-Entrevías",
+      "types": [
+        "Q55488"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Asamblea de Madrid-Entrevías (Q1960376) for cells containing \"ASAMBLEA DE MADRID-ENTREVIAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "VILLAVERDE BAJO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2560615",
+      "name": "Villaverde Bajo railway station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 79
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villaverde Bajo railway station (Q2560615) for cells containing \"VILLAVERDE BAJO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "SAN CRISTOBAL INDUSTRIAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5847117",
+      "name": "Estación de San Cristóbal Industrial",
+      "types": [
+        "Q55488"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de San Cristóbal Industrial (Q5847117) for cells containing \"SAN CRISTOBAL INDUSTRIAL\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "SAN CRISTOBAL DE LOS ANGELES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5494493",
+      "name": "Estación de San Cristóbal de los Ángeles",
+      "types": [
+        "Q55488"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de San Cristóbal de los Ángeles (Q5494493) for cells containing \"SAN CRISTOBAL DE LOS ANGELES\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "ARAVACA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3647056",
+      "name": "Estación de Aravaca",
+      "types": [
+        "Q55488"
+      ],
+      "score": 64
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Aravaca (Q3647056) for cells containing \"ARAVACA\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "DOCE DE OCTUBRE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846116",
+      "name": "Estación de Doce de Octubre",
+      "types": [
+        "Q55488"
+      ],
+      "score": 79
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Doce de Octubre (Q5846116) for cells containing \"DOCE DE OCTUBRE\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "EL POZO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q613656",
+      "name": "El Pozo station",
+      "types": [
+        "Q55488",
+        "Q22808404"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Pozo station (Q613656) for cells containing \"EL POZO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "SANTA EUGENIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5847173",
+      "name": "Q5847173",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Q5847173 (Q5847173) for cells containing \"SANTA EUGENIA\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "FUENCARRAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8779819",
+      "name": "Fuencarral station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuencarral station (Q8779819) for cells containing \"FUENCARRAL\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "ORCASITAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846837",
+      "name": "Orcasitas train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 69
+    },
+    "shareNewTopics": false,
+    "description": "Match item Orcasitas train station (Q5846837) for cells containing \"ORCASITAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "PUENTE ALCOCER",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846980",
+      "name": "Estación de Puente Alcocer",
+      "types": [
+        "Q55488"
+      ],
+      "score": 78
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Puente Alcocer (Q5846980) for cells containing \"PUENTE ALCOCER\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "FANJUL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846227",
+      "name": "Estación de Fanjul",
+      "types": [
+        "Q55488"
+      ],
+      "score": 60
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Fanjul (Q5846227) for cells containing \"FANJUL\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "LAS AGUILAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846576",
+      "name": "Q5846576",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Q5846576 (Q5846576) for cells containing \"LAS AGUILAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "MADRID-ATOCHA CERCANIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2842655",
+      "name": "Atocha-Cercanías railway station",
+      "types": [
+        "Q55490"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Match item Atocha-Cercanías railway station (Q2842655) for cells containing \"MADRID-ATOCHA CERCANIAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "MADRID-NUEVOS MINISTERIOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2705508",
+      "name": "Nuevos Ministerios Station",
+      "types": [
+        "Q928830",
+        "Q55488",
+        "Q1147171",
+        "Q22808403"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item Nuevos Ministerios Station (Q2705508) for cells containing \"MADRID-NUEVOS MINISTERIOS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "EL GOLOSO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846165",
+      "name": "El Goloso station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 69
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Goloso station (Q5846165) for cells containing \"EL GOLOSO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "UNIVERSIDAD PONTIFICIA DE COMILLAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2280874",
+      "name": "Universidad P. Comillas station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item Universidad P. Comillas station (Q2280874) for cells containing \"UNIVERSIDAD PONTIFICIA DE COMILLAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "VALDEBEBAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q19753295",
+      "name": "Estación de Valdebebas",
+      "types": [
+        "Q55488"
+      ],
+      "score": 62
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Valdebebas (Q19753295) for cells containing \"VALDEBEBAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "ALCOBENDAS SAN SEBASTIAN DE LOS REYES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1882520",
+      "name": "Alcobendas-San Sebastián de los Reyes train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Alcobendas-San Sebastián de los Reyes train station (Q1882520) for cells containing \"ALCOBENDAS SAN SEBASTIAN DE LOS REYES\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "POZUELO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846969",
+      "name": "Q5846969",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Q5846969 (Q5846969) for cells containing \"POZUELO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "EL BARRIAL-CENTRO COMERCIAL-POZUELO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846138",
+      "name": "El Barrial train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Barrial train station (Q5846138) for cells containing \"EL BARRIAL-CENTRO COMERCIAL-POZUELO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "PINAR DE LAS ROZAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2537523",
+      "name": "Pinar",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Pinar (Q2537523) for cells containing \"PINAR DE LAS ROZAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "EL ESCORIAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11681645",
+      "name": "El Escorial train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 73
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Escorial train station (Q11681645) for cells containing \"EL ESCORIAL\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "LAS MATAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8840909",
+      "name": "Las Matas train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 69
+    },
+    "shareNewTopics": false,
+    "description": "Match item Las Matas train station (Q8840909) for cells containing \"LAS MATAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "SAN YAGO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5847153",
+      "name": "Estación de San Yago",
+      "types": [
+        "Q55488"
+      ],
+      "score": 67
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de San Yago (Q5847153) for cells containing \"SAN YAGO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "LAS ZORRERAS-NAVALQUEJIGO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8840897",
+      "name": "Q8840897",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Q8840897 (Q8840897) for cells containing \"LAS ZORRERAS-NAVALQUEJIGO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "PINTO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10276290",
+      "name": "Pinto train station",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Pinto train station (Q10276290) for cells containing \"PINTO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "VALDEMORO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5847404",
+      "name": "Valdemoro train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 69
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valdemoro train station (Q5847404) for cells containing \"VALDEMORO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "CIEMPOZUELOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846048",
+      "name": "Ciempozuelos train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 75
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ciempozuelos train station (Q5846048) for cells containing \"CIEMPOZUELOS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "VILLALBA DE GUADARRAMA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q931922",
+      "name": "Villalba train station",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villalba train station (Q931922) for cells containing \"VILLALBA DE GUADARRAMA\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "LOS NEGRALES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846633",
+      "name": "Estación de Los Negrales",
+      "types": [
+        "Q55488"
+      ],
+      "score": 75
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Los Negrales (Q5846633) for cells containing \"LOS NEGRALES\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "GALAPAGAR-LA NAVATA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2085120",
+      "name": "Galapagar-La Navata station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Match item Galapagar-La Navata station (Q2085120) for cells containing \"GALAPAGAR-LA NAVATA\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "ALPEDRETE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5845680",
+      "name": "Estación de Alpedrete",
+      "types": [
+        "Q55488"
+      ],
+      "score": 69
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Alpedrete (Q5845680) for cells containing \"ALPEDRETE\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "COLLADO MEDIANO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846071",
+      "name": "Estación de Collado Mediano",
+      "types": [
+        "Q55488"
+      ],
+      "score": 79
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Collado Mediano (Q5846071) for cells containing \"COLLADO MEDIANO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "CERCEDILLA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846025",
+      "name": "Cercedilla train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 71
+    },
+    "shareNewTopics": false,
+    "description": "Match item Cercedilla train station (Q5846025) for cells containing \"CERCEDILLA\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "PUERTO DE NAVACERRADA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846997",
+      "name": "Puerto de Navacerrada train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 78
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puerto de Navacerrada train station (Q5846997) for cells containing \"PUERTO DE NAVACERRADA\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "TRES CANTOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5847364",
+      "name": "Tres Cantos Station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 73
+    },
+    "shareNewTopics": false,
+    "description": "Match item Tres Cantos Station (Q5847364) for cells containing \"TRES CANTOS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "COLMENAR VIEJO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846073",
+      "name": "Colmenar Viejo train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 78
+    },
+    "shareNewTopics": false,
+    "description": "Match item Colmenar Viejo train station (Q5846073) for cells containing \"COLMENAR VIEJO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "SAN FERNANDO DE HENARES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2058644",
+      "name": "San Fernando",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Fernando (Q2058644) for cells containing \"SAN FERNANDO DE HENARES\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "MECO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846698",
+      "name": "Q5846698",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Q5846698 (Q5846698) for cells containing \"MECO\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "GETAFE-SECTOR 3",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846299",
+      "name": "Getafe Sector 3 train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 79
+    },
+    "shareNewTopics": false,
+    "description": "Match item Getafe Sector 3 train station (Q5846299) for cells containing \"GETAFE-SECTOR 3\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "LAS MARGARITAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2640301",
+      "name": "Las Margaritas Universidad",
+      "types": [
+        "Q55488"
+      ],
+      "score": 70
+    },
+    "shareNewTopics": false,
+    "description": "Match item Las Margaritas Universidad (Q2640301) for cells containing \"LAS MARGARITAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "GETAFE-INDUSTRIAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846298",
+      "name": "Getafe Industrial train station",
+      "types": [
+        "Q55488"
+      ],
+      "score": 81
+    },
+    "shareNewTopics": false,
+    "description": "Match item Getafe Industrial train station (Q5846298) for cells containing \"GETAFE-INDUSTRIAL\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "LAS RETAMAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846572",
+      "name": "Estación de Las Retamas",
+      "types": [
+        "Q55488"
+      ],
+      "score": 73
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de Las Retamas (Q5846572) for cells containing \"LAS RETAMAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "SAN JOSE DE VALDERAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5847135",
+      "name": "Estación de San José de Valderas",
+      "types": [
+        "Q55488"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Match item Estación de San José de Valderas (Q5847135) for cells containing \"SAN JOSE DE VALDERAS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "FUENLABRADA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2486901",
+      "name": "Fuenlabrada Central",
+      "types": [
+        "Q55488"
+      ],
+      "score": 73
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuenlabrada Central (Q2486901) for cells containing \"FUENLABRADA\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "LOS COTOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5846082",
+      "name": "Cotos Station",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Cotos Station (Q5846082) for cells containing \"LOS COTOS\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "DESCRIPCION: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "DESCRIPCION",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "DESCRIPCION",
+    "similarValue": "LOS MOLINOS-GUADARRAMA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5847304",
+      "name": "Tablada station",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Tablada station (Q5847304) for cells containing \"LOS MOLINOS-GUADARRAMA\" in column DESCRIPCION"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "POBLACION",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipality of Spain"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column POBLACION to type Q2074737"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q162620",
+        "name": "province of Spain"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PROVINCIA to type Q162620"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "PROVINCIA: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "PROVINCIA",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "similarValue": "Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24004405",
+      "name": "Madrid Province",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Madrid Province (Q24004405) for cells containing \"Madrid\" in column PROVINCIA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DESCRIPCION",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "SameAs_Wikidata_DESCRIPCION",
+    "columnInsertIndex": 2,
+    "description": "Create column SameAs_Wikidata_DESCRIPCION at index 2 based on column DESCRIPCION using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "POBLACION",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "SameAs_Wikidata_POBLACION",
+    "columnInsertIndex": 8,
+    "description": "Create column SameAs_Wikidata_POBLACION at index 8 based on column POBLACION using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PROVINCIA",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "SameAs_Wikidata_PROVINCIA",
+    "columnInsertIndex": 10,
+    "description": "Create column SameAs_Wikidata_PROVINCIA at index 10 based on column PROVINCIA using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

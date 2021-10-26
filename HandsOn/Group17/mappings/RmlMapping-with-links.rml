@@ -1,0 +1,429 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix vocab: <http://transporteMad.example.org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@base <http://transporteMad.example.org/ns#>.
+
+<#TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/bases_bicimad-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/EstacionBiciMad/{ID}";
+    rr:class vocab:EstacionBiciMad
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:gis_x;
+    rr:objectMap [
+      rml:reference "Gis_X"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:gis_Y;
+    rr:objectMap [
+      rml:reference "Gis_Y"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:fechaAlta;
+    rr:objectMap [
+      rml:reference "FechadeAlta"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:distrito;
+    rr:objectMap [
+      rml:reference "Distrito"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:barrio;
+    rr:objectMap [
+      rml:reference "Barrio"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:nFinca;
+    rr:objectMap [
+      rml:reference "NFinca"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:tipoReserva;
+    rr:objectMap [
+      rml:reference "TipodeReserva"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:numeroPlazas;
+    rr:objectMap [
+      rml:reference "NumerodePlazas"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:longitud;
+    rr:objectMap [
+      rml:reference "Longitud"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:latitud;
+    rr:objectMap [
+      rml:reference "Latitud"
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:direccion;
+    rr:objectMap [
+      rml:reference "Direccion"
+      ]
+  ].
+  
+<#TriplesMap1.1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/bases_bicimad-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/Distrito/{Distrito}";
+    rr:class vocab:Distrito
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant rdfs:label; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "Distrito"; rr:termType rr:Literal ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+        rml:reference "SameAs_Wikidata_Distrito"
+      ]
+  ].
+  
+<#TriplesMap1.2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/bases_bicimad-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/Barrio/{Barrio}";
+    rr:class vocab:Barrio
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant rdfs:label; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "Barrio"; rr:termType rr:Literal ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs; 
+    rr:objectMap [
+        rml:reference "SameAs_Wikidata_Barrio"
+      ]
+  ].
+  
+<#TriplesMap1.3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/bases_bicimad-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/TipodeReserva/{TipodeReserva}";
+    rr:class vocab:TipodeReserva
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant rdfs:label; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "TipodeReserva"; rr:termType rr:Literal ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+        rml:reference "SameAs_Wikidata_TipodeReserva"
+      ]
+  ].
+  
+<#TriplesMap2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/reserva_paradas_taxis-updated-with-links.csv";
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/ParadaTaxi/{ID}";
+    rr:class vocab:ParadaTaxi
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:Gis_X;
+    rr:objectMap [
+      rml:reference "Gis_X"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Gis_Y;
+    rr:objectMap [
+      rml:reference "Gis_Y"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:FechaAlta;
+    rr:objectMap [
+      rml:reference "FechadeAlta"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Distrito;
+    rr:objectMap [
+      rml:reference "Distrito"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Barrio;
+    rr:objectMap [
+      rml:reference "Barrio"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:NFinca;
+    rr:objectMap [
+      rml:reference "NFinca"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:TipoReserva;
+    rr:objectMap [
+      rml:reference "TipodeReserva"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:LineaBateria;
+    rr:objectMap [
+      rml:reference "LineaBateria"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:NumeroPlazas;
+    rr:objectMap [
+      rml:reference "NumerodePlazas"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:LongitudP;
+    rr:objectMap [
+      rml:reference "LongitudP"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Longitud;
+    rr:objectMap [
+      rml:reference "Longitud"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Latitud;
+    rr:objectMap [
+      rml:reference "Latitud"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Direccion;
+    rr:objectMap [
+      rml:reference "Direccion"
+    ]
+  ].
+  
+<#TriplesMap2.1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/reserva_paradas_taxis-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/Distrito/{Distrito}";
+    rr:class vocab:Distrito
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant rdfs:label; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "Distrito"; rr:termType rr:Literal ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+        rml:reference "SameAs_Wikidata_Distrito"
+      ]
+  ].
+  
+<#TriplesMap2.2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/reserva_paradas_taxis-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/Barrio/{Barrio}";
+    rr:class vocab:Barrio
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant rdfs:label; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "Barrio"; rr:termType rr:Literal ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+        rml:reference "SameAs_Wikidata_Barrio"
+      ]
+  ].
+  
+ <#TriplesMap3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/listado-estaciones-cercanias-madrid-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/EstacionCercanias/{CODIGO}";
+    rr:class vocab:EstacionCercanias
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Descripcion;
+    rr:objectMap [
+      rml:reference "DESCRIPCION"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Latitud;
+    rr:objectMap [
+      rml:reference "LATITUD"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Longitud;
+    rr:objectMap [
+      rml:reference "LONGITUD"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Direccion;
+    rr:objectMap [
+      rml:reference "DIRECCION"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:CodigoPostal;
+    rr:objectMap [
+      rml:reference "C.P."
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Poblacion;
+    rr:objectMap [
+      rml:reference "POBLACION"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Provincia;
+    rr:objectMap [
+      rml:reference "PROVINCIA"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:Fichas;
+    rr:objectMap [
+      rml:reference "Fichas"
+    ]
+  ].
+  
+<#TriplesMap3.1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/listado-estaciones-cercanias-madrid-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/EstacionCercanias/{DESCRIPCION}";
+    rr:class vocab:EstacionCercanias
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant rdfs:label; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "DESCRIPCION"; rr:termType rr:Literal ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+        rml:reference "SameAs_Wikidata_DESCRIPCION"
+      ]
+  ].
+  
+<#TriplesMap3.2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/listado-estaciones-cercanias-madrid-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/Poblacion/{POBLACION}";
+    rr:class vocab:Poblacion
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant rdfs:label; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "POBLACION"; rr:termType rr:Literal ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+        rml:reference "SameAs_Wikidata_POBLACION"
+      ]
+  ].
+  
+<#TriplesMap3.3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/listado-estaciones-cercanias-madrid-updated-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://transporteMad.example.org/Ontology/Provincia/{PROVINCIA}";
+    rr:class vocab:Provincia
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant rdfs:label; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "PROVINCIA"; rr:termType rr:Literal ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs;
+    rr:objectMap [
+        rml:reference "SameAs_Wikidata_PROVINCIA"
+      ]
+  ].

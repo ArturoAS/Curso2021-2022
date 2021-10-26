@@ -1,0 +1,25 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbr: <http://transporteMad.example.org#>
+PREFIX dbo: <http://transporteMad.example.org/Ontology/>
+PREFIX res: <http://transporteMad.example.org#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+#Query1
+SELECT ?Numero 
+WHERE {
+    ?Numero rdf:type dbr:Barrio.
+    ?Numero owl:sameAs <valor>
+}
+
+#Query2
+SELECT ?Numero WHERE {
+    ?Numero rdf:type dbr:TipodeReserva.
+    ?Numero owl:sameAs <valor>
+}
+
+#Query3
+SELECT ?Numero WHERE {
+    ?Numero rdf:type dbr:Distrito.
+    ?Numero owl:sameAs <valor>
+}
+

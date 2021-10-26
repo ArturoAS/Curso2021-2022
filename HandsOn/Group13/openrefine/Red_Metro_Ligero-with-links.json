@@ -1,0 +1,1469 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "LightRail_Name",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "LightRail_Line",
+    "columnInsertIndex": 2,
+    "description": "Create column LightRail_Line at index 2 based on column LightRail_Name using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ALVAREZ DE VILLAAMIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML1"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ANTONIO SAURA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML1"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "AVENIDA DE EUROPA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "AVENIDA SISTEMA SOLAR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "BELGICA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "BERNA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "BLASCO IBAÑEZ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML1"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "BOADILLA CENTRO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "BULEVAR SUR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CAMPUS DE SOMOSAGUAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CANTABRIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CIUDAD DE LA IMAGEN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CIUDAD DEL CINE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "COCHERAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "COLONIA DE LOS ANGELES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "COLONIA JARDIN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DOS CASTILLAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ESTACION DE ARAVACA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ESTRELLA POLAR NORTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ESTRELLA POLAR SUR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FERIAL DE BOADILLA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "IGLESIA CENTRO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FUENTE DE LA MORA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML1"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "INFANTE DON LUIS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ISABEL II"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "JAIME I NORTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "JAIME I SUR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "JOSE ISBERT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "JULIO ROMERO DE TORRES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "LA BALLENA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "LAS TABLAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML1"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MARIA TUDOR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML1"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MONTEPRINCIPE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NUEVO MUNDO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PALAS DE REY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML1"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PARLA CENTRO - BULEVAR NORTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PARQUE PARLA ESTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PINAR DE CHAMARTIN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML1"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "POLIGONO INDUSTRIAL CIUDAD DE PARLA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "POZUELO OESTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PRADO DE LA VEGA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PRADO DEL ESPINO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PRADO DEL REY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PUERTA DE BOADILLA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "RETAMARES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SIGLO XXI"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SOMOSAGUAS CENTRO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SOMOSAGUAS SUR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML2"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "TIERRA NORTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "TIERRA SUR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VENTORRO DEL CANO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML3"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VENUS NORTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VENUS SUR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "VIRGEN DEL CORTIJO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML1"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "LightRail_Line: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "LightRail_Line",
+          "from": 3.5,
+          "to": 4.51,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "LightRail_Line",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "Same_As_Wikidata_LightRail_Line",
+    "columnInsertIndex": 3,
+    "description": "Create column Same_As_Wikidata_LightRail_Line at index 3 based on column LightRail_Line using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Same_As_Wikidata_LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ML1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q2058921"
+      }
+    ],
+    "description": "Mass edit cells in column Same_As_Wikidata_LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Same_As_Wikidata_LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ML2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q3832710"
+      }
+    ],
+    "description": "Mass edit cells in column Same_As_Wikidata_LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Same_As_Wikidata_LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ML3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q3832709"
+      }
+    ],
+    "description": "Mass edit cells in column Same_As_Wikidata_LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Same_As_Wikidata_LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ML4"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q1637556"
+      }
+    ],
+    "description": "Mass edit cells in column Same_As_Wikidata_LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLAZA DE TOROS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "REYES CATOLICOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ML4"
+      }
+    ],
+    "description": "Mass edit cells in column LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Same_As_Wikidata_LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLAZA DE TOROS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q1637556"
+      }
+    ],
+    "description": "Mass edit cells in column Same_As_Wikidata_LightRail_Line"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Same_As_Wikidata_LightRail_Line",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "REYES CATOLICOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "https://www.wikidata.org/wiki/Q1637556"
+      }
+    ],
+    "description": "Mass edit cells in column Same_As_Wikidata_LightRail_Line"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "District_ID",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "District_Name",
+    "columnInsertIndex": 11,
+    "description": "Create column District_Name at index 11 based on column District_ID using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Centro"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Arganzuela"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "8"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fuencarral-El Pardo"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "9"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncloa-Aravaca"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "10"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Latina"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "15"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ciudad Lineal"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hortaleza"
+      }
+    ],
+    "description": "Mass edit cells in column District_Name"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "District_Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column District_Name to type Q3032114"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "District_Name",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Same_As_Wikidata_District",
+    "columnInsertIndex": 12,
+    "description": "Create column Same_As_Wikidata_District at index 12 based on column District_Name using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

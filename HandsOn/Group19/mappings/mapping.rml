@@ -1,8 +1,9 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
-@prefix aq: <http://spainaq.linkeddata.com/#>.
-@prefix mad: <http://spainaq.linkeddata.com/28/#>.
+@prefix aq: <http://spainaq.linkeddata.com/provincia/>.
+@prefix est: <http://spainaq.linkeddata.com/provincia/municipio/>.
+@prefix params: <http://spainaq.linkeddata.com/provincia/municipio/#>.
 @prefix transit: <http://vocab.org/transit/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
@@ -17,37 +18,44 @@
   ];
 
   rr:subjectMap [
-    rr:template "http://spainaq.linkeddata.com/{provincia}";
-    rr:class aq:PROVINCIA
+    rr:template "http://spainaq.linkeddata.com/{provincia}/{municipio}/{estacion}/";
+    rr:class aq:PROVINCIA;
+    rr:class aq:MUNICIPIO;
+    rr:class aq:ESTACION
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MUNICIPIO; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant aq: ; rr:termType rr:IRI];
+    rr:objectMap[ rml:reference "PROVINCIA"; rr:dataType xsd:integer]
+  ];
+
+  rr:predicateObjectMap[
+    rr:predicateMap[ rr:constant aq:municipio; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "MUNICIPIO"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:ESTACION; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant est:estacion; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "ESTACION"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MAGNITUD; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:MAGNITUD; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "MAGNITUD"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:DATE; rr:termType rr:IRI];
-    rr:objectMap[ rml:reference "DATE"; rr:dataType xsd:integer]
+    rr:predicateMap[ rr:constant params:DATE; rr:termType rr:IRI];
+    rr:objectMap[ rml:reference "DATE"; rr:dataType xsd:date]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MEDIDA; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:MEDIDA; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "D01"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:VALIDEZ; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:VALIDEZ; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "V01"; rr:termType rr:Literal]
   ].
 
@@ -64,32 +72,32 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MUNICIPIO; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant aq:MUNICIPIO; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "MUNICIPIO"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:ESTACION; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant est:estacion; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "ESTACION"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MAGNITUD; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:MAGNITUD; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "MAGNITUD"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:DATE; rr:termType rr:IRI];
-    rr:objectMap[ rml:reference "DATE"; rr:dataType xsd:integer]
+    rr:predicateMap[ rr:constant params:DATE; rr:termType rr:IRI];
+    rr:objectMap[ rml:reference "DATE"; rr:dataType xsd:date]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MEDIDA; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:MEDIDA; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "D01"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:VALIDEZ; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:VALIDEZ; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "V01"; rr:termType rr:Literal]
   ].
 
@@ -106,32 +114,32 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MUNICIPIO; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant aq:MUNICIPIO; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "MUNICIPIO"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:ESTACION; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant est:estacion; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "ESTACION"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MAGNITUD; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:MAGNITUD; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "MAGNITUD"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:DATE; rr:termType rr:IRI];
-    rr:objectMap[ rml:reference "DATE"; rr:dataType xsd:integer]
+    rr:predicateMap[ rr:constant params:DATE; rr:termType rr:IRI];
+    rr:objectMap[ rml:reference "DATE"; rr:dataType xsd:date]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MEDIDA; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:MEDIDA; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "D01"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:VALIDEZ; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:VALIDEZ; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "V01"; rr:termType rr:Literal]
   ].
 
@@ -148,31 +156,31 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MUNICIPIO; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant aq:MUNICIPIO; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "MUNICIPIO"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:ESTACION; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant est:estacion; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "ESTACION"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MAGNITUD; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:MAGNITUD; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "MAGNITUD"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:DATE; rr:termType rr:IRI];
-    rr:objectMap[ rml:reference "DATE"; rr:dataType xsd:integer]
+    rr:predicateMap[ rr:constant params:DATE; rr:termType rr:IRI];
+    rr:objectMap[ rml:reference "DATE"; rr:dataType xsd:date]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:MEDIDA; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:MEDIDA; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "D01"; rr:dataType xsd:integer]
   ];
 
   rr:predicateObjectMap[
-    rr:predicateMap[ rr:constant mad:VALIDEZ; rr:termType rr:IRI];
+    rr:predicateMap[ rr:constant params:VALIDEZ; rr:termType rr:IRI];
     rr:objectMap[ rml:reference "V01"; rr:termType rr:Literal]
   ].

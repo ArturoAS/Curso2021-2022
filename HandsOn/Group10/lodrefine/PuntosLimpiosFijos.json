@@ -1,0 +1,652 @@
+[
+    {
+      "op": "core/column-removal",
+      "columnName": "PK",
+      "description": "Remove column PK"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "DESCRIPCION-ENTIDAD",
+      "description": "Remove column DESCRIPCION-ENTIDAD"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "EQUIPAMIENTO",
+      "description": "Remove column EQUIPAMIENTO"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "ACCESIBILIDAD",
+      "description": "Remove column ACCESIBILIDAD"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "PLANTA",
+      "description": "Remove column PLANTA"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "PUERTA",
+      "description": "Remove column PUERTA"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "ESCALERAS",
+      "description": "Remove column ESCALERAS"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "ORIENTACION",
+      "description": "Remove column ORIENTACION"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "TELEFONO",
+      "description": "Remove column TELEFONO"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "FAX",
+      "description": "Remove column FAX"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "EMAIL",
+      "description": "Remove column EMAIL"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "DESCRIPCION",
+      "description": "Remove column DESCRIPCION"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "CONTENT-URL",
+      "description": "Remove column CONTENT-URL"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "TRANSPORTE",
+      "description": "Remove column TRANSPORTE"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "LOCALIDAD",
+      "description": "Remove column LOCALIDAD"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "PROVINCIA",
+      "description": "Remove column PROVINCIA"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "BARRIO",
+      "description": "Remove column BARRIO"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "LATITUD",
+      "description": "Remove column LATITUD"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "LONGITUD",
+      "description": "Remove column LONGITUD"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Column",
+      "description": "Remove column Column"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "TIPO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "/contenido/entidadesYorganismos/PuntosLimpiosFijos"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Punto Limpio Fijo"
+        }
+      ],
+      "description": "Mass edit cells in column TIPO"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "TIPO-NUM",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "V"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Número"
+        }
+      ],
+      "description": "Mass edit cells in column TIPO-NUM"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "NOMBRE-VIA",
+      "expression": "grel:null",
+      "onError": "set-to-blank",
+      "newColumnName": "CENTRO",
+      "columnInsertIndex": 3,
+      "description": "Create column CENTRO at index 3 based on column NOMBRE-VIA using expression grel:null"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "CENTRO",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [],
+          "fromBlank": true,
+          "fromError": false,
+          "to": "Vía pública"
+        }
+      ],
+      "description": "Mass edit cells in column CENTRO"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "TIPO",
+      "newColumnName": "DATA_TYPE",
+      "description": "Rename column TIPO to DATA_TYPE"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "CENTRO",
+      "newColumnName": "CENTER",
+      "description": "Rename column CENTRO to CENTER"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "HORARIO",
+      "newColumnName": "SCHEDULE",
+      "description": "Rename column HORARIO to SCHEDULE"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "SCHEDULE",
+      "expression": "grel:NULL",
+      "onError": "set-to-blank",
+      "newColumnName": "WASTE",
+      "columnInsertIndex": 2,
+      "description": "Create column WASTE at index 2 based on column SCHEDULE using expression grel:NULL"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "CLASE-VIAL",
+      "newColumnName": "ROAD_TYPE",
+      "description": "Rename column CLASE-VIAL to ROAD_TYPE"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "NOMBRE-VIA",
+      "newColumnName": "ROAD_NAME",
+      "description": "Rename column NOMBRE-VIA to ROAD_NAME"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "TIPO-NUM",
+      "newColumnName": "NUM_TYPE",
+      "description": "Rename column TIPO-NUM to NUM_TYPE"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "CODIGO-POSTAL",
+      "newColumnName": "DISTRICT_CODE",
+      "description": "Rename column CODIGO-POSTAL to DISTRICT_CODE"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "DISTRITO",
+      "newColumnName": "DISTRICT",
+      "description": "Rename column DISTRITO to DISTRICT"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "COORDENADA-X",
+      "newColumnName": "UTMX",
+      "description": "Rename column COORDENADA-X to UTMX"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "COORDENADA-Y",
+      "newColumnName": "UTMY",
+      "description": "Rename column COORDENADA-Y to UTMY"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "WASTE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [],
+          "fromBlank": true,
+          "fromError": false,
+          "to": "Aceite vegetal de cocina (producción doméstica)\nRopa y calzado usado (producción doméstica)\nCápsulas de café (producción doméstica)\nRadiografías (50 unidades)\nAerosoles (10 unidades)\nPilas alcalinas, salinas y baterías usadas (producción doméstica)\nCartuchos de tinta y tóner (4 unidades)\nBombillas de bajo consumo y tubos fluorescentes (3 unidades)\nCD´s, DVD´s, casetes... y sus embalajes (50 unidades)\nCintas de video (50 unidades)\nPequeños aparatos elécrtricos y electrónicos (RAEE´s): ebooks, MP3, MP4, MP5, Ipods, tablets, mandos de televisión, USB´s y teléfonos móviles, lectores de DVDs y CDs… (producción doméstica) \nEnvases  (producción doméstica)\nEnvases contaminados (producción doméstica)\nBaterías de automovil (2 unidades)\nPintura y disolventes (5 Kg)\nAceite mineral o sintético de motor (10 Litros)\nJeringuillas y agujas hipodérmicas de origen doméstico: 50 unidades\nNeumáticos de bicicleta: 3 unidades\nTapones de plástico de recipientes domésticos.\nMetales (producción doméstica)\nVidrio  (producción doméstica)\nPapel y cartón (producción doméstica)\nCristal plano de ventanas, cuadros, vitrocerámicas o espejos\nFrigoríficos y aires acondicionados (1 unidad)\nLavavajillas, cocinas, lavadoras, tv, etc (6 unidades)\nMaderas (hasta 150 Kg)\nMuebles, estanterías, somieres, colchones  y enseres… (5 unidades)\nEscombros de pequeñas obras domésticas (120 Kg/4 sacos pequeños)\nRestos de poda (producción doméstica)\nTermómetros (2 unidades)\nMedicamentos y sus envases (1 Kg)\nPequeñas bombonas de gas de hasta 10 litros de volumen (tipo camping gas, helio...): 1 unidad\nPorexpán  de grandes embalajes domésticos."
+        }
+      ],
+      "description": "Mass edit cells in column WASTE"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "NOMBRE",
+      "newColumnName": "NAME",
+      "description": "Rename column NOMBRE to NAME"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28016"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "5"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28021"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "17"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28026"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "12"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28030"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "14"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28031"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "18"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28032"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "15"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28033"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "16"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28034"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "8"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28037"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "20"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28038"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "13"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28040"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "9"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28042"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "21"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28044"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "11"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28045"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "2"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "28047"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "10"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT_CODE"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "CENTER",
+      "index": 0,
+      "description": "Move column CENTER to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "NAME",
+      "index": 0,
+      "description": "Move column NAME to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "ROAD_TYPE",
+      "index": 4,
+      "description": "Move column ROAD_TYPE to position 4"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "DATA_TYPE",
+      "index": 0,
+      "description": "Move column DATA_TYPE to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "DATA_TYPE",
+      "index": 1,
+      "description": "Move column DATA_TYPE to position 1"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "NUM",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column NUM using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column DISTRICT_CODE using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "UTMX",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column UTMX using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "UTMY",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column UTMY using expression value.toNumber()"
+    }
+  ]

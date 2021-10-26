@@ -1,0 +1,215 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+PREFIX acc: <http://safemadrid.linkeddata.es/ontology/accidentalidad#> .
+
+#Consultamos el listado completo de accidentes
+
+  SELECT ?Subject WHERE { 
+    ?Subject rdf:type acc:accidente. 
+  }
+
+#http://safemadrid.linkeddata.es/Accidente/94
+#http://safemadrid.linkeddata.es/Accidente/73
+#http://safemadrid.linkeddata.es/Accidente/147
+#http://safemadrid.linkeddata.es/Accidente/52
+#http://safemadrid.linkeddata.es/Accidente/126
+#http://safemadrid.linkeddata.es/Accidente/31
+#http://safemadrid.linkeddata.es/Accidente/105
+#http://safemadrid.linkeddata.es/Accidente/10
+#http://safemadrid.linkeddata.es/Accidente/9
+#http://safemadrid.linkeddata.es/Accidente/81
+#http://safemadrid.linkeddata.es/Accidente/60
+#http://safemadrid.linkeddata.es/Accidente/134
+#http://safemadrid.linkeddata.es/Accidente/113
+#http://safemadrid.linkeddata.es/Accidente/39
+#http://safemadrid.linkeddata.es/Accidente/18
+#http://safemadrid.linkeddata.es/Accidente/89
+#http://safemadrid.linkeddata.es/Accidente/142
+#http://safemadrid.linkeddata.es/Accidente/68
+#http://safemadrid.linkeddata.es/Accidente/121
+#http://safemadrid.linkeddata.es/Accidente/47
+#http://safemadrid.linkeddata.es/Accidente/100
+#http://safemadrid.linkeddata.es/Accidente/26
+#http://safemadrid.linkeddata.es/Accidente/4
+#http://safemadrid.linkeddata.es/Accidente/97
+#http://safemadrid.linkeddata.es/Accidente/76
+#http://safemadrid.linkeddata.es/Accidente/129
+#http://safemadrid.linkeddata.es/Accidente/55
+#http://safemadrid.linkeddata.es/Accidente/34
+#http://safemadrid.linkeddata.es/Accidente/108
+#http://safemadrid.linkeddata.es/Accidente/13
+#http://safemadrid.linkeddata.es/Accidente/84
+#http://safemadrid.linkeddata.es/Accidente/63
+#http://safemadrid.linkeddata.es/Accidente/137
+#http://safemadrid.linkeddata.es/Accidente/42
+#http://safemadrid.linkeddata.es/Accidente/116
+#http://safemadrid.linkeddata.es/Accidente/21
+#http://safemadrid.linkeddata.es/Accidente/92
+#http://safemadrid.linkeddata.es/Accidente/71
+#http://safemadrid.linkeddata.es/Accidente/145
+#http://safemadrid.linkeddata.es/Accidente/50
+#http://safemadrid.linkeddata.es/Accidente/124
+#http://safemadrid.linkeddata.es/Accidente/103
+#http://safemadrid.linkeddata.es/Accidente/29
+#http://safemadrid.linkeddata.es/Accidente/7
+#http://safemadrid.linkeddata.es/Accidente/79
+#http://safemadrid.linkeddata.es/Accidente/132
+#http://safemadrid.linkeddata.es/Accidente/58
+#http://safemadrid.linkeddata.es/Accidente/111
+#http://safemadrid.linkeddata.es/Accidente/37
+#http://safemadrid.linkeddata.es/Accidente/16
+#http://safemadrid.linkeddata.es/Accidente/87
+#http://safemadrid.linkeddata.es/Accidente/140
+#http://safemadrid.linkeddata.es/Accidente/66
+#http://safemadrid.linkeddata.es/Accidente/119
+#http://safemadrid.linkeddata.es/Accidente/45
+#http://safemadrid.linkeddata.es/Accidente/24
+#http://safemadrid.linkeddata.es/Accidente/2
+#http://safemadrid.linkeddata.es/Accidente/95
+#http://safemadrid.linkeddata.es/Accidente/74
+#http://safemadrid.linkeddata.es/Accidente/148
+#http://safemadrid.linkeddata.es/Accidente/53
+#http://safemadrid.linkeddata.es/Accidente/127
+#http://safemadrid.linkeddata.es/Accidente/32
+#http://safemadrid.linkeddata.es/Accidente/106
+#http://safemadrid.linkeddata.es/Accidente/11
+#http://safemadrid.linkeddata.es/Accidente/82
+#http://safemadrid.linkeddata.es/Accidente/61
+#http://safemadrid.linkeddata.es/Accidente/135
+#http://safemadrid.linkeddata.es/Accidente/40
+#http://safemadrid.linkeddata.es/Accidente/114
+#http://safemadrid.linkeddata.es/Accidente/19
+#http://safemadrid.linkeddata.es/Accidente/90
+#http://safemadrid.linkeddata.es/Accidente/143
+#http://safemadrid.linkeddata.es/Accidente/69
+#http://safemadrid.linkeddata.es/Accidente/122
+#http://safemadrid.linkeddata.es/Accidente/48
+#http://safemadrid.linkeddata.es/Accidente/101
+#http://safemadrid.linkeddata.es/Accidente/27
+#http://safemadrid.linkeddata.es/Accidente/5
+#http://safemadrid.linkeddata.es/Accidente/98
+#http://safemadrid.linkeddata.es/Accidente/77
+#http://safemadrid.linkeddata.es/Accidente/130
+#http://safemadrid.linkeddata.es/Accidente/56
+#http://safemadrid.linkeddata.es/Accidente/109
+#http://safemadrid.linkeddata.es/Accidente/35
+#http://safemadrid.linkeddata.es/Accidente/14
+#http://safemadrid.linkeddata.es/Accidente/85
+#http://safemadrid.linkeddata.es/Accidente/64
+#http://safemadrid.linkeddata.es/Accidente/138
+#http://safemadrid.linkeddata.es/Accidente/43
+#http://safemadrid.linkeddata.es/Accidente/117
+#http://safemadrid.linkeddata.es/Accidente/22
+#http://safemadrid.linkeddata.es/Accidente/93
+#http://safemadrid.linkeddata.es/Accidente/72
+#http://safemadrid.linkeddata.es/Accidente/146
+#http://safemadrid.linkeddata.es/Accidente/51
+#http://safemadrid.linkeddata.es/Accidente/125
+#http://safemadrid.linkeddata.es/Accidente/30
+#http://safemadrid.linkeddata.es/Accidente/104
+#http://safemadrid.linkeddata.es/Accidente/8
+#http://safemadrid.linkeddata.es/Accidente/80
+#http://safemadrid.linkeddata.es/Accidente/133
+#http://safemadrid.linkeddata.es/Accidente/59
+#http://safemadrid.linkeddata.es/Accidente/112
+#http://safemadrid.linkeddata.es/Accidente/38
+#http://safemadrid.linkeddata.es/Accidente/17
+#http://safemadrid.linkeddata.es/Accidente/88
+#http://safemadrid.linkeddata.es/Accidente/141
+#http://safemadrid.linkeddata.es/Accidente/67
+#http://safemadrid.linkeddata.es/Accidente/120
+#http://safemadrid.linkeddata.es/Accidente/46
+#http://safemadrid.linkeddata.es/Accidente/25
+#http://safemadrid.linkeddata.es/Accidente/3
+#http://safemadrid.linkeddata.es/Accidente/96
+#http://safemadrid.linkeddata.es/Accidente/75
+#http://safemadrid.linkeddata.es/Accidente/149
+#http://safemadrid.linkeddata.es/Accidente/54
+#http://safemadrid.linkeddata.es/Accidente/128
+#http://safemadrid.linkeddata.es/Accidente/33
+#http://safemadrid.linkeddata.es/Accidente/107
+#http://safemadrid.linkeddata.es/Accidente/12
+#http://safemadrid.linkeddata.es/Accidente/83
+#http://safemadrid.linkeddata.es/Accidente/62
+#http://safemadrid.linkeddata.es/Accidente/136
+#http://safemadrid.linkeddata.es/Accidente/41
+#http://safemadrid.linkeddata.es/Accidente/115
+#http://safemadrid.linkeddata.es/Accidente/20
+#http://safemadrid.linkeddata.es/Accidente/91
+#http://safemadrid.linkeddata.es/Accidente/70
+#http://safemadrid.linkeddata.es/Accidente/144
+#http://safemadrid.linkeddata.es/Accidente/123
+#http://safemadrid.linkeddata.es/Accidente/49
+#http://safemadrid.linkeddata.es/Accidente/102
+#http://safemadrid.linkeddata.es/Accidente/28
+#http://safemadrid.linkeddata.es/Accidente/6
+#http://safemadrid.linkeddata.es/Accidente/99
+#http://safemadrid.linkeddata.es/Accidente/78
+#http://safemadrid.linkeddata.es/Accidente/131
+#http://safemadrid.linkeddata.es/Accidente/57
+#http://safemadrid.linkeddata.es/Accidente/110
+#http://safemadrid.linkeddata.es/Accidente/36
+#http://safemadrid.linkeddata.es/Accidente/15
+#http://safemadrid.linkeddata.es/Accidente/86
+#http://safemadrid.linkeddata.es/Accidente/65
+#http://safemadrid.linkeddata.es/Accidente/139
+#http://safemadrid.linkeddata.es/Accidente/44
+#http://safemadrid.linkeddata.es/Accidente/118
+#http://safemadrid.linkeddata.es/Accidente/23
+#http://safemadrid.linkeddata.es/Accidente/1
+
+#Consultamos todos los accidentes que han ocurrido en el distrito Salamanca
+
+  SELECT ?Subject WHERE { 
+    ?Subject acc:hasDISTRITO "SALAMANCA".
+    ?Subject rdf:type acc:accidente
+  }
+
+#http://safemadrid.linkeddata.es/Accidente/94
+#http://safemadrid.linkeddata.es/Accidente/47
+#http://safemadrid.linkeddata.es/Accidente/71
+#http://safemadrid.linkeddata.es/Accidente/135
+#http://safemadrid.linkeddata.es/Accidente/46
+#http://safemadrid.linkeddata.es/Accidente/136
+#http://safemadrid.linkeddata.es/Accidente/70
+
+#Consultamos los barrios del Distrito CENTRO
+
+  SELECT ?Subject ?Object WHERE {
+    ?Subject acc:hasDISTRITO "CENTRO".
+    ?Subject acc:hasBARRIO ?Object.
+  }
+ 
+#http://safemadrid.linkeddata.es/Barrio/66 UNIVERSIDAD
+#http://safemadrid.linkeddata.es/Barrio/56 SOL
+#http://safemadrid.linkeddata.es/Barrio/64 JUSTICIA
+#http://safemadrid.linkeddata.es/Barrio/60 PALACIO
+#http://safemadrid.linkeddata.es/Barrio/55 CORTES
+#http://safemadrid.linkeddata.es/Barrio/50 EMBAJADORES
+
+#Consultamos los accidentes en los que se han visto involucradas conductoras mujeres
+
+  SELECT ?Subject WHERE {
+    ?Subject acc:hasSEXO "Mujer".
+    ?Subject acc:hasTIPO_PERSONA "Conductor".
+  }
+
+#http://safemadrid.linkeddata.es/Accidente/18
+#http://safemadrid.linkeddata.es/Accidente/89
+#http://safemadrid.linkeddata.es/Accidente/68
+#http://safemadrid.linkeddata.es/Accidente/21
+#http://safemadrid.linkeddata.es/Accidente/124
+#http://safemadrid.linkeddata.es/Accidente/58
+#http://safemadrid.linkeddata.es/Accidente/111
+#http://safemadrid.linkeddata.es/Accidente/127
+#http://safemadrid.linkeddata.es/Accidente/19
+#http://safemadrid.linkeddata.es/Accidente/101
+#http://safemadrid.linkeddata.es/Accidente/14
+#http://safemadrid.linkeddata.es/Accidente/93
+#http://safemadrid.linkeddata.es/Accidente/54
+#http://safemadrid.linkeddata.es/Accidente/115
+#http://safemadrid.linkeddata.es/Accidente/49
+#http://safemadrid.linkeddata.es/Accidente/102
+#http://safemadrid.linkeddata.es/Accidente/110
+#http://safemadrid.linkeddata.es/Accidente/36
+#http://safemadrid.linkeddata.es/Accidente/65
+#http://safemadrid.linkeddata.es/Accidente/118

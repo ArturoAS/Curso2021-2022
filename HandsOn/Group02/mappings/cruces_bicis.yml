@@ -1,0 +1,60 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#
+  
+mappings:
+
+  triplesmap1:
+    sources:
+      - [cabezas_semaforo_bici-updated.csv~csv]
+    s: http://www.preventbicyleaccidents-app.es/group02/resoruces/Crossing/$(id_cruce)~iri]
+    po:
+      - [a, vocab:Crossing]
+      - [vocab:hasIdCrossing,$(id_cruce)]
+      - [vocab:hasTrafficLigh,http://www.preventbicyleaccidents-app.es/group02/resources/TrafficLight/$(id)~iri]
+      - p: vocab:crossIn
+        o:
+          mapping: triplesmap4
+          condition:
+            function: equal
+            parameters:
+            - [str1, $(distrito)]
+            - [str2, $(ID_DISTRICT)]
+
+  triplesmap2:
+    sources:
+      - [cabezas_semaforo_bici-updated.csv~csv]
+    s: http://www.preventbicyleaccidents-app.es/group02/resoruces/Crossing/$(id_cruce)~iri]
+    po:
+      - [a, vocab:TrafficLight]
+      - [vocab:hasIdTrafficLight,$(id)]
+      - [vocab:wasInstalled,$(fecha_inst)]
+      - [vocab:typeTrafficLigh,$(tipo_elem)]
+      - [vocab:ubicatedin,http://www.preventbicyleaccidents-app.es/group02/resources/Geometry/trafficLight$(id)~iri]
+      
+  triplesmap3:
+    sources:
+      - [cabezas_semaforo_bici-updated.csv~csv]
+    s: http://www.preventbicyleaccidents-app.es/group02/resources/Geometry/trafficLight$(id)~iri]
+    po:
+      - [a, vocab:Geometry]
+      - [vocab:hasLat,$(latitud)]
+      - [vocab:hasLong,$(longitud)]
+
+  triplesmap4:
+    sources:
+      - [distritos-updated.csv~csv]
+    s: http://www.preventbicyleaccidents-app.es/group02/resources/District/$(ID_DISTRICT)
+    po:
+      - [a, vocab:District]
+      - [vocab:hasCode,$(ID_DISTRICT)]
+      - [vocab:hasDistrictName,$(NOMBRE)]

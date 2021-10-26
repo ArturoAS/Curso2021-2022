@@ -1,0 +1,38 @@
+PREFIX bici: <http://www.biciwhere-madrid.es/bwm/ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?Subject ?o
+WHERE { 
+    ?Subject bici:hasDescription ?o . 
+  }
+
+SELECT *
+WHERE {
+	?v ?p bici:BikeStand
+}
+
+SELECT *
+WHERE {
+	?s bici:hasDistrictName "SALAMANCA"
+}
+
+SELECT ?s ?z
+WHERE {
+	?s bici:hasDistrictName "SALAMANCA".
+  	?s bici:hasNeighborhoodName ?z
+}
+
+
+SELECT ?s ?x ?y
+WHERE {
+	?s rdf:type bici:Bicimad_Stations.
+  	?s bici:hasLongitude ?x.
+  	?s bici:hasLatitude ?y
+}
+
+SELECT ?s ?z
+WHERE {
+	?s bici:hasNeighborhoodName "PALACIO".
+  	?s bici:hasAddress ?z
+}LIMIT 10
+

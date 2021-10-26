@@ -1,50 +1,52 @@
-<<<<<<< HEAD
-#An HTML document that discusses whether the selected datasets satisfy the requirements. 
-All the requirements must be satisfied by the datasets with the exception of the optional# 
+<!DOCTYPE html>
+<html lang="es">
 
- - Para el csv denominado centros_servicios_establecimientos_sanitarios se ha identificado
-lo siguiente:
--Los datos se han extraidos de https://www.comunidad.madrid/gobierno/datos-abiertos
-poseen una licencia de uso Creative Commons Attribution de la cual entre otros
-para la utilizacion de los datos provenientes en esta fuente se deben respetar los siguientes
-preceptos: 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <title>Dataset Requiremets G24</title>
+</head>
 
-Compartir — Se puede copiar y redistribuir el material en cualquier medio o formato.
-Adaptar — Se permite remezclar, transformar y construir a partir del material
-para cualquier propósito, incluso comercialmente.
-Atribución — Se debe dar crédito de manera adecuada, brindar un enlace a la licencia,
-e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, 
-pero no de forma tal que sugiera que usted o su uso tienen el apoyo de la licenciante.
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Dataset Requiremets</a>
+    </div>
+  </nav>
+  <div class="container-collection">
+    <ul class="collection">
+      <li class="collection-item"><b>R1</b> - El conjunto de datos elegido muestra algunos de los locales en Madrid que disponen de terraza.</li>
+      <li class="collection-item"><b>R2</b> - Nuestro cojunto de datos se encuentra disponible en formato <i>.csv</i> en el siguiente enlace: <br>
+        <a
+          href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=66665cde99be2410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">Conjunto
+          de datos TerrazasMadrid</a>
+      </li>
+      <li class="collection-item"><b>R3</b> - Las condiciones generales del conjunto de datos permiten la reutilización para fines comerciales y no comerciales. <br>
+        <a
+          href="https://datos.madrid.es/portal/site/egob/menuitem.400a817358ce98c34e937436a8a409a0/?vgnextoid=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">Licencia
+          abierta del conjunto de datos</a>
+      </li>
+      <li class="collection-item"><b>R4</b> - El nombre de los distritos y barrios de los locales puede cotejarse con Wikidata. </li>
+      <li class="collection-item"><b>R5</b> - El conjunto de datos dispone de documentación.<a href="https://datos.madrid.es/FWProjects/egob/Catalogo/Economia/Ficheros/Estructura_DS_FicheroCLA_Terrazas.pdf"><br>Documentación PDF</a></li>
+    </ul>
+  </div>
 
-De entre todas las entidades seleccionadas en el dataset y que se ven reflejadas en el
-documento centros_servicios_establecimientos_sanitarios-properties adjunto al propio dataset
-podemos observar como el identificador no nos aporta demasiada información y no parece
-estar relacionado con otros grafos de conocimiento como DBpedia, sin embargo otras entidades
-tales como el municipio, las coordenadas, el tipo de oferta asistencial o el codigo postal
-nos pueden servir para relacionar estos lugares con esas entidades presentes ya en otros
-grafos de conocimiento.
-De la misma forma si consiguieramos una equiparación entre los identificadores del dataset
-y sus correspondientes valores en los grafos de conocimiento ya existentes tambien podrian
-ampliarse los datos asociados a estos y atrubuirles caracteristicas demograficas, economicas
-sociales, etc... 
+</body>
 
- - Para el csv denominado Modelo de flujo del aire se ha identificado
-lo siguiente:
-Los datos se han extraidos de https://datos.gob.es/es/catalogo/l01150780-historico-de-observaciones-de-calidad-del-aire
-poseen una licencia tambien de uso Creative Commons Attribution los cuales deben seguir los
-mismo principios citados anteriormente
 
-De entre todas las entidades seleccionadas en el dataset y que se ven reflejadas en el
-documento Modelo de flujo del aire podemos observar como la referencia al identificador 
-no nos aporta información extra.
+<style>
+  .container-collection {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
 
- - Para el csv denominado Modelo de flujo de trafico horario se ha identificado
-lo siguiente:
-Los datos se han extraidos de https://datos.gob.es/es/catalogo/l01150780-modelo-de-flujo-de-trafico-horario
-poseen una licencia tambien de uso Creative Commons Attribution los cuales deben seguir los
-mismo principios citados anteriormente.
+  .collection {
+    max-width: 700px;
+    width: 95%;
+  }
+</style>
 
-De entre todas las entidades seleccionadas en el dataset y que se ven reflejadas en el
-documento Modelo de flujo de trafico horario podemos observar como la referencia al 
-identificador no nos aporta información extra. Así mismo, el identificador de las 
-calles no nos ayuda a linkearlo dado que no nos aporta el nombre literal de la calle.
+</html>

@@ -1,0 +1,134 @@
+prefixes:
+  rr: http://www.w3.org/ns/r2rml#
+  foaf: http://xmlns.com/foaf/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  schema: http://schema.org/
+  dct: http://purl.org/dc/terms/
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  vocab: http://calidadAire.com#
+ 
+
+  
+mappings:
+  Provincia:
+    sources:
+      - [calidad_aire_datos_mes-updated.csv~csv]
+    s: http://calidadAire.com/$(provincia)
+    po:
+      - [a, vocab:Provincia]
+      - [vocab:refProvincia,$(provincia),xsd:string]
+      - [owl:sameAs, $(URI_provincia)~iri]
+      - p: vocab:tieneMunicipio
+        o:
+          mapping: Municipio
+
+  Municipio:
+    sources:
+      - [calidad_aire_datos_mes-updated.csv~csv]
+    s:  http://calidadAire.com/$(municipio)
+    po:
+      - [a, vocab:Municipio]
+      - [vocab:refMunicipio,$(municipio),xsd:string]
+      - [owl:sameAs, $(URI_municipio)~iri]
+      - p: vocab:tieneEstacion
+        o:
+          mapping: Estacion
+        
+  Estacion:
+    sources:
+      - [calidad_aire_datos_mes-updated.csv~csv]
+    s:  http://calidadAire.com/$(estacion)
+    po:
+      - [a, vocab:Estacion]
+      - [vocab:refEstacion,$(estacion),xsd:string]
+      - p: vocab:tienePuntoMuestreo
+        o:
+          mapping: PuntoMuestreo
+                
+      - p: vocab:mide
+        o:
+          mapping: Magnitud
+   
+  Magnitud:
+    sources:
+      - [calidad_aire_datos_mes-updated.csv~csv]
+    s:  http://calidadAire.com/$(magnitud)
+    po:
+      - [a, vocab:Magnitud]
+      - [vocab:refMagnitud,$(magnitud),xsd:string]
+     
+  PuntoMuestreo:
+    sources:
+      - [calidad_aire_datos_mes-updated.csv~csv]
+    s:  http://calidadAire.com/$(punto_muestreo)
+    po:
+      - [a, vocab:PuntoMuestreo]
+      - [vocab:refPunto,$(punto_muestreo),xsd:string]
+      - [vocab:ano,$(ano),xsd:integer]
+      - [vocab:mes,$(mes),xsd:integer]
+      - [vocab:dia,$(dia),xsd:integer]
+      - p: vocab:tieneMedicion
+        o:
+          mapping: Medicion
+          
+  Medicion:
+    sources:
+      - [calidad_aire_datos_mes-updated.csv~csv]
+    s:  http://calidadAire.com/$(ano)-$(mes)-$(dia)
+    po:
+      - [a, vocab:Medicion]
+      - [vocab:fecha,$(ano)-$(mes)-$(dia), xsd:date]
+      - [vocab:h01, $(h01), xsd:double]
+      - [vocab:valido1, $(v01), xsd:boolean]
+      - [vocab:h02, $(h02), xsd:double]
+      - [vocab:valido2, $(v02), xsd:boolean]
+      - [vocab:h03, $(h03), xsd:double]
+      - [vocab:valido3, $(v03), xsd:boolean]
+      - [vocab:h04, $(h04), xsd:double]
+      - [vocab:valido4, $(v04), xsd:boolean]
+      - [vocab:h05, $(h05), xsd:double]
+      - [vocab:valido5, $(v05), xsd:boolean]
+      - [vocab:h06, $(h06), xsd:double]
+      - [vocab:valido6, $(v06), xsd:boolean]
+      - [vocab:h07, $(h07), xsd:double]
+      - [vocab:valido7, $(v07), xsd:boolean]
+      - [vocab:h08, $(h08), xsd:double]
+      - [vocab:valido8, $(v08), xsd:boolean]
+      - [vocab:h09, $(h09), xsd:double]
+      - [vocab:valido9, $(v09), xsd:boolean]
+      - [vocab:h010, $(h10), xsd:double]
+      - [vocab:valido10, $(v10), xsd:boolean]
+      - [vocab:h011, $(h11), xsd:double]
+      - [vocab:valido11, $(v11), xsd:boolean]
+      - [vocab:h012, $(h12), xsd:double]
+      - [vocab:valido12, $(v12), xsd:boolean]
+      - [vocab:h013, $(h13), xsd:double]
+      - [vocab:valido13, $(v13), xsd:boolean]
+      - [vocab:h014, $(h14), xsd:double]
+      - [vocab:valido14, $(v14), xsd:boolean]
+      - [vocab:h015, $(h15), xsd:double]
+      - [vocab:valido15, $(v15), xsd:boolean]
+      - [vocab:h016, $(h16), xsd:double]
+      - [vocab:valido16, $(v16), xsd:boolean]
+      - [vocab:h017, $(h17), xsd:double]
+      - [vocab:valido17, $(v17), xsd:boolean]
+      - [vocab:h018, $(h18), xsd:double]
+      - [vocab:valido18, $(v18), xsd:boolean]
+      - [vocab:h019, $(h19), xsd:double]
+      - [vocab:valido19, $(v19), xsd:boolean]
+      - [vocab:h020, $(h20), xsd:double]
+      - [vocab:valido20, $(v20), xsd:boolean]
+      - [vocab:h021, $(h21), xsd:double]
+      - [vocab:valido21, $(v21), xsd:boolean]
+      - [vocab:h022, $(h22), xsd:double]
+      - [vocab:valido22, $(v22), xsd:boolean]
+      - [vocab:h023, $(h23), xsd:double]
+      - [vocab:valido23, $(v23), xsd:boolean]
+      - [vocab:h024, $(h24), xsd:double]
+      - [vocab:valido24, $(v24), xsd:boolean]
+   
+   

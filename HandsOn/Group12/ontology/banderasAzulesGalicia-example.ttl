@@ -1,0 +1,175 @@
+@prefix : <http://www.banderasazulesgalicia.com/ontologia#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.banderasazulesgalicia.com> .
+
+<http://www.banderasazulesgalicia.com/ontologia> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.banderasazulesgalicia.com/ontologia#pertenece
+:pertenece rdf:type owl:ObjectProperty ;
+           rdfs:domain :ayuntamiento ;
+           rdfs:range :provincia .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#seencuentra
+:seencuentra rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :ubicacion ;
+             rdfs:range :ayuntamiento .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#ubicadaEn
+:ubicadaEn rdf:type owl:ObjectProperty ;
+           rdfs:domain :playa ;
+           rdfs:range :ubicacion .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.banderasazulesgalicia.com/ontologia#codigoAyuntamiento
+:codigoAyuntamiento rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :ayuntamiento ;
+                    rdfs:range xsd:int .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#codigoProvincia
+:codigoProvincia rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :provincia ;
+                 rdfs:range xsd:int .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#latitud
+:latitud rdf:type owl:DatatypeProperty ;
+         rdfs:domain :playa ;
+         rdfs:range xsd:float .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#longitud
+:longitud rdf:type owl:DatatypeProperty ;
+          rdfs:domain :playa ;
+          rdfs:range xsd:float .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#longitudPlaya
+:longitudPlaya rdf:type owl:DatatypeProperty ;
+               rdfs:domain :playa ;
+               rdfs:range xsd:int .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#masInfo
+:masInfo rdf:type owl:DatatypeProperty ;
+         rdfs:domain :playa ;
+         rdfs:range xsd:anyURI .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#nombreAyuntamiento
+:nombreAyuntamiento rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :ayuntamiento ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#nombrePlaya
+:nombrePlaya rdf:type owl:DatatypeProperty ;
+             rdfs:domain :playa ;
+             rdfs:range xsd:string .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#nombreProvincia
+:nombreProvincia rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :provincia ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#nombreUbicacion
+:nombreUbicacion rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :ubicacion ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#tipoArena
+:tipoArena rdf:type owl:DatatypeProperty ;
+           rdfs:domain :playa ;
+           rdfs:range xsd:string .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#tipoPlaya
+:tipoPlaya rdf:type owl:DatatypeProperty ;
+           rdfs:domain :playa ;
+           rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.banderasazulesgalicia.com/ontologia#ayuntamiento
+:ayuntamiento rdf:type owl:Class .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#playa
+:playa rdf:type owl:Class .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#provincia
+:provincia rdf:type owl:Class .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#ubicacion
+:ubicacion rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.banderasazulesgalicia.com/ontologia#Arteixo
+:Arteixo rdf:type owl:NamedIndividual ,
+                  :ayuntamiento ;
+         :pertenece :CorunaA ;
+         :codigoAyuntamiento "15005"^^xsd:int ;
+         :nombreAyuntamiento "Arteixo"^^xsd:string .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#CorunaA
+:CorunaA rdf:type owl:NamedIndividual ,
+                  :provincia ;
+         :codigoProvincia "15"^^xsd:int ;
+         :nombreProvincia "Coruna,A"^^xsd:string .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#Sabon
+:Sabon rdf:type owl:NamedIndividual ,
+                :playa ;
+       :ubicadaEn :SabonOseiroSanTirso ;
+       :codigoAyuntamiento "15005"^^xsd:int ;
+       :codigoProvincia "15"^^xsd:int ;
+       :latitud "43.327694"^^xsd:float ;
+       :longitud "-8.508833"^^xsd:float ;
+       :longitudPlaya "900"^^xsd:int ;
+       :masInfo "http://www.turismo.gal/ficha-recurso?cod_rec=9859"^^xsd:anyURI ;
+       :nombreAyuntamiento "Arteixo"^^xsd:string ;
+       :nombrePlaya "Sabon"^^xsd:string ;
+       :nombreProvincia "Coruna, A"^^xsd:string ;
+       :nombreUbicacion "Sabon - Oseiro (San Tirso)"^^xsd:string ;
+       :tipoArena "Fina"^^xsd:string ;
+       :tipoPlaya "Playa abierta"^^xsd:string .
+
+
+###  http://www.banderasazulesgalicia.com/ontologia#SabonOseiroSanTirso
+:SabonOseiroSanTirso rdf:type owl:NamedIndividual ,
+                              :ubicacion ;
+                     :seencuentra :Arteixo ;
+                     :nombreUbicacion "Sabon - Oseiro(San Tirso)"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

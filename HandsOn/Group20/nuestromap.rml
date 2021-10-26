@@ -1,0 +1,106 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix clase: <http://localizalocales.es/lcc/ontology/locales#>.
+@base <http://example.com/ns#>.
+
+<#MappingTerraza>
+  rml:logicalSource [
+    rml:source "./data/Terrazas.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://localizalocales.es/lcc/ontology/locales/{id_terraza}";
+    rr:class clase:Terraza
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate clase:superficie;
+    rr:objectMap [
+      rml:reference "Superficie_ES";
+    ]
+  ];
+
+  rr:predicateObjectMap [
+  rr:predicate clase:numeroMesasAutorizadas; 
+  rr:objectMap [
+    rml:reference "mesas_es";
+  ]
+];
+
+rr:predicateObjectMap [
+    rr:predicate clase:numeroSillasAutorizadas; 
+    rr:objectMap [
+      rml:reference "sillas_es";
+    ]
+];
+
+ rr:predicateObjectMap [
+    rr:predicate clase:perteneceALocal;
+    rr:objectMap [
+       rr:template "http://localizalocales.es/lcc/ontology/locales/{id_local}";
+    ];
+ rr:predicateObjectMap [
+    rr:predicate clase:tieneLicencia;
+    rr:objectMap [
+       rr:template "http://localizalocales.es/lcc/ontology/locales/{id_local},{id_terraa}";
+    ]
+  ] .
+
+  <#MappingLocal>
+  rml:logicalSource [
+    rml:source "./data/Terrazas.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://localizalocales.es/lcc/ontology/locales/{id_local}";
+    rr:class clase:Local
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate clase:rotulo;
+    rr:objectMap [
+      rml:reference "rotulo";
+    ];
+ rr:predicateObjectMap [
+    rr:predicate clase:tieneTerraa;
+    rr:objectMap [
+       rr:template "http://localizalocales.es/lcc/ontology/locales/{id_terraza}";
+    ];
+  rr:predicateObjectMap [
+    rr:predicate clase:tieneLicencia;
+    rr:objectMap [
+       rr:template "http://localizalocales.es/lcc/ontology/locales/{id_local},{id_terraa}";
+    ]
+  ].
+ <#MappingLicencia>
+  rml:logicalSource [
+    rml:source "./data/Terrazas.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://localizalocales.es/lcc/ontology/locales/{id_local},{id_terraza}";
+    rr:class clase:Licencia
+  ];
+ rr:predicateObjectMap [
+    rr:predicate clase:fechaLicencia; 
+    rr:objectMap [
+      rml:reference "Fecha_confir_ult_decreto_resol";
+    ]
+];
+
+ rr:predicateObjectMap [
+    rr:predicate clase:asociadaA;
+    rr:objectMap [
+       rr:template "http://localizalocales.es/lcc/ontology/locales/{id_local}";
+    ];
+ rr:predicateObjectMap [
+    rr:predicate clase:asociadaA;
+    rr:objectMap [
+       rr:template "http://localizalocales.es/lcc/ontology/locales/{id_terraa}";
+    ]
+  ] .

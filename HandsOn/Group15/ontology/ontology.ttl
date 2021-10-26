@@ -28,7 +28,7 @@ prop:locatedVia rdf:type owl:ObjectProperty;
 
 prop:licensePlate rdf:type owl:DatatypeProperty;
                   rdfs:domain class:ParkingMeter;
-                  rdfs:range xsd:int.
+                  rdfs:range xsd:string.
 
 prop:gis_X  rdf:type owl:DatatypeProperty;
             rdfs:domain class:ParkingMeter;
@@ -40,7 +40,7 @@ prop:gis_Y  rdf:type owl:DatatypeProperty;
 
 prop:releaseDate rdf:type owl:DatatypeProperty;
                  rdfs:domain class:ParkingMeter;
-                 rdfs:range xsd:string.
+                 rdfs:range xsd:date.
 
 prop:districtName rdf:type owl:DatatypeProperty;
                   rdfs:domain class:District;
@@ -53,6 +53,10 @@ prop:neighborhoodName rdf:type owl:DatatypeProperty;
 prop:viaName rdf:type owl:DatatypeProperty;
              rdfs:domain class:Via;
              rdfs:range xsd:string.
+
+prop:viaNumber rdf:type owl:DatatypeProperty;
+               rdfs:domain class:Via;
+               rdfs:range xsd:string.
 
 
 ## Classes 

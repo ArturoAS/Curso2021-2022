@@ -1,0 +1,50 @@
+{
+    "@context" : {
+        "xsd" : "http://www.w3.org/2001/XMLSchema#",
+        "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+        "clase" : "http://example.org#",
+        "info" : "http://example.org/info",
+        "includes" : "clase:includes",
+        "hasMeasurement" : "clase:hasMeasurement/",
+        "hasTemperature" : "clase:hasTemperature/",
+        "atTime" : "clase:atTime/",
+        "hasOwner" : "clase:hasOwner/",
+        "hasName" : "clase:hasName/"
+    },
+    "@graph" : [
+      {
+        "@id" : "http://example.org/Class01",
+        "@type" : "clase:Class01",
+        "includes" : [
+          {
+            "@id" : "http://example.org/Class01/Sensor029",
+            "@type" : "clase:Sensor029",
+            "hasMeasurement" : {
+                "@id" : "http://example.org/Class01/Sensor029/Measurement8401",
+                "@type" : "clase:Measurement8401",
+                "hasTemperature" : {
+                    "@value" : "29",
+                    "@type" : "xsd:integer"
+                  },
+                  "atTime" : {
+                    "@value" : "2010-06-12T12:00:12",
+                    "@type" : "xsd:dateTime"
+                  }
+              }
+          },
+          {
+            "@id" : "http://example.org/Class01/Computer101",
+            "@type" : "clase:Computer101",
+            "hasOwner" : {
+                "@id" : "http://example.org/Class01/Computer101/User10A",
+                "@type" : "clase:User10A",
+                "hasName" : {
+                    "@value" : "Pedro",
+                    "@type" : "xsd:string"
+                  }
+            }      
+          }
+        ]
+      }
+    ]
+  }

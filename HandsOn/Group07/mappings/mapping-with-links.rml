@@ -1,0 +1,101 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix vocab: <http://example.org#> .
+@base <http://example.com/ns#>.
+@prefix esadm:<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+<#FuentesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/fuentes-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://fuent.example.com/fountain/{CODIGO}";
+    rr:termType rr:IRI; 
+    rr:class esadm:Distrito
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasAddress;
+    rr:objectMap [
+      rml:reference "DIRECCION";
+        rr:datatype rr:Literal
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasStatus;
+    rr:objectMap [
+      rml:reference "ESTADO";
+        rr:datatype rr:Literal
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasLongitude;
+    rr:objectMap [
+      rml:reference "LONGITUD";
+        rr:datatype xsd:float
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasLatitude;
+    rr:objectMap [
+      rml:reference "LATITUD";
+        rr:datatype xsd:float
+    ]
+  ];
+rr:predicateObjectMap [
+    rr:predicate owl:sameAs; 
+    rr:objectMap [
+        rml:reference "same_as_wikidata_distrito" ;
+        rr:termType rr:IRI
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:isInDistrict ;
+    rr:objectMap [
+      rr:parentTriplesMap <#DistrictMap> ;
+      rr:joinCondition [
+        rr:child "DISTRITO";
+        rr:parent "distrito_ind"
+      ]
+    ]
+  ].
+
+
+<#DistrictMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "data/indicadores-with-links.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [ 
+    rr:template "http://dist.example.com/district/{distrito_ind}";
+    rr:termType rr:IRI; 
+    rr:class esadm:Distrito
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:numHabitantes;
+    rr:objectMap [
+      rml:reference "numHabitantes" ;
+      rr:datatype xsd:float
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate owl:sameAs; 
+    rr:objectMap [
+        rml:reference "same_as_wikidata_distrito" ;
+        rr:termType rr:IRI
+    ]
+  ].

@@ -1,0 +1,954 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DESCRIPTIO,C,105",
+    "expression": "grel:substring(value,lastIndexOf(value,\"-\")+1,end)",
+    "onError": "set-to-blank",
+    "newColumnName": "Direccion",
+    "columnInsertIndex": 2,
+    "description": "Create column Direccion at index 2 based on column DESCRIPTIO,C,105 using expression grel:substring(value,lastIndexOf(value,\"-\")+1,end)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DESCRIPTIO,C,105",
+    "description": "Remove column DESCRIPTIO,C,105"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " PABELLON MUNICIPAL DE DEPORTES CERRO ALMODOVAR",
+          " Pabellón Municipal de Deportes Cerro Almodovar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " PABELLON MUNICIPAL DE DEPORTES CERRO ALMODOVAR"
+      },
+      {
+        "from": [
+          "40",
+          "40)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "40"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALLE",
+          "Calle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE"
+      },
+      {
+        "from": [
+          "PLAZA",
+          "Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLAZA"
+      },
+      {
+        "from": [
+          "AVENIDA",
+          "Avenida"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA"
+      },
+      {
+        "from": [
+          "PASEO",
+          "Paseo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PASEO"
+      }
+    ],
+    "description": "Mass edit cells in column MINTTIPOVI,C,15"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNOMBRE,C,254",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PUERTA DEL SOL",
+          "Puerta del Sol"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PUERTA DEL SOL"
+      },
+      {
+        "from": [
+          "POBLADOS",
+          "Poblados"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "POBLADOS"
+      },
+      {
+        "from": [
+          "HACIENDA DE PAVONES",
+          "Hacienda de Pavones"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HACIENDA DE PAVONES"
+      },
+      {
+        "from": [
+          "PLATA Y CASTAÑAR",
+          "Plata y Castanar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLATA Y CASTAÑAR"
+      }
+    ],
+    "description": "Mass edit cells in column MINTNOMBRE,C,254"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTTIPOVI,C,15 using expression join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTNOMBRE,C,254",
+    "description": "Remove column MINTNOMBRE,C,254"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " PABELLON MUNICIPAL DE DEPORTES CERRO ALMODOVAR",
+          " Pabellón Municipal de Deportes Cerro Almodovar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " PABELLON MUNICIPAL DE DEPORTES CERRO ALMODOVAR"
+      },
+      {
+        "from": [
+          "40",
+          "40)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "40"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALLE",
+          "Calle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE"
+      },
+      {
+        "from": [
+          "PLAZA",
+          "Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLAZA"
+      },
+      {
+        "from": [
+          "AVENIDA",
+          "Avenida"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA"
+      },
+      {
+        "from": [
+          "PASEO",
+          "Paseo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PASEO"
+      }
+    ],
+    "description": "Mass edit cells in column MINTTIPOVI,C,15"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTTIPOVI,C,15 using expression join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " PABELLON MUNICIPAL DE DEPORTES CERRO ALMODOVAR",
+          " Pabellón Municipal de Deportes Cerro Almodovar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " PABELLON MUNICIPAL DE DEPORTES CERRO ALMODOVAR"
+      },
+      {
+        "from": [
+          "40",
+          "40)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "40"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALLE",
+          "Calle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE"
+      },
+      {
+        "from": [
+          "PLAZA",
+          "Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLAZA"
+      },
+      {
+        "from": [
+          "AVENIDA",
+          "Avenida"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA"
+      },
+      {
+        "from": [
+          "PASEO",
+          "Paseo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PASEO"
+      }
+    ],
+    "description": "Mass edit cells in column MINTTIPOVI,C,15"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTTIPOVI,C,15 using expression join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " PABELLON MUNICIPAL DE DEPORTES CERRO ALMODOVAR",
+          " Pabellón Municipal de Deportes Cerro Almodovar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " PABELLON MUNICIPAL DE DEPORTES CERRO ALMODOVAR"
+      },
+      {
+        "from": [
+          "40",
+          "40)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "40"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALLE",
+          "Calle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE"
+      },
+      {
+        "from": [
+          "PLAZA",
+          "Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLAZA"
+      },
+      {
+        "from": [
+          "AVENIDA",
+          "Avenida"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVENIDA"
+      },
+      {
+        "from": [
+          "PASEO",
+          "Paseo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PASEO"
+      }
+    ],
+    "description": "Mass edit cells in column MINTTIPOVI,C,15"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTTIPOVI,C,15",
+    "expression": "join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTTIPOVI,C,15 using expression join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Direccion",
+    "newColumnName": "Lugar",
+    "description": "Rename column Direccion to Lugar"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "﻿MXASSETNUM,C,12",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ﻿MXASSETNUM,C,12 using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTDISTRI,C,20",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTDISTRI,C,20 using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTBARRIO,C,10",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTBARRIO,C,10 using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNUMERO,C,25",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNUMERO,C,25 using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "MINTNDP,C,20",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column MINTNDP,C,20 using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "﻿MXASSETNUM,C,12",
+    "newColumnName": "ID",
+    "description": "Rename column ﻿MXASSETNUM,C,12 to ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTDISTRI,C,20",
+    "newColumnName": "MINTDISTRI",
+    "description": "Rename column MINTDISTRI,C,20 to MINTDISTRI"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE_DIS,C,20",
+    "newColumnName": "NOMBRE_DIS",
+    "description": "Rename column NOMBRE_DIS,C,20 to NOMBRE_DIS"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTBARRIO,C,10",
+    "newColumnName": "MINTBARRIO",
+    "description": "Rename column MINTBARRIO,C,10 to MINTBARRIO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE_BAR,C,50",
+    "newColumnName": "NOMBRE_BAR",
+    "description": "Rename column NOMBRE_BAR,C,50 to NOMBRE_BAR"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESTADO,C,50",
+    "newColumnName": "ESTADO",
+    "description": "Rename column ESTADO,C,50 to ESTADO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "INSTALLDAT,D",
+    "newColumnName": "INSTALLDAT",
+    "description": "Rename column INSTALLDAT,D to INSTALLDAT"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTNUMERO,C,25",
+    "newColumnName": "MINTNUMERO",
+    "description": "Rename column MINTNUMERO,C,25 to MINTNUMERO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTNDP,C,20",
+    "newColumnName": "MINTNDP",
+    "description": "Rename column MINTNDP,C,20 to MINTNDP"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MODELO,C,254",
+    "newColumnName": "MODELO",
+    "description": "Rename column MODELO,C,254 to MODELO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MINTTIPOVI,C,15",
+    "newColumnName": "Direccion",
+    "description": "Rename column MINTTIPOVI,C,15 to Direccion"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Lugar",
+    "description": "Remove column Lugar"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_DIS",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE_DIS to type Q3032114"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_BAR",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column NOMBRE_BAR to type Q10267336"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Direccion to type Q79007"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE_DIS",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_Dis",
+    "columnInsertIndex": 3,
+    "description": "Create column wikidata_Dis at index 3 based on column NOMBRE_DIS using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE_BAR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE_BAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_BAR",
+    "similarValue": "PEÑA GRANDE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3319582",
+      "name": "Peñagrande",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Peñagrande (Q3319582) for cells containing \"PEÑA GRANDE\" in column NOMBRE_BAR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE_BAR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE_BAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_BAR",
+    "similarValue": "CASCO H.VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544370",
+      "name": "Casco Histórico de Vallecas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Vallecas (Q16544370) for cells containing \"CASCO H.VALLECAS\" in column NOMBRE_BAR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE_BAR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE_BAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_BAR",
+    "similarValue": "CASCO H.VICALVARO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544374",
+      "name": "Casco Histórico de Vicálvaro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Vicálvaro (Q16544374) for cells containing \"CASCO H.VICALVARO\" in column NOMBRE_BAR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE_BAR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE_BAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_BAR",
+    "similarValue": "VILLAVERDE ALTO C.H.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q390435",
+      "name": "Villaverde Alto, Casco Histórico de Villaverde",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villaverde Alto, Casco Histórico de Villaverde (Q390435) for cells containing \"VILLAVERDE ALTO C.H.\" in column NOMBRE_BAR"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE_BAR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE_BAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_BAR",
+    "similarValue": "EL SALVADOR",
+    "description": "Clear recon data for cells containing \"EL SALVADOR\" in column NOMBRE_BAR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOMBRE_BAR: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "NOMBRE_BAR",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_BAR",
+    "similarValue": "CASCO H.BARAJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q9701730",
+      "name": "Casco Histórico de Barajas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Barajas (Q9701730) for cells containing \"CASCO H.BARAJAS\" in column NOMBRE_BAR"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "NOMBRE_BAR",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_Bar",
+    "columnInsertIndex": 6,
+    "description": "Create column wikidata_Bar at index 6 based on column NOMBRE_BAR using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Direccion",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_Dir",
+    "columnInsertIndex": 10,
+    "description": "Create column wikidata_Dir at index 10 based on column Direccion using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_BAR",
+    "expression": "value.replace(\" \",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOMBRE_BAR using expression value.replace(\" \",\"-\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value.replace(\" \",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion using expression value.replace(\" \",\"-\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NOMBRE_DIS",
+    "expression": "value.replace(\" \",\"-\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NOMBRE_DIS using expression value.replace(\" \",\"-\")"
+  }
+
+]

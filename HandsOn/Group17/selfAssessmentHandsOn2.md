@@ -5,7 +5,7 @@
 **The “analysis.html” file:**
 
 - [X] Includes the potential license of the dataset to be generated
-- [ ] Includes the resource naming strategy
+- [X] Includes the resource naming strategy
 
 **The resource naming strategy:**
 
@@ -20,16 +20,15 @@
 - [X] Is serialized in the Turtle format
 - [X] Follows the resource naming strategy
 - [X] Contains at least one class
-- [ ] Contains at least one object property (where the value of the property is a resource)
-- [ ] Contains at least one datatype property (where the value of the property is a string literal, usually typed)
-- [ ] Defines the domain of all the properties (the origin of the property)
-- [ ] Defines the range of all the properties (the destination of the property)
+- [X] Contains at least one object property (where the value of the property is a resource)
+- [X] Contains at least one datatype property (where the value of the property is a string literal, usually typed)
+- [X] Defines the domain of all the properties (the origin of the property)
+- [X] Defines the range of all the properties (the destination of the property)
 - [X] Defines all class names starting with a capital letter
 - [ ] Defines all property names starting with a non-capital letter
 - [X] Does not mix labels in different languages (e.g., Spanish and English)
 - [X] Does not define multiple domains or multiple ranges in properties
-- [ ] Contains at least one class that will be used to link to other entities
+- [X] Contains at least one class that will be used to link to other entities
 
 ## Comments on the self-assessment
 _(If required)_
-selfAssessmentHandsOn2 not finished

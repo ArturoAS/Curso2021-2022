@@ -1,0 +1,54 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX ontology: <http://dbpedia.org/ontology/>
+PREFIX onto: <http://www.ontotext.com/>
+PREFIX ont: <http://purl.org/net/ns/ontology-annot#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ontologia: <http://www.ontologies.org/ontologies/Group06/ontology/>
+PREFIX schema: <http://schema.org/>
+
+#CONOCER TODAS LAS DESCRIPCIONES 	QUE CONTENGAN  "SI"
+SELECT ?description
+WHERE { ?x schema:description ?description
+FILTER regex(?description, "SI")
+}
+
+#CONOCE TODAS LAS BASESBICI LAS CUALES EL NUMERO DE PLAZAS SEAN MAYOR DE 24
+SELECT ?BaseBiciMad WHERE {
+  ?BaseBiciMad ontologia:numPlaces ?NumerodePlazas .
+  FILTER (?NumerodePlazas> "24" && ?NumerodePlazas < "28" ) .
+} 
+
+#CONOCE TODAS LAS TRAFFICLIGHTS QUE TENGAN SU TRAFFICLIGHTAT 2026
+SELECT DISTINCT ?TrafficLight WHERE{
+?TrafficLight ontologia:trafficLightAt ?x .
+  FILTER (?x ="2026") .
+}
+
+#QUIERO LAS BICIMADS CUYA AVENIDA ESTE EN MENENDEZ PELAYO 
+SELECT ?BaseBiciMad  WHERE {
+  ?BaseBiciMad ontologia:biciMadAt ?x.
+  FILTER (?x ="AVENIDA MENENDEZ PELAYO") .
+} 
+
+#CONSULTA LA DIRECCION DE LAS BASES DE BICI Y PARKING DE BICI COINCIDENTES CON SU DIRECCION
+SELECT ?BaseBiciMad ?BycicleParking ?direccion
+WHERE {
+?BaseBiciMad ontologia:biciMadAt ?direccion .
+?BycicleParking ontologia:bycicleParkingAt ?direccion .
+ }
+LIMIT 10
+
+#RECOGER LOS PARKINGS DE BICIS CUYA FECHA DE INSTALACION SEA POSTERIOR A UNA FECHA
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ontologia: <http://www.ontologies.org/ontologies/Group06/ontology/>
+SELECT ?parkingBicis WHERE {
+  ?parkingBicis rdf:type ontologia:BycicleParking.
+  ?parkingBicis ontologia:installDate ?fechaInstalacion.
+  FILTER (xsd:dateTime(?fechaInstalacion) >= "2017-07-30T00:00:00Z"^^xsd:dateTime) .
+
+} 
+LIMIT 10

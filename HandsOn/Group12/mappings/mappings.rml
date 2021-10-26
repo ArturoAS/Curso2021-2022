@@ -1,0 +1,416 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix vocab: <http://www.banderasazulesgalicia.com/ontologia#> .
+@base <http://www.banderasazulesgalicia.com/>.
+
+<#TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "PraiasBandeiraAzul_2014-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+  rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/{PLAYA}";
+    rr:class vocab:playa
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:ubicadaEn;
+    rr:objectMap [
+      rr:parentTriplesMap <#playa>;
+      rr:joinCondition [
+		rr:parent "playa";
+        rr:child "ubicacion"; 
+      ];
+    ];
+  ].
+     
+   rr:predicateObjectMap [
+    rr:predicate vocab: nombrePlaya;
+    rr:objectMap [
+      rml:reference "PLAYA"
+      ]
+];
+   rr:predicateObjectMap [
+    rr:predicate vocab: latitud;
+    rr:objectMap [
+      rml:reference "LATITUD"
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:longitud;
+    rr:objectMap [
+      rml:reference "LONGITUD"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:longitudPlaya;
+    rr:objectMap [
+      rml:reference "LONGITUD-PLAYA"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:masInfo;
+    rr:objectMap [
+      rml:reference "MAS-INFORMACION"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:tipoArena;
+    rr:objectMap [
+      rml:reference "TIPO-DE-ARENA"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:tipoPlaya;
+    rr:objectMap [
+      rml:reference "TIPO-DE-PLAYA"
+      ]
+  ];
+  
+  
+   rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/ubicacion/{UBICACION}";
+    rr:class vocab:ubicacion
+  ];
+  
+  
+   rr:predicateObjectMap [
+    rr:predicate vocab:nombreUbicacion;
+    rr:objectMap [
+      rml:reference "UBICACION"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:seencuentra;
+    rr:objectMap [
+      rr:parentTriplesMap <#ubicacion>;
+      rr:joinCondition [
+		rr:parent "ubicacion";
+        rr:child "ayuntamiento"; 
+      ];
+    ];
+  ].
+  
+   rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/ayuntamiento/{CODIGO-AYUNTAMIENTO}";
+    rr:class vocab:ayuntamiento
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:nombreAyuntamiento;
+    rr:objectMap [
+      rml:reference "AYUNTAMIENTO"
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:codigoAyuntamiento;
+    rr:objectMap [
+      rml:reference "CODIGO-AYUNTAMIENTO"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:pertenece;
+    rr:objectMap [
+      rr:parentTriplesMap <#ayuntamiento>;
+      rr:joinCondition [
+		rr:parent "ayuntamiento";
+        rr:child "provincia"; 
+      ];
+    ];
+  ].
+  
+   rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/provincia/{CODIGO-PROVINCIA}";
+    rr:class vocab:provincia
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:codigoProvincia;
+    rr:objectMap [
+      rml:reference "CODIGO-PROVINCIA"
+      ]
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicate vocab:nombreProvincia;
+    rr:objectMap [
+      rml:reference "PROVINCIA"
+      ]
+  ];
+  
+  
+  
+  <#TriplesMap2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "PraiasBandeiraAzul_2017-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+   rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/{PLAYA}";
+    rr:class vocab:playa
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:ubicadaEn;
+    rr:objectMap [
+      rr:parentTriplesMap <#playa>;
+      rr:joinCondition [
+		rr:parent "playa";
+        rr:child "ubicacion"; 
+      ];
+    ];
+  ].
+
+   rr:predicateObjectMap [
+    rr:predicate vocab: nombrePlaya;
+    rr:objectMap [
+      rml:reference "PLAYA"
+      ]
+
+   rr:predicateObjectMap [
+    rr:predicate vocab: latitud;
+    rr:objectMap [
+      rml:reference "LATITUD"
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:longitud;
+    rr:objectMap [
+      rml:reference "LONGITUD"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:longitudPlaya;
+    rr:objectMap [
+      rml:reference "LONGITUD-PLAYA"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:masInfo;
+    rr:objectMap [
+      rml:reference "MAS-INFORMACION"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:tipoArena;
+    rr:objectMap [
+      rml:reference "TIPO-DE-ARENA"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:tipoPlaya;
+    rr:objectMap [
+      rml:reference "TIPO-DE-PLAYA"
+      ]
+  ];
+  
+  
+   rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/ubicacion/{UBICACION}";
+    rr:class vocab:ubicacion
+  ];
+  
+  
+   rr:predicateObjectMap [
+    rr:predicate vocab:nombreUbicacion;
+    rr:objectMap [
+      rml:reference "UBICACION"
+      ]
+  ];
+  
+    rr:predicateObjectMap [
+    rr:predicate vocab:seencuentra;
+    rr:objectMap [
+      rr:parentTriplesMap <#ubicacion>;
+      rr:joinCondition [
+		rr:parent "ubicacion";
+        rr:child "ayuntamiento"; 
+      ];
+    ];
+  ].
+  
+   rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/ayuntamiento/{CODIGO-AYUNTAMIENTO}";
+    rr:class vocab:ayuntamiento
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:nombreAyuntamiento;
+    rr:objectMap [
+      rml:reference "AYUNTAMIENTO"
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:codigoAyuntamiento;
+    rr:objectMap [
+      rml:reference "CODIGO-AYUNTAMIENTO"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:pertenece;
+    rr:objectMap [
+      rr:parentTriplesMap <#ayuntamiento>;
+      rr:joinCondition [
+		rr:parent "ayuntamiento";
+        rr:child "provincia"; 
+      ];
+    ];
+  ].
+  
+   rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/provincia/{CODIGO-PROVINCIA}";
+    rr:class vocab:provincia
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:codigoProvincia;
+    rr:objectMap [
+      rml:reference "CODIGO-PROVINCIA"
+      ]
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicate vocab:nombreProvincia;
+    rr:objectMap [
+      rml:reference "PROVINCIA"
+      ]
+  ];
+  
+
+
+
+<#TriplesMap3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "PraiasBandeiraAzul_2020-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+     rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/{PLAYA}";
+    rr:class vocab:playa
+  ];
+
+   rr:predicateObjectMap [
+    rr:predicate vocab: nombrePlaya;
+    rr:objectMap [
+      rml:reference "PLAYA"
+      ]
+	  
+	rr:predicateObjectMap [
+    rr:predicate vocab:ubicadaEn;
+    rr:objectMap [
+      rr:parentTriplesMap <#playa>;
+      rr:joinCondition [
+		rr:parent "playa";
+        rr:child "ubicacion"; 
+      ];
+    ];
+  ].
+
+   rr:predicateObjectMap [
+    rr:predicate vocab: latitud;
+    rr:objectMap [
+      rml:reference "LATITUD"
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:longitud;
+    rr:objectMap [
+      rml:reference "LONGITUD"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:longitudPlaya;
+    rr:objectMap [
+      rml:reference "LONGITUD-PLAYA"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:masInfo;
+    rr:objectMap [
+      rml:reference "MAS-INFORMACION"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:tipoArena;
+    rr:objectMap [
+      rml:reference "TIPO-DE-ARENA"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:tipoPlaya;
+    rr:objectMap [
+      rml:reference "TIPO-DE-PLAYA"
+      ]
+  ];
+  
+  
+   rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/ubicacion/{UBICACION}";
+    rr:class vocab:ubicacion
+  ];
+  
+  
+   rr:predicateObjectMap [
+    rr:predicate vocab:nombreUbicacion;
+    rr:objectMap [
+      rml:reference "UBICACION"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:seencuentra;
+    rr:objectMap [
+      rr:parentTriplesMap <#ubicacion>;
+      rr:joinCondition [
+		rr:parent "ubicacion";
+        rr:child "ayuntamiento"; 
+      ];
+    ];
+  ].
+  
+   rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/ayuntamiento/{CODIGO-AYUNTAMIENTO}";
+    rr:class vocab:ayuntamiento
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:nombreAyuntamiento;
+    rr:objectMap [
+      rml:reference "AYUNTAMIENTO"
+      ]
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:codigoAyuntamiento;
+    rr:objectMap [
+      rml:reference "CODIGO-AYUNTAMIENTO"
+      ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate vocab:pertenece;
+    rr:objectMap [
+      rr:parentTriplesMap <#ayuntamiento>;
+      rr:joinCondition [
+		rr:parent "ayuntamiento";
+        rr:child "provincia"; 
+      ];
+    ];
+  ].
+  
+   rr:subjectMap [
+    rr:template "http://www.banderasazulesgalicia.com/playa/provincia/{CODIGO-PROVINCIA}";
+    rr:class vocab:provincia
+  ];
+   rr:predicateObjectMap [
+    rr:predicate vocab:codigoProvincia;
+    rr:objectMap [
+      rml:reference "CODIGO-PROVINCIA"
+      ]
+  ];
+  
+   rr:predicateObjectMap [
+    rr:predicate vocab:nombreProvincia;
+    rr:objectMap [
+      rml:reference "PROVINCIA"
+      ]
+  ];

@@ -1,0 +1,22 @@
+PREFIX ns: <http://www.calidadAire.com#>
+
+SELECT DISTINCT ?municipio
+    WHERE {
+  		 ?provincia ns:tieneMunicipio ?municipio.
+    }
+	
+SELECT DISTINCT ?uriProvincia
+    WHERE {
+  		 ?provincia ns:tieneURIProvi ?uriProvincia.
+    }
+	
+SELECT DISTINCT ?municipio ?uriMunicipio
+    WHERE {
+  		 ?municipio ns:tieneURIMuni ?uriMunicipio.
+    }
+
+SELECT DISTINCT ?provincia ?municipio ?uriMunicipio 
+    WHERE {
+        ?provincia ns:tieneURIProvi ?uriProvincia.
+  		?municipio ns:tieneURIMuni ?uriMunicipio.
+    }

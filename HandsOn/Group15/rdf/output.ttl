@@ -1,0 +1,2300 @@
+@base          <http://helio.linkeddata.es/> .
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-AVELINO-MONTERO-RIOS>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-AVELINO-MONTERO-RIOS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "42"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/District#03-RETIRO>
+        a       <http://parquimetrosdemadrid.com/Classes#District> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                "03-RETIRO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110010>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439674.1556642660"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476571.8260720700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110010"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-BLASCO-DE-GARAY> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO>
+        a       <http://parquimetrosdemadrid.com/Classes#Neighborhood> ;
+        <http://parquimetrosdemadrid.com/Properties#neighborhoodName>
+                "09-01-CASA-DE-CAMPO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120011>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438453.8293160000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475101.0178510000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120011"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-COBOS-DE-SEGOVIA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-COBOS-DE-SEGOVIA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "21"^^<http://www.w3.org/2001/XMLSchema#string> , "6"^^<http://www.w3.org/2001/XMLSchema#string> , "2"^^<http://www.w3.org/2001/XMLSchema#string> , "16"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420825>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439615.6649235250"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4480441.1316276300"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420825"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#AVENIDA-DE-BETANZOS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130016>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442150.7064060000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475439.2689340000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130016"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-AYALA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ANICETO-MARINAS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "56"^^<http://www.w3.org/2001/XMLSchema#string> , "SN"^^<http://www.w3.org/2001/XMLSchema#string> , "FRENTE-106"^^<http://www.w3.org/2001/XMLSchema#string> , "72"^^<http://www.w3.org/2001/XMLSchema#string> , "84"^^<http://www.w3.org/2001/XMLSchema#string> , "FRENTE-116"^^<http://www.w3.org/2001/XMLSchema#string> , "60"^^<http://www.w3.org/2001/XMLSchema#string> , "FRENTE-100"^^<http://www.w3.org/2001/XMLSchema#string> , "114"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130060>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442008.0723309330"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4472690.0760720700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130060"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-NEBRIJA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ALBERCHE>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ALBERCHE"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "14"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130015>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439049.1556642660"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4472674.3260720700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130015"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALEJANDRO-DUMAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DEL-ARCIPRESTE-DE-HITA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DEL-ARCIPRESTE-DE-HITA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "14"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/District#06-TETUAN>
+        a       <http://parquimetrosdemadrid.com/Classes#District> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                "06-TETUAN"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130066>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441868.6709090000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4474697.3649490000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130066"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALCALA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420833>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439665.8871457480"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4480533.7242202200"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420833"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#AVENIDA-DE-BETANZOS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120357>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "440039.9982568590"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477746.4649609600"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120357"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ADELA-BALBOA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-BECERREA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-BECERREA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "4"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120315>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439941.0092260000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477903.7420430000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120315"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ARANJUEZ> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130044>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439010.6925075950"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4472880.3770948500"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130044"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-COBOS-DE-SEGOVIA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2020-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DEL-FOSFORO>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DEL-FOSFORO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "3"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130026>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442684.0446684160"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4472923.5304289200"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130026"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ABTAO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120006>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "437983.0991320000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475613.9220310000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120006"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-GOMEZ-GALIANA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ANTONIO-GOMEZ-GALIANA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "8"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110010>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439735.2317480000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4474489.9585980000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110010"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ARRIETA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120365>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "440028.3147820000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478005.4920430000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120365"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-AVELINO-MONTERO-RIOS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120323>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439745.9814480000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478211.4364870000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120323"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-GOMEZ-GALIANA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110034>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439087.6344840000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476242.2105020000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110034"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DEL-ARCIPRESTE-DE-HITA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ARANJUEZ>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ARANJUEZ"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "11"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110461>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442250.3134300000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477008.3506420000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110461"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-PEREZ> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/District#02-ARGANZUELA>
+        a       <http://parquimetrosdemadrid.com/Classes#District> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                "02-ARGANZUELA"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ARRIETA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ARRIETA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "8"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/District#04-SALAMANCA>
+        a       <http://parquimetrosdemadrid.com/Classes#District> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                "04-SALAMANCA"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130061>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442197.2775170000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4474801.3769730000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130061"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-AGUIRRE> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120352>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439759.9056642660"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477992.9510720700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120352"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#PUENTE-DE-AMANIEL> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130081>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438868.1392550000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473607.9171274100"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130081"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DEL-FOSFORO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110519>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441779.7484560000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478000.8838740000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110519"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ARMANDO-PALACIO-VALDES> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130039>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439213.3269445430"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473198.0994284700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130039"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-GIL-IMON> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130042>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442587.0131022830"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4472781.9149150500"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130042"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ABTAO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#AVENIDA-DE-BETANZOS>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "AVENIDA-DE-BETANZOS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "63"^^<http://www.w3.org/2001/XMLSchema#string> , "50"^^<http://www.w3.org/2001/XMLSchema#string> , "SN"^^<http://www.w3.org/2001/XMLSchema#string> , "38"^^<http://www.w3.org/2001/XMLSchema#string> , "16"^^<http://www.w3.org/2001/XMLSchema#string> , "29"^^<http://www.w3.org/2001/XMLSchema#string> , "11"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420907>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439598.1834420440"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4481128.1316276300"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420907"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#AVENIDA-DE-BETANZOS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#PLAZA-DE-CARBALLO>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "PLAZA-DE-CARBALLO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "4"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120001>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "437646.8162460000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476084.2896220000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420836>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439675.6747200000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4480912.3977520000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420836"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#AVENIDA-DE-BETANZOS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110029>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439650.1766840000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476264.8225380000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110029"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-BLASCO-DE-GARAY> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#calle-del-Almendro>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "calle-del-Almendro"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "14"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120009>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438252.8719620000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475306.2096490000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120009"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130008>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442627.5266340000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473067.9260580000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130008"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-CAVANILLES> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR>
+        a       <http://parquimetrosdemadrid.com/Classes#Neighborhood> ;
+        <http://parquimetrosdemadrid.com/Properties#neighborhoodName>
+                "08-04-EL-PILAR"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL>
+        a       <http://parquimetrosdemadrid.com/Classes#Neighborhood> ;
+        <http://parquimetrosdemadrid.com/Properties#neighborhoodName>
+                "02-01-IMPERIAL"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE>
+        a       <http://parquimetrosdemadrid.com/Classes#Neighborhood> ;
+        <http://parquimetrosdemadrid.com/Properties#neighborhoodName>
+                "07-01-GAZTAMBIDE"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO>
+        a       <http://parquimetrosdemadrid.com/Classes#Neighborhood> ;
+        <http://parquimetrosdemadrid.com/Properties#neighborhoodName>
+                "05-01-EL-VISO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-PALOMINO>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ANTONIO-PALOMINO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "10"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130014>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442212.3437080000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475444.2652000000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130014"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-AYALA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-CAVANILLES>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-CAVANILLES"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "24"^^<http://www.w3.org/2001/XMLSchema#string> , "7"^^<http://www.w3.org/2001/XMLSchema#string> , "10"^^<http://www.w3.org/2001/XMLSchema#string> , "19"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO>
+        a       <http://parquimetrosdemadrid.com/Classes#Neighborhood> ;
+        <http://parquimetrosdemadrid.com/Properties#neighborhoodName>
+                "03-01-PACIFICO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110037>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439399.6051900000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476204.8392970000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110037"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANDRES-MELLADO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130034>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439392.3850031090"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473187.7000390100"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130034"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#TRAVESIA-DE-GIL-IMON> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130016>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442529.3076940000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473125.5940280000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130016"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-CAVANILLES> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110485>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442251.7393560000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477138.4061970000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110485"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-RODRIGUEZ-VILLA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110063>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439549.6164080680"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473438.8364026500"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110063"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-CALATRAVA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#TRAVESIA-DE-GIL-IMON>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "TRAVESIA-DE-GIL-IMON"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "11-B"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110042>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439757.5709535220"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473794.5182208300"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110042"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DEL-ALMENDRO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-GIL-IMON>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-GIL-IMON"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "6"^^<http://www.w3.org/2001/XMLSchema#string> , "7"^^<http://www.w3.org/2001/XMLSchema#string> , "10"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA>
+        a       <http://parquimetrosdemadrid.com/Classes#District> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                "09-MONCLOA-ARAVACA"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120355>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439621.2636560000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478659.8281810000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120355"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALEJANDRO-RODRIGUEZ> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS>
+        a       <http://parquimetrosdemadrid.com/Classes#Neighborhood> ;
+        <http://parquimetrosdemadrid.com/Properties#neighborhoodName>
+                "06-01-BELLAS-VISTAS"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130001>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441556.3678400000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475592.1165890000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#PASEO-DE-LA-CASTELLANA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-BALBINA-VALVERDE>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-BALBINA-VALVERDE"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "16"^^<http://www.w3.org/2001/XMLSchema#string> , "24"^^<http://www.w3.org/2001/XMLSchema#string> , "28"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110003>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439440.2601505520"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476725.5653793700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110003"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANDRES-MELLADO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130021>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438744.4778459370"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4472815.2686917000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130021"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DEL-DUQUE-DE-TOVAR> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120004>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "437808.8539230000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475799.6889300000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120004"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420860>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "440120.1278864880"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4481073.6316276300"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420860"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#PLAZA-DE-ARTEIJO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-LA-CAVA-BAJA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-LA-CAVA-BAJA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "34"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-LA-CARIDAD>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-LA-CARIDAD"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "22"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#PLAZA-DE-ARTEIJO>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "PLAZA-DE-ARTEIJO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "6"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ANDRES-MELLADO>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ANDRES-MELLADO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "8"^^<http://www.w3.org/2001/XMLSchema#string> , "29"^^<http://www.w3.org/2001/XMLSchema#string> , "35"^^<http://www.w3.org/2001/XMLSchema#string> , "52"^^<http://www.w3.org/2001/XMLSchema#string> , "61-A"^^<http://www.w3.org/2001/XMLSchema#string> , "82"^^<http://www.w3.org/2001/XMLSchema#string> , "SN"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DEL-ARGA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DEL-ARGA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "24"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110459>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441613.5817890000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477803.8560970000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110459"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-BALBINA-VALVERDE> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#PUENTE-DE-AMANIEL>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "PUENTE-DE-AMANIEL"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "SN"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130017>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442263.6556642660"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475430.4510720700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130017"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-AYALA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ALCALA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ALCALA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "97"^^<http://www.w3.org/2001/XMLSchema#string> , "89"^^<http://www.w3.org/2001/XMLSchema#string> , "79"^^<http://www.w3.org/2001/XMLSchema#string> , "111"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130037>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439265.9869791450"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473224.2672485400"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130037"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-GIL-IMON> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110019>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439661.3081830000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476419.8866090000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110019"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-BLASCO-DE-GARAY> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-RODRIGUEZ-VILLA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ANTONIO-RODRIGUEZ-VILLA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420897>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439625.3566700000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4481122.2673000000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420897"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#AVENIDA-DE-BETANZOS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ARMANDO-PALACIO-VALDES>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ARMANDO-PALACIO-VALDES"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "13"^^<http://www.w3.org/2001/XMLSchema#string> , "3"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110045>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439775.1329369930"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473743.0719398400"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110045"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-LA-CAVA-BAJA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420855>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "440254.0723309330"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4480964.6501461500"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420855"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#PLAZA-DE-CARBALLO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130067>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442001.0667354090"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4474750.5976548100"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130067"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALCALA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420834>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439715.1702800000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4480778.8393960000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420834"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#AVENIDA-DE-BETANZOS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/District#Centro>
+        a       <http://parquimetrosdemadrid.com/Classes#District> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                "Centro"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120049>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438090.9225450000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475543.9841910000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120049"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#PLAZA-DE-ALMU%C3%83%E2%80%98ECAR> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130048>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442710.7734328610"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4472633.2578902500"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130048"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-LA-CARIDAD> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110006>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439435.6701270760"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476620.3446671100"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110006"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANDRES-MELLADO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120007>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438048.4486770000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475525.5228410000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120007"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ALEJANDRO-DUMAS>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ALEJANDRO-DUMAS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "8"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110032>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439232.9841766630"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473818.0719398400"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110032"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-BEATRIZ-GALINDO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110011>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439834.9469865800"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4474517.9686340600"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110011"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-CAMPOMANES> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DEL-DUQUE-DE-TOVAR>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DEL-DUQUE-DE-TOVAR"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "SN"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420821>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439565.2575161180"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4480339.3538498500"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420821"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-BECERREA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130012>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441892.7555760000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475465.9591700000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130012"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-AYALA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120345>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439727.7636560000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478606.8281810000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120345"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALEJANDRO-RODRIGUEZ> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110056>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439392.8315250000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475863.3505820000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110056"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANDRES-MELLADO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ALFONSO-RODRIGUEZ-SANTAMARIA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ALFONSO-RODRIGUEZ-SANTAMARIA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "33"^^<http://www.w3.org/2001/XMLSchema#string> , "19"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110462>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441898.1373450000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477859.3560970000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110462"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALFONSO-RODRIGUEZ-SANTAMARIA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120353>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439677.9258930000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478163.5753760000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120353"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#PUENTE-DE-AMANIEL> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO>
+        a       <http://parquimetrosdemadrid.com/Classes#District> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                "08-FUENCARRAL-EL-PARDO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-LA-CAVA-ALTA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-LA-CAVA-ALTA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "6"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130061>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438960.7301181820"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473142.5867273700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130061"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-COBOS-DE-SEGOVIA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110520>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441706.6929000000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477913.8005410000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110520"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ARMANDO-PALACIO-VALDES> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130043>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442537.1164080680"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4472699.5802043000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130043"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ABTAO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#COSTANILLA-DE-LOS-ANGELES>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "COSTANILLA-DE-LOS-ANGELES"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "11"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120002>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "437678.4580520000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475985.1983500000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120002"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Neighborhood#Palacio>
+        a       <http://parquimetrosdemadrid.com/Classes#Neighborhood> ;
+        <http://parquimetrosdemadrid.com/Properties#neighborhoodName>
+                "Palacio"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ABEL>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ABEL"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "24"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/District#01-CENTRO>
+        a       <http://parquimetrosdemadrid.com/Classes#District> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                "01-CENTRO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-LAS-AGUAS>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-LAS-AGUAS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/District#07-CHAMBERI>
+        a       <http://parquimetrosdemadrid.com/Classes#District> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                "07-CHAMBERI"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ABTAO>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ABTAO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "2"^^<http://www.w3.org/2001/XMLSchema#string> , "10"^^<http://www.w3.org/2001/XMLSchema#string> , "26"^^<http://www.w3.org/2001/XMLSchema#string> , "27"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110030>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439414.5330150000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476272.1195650000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110030"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANDRES-MELLADO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#calle-de-las-Aguas>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "calle-de-las-Aguas"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130051>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441966.1453336880"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4472852.5760720700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130051"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-NEBRIJA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120010>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438329.0450730000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475244.1229990000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120010"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130009>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442767.2816973240"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473073.8570638100"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130009"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ABTAO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110056>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439608.1907882330"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473550.0278627100"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110056"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-LAS-AGUAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#PLAZA-DE-ALMU%C3%83%E2%80%98ECAR>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "PLAZA-DE-ALMUÃ‘ECAR"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "10"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110457>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441665.1373450000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477866.4672080000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-BALBINA-VALVERDE> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110014>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439724.4730690000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4474317.3719490000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110014"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-LA-AMNISTIA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DEL-ALMENDRO>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DEL-ALMENDRO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "14"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130015>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442047.6348690000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475446.2379870000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130015"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-AYALA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-CAMPOMANES>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-CAMPOMANES"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "8"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-PEREZ>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ANTONIO-PEREZ"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "28"^^<http://www.w3.org/2001/XMLSchema#string> , "7"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130017>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442570.0709535220"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473078.5058241400"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130017"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-CAVANILLES> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-AYALA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-AYALA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "66"^^<http://www.w3.org/2001/XMLSchema#string> , "56"^^<http://www.w3.org/2001/XMLSchema#string> , "48"^^<http://www.w3.org/2001/XMLSchema#string> , "49"^^<http://www.w3.org/2001/XMLSchema#string> , "25"^^<http://www.w3.org/2001/XMLSchema#string> , "2"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110064>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439622.7569039360"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473423.0306175300"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110064"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-CALATRAVA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110465>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442149.8504670000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477139.8506420000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110465"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-PEREZ> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-JEMENU%C3%83%E2%80%98O>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-JEMENUÃ‘O"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "2-J"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130065>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441752.1289400000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4474666.4369220000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130065"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALCALA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-BLASCO-DE-GARAY>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-BLASCO-DE-GARAY"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "41"^^<http://www.w3.org/2001/XMLSchema#string> , "53"^^<http://www.w3.org/2001/XMLSchema#string> , "63"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420832>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439673.0167753770"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4480610.5760720700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420832"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#AVENIDA-DE-BETANZOS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130002>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441540.8431390000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475482.8832710000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130002"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-AYALA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130064>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438949.8489099390"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473225.5138108900"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130064"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-COBOS-DE-SEGOVIA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#PASEO-DE-LA-CASTELLANA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "PASEO-DE-LA-CASTELLANA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "18"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110502>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441913.8223309330"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478057.6594054000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110502"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALFONSO-RODRIGUEZ-SANTAMARIA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120005>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "437886.0790330000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475699.5177290000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120005"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ALEJANDRO-RODRIGUEZ>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ALEJANDRO-RODRIGUEZ"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "39"^^<http://www.w3.org/2001/XMLSchema#string> , "29-B"^^<http://www.w3.org/2001/XMLSchema#string> , "33"^^<http://www.w3.org/2001/XMLSchema#string> , "23"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110494>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442335.9543380000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477779.4166490000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110494"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DEL-ARGA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/District#05-CHAMARTIN>
+        a       <http://parquimetrosdemadrid.com/Classes#District> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                "05-CHAMARTIN"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-AGUIRRE>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-AGUIRRE"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "3"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120322>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439757.3469890000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478418.4115140000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120322"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALEJANDRO-RODRIGUEZ> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO>
+        a       <http://parquimetrosdemadrid.com/Classes#Neighborhood> ;
+        <http://parquimetrosdemadrid.com/Properties#neighborhoodName>
+                "01-01-PALACIO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130054>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442559.4304576550"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4472555.3653282700"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130054"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALBERCHE> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110012>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439417.6532607370"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476514.1591090800"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110012"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANDRES-MELLADO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#704130060>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442129.9262840000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4474822.2426440000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "704130060"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#04-SALAMANCA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALCALA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-LA-AMNISTIA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-LA-AMNISTIA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "6"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130038>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439171.8271518690"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473200.3033448000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130038"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-GIL-IMON> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-BEATRIZ-GALINDO>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-BEATRIZ-GALINDO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "SN"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420898>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439604.6191640000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4481204.5505290000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420898"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#AVENIDA-DE-BETANZOS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110297>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441571.8223309330"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476663.4927387400"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110297"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALVAREZ-DE-BAENA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110046>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439479.2651683980"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473481.5016919100"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110046"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-CALATRAVA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#108420835>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439686.8691640000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4480805.9255290000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "108420835"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#08-FUENCARRAL-EL-PARDO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#08-04-EL-PILAR> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#AVENIDA-DE-BETANZOS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ADELA-BALBOA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ADELA-BALBOA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "14"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110049>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439499.9100750000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476016.7500350000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110049"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-PALOMINO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130067>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439054.5584509830"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473330.9130523800"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130067"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-JEMENU%C3%83%E2%80%98O> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120317>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439887.5370040000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478025.2698210000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120317"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ABEL> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120008>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438157.1228040000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475427.4217700000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120008"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110012>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439923.6811090000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4474528.8892540000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110012"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#COSTANILLA-DE-LOS-ANGELES> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120346>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439740.3747670000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478493.1615140000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120346"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ALEJANDRO-RODRIGUEZ> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#302130054>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "438974.9184002570"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473046.6425988900"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "302130054"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#02-ARGANZUELA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#02-01-IMPERIAL> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-COBOS-DE-SEGOVIA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2016-10-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#205110513>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "441598.9056642660"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4477731.2427387400"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "205110513"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#05-CHAMARTIN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#05-01-EL-VISO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-BALBINA-VALVERDE> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#703130015>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "442466.8684741830"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473136.4603695900"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "703130015"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#03-RETIRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#03-01-PACIFICO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-CAVANILLES> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#301110041>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439885.3223309330"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4473783.4094054000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "301110041"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#01-CENTRO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#01-01-PALACIO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-LA-CAVA-ALTA> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-CALATRAVA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-CALATRAVA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "37"^^<http://www.w3.org/2001/XMLSchema#string> , "17"^^<http://www.w3.org/2001/XMLSchema#string> , "29"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ANTONIO-NEBRIJA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ANTONIO-NEBRIJA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "SN"^^<http://www.w3.org/2001/XMLSchema#string> , "3"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#106120354>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439716.5925590000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4478083.7420430000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "106120354"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#06-TETUAN> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#06-01-BELLAS-VISTAS> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#PUENTE-DE-AMANIEL> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2017-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#307110044>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "439392.7952010000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4476074.4274490000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "307110044"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#07-CHAMBERI> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#07-01-GAZTAMBIDE> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANDRES-MELLADO> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://parquimetrosdemadrid.com/Neighborhood#04-01-RECOLETOS>
+        a       <http://parquimetrosdemadrid.com/Classes#Neighborhood> ;
+        <http://parquimetrosdemadrid.com/Properties#neighborhoodName>
+                "04-01-RECOLETOS"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/Via#CALLE-DE-ALVAREZ-DE-BAENA>
+        a       <http://parquimetrosdemadrid.com/Classes#Via> ;
+        <http://parquimetrosdemadrid.com/Properties#viaName>
+                "CALLE-DE-ALVAREZ-DE-BAENA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#viaNumber>
+                "4"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://parquimetrosdemadrid.com/ParkingMeter#309120003>
+        a       <http://parquimetrosdemadrid.com/Classes#ParkingMeter> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_X>
+                "437736.6507620000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#gis_Y>
+                "4475861.3919530000"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://parquimetrosdemadrid.com/Properties#licensePlate>
+                "309120003"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedDistrict>
+                <http://parquimetrosdemadrid.com/District#09-MONCLOA-ARAVACA> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedNeighborhood>
+                <http://parquimetrosdemadrid.com/Neighborhood#09-01-CASA-DE-CAMPO> ;
+        <http://parquimetrosdemadrid.com/Properties#locatedVia>
+                <http://parquimetrosdemadrid.com/Via#CALLE-DE-ANICETO-MARINAS> ;
+        <http://parquimetrosdemadrid.com/Properties#releaseData>
+                "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .

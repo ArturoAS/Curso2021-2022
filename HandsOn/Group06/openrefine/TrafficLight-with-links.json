@@ -1,0 +1,555 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "id",
+    "newColumnName": "IdTrafficLight",
+    "description": "Rename column id to IdTrafficLight"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IdTrafficLight",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column IdTrafficLight using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "latitud",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column latitud using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "longitud",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column longitud using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "longitud",
+    "newColumnName": "longitude",
+    "description": "Rename column longitud to longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "latitud",
+    "newColumnName": "latitude",
+    "description": "Rename column latitud to latitude"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "utm_x",
+    "description": "Remove column utm_x"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "utm_y",
+    "description": "Remove column utm_y"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "id_cruce",
+    "newColumnName": "IdCross",
+    "description": "Rename column id_cruce to IdCross"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column IdCross using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "﻿tipo_elem",
+    "description": "Remove column ﻿tipo_elem"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "distrito",
+    "description": "Remove column distrito"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "fecha_inst",
+    "newColumnName": "installDate",
+    "description": "Rename column fecha_inst to installDate"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "installDate",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column installDate using expression value.toDate()"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q21199",
+        "name": "natural number"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column IdCross to type Q21199"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "IdCross: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "IdCross",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "similarValue": "1011",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4707476",
+      "name": "1011",
+      "types": [
+        "Q21199",
+        "Q13366129",
+        "Q765289",
+        "Q50707"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item 1011 (Q4707476) for cells containing \"1011\" in column IdCross"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "IdCross: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "IdCross",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "similarValue": "1010",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3843555",
+      "name": "1010",
+      "types": [
+        "Q21199",
+        "Q13366104",
+        "Q638185",
+        "Q50707"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item 1010 (Q3843555) for cells containing \"1010\" in column IdCross"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "IdCross: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "IdCross",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "similarValue": "1069",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4902209",
+      "name": "1069",
+      "types": [
+        "Q21199",
+        "Q49008",
+        "Q13366129"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item 1069 (Q4902209) for cells containing \"1069\" in column IdCross"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "IdCross: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "IdCross",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "similarValue": "1031",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5101873",
+      "name": "1031",
+      "types": [
+        "Q21199",
+        "Q49008",
+        "Q13366129"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item 1031 (Q5101873) for cells containing \"1031\" in column IdCross"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "IdCross: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "IdCross",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "similarValue": "1040",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5361486",
+      "name": "1040",
+      "types": [
+        "Q21199",
+        "Q13366104",
+        "Q50707"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item 1040 (Q5361486) for cells containing \"1040\" in column IdCross"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "IdCross: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "IdCross",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "similarValue": "1028",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4901398",
+      "name": "1028",
+      "types": [
+        "Q21199",
+        "Q13366104",
+        "Q1193504",
+        "Q50707"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item 1028 (Q4901398) for cells containing \"1028\" in column IdCross"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "IdCross: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "IdCross",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "similarValue": "1446",
+    "judgment": "matched",
+    "match": {
+      "id": "Q13634784",
+      "name": "1446",
+      "types": [
+        "Q21199",
+        "Q13366104",
+        "Q50707"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item 1446 (Q13634784) for cells containing \"1446\" in column IdCross"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "IdCross: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "IdCross",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "similarValue": "1019",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3843613",
+      "name": "1019",
+      "types": [
+        "Q21199",
+        "Q49008",
+        "Q13366129",
+        "Q145134"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item 1019 (Q3843613) for cells containing \"1019\" in column IdCross"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "IdCross: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "IdCross",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "IdCross",
+    "similarValue": "1057",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4901383",
+      "name": "1057",
+      "types": [
+        "Q21199",
+        "Q13366129",
+        "Q765289",
+        "Q50707"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item 1057 (Q4901383) for cells containing \"1057\" in column IdCross"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "IdCross: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "IdCross",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "IdCross",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_cross",
+    "columnInsertIndex": 2,
+    "description": "Create column same_as_wikidata_cross at index 2 based on column IdCross using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

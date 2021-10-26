@@ -1,0 +1,15 @@
+{
+  "datasources" : [
+      {
+        "id" : "RDF file",
+        "handler" : {"type" : "RDFHandler", "format" : "N-TRIPLES"},
+        "provider"  : { "type" : "FileProvider", "file" : "./rdf/Ntriples.nt"}
+      }
+  ],
+  "resource_rules" : [
+    { 
+      "id" : "RDF file rules",
+      "datasource_ids" : ["RDF file"]
+    }
+  ]
+}

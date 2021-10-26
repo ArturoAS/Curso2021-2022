@@ -1,0 +1,84 @@
+@prefix : <http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident> .
+
+<http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident> rdf:type owl:Ontology .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.preventbicyleaccidents-app.es/group02/resources/Accident/2021S002879
+<http://www.preventbicyleaccidents-app.es/group02/resources/Accident/2021S002879> rdf:type owl:NamedIndividual ,
+                                                                                           :Accident ;
+                                                                                  :hasPlace <http://www.preventbicyleaccidents-app.es/group02/resources/Address/CALLE_SEGOVIA> ;
+                                                                                  :hasVictim <http://www.preventbicyleaccidents-app.es/group02/resources/Person/victima10077> ;
+                                                                                  :causedBy "Caída"^^xsd:string ;
+                                                                                  :hasDate "2021-01-01T11:38:00Z"^^xsd:dateTime ;
+                                                                                  :hasIdAccident "2021S000047"^^xsd:string ;
+                                                                                  :hasWeather "Despejado"^^xsd:string ;
+                                                                                  :typeBicycle "Bicicleta"^^xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/resources/Address/CALLE_SEGOVIA
+<http://www.preventbicyleaccidents-app.es/group02/resources/Address/CALLE_SEGOVIA> rdf:type owl:NamedIndividual ,
+                                                                                            :Address ;
+                                                                                   :belongsTo <http://www.preventbicyleaccidents-app.es/group02/resources/District/ARGANZUELA> ;
+                                                                                   :hasNumber "8"^^xsd:string ,
+                                                                                              "CALLE_SEGOVIA"^^xsd:string ;
+                                                                                   :typeAddress "CICLOCALLES"^^xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/resources/Crossing/116
+<http://www.preventbicyleaccidents-app.es/group02/resources/Crossing/116> rdf:type owl:NamedIndividual ,
+                                                                                   :Crossing ;
+                                                                          :crossIn <http://www.preventbicyleaccidents-app.es/group02/resources/District/VILLAVERDE> ;
+                                                                          :hasTrafficLight <http://www.preventbicyleaccidents-app.es/group02/resources/TrafficLight/1793> ;
+                                                                          :hasIdCrossing "116"^^xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/resources/District/ARGANZUELA
+<http://www.preventbicyleaccidents-app.es/group02/resources/District/ARGANZUELA> rdf:type owl:NamedIndividual ,
+                                                                                          :District ;
+                                                                                 :hasCode "6"^^xsd:string ;
+                                                                                 :hasDistrictName "ARGANZUELA"^^xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/resources/District/VILLAVERDE
+<http://www.preventbicyleaccidents-app.es/group02/resources/District/VILLAVERDE> rdf:type owl:NamedIndividual ,
+                                                                                          :District ;
+                                                                                 :hasCode "1"^^xsd:string ;
+                                                                                 :hasDistrictName "VILLAVERDE"^^xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/resources/Geometry/trafficLight1793
+<http://www.preventbicyleaccidents-app.es/group02/resources/Geometry/trafficLight1793> rdf:type owl:NamedIndividual ,
+                                                                                                :Geometry ;
+                                                                                       :hasLat "40.4160190138483"^^xsd:string ;
+                                                                                       :hasLong "-3.70872451251705"^^xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/resources/Person/victima10077
+<http://www.preventbicyleaccidents-app.es/group02/resources/Person/victima10077> rdf:type owl:NamedIndividual ,
+                                                                                          :Person ;
+                                                                                 :gradeOfInjury "2"^^xsd:string ;
+                                                                                 :hasGender "Hombre"^^xsd:string ;
+                                                                                 :hasIdVictim "10001"^^xsd:string ;
+                                                                                 :hasRangeAge "De 45 a 49 años"^^xsd:string ;
+                                                                                 :hasRole "Conductor"^^xsd:string .
+
+
+###  http://www.preventbicyleaccidents-app.es/group02/resources/TrafficLight/1793
+<http://www.preventbicyleaccidents-app.es/group02/resources/TrafficLight/1793> rdf:type owl:NamedIndividual ,
+                                                                                        :TrafficLight ;
+                                                                               :ubicatedIn <http://www.preventbicyleaccidents-app.es/group02/resources/Geometry/trafficLight1793> ;
+                                                                               :hasIdTrafficLight "1793"^^xsd:string ;
+                                                                               :typeTrafficLight "SEMAFORO 2/200 PEATON - BICI"^^xsd:string ;
+                                                                               :wasInstalled "1964-03-14T00:00:00Z"^^xsd:dateTime .
+
+

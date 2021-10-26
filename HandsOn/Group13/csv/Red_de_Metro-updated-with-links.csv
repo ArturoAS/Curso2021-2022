@@ -1,0 +1,290 @@
+Underground_ID,Underground_Name,Same_As_Wikidata_Underground,Street_Type,Preposition,Street_Name,Number_Type,Portal_Number,Postal_Code,District_ID,District_Name,Same_As_Wikidata_District,X,Y
+1,Plaza de España / Noviciado,https://wikidata.org/entity/Q2219895,Calle,de,San Bernardo,N,49,28015,1,Centro,https://wikidata.org/entity/Q1763376,440100,4475360
+2,Estrella,https://wikidata.org/entity/Q2464797,Calle,del,Camino de los Vinateros,N,1,28030,14,Moratalaz,https://wikidata.org/entity/Q2076109,443960,4473846
+3,Ríos Rosas,https://wikidata.org/entity/Q2479349,Calle,de,Ríos Rosas,N,22,28003,7,Chamberí,https://wikidata.org/entity/Q1763370,440632,4477258
+4,Campamento,https://wikidata.org/entity/Q2481364,Avda,del,Padre Piquer,N,7,28024,10,Latina,https://wikidata.org/entity/Q794954,434921,4472069
+5,Usera,https://wikidata.org/entity/Q643209,Calle,de,Amparo Usera,N,44,28026,12,Usera,https://wikidata.org/entity/Q953368,440111,4471170
+6,O'Donnell,https://wikidata.org/entity/Q2479913,Calle,del,Doctor Esquerdo,N,47,28028,4,Salamanca,https://wikidata.org/entity/Q1773521,443392,4475118
+7,Puerta del Ángel,https://wikidata.org/entity/Q2482152,Paseo,de,Extremadura,N,26,28011,10,Latina,https://wikidata.org/entity/Q794954,438409,4474159
+8,El Bercial,https://wikidata.org/entity/Q2485050,Avda,,Comandante José Manuel Ripollés,N,4,28905,3,Retiro,https://wikidata.org/entity/Q2002296,438128,4464745
+9,Hospital 12 de Octubre,https://wikidata.org/entity/Q929500,Avda,de,Córdoba,N,49,28041,12,Usera,https://wikidata.org/entity/Q953368,441038,4469823
+10,Almendrales,https://wikidata.org/entity/Q543261,Avda,de,Córdoba,N,21,28026,12,Usera,https://wikidata.org/entity/Q953368,440873,4470831
+11,Lavapiés,https://wikidata.org/entity/Q388743,Plaza,de,Lavapiés,N,7,28012,1,Centro,https://wikidata.org/entity/Q1763376,440638,4473543
+12,Tres Olivos,https://wikidata.org/entity/Q608766,Acces,,M-607,SN,S/N,28034,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,441203,4483828
+13,San Fermín-Orcasur,https://wikidata.org/entity/Q2057787,Avda,de,Andalucía,N,9,28041,12,Usera,https://wikidata.org/entity/Q953368,441176,4469263
+14,García Noblejas,https://wikidata.org/entity/Q2480917,Calle,de,Luis del Campo,N,1,28017,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,446390,4475710
+15,Gregorio Marañón,https://wikidata.org/entity/Q2056442,Calle,de,José Abascal,N,65,28003,7,Chamberí,https://wikidata.org/entity/Q1763370,441463,4476838
+16,Peñagrande,https://wikidata.org/entity/Q2058663,Cmno,de,Ganapanes,N,35,28029,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,439433,4481036
+17,Herrera Oria,https://wikidata.org/entity/Q2462763,Calle,de,Valencia de Don Juan,N,1,28034,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,440145,4482000
+18,Pío XII,https://wikidata.org/entity/Q2635957,Avda,de,Pío XII,N,27,28016,5,Chamartín,https://wikidata.org/entity/Q1766348,442815,4479575
+19,Argüelles,https://wikidata.org/entity/Q1890537,Calle,de,Alberto Aguilera,N,72,28015,7,Chamberí,https://wikidata.org/entity/Q1763370,439380,4476012
+20,Callao,https://wikidata.org/entity/Q2055072,Plaza,del,Callao,N,3,28013,1,Centro,https://wikidata.org/entity/Q1763376,440245,4474831
+21,Hortaleza,https://wikidata.org/entity/Q2056542,Calle,del,Capitán Cortés,BLQ,4,28033,16,Hortaleza,https://wikidata.org/entity/Q1928529,444794,4480933
+22,Aeropuerto T4,https://wikidata.org/entity/Q2605805,Ctra,de,Alcobendas a Barajas,SN,S/N,28042,21,Barajas,https://wikidata.org/entity/Q807230,449835,4482717
+23,Pitis,https://wikidata.org/entity/Q2697462,Ctra,a la,Estación de Pitis,N,19,28035,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,438597,4483172
+24,Móstoles,https://wikidata.org/entity/Q684862,Paseo,de la,Estación,N,13,28933,2,Arganzuela,https://wikidata.org/entity/Q2000929,426752,4464784
+25,Puerta de Toledo,https://wikidata.org/entity/Q2056515,Gta,de,Puerta de Toledo,N,1,28005,1,Centro,https://wikidata.org/entity/Q1763376,439776,4473386
+26,La Moraleja,https://wikidata.org/entity/Q2059047,Avda,de la,Ermita,N,5,28109,1,Centro,https://wikidata.org/entity/Q1763376,446281,4487203
+27,Fuenlabrada Central,https://wikidata.org/entity/Q10948342,Calle,de la,Vía,SN,S/N,28944,4,Salamanca,https://wikidata.org/entity/Q1773521,432197,4459646
+28,Cartagena,https://wikidata.org/entity/Q2058037,Avda,de,América,N,35,28002,5,Chamartín,https://wikidata.org/entity/Q1766348,443104,4476946
+29,Plaza de España / Noviciado,https://wikidata.org/entity/Q2219895,Calle,de los,Reyes,N,10,28015,1,Centro,https://wikidata.org/entity/Q1763376,439906,4475278
+30,Islas Filipinas,https://wikidata.org/entity/Q966680,Calle,de,Cea Bermúdez,N,54,28003,7,Chamberí,https://wikidata.org/entity/Q1763370,439577,4476943
+31,Ibiza,https://wikidata.org/entity/Q2464739,Calle,de,Ibiza,N,1,28009,3,Retiro,https://wikidata.org/entity/Q2002296,442541,4474625
+32,Alvarado,https://wikidata.org/entity/Q664440,Calle,de,Bravo Murillo,N,138,28020,6,Tetuán,https://wikidata.org/entity/Q1773540,440471,4478187
+33,Colón,https://wikidata.org/entity/Q2481248,Plaza,de,Colón,N,2,28046,7,Chamberí,https://wikidata.org/entity/Q1763370,441493,4475413
+34,Sevilla,https://wikidata.org/entity/Q2056503,Calle,de,Alcalá,N,23,28014,1,Centro,https://wikidata.org/entity/Q1763376,440787,4474601
+35,Banco de España,https://wikidata.org/entity/Q2481227,Calle,de,Alcalá,N,49,28014,1,Centro,https://wikidata.org/entity/Q1763376,441152,4474728
+36,Estrecho,https://wikidata.org/entity/Q2055525,Calle,de,Bravo Murillo,N,191,28020,6,Tetuán,https://wikidata.org/entity/Q1773540,440499,4478625
+37,Rivas Futura Metro Station,https://wikidata.org/entity/Q2055499,Calle,,Concepción Arenal,N,1,28529,1,Centro,https://wikidata.org/entity/Q1763376,455537,4465984
+38,Plaza Elíptica,https://wikidata.org/entity/Q782113,Plaza,de,Fernández Ladreda,N,2,28025,11,Carabanchel,https://wikidata.org/entity/Q1001991,439135,4470901
+39,Aeropuerto T1-T2-T3,https://wikidata.org/entity/Q2477093,Avda,de la,Hispanidad,N,S/N,28042,21,Barajas,https://wikidata.org/entity/Q807230,451828,4480138
+40,Avenida de América,https://wikidata.org/entity/Q730768,Avda,de,América,N,9,28002,5,Chamartín,https://wikidata.org/entity/Q1766348,442722,4476804
+41,Cuatro Caminos,https://wikidata.org/entity/Q2420839,Gta,de,Cuatro Caminos,N,9,28020,6,Tetuán,https://wikidata.org/entity/Q1773540,440421,4477814
+42,Manuel Becerra,https://wikidata.org/entity/Q2056869,Plaza,de,Manuel Becerra,N,1,28028,4,Salamanca,https://wikidata.org/entity/Q1773521,443344,4475675
+43,Puente de Vallecas,https://wikidata.org/entity/Q2479039,Avda,de la,Albufera,N,1,28053,13,Puente de Vallecas,https://wikidata.org/entity/Q2003054,443332,4472377
+44,Jarama,https://wikidata.org/entity/Q2058848,Plaza,,Guernica,N,1,28830,1,Centro,https://wikidata.org/entity/Q1763376,455531,4475043
+45,Canal,https://wikidata.org/entity/Q2479455,Calle,de,Cea Bermúdez,N,1,28003,7,Chamberí,https://wikidata.org/entity/Q1763370,440327,4476897
+46,Ronda de la Comunicación,https://wikidata.org/entity/Q3941077,Ronda,de la,Comunicación,N,22,28050,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,443963,4485398
+47,Alonso Martínez,https://wikidata.org/entity/Q2481198,Calle,de,Manuel González Longoria,N,14,28010,7,Chamberí,https://wikidata.org/entity/Q1763370,441035,4475762
+48,Palos de la Frontera,https://wikidata.org/entity/Q2481204,Calle,de,Palos de la Frontera,N,33,28045,2,Arganzuela,https://wikidata.org/entity/Q2000929,441200,4472935
+49,Pueblo Nuevo,https://wikidata.org/entity/Q384453,Calle,de,Alcalá,N,372,28027,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,445588,4476519
+50,Guzmán el Bueno,https://wikidata.org/entity/Q2482402,Calle,de,Guzmán el Bueno,N,118,28003,7,Chamberí,https://wikidata.org/entity/Q1763370,439706,4477752
+51,Pacífico,https://wikidata.org/entity/Q2479769,Avda,de la,Ciudad de Barcelona,N,79,28007,3,Retiro,https://wikidata.org/entity/Q2002296,442819,4472721
+52,Gran Vía,https://wikidata.org/entity/Q2729745,Calle,,Gran Vía,N,23,28013,1,Centro,https://wikidata.org/entity/Q1763376,440572,4474817
+53,Sierra de Guadalupe,https://wikidata.org/entity/Q2479478,Avda,de la,Democracia,N,1,28031,13,Puente de Vallecas,https://wikidata.org/entity/Q2003054,447082,4470570
+54,Fuencarral,https://wikidata.org/entity/Q2059161,Calle,de la,Fuente Chica,N,21,28034,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,441399,4483147
+55,Valdeacederas,https://wikidata.org/entity/Q2055837,Calle,de,Bravo Murillo,N,332,28020,6,Tetuán,https://wikidata.org/entity/Q1773540,441183,4479745
+56,Pan Bendito,https://wikidata.org/entity/Q2482414,Avda,de,Abrantes,N,289,28025,11,Carabanchel,https://wikidata.org/entity/Q1001991,437786,4469942
+57,Parque Lisboa,https://wikidata.org/entity/Q510707,Calle,de,Porto Lagos,N,7,28924,2,Arganzuela,https://wikidata.org/entity/Q2000929,430371,4467101
+58,Laguna,https://wikidata.org/entity/Q2482135,Calle,de,Cuart de Poblet,N,1,28047,10,Latina,https://wikidata.org/entity/Q794954,436948,4472543
+59,Parque de los Estados,https://wikidata.org/entity/Q2484454,Calle,de,Venezuela,N,2,28945,2,Arganzuela,https://wikidata.org/entity/Q2000929,433215,4460099
+60,Juan de la Cierva,https://wikidata.org/entity/Q592352,Avda,de,España,N,20,28903,4,Salamanca,https://wikidata.org/entity/Q1773521,438740,4462823
+61,El Carrascal,https://wikidata.org/entity/Q2485042,Avda,,Rey Juan Carlos I,N,85,28916,5,Chamartín,https://wikidata.org/entity/Q1766348,437239,4465592
+62,Casa del Reloj,https://wikidata.org/entity/Q2486887,Avda,,Gibraltar,N,11,28914,2,Arganzuela,https://wikidata.org/entity/Q2000929,435595,4464492
+63,El Capricho,https://wikidata.org/entity/Q2056510,Calle,de,Pinos de Osuna,N,15,28042,21,Barajas,https://wikidata.org/entity/Q807230,449742,4478467
+64,Villa de Vallecas,https://wikidata.org/entity/Q630441,Paseo,de,Federico García Lorca,N,2,28031,18,Villa de Vallecas,https://wikidata.org/entity/Q1947988,447370,4470283
+65,Valdebernardo,https://wikidata.org/entity/Q2696095,Bulv,de,Indalecio Prieto,N,26,28032,19,Vicálvaro,https://wikidata.org/entity/Q589403,447364,4472553
+66,Colombia,https://wikidata.org/entity/Q2462831,Calle,del,Príncipe de Vergara,N,269,28016,5,Chamartín,https://wikidata.org/entity/Q1766348,442713,4478964
+67,Las Musas,https://wikidata.org/entity/Q2482052,Avda,de,Niza,N,61,28022,20,San Blas,https://wikidata.org/entity/Q2001937,448550,4476201
+68,Diego de León,https://wikidata.org/entity/Q2055658,Calle,de,Francisco Silvela,N,47,28028,4,Salamanca,https://wikidata.org/entity/Q1773521,443032,4476237
+69,Núñez de Balboa,https://wikidata.org/entity/Q782924,Plaza,del,Marqués de Salamanca,N,9,28006,4,Salamanca,https://wikidata.org/entity/Q1773521,442484,4475928
+70,Ventas,https://wikidata.org/entity/Q2014690,Calle,de,Alcalá,N,204,28028,4,Salamanca,https://wikidata.org/entity/Q1773521,443822,4476002
+71,Plaza de Castilla,https://wikidata.org/entity/Q2463399,Paseo,de la,Castellana,N,216,28046,5,Chamartín,https://wikidata.org/entity/Q1766348,441692,4480016
+72,Puerta de Arganda,https://wikidata.org/entity/Q2059170,Calle,de,San Cipriano,N,85,28032,19,Vicálvaro,https://wikidata.org/entity/Q589403,449536,4472679
+73,Feria de Madrid,https://wikidata.org/entity/Q2473865,Avda,del,Partenón,N,5,28042,21,Barajas,https://wikidata.org/entity/Q807230,447868,4479637
+74,Eugenia de Montijo,https://wikidata.org/entity/Q2058271,Calle,de,Ocaña,N,86,28047,11,Carabanchel,https://wikidata.org/entity/Q1001991,436347,4470900
+75,La Fortuna,https://wikidata.org/entity/Q3820855,Calle,,San José,N,40,28917,6,Tetuán,https://wikidata.org/entity/Q1773540,434062,4467986
+76,Alsacia,https://wikidata.org/entity/Q3613056,Plaza,de,Alsacia,N,S/N,28037,20,San Blas,https://wikidata.org/entity/Q2001937,447213,4474579
+77,La Almudena,https://wikidata.org/entity/Q3820626,Calle,de,Arriaga,N,75,28017,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,445891,4475180
+78,Paco de Lucía,https://wikidata.org/entity/Q5846080,Calle,de,Monasterio de Las Huelgas,N,5,28034,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,440026,4483665
+79,Velázquez,https://wikidata.org/entity/Q2481170,Calle,de,Núñez de Balboa,N,33,28001,4,Salamanca,https://wikidata.org/entity/Q1773521,442179,4475365
+80,Prosperidad,https://wikidata.org/entity/Q2056525,Plaza,de la,Prosperidad,N,4,28002,5,Chamartín,https://wikidata.org/entity/Q1766348,442882,4477486
+81,Arturo Soria,https://wikidata.org/entity/Q2481371,Calle,de,Arturo Soria,N,172,28043,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,444472,4478766
+82,Canillas,https://wikidata.org/entity/Q2481265,Avda,de,Machupichu,N,64,28043,16,Hortaleza,https://wikidata.org/entity/Q1928529,446224,4479639
+83,Parque de Santa María,https://wikidata.org/entity/Q2481002,Calle,de,Santa Virgilia,N,1,28033,16,Hortaleza,https://wikidata.org/entity/Q1928529,445417,4481122
+84,Ciudad Lineal,https://wikidata.org/entity/Q2054883,Calle,de,Arturo Soria,N,2,28027,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,445986,4476781
+85,La Latina,https://wikidata.org/entity/Q1115250,Calle,de,San Millán,N,5,28005,1,Centro,https://wikidata.org/entity/Q1763376,440025,4473855
+86,Carabanchel,https://wikidata.org/entity/Q2056760,Gta,del,Ejército,N,1,28047,11,Carabanchel,https://wikidata.org/entity/Q1001991,436888,4471277
+87,Rivas Urbanizaciones,https://wikidata.org/entity/Q2479404,Plaza,de,Galicia,N,5,28529,1,Centro,https://wikidata.org/entity/Q1763376,453645,4468818
+88,Lista,https://wikidata.org/entity/Q2479567,Calle,del,Conde de Peñalver,N,45,28006,4,Salamanca,https://wikidata.org/entity/Q1773521,442819,4475819
+89,Lago,https://wikidata.org/entity/Q1902898,Ronda,del,Lago,N,3,28011,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,437699,4474444
+90,Batán,https://wikidata.org/entity/Q2059269,Paseo,de la,Venta,N,1,28011,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,436208,4473507
+91,Sol,https://wikidata.org/entity/Q1766008,Plaza,de la,Puerta del Sol,N,6,28013,1,Centro,https://wikidata.org/entity/Q1763376,440446,4474473
+92,Sol,https://wikidata.org/entity/Q1766008,Plaza,de la,Puerta del Sol,N,6,28013,1,Centro,https://wikidata.org/entity/Q1763376,440446,4474470
+93,Sol,https://wikidata.org/entity/Q1766008,Plaza,de la,Puerta del Sol,N,6,28013,1,Centro,https://wikidata.org/entity/Q1763376,440446,4474466
+94,Nuevos Ministerios Station,https://wikidata.org/entity/Q2705508,Calle,de,Raimundo Fernández Villaverde,N,67,28046,6,Tetuán,https://wikidata.org/entity/Q1773540,441392,4477767
+95,Nuevos Ministerios Station,https://wikidata.org/entity/Q2705508,Calle,de,Raimundo Fernández Villaverde,N,67,28046,6,Tetuán,https://wikidata.org/entity/Q1773540,441392,4477763
+96,La Poveda,https://wikidata.org/entity/Q2479062,Parcela,,9017 Polígono 1,SN,S/N,28500,1,Centro,https://wikidata.org/entity/Q1763376,459545,4463483
+97,Empalme,https://wikidata.org/entity/Q2057577,Calle,de,Tembleque,N,105,28024,10,Latina,https://wikidata.org/entity/Q794954,435153,4471597
+98,Getafe Central,https://wikidata.org/entity/Q2485075,Calle,,Ferrocarril,N,2,28904,3,Retiro,https://wikidata.org/entity/Q2002296,437737,4462623
+99,Tribunal,https://wikidata.org/entity/Q2479844,Calle,de,Fuencarral,N,81,28004,1,Centro,https://wikidata.org/entity/Q1763376,440637,4475505
+100,Carpetana,https://wikidata.org/entity/Q2482395,Calle,,Vía Carpetana,N,141,28025,11,Carabanchel,https://wikidata.org/entity/Q1001991,437222,4471816
+101,Opañel,https://wikidata.org/entity/Q2482116,Calle,del,Valle de Oro,N,50,28019,11,Carabanchel,https://wikidata.org/entity/Q1001991,438733,4471160
+102,Conde de Casal,https://wikidata.org/entity/Q2055817,Plaza,del,Conde de Casal,N,3,28007,3,Retiro,https://wikidata.org/entity/Q2002296,443225,4473352
+103,Vicente Aleixandre,https://wikidata.org/entity/Q2482382,Avda,de,Gregorio del Amo,N,4,28040,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,439101,4477765
+104,Alto de Extremadura,https://wikidata.org/entity/Q2482103,Paseo,de,Extremadura,N,154,28011,10,Latina,https://wikidata.org/entity/Q794954,437413,4473726
+105,Tirso de Molina,https://wikidata.org/entity/Q2474438,Plaza,de,Tirso de Molina,N,7,28012,1,Centro,https://wikidata.org/entity/Q1763376,440323,4473971
+106,Plaza de España / Noviciado,https://wikidata.org/entity/Q2219895,Plaza,de,España,N,1,28008,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,439778,4475204
+107,Ventura Rodríguez,https://wikidata.org/entity/Q2378663,Calle,de la,Princesa,N,22,28008,1,Centro,https://wikidata.org/entity/Q1763376,439594,4475613
+108,Las Tablas,https://wikidata.org/entity/Q2244102,Calle,de,Palas de Rey,N,30,28050,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,443392,4484602
+109,Casa de Campo,https://wikidata.org/entity/Q568579,Ctra,del,Zoo,N,1,28011,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,435533,4473000
+110,Casa de Campo,https://wikidata.org/entity/Q568579,Paseo,de la,Venta,N,S/N,28011,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,435533,4472996
+111,Pueblo Nuevo,https://wikidata.org/entity/Q384453,Calle,de,Alcalá,N,372,28027,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,445588,4476523
+112,Ciudad Universitaria,https://wikidata.org/entity/Q2482378,Avda,,Complutense,N,1,28040,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,438474,4477451
+113,Guzmán el Bueno,https://wikidata.org/entity/Q2482402,Calle,de,Guzmán el Bueno,N,118,28003,7,Chamberí,https://wikidata.org/entity/Q1763370,439706,4477748
+114,Vinateros,https://wikidata.org/entity/Q2479812,Calle,del,Camino de los Vinateros,N,70,28030,14,Moratalaz,https://wikidata.org/entity/Q2076109,444727,4473704
+115,Artilleros,https://wikidata.org/entity/Q649362,Calle,del,Camino de los Vinateros,N,210,28030,14,Moratalaz,https://wikidata.org/entity/Q2076109,445650,4473140
+116,Nueva Numancia,https://wikidata.org/entity/Q2696516,Avda,de la,Albufera,N,70,28053,13,Puente de Vallecas,https://wikidata.org/entity/Q2003054,443747,4472079
+117,San Cipriano,https://wikidata.org/entity/Q2479793,Calle,de,San Cipriano,N,68,28032,19,Vicálvaro,https://wikidata.org/entity/Q589403,448993,4472960
+118,Alameda de Osuna,https://wikidata.org/entity/Q2403543,Calle,de la,Corbeta,N,14,28042,21,Barajas,https://wikidata.org/entity/Q807230,450295,4478943
+119,Estación del Arte,https://wikidata.org/entity/Q2016175,Plaza,del,Emperador Carlos V,N,11,28012,1,Centro,https://wikidata.org/entity/Q1763376,441353,4473575
+120,Atocha Renfe,https://wikidata.org/entity/Q9161733,Avda,de la,Ciudad de Barcelona,N,2,28007,2,Arganzuela,https://wikidata.org/entity/Q2000929,441615,4473322
+121,Ópera,https://wikidata.org/entity/Q2736048,Plaza,de,Isabel II,N,9,28013,1,Centro,https://wikidata.org/entity/Q1763376,439924,4474612
+122,Alonso Martínez,https://wikidata.org/entity/Q2481198,Plaza,de,Alonso Martínez,N,4,28004,7,Chamberí,https://wikidata.org/entity/Q1763370,441076,4475672
+123,Tetuán,https://wikidata.org/entity/Q515413,Calle,de,Bravo Murillo,N,264,28020,6,Tetuán,https://wikidata.org/entity/Q1773540,440909,4479318
+124,La Gavia,https://wikidata.org/entity/Q3820879,Avda,del,Ensanche de Vallecas,N,16,28031,18,Villa de Vallecas,https://wikidata.org/entity/Q1947988,448028,4469234
+125,Goya,https://wikidata.org/entity/Q955699,Calle,de,Alcalá,N,96,28009,4,Salamanca,https://wikidata.org/entity/Q1773521,442773,4475306
+126,Príncipe de Vergara,https://wikidata.org/entity/Q582040,Calle,de,Alcalá,N,123,28009,4,Salamanca,https://wikidata.org/entity/Q1773521,442414,4475131
+127,Retiro,https://wikidata.org/entity/Q2056874,Calle,de,Alcalá,N,81,28009,3,Retiro,https://wikidata.org/entity/Q2002296,441892,4474842
+128,Santo Domingo,https://wikidata.org/entity/Q2125964,Calle,de,San Bernardo,N,11,28013,1,Centro,https://wikidata.org/entity/Q1763376,440051,4474969
+129,San Bernardo,https://wikidata.org/entity/Q2055810,Calle,de,San Bernardo,N,94,28015,7,Chamberí,https://wikidata.org/entity/Q1763370,440261,4475933
+130,Las Suertes,https://wikidata.org/entity/Q3827256,Calle,de,Cañada del Santísimo,N,45,28031,18,Villa de Vallecas,https://wikidata.org/entity/Q1947988,449206,4468453
+131,Valdecarros,https://wikidata.org/entity/Q667797,Avda,del,Ensanche de Vallecas,N,120,28031,18,Villa de Vallecas,https://wikidata.org/entity/Q1947988,449744,4468099
+132,Iglesia,https://wikidata.org/entity/Q1113361,Gta,del,Pintor Sorolla,N,2,28010,7,Chamberí,https://wikidata.org/entity/Q1763370,440825,4476473
+133,Gran Vía,https://wikidata.org/entity/Q2729745,Calle,,Gran Vía,N,23,28013,1,Centro,https://wikidata.org/entity/Q1763376,440572,4474820
+134,Bambú,https://wikidata.org/entity/Q2244021,Calle,del,Bambú,N,14,28036,5,Chamartín,https://wikidata.org/entity/Q1766348,442778,4481108
+135,Príncipe Pío,https://wikidata.org/entity/Q2527066,Paseo,de la,Florida,N,2,28008,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,439002,4474950
+136,Príncipe Pío,https://wikidata.org/entity/Q2527066,Paseo,de la,Florida,N,2,28008,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,439002,4474946
+137,Príncipe Pío,https://wikidata.org/entity/Q2527066,Paseo,de la,Florida,N,2,28008,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,439002,4474942
+138,Cuzco,https://wikidata.org/entity/Q2482024,Paseo,de la,Castellana,N,162,28046,5,Chamartín,https://wikidata.org/entity/Q1766348,441619,4479076
+139,Santiago Bernabéu,https://wikidata.org/entity/Q2704346,Paseo,de la,Castellana,N,97,28046,5,Chamartín,https://wikidata.org/entity/Q1766348,441569,4478317
+140,Puerta del Sur,https://wikidata.org/entity/Q2484406,Avda,de la,Libertad,N,2,28924,2,Arganzuela,https://wikidata.org/entity/Q2000929,431138,4466601
+141,Joaquín Vilumbrales,https://wikidata.org/entity/Q528905,Avda,de la,Libertad,N,13,28925,2,Arganzuela,https://wikidata.org/entity/Q2000929,431560,4467108
+142,Abrantes,https://wikidata.org/entity/Q2484433,Avda,de,Abrantes,N,77,28025,11,Carabanchel,https://wikidata.org/entity/Q1001991,438322,4470489
+143,Portazgo,https://wikidata.org/entity/Q2479031,Avda,de la,Albufera,N,131,28018,13,Puente de Vallecas,https://wikidata.org/entity/Q2003054,444208,4471756
+144,San Blas,https://wikidata.org/entity/Q2482075,Calle,de,Pobladura del Valle,N,27,28037,20,San Blas,https://wikidata.org/entity/Q2001937,447903,4475651
+145,Simancas,https://wikidata.org/entity/Q2481349,Calle,del,Castillo de Madrigal de las Altas Torres,N,15,28037,20,San Blas,https://wikidata.org/entity/Q2001937,447033,4475657
+146,Pinar de Chamartín,https://wikidata.org/entity/Q921800,Calle,de,Arturo Soria,N,330,28033,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,443592,4481471
+147,Pinar de Chamartín,https://wikidata.org/entity/Q921800,Calle,de,Arturo Soria,N,330,28033,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,443595,4481471
+148,Ópera,https://wikidata.org/entity/Q2736048,Plaza,de,Isabel II,N,9,28013,1,Centro,https://wikidata.org/entity/Q1763376,439930,4474612
+149,Ópera,https://wikidata.org/entity/Q2736048,Plaza,de,Isabel II,N,9,28013,1,Centro,https://wikidata.org/entity/Q1763376,439936,4474612
+150,Plaza Elíptica,https://wikidata.org/entity/Q782113,Plaza,de,Fernández Ladreda,N,2,28025,11,Carabanchel,https://wikidata.org/entity/Q1001991,439145,4470901
+151,Avenida de América,https://wikidata.org/entity/Q730768,Avda,de,América,N,9,28002,5,Chamartín,https://wikidata.org/entity/Q1766348,442727,4476804
+152,Avenida de América,https://wikidata.org/entity/Q730768,Avda,de,América,N,9,28002,5,Chamartín,https://wikidata.org/entity/Q1766348,442732,4476804
+153,Avenida de América,https://wikidata.org/entity/Q730768,Avda,de,América,N,9,28002,5,Chamartín,https://wikidata.org/entity/Q1766348,442737,4476804
+154,Manuel Becerra,https://wikidata.org/entity/Q2056869,Plaza,de,Manuel Becerra,N,1,28028,4,Salamanca,https://wikidata.org/entity/Q1773521,443340,4475675
+155,Cuatro Caminos,https://wikidata.org/entity/Q2420839,Gta,de,Cuatro Caminos,N,2,28020,6,Tetuán,https://wikidata.org/entity/Q1773540,440412,4477814
+156,Cuatro Caminos,https://wikidata.org/entity/Q2420839,Gta,de,Cuatro Caminos,N,10,28020,6,Tetuán,https://wikidata.org/entity/Q1773540,440416,4477814
+157,Colonia Jardín,https://wikidata.org/entity/Q2060520,Calle,de,Arenas de San Pedro,N,2,28024,10,Latina,https://wikidata.org/entity/Q794954,434373,4472315
+158,Parque Oeste,https://wikidata.org/entity/Q2482424,Calle,de,Estambul,N,5,28922,1,Centro,https://wikidata.org/entity/Q1763376,427977,4466703
+159,Universidad Rey Juan Carlos station,https://wikidata.org/entity/Q2482419,Calle,,Tulipán,N,2,28933,2,Arganzuela,https://wikidata.org/entity/Q2000929,426025,4465526
+160,Pradillo,https://wikidata.org/entity/Q2484445,Calle,de,Agustina de Aragón,N,23,28931,4,Salamanca,https://wikidata.org/entity/Q1773521,426630,4464028
+161,Hospital de Móstoles,https://wikidata.org/entity/Q2484422,Calle,del,Río Sella,N,10,28934,4,Salamanca,https://wikidata.org/entity/Q1773521,425790,4463464
+162,Conservatorio,https://wikidata.org/entity/Q602081,Avda,de las,Arcas del Agua,N,5,28905,3,Retiro,https://wikidata.org/entity/Q2002296,436724,4460780
+163,Loranca,https://wikidata.org/entity/Q2484967,Calle,de la,Alegría,N,4,28942,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,428915,4461245
+164,Hospital de Fuenlabrada,https://wikidata.org/entity/Q576330,Cmno,del,Molino,N,3,28942,7,Chamberí,https://wikidata.org/entity/Q1763370,430711,4460001
+165,Parque Europa,https://wikidata.org/entity/Q2484940,Calle,de,Francia,N,34,28943,7,Chamberí,https://wikidata.org/entity/Q1763370,431569,4459929
+166,Canal,https://wikidata.org/entity/Q2479455,Calle,de,Bravo Murillo,N,40,28015,7,Chamberí,https://wikidata.org/entity/Q1763370,440374,4476864
+167,Quevedo,https://wikidata.org/entity/Q747162,Gta,de,Quevedo,N,1,28015,7,Chamberí,https://wikidata.org/entity/Q1763370,440369,4476288
+168,Arroyo Culebro,https://wikidata.org/entity/Q2484959,Paseo,de,Juan José Rosón,N,1,28905,3,Retiro,https://wikidata.org/entity/Q2002296,435780,4460288
+169,Alonso de Mendoza,https://wikidata.org/entity/Q2484972,Calle,del,Greco,N,6,28904,3,Retiro,https://wikidata.org/entity/Q2002296,437507,4461613
+170,Los Espartales,https://wikidata.org/entity/Q2485060,Avda,,Rigoberta Menchú,N,3,28903,2,Arganzuela,https://wikidata.org/entity/Q2000929,439095,4464199
+171,Alto del Arenal,https://wikidata.org/entity/Q2479465,Calle,de,Santillana del Mar,N,21,28038,13,Puente de Vallecas,https://wikidata.org/entity/Q2003054,445348,4471427
+172,Julián Besteiro,https://wikidata.org/entity/Q2484526,Avda,,Rey Juan Carlos I,N,23,28915,4,Salamanca,https://wikidata.org/entity/Q1773521,436177,4465391
+173,Delicias,https://wikidata.org/entity/Q3306947,Paseo,de las,Delicias,N,60,28045,2,Arganzuela,https://wikidata.org/entity/Q2000929,441200,4472583
+174,San Nicasio,https://wikidata.org/entity/Q2484393,Avda,,Mar Mediterráneo,SN,S/N,28918,3,Retiro,https://wikidata.org/entity/Q2002296,434207,4465565
+175,Miguel Hernández,https://wikidata.org/entity/Q2479837,Calle,de,León Felipe,N,4,28038,13,Puente de Vallecas,https://wikidata.org/entity/Q2003054,445831,4471151
+176,San Francisco,https://wikidata.org/entity/Q2061686,Avda,de los,Poblados,N,102,28054,11,Carabanchel,https://wikidata.org/entity/Q1001991,437365,4469694
+177,Aviación Española,https://wikidata.org/entity/Q2482246,Paseo,de,Extremadura,N,463,28024,10,Latina,https://wikidata.org/entity/Q794954,433570,4470841
+178,Pinar del Rey,https://wikidata.org/entity/Q2018370,Avda,de la,Gran Vía de Hortaleza,N,47,28043,16,Hortaleza,https://wikidata.org/entity/Q1928529,445119,4480112
+179,La Elipa,https://wikidata.org/entity/Q1766021,Avda,del,Marqués de Corbera,N,58,28017,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,444928,4475520
+180,Estadio Metropolitano,https://wikidata.org/entity/Q2244081,Avda,de,Arcentales,N,28,28022,20,San Blas,https://wikidata.org/entity/Q2001937,449206,4476242
+181,Rivas Vaciamadrid,https://wikidata.org/entity/Q2479389,Calle,,Areneros,N,6,28529,1,Centro,https://wikidata.org/entity/Q1763376,455885,4464542
+182,Buenos Aires,https://wikidata.org/entity/Q2479851,Avda,de la,Albufera,N,179,28038,13,Puente de Vallecas,https://wikidata.org/entity/Q2003054,444612,4471631
+183,Pavones,https://wikidata.org/entity/Q2479437,Calle,de la,Hacienda de Pavones,N,342,28030,14,Moratalaz,https://wikidata.org/entity/Q2076109,446214,4472613
+184,Villaverde Alto,https://wikidata.org/entity/Q2480338,Calle,del,Valle de Tobalina,N,56,28021,17,Villaverde,https://wikidata.org/entity/Q919536,439638,4466082
+185,Ventas,https://wikidata.org/entity/Q2014690,Calle,de,Alcalá,N,204,28028,4,Salamanca,https://wikidata.org/entity/Q1773521,443817,4476002
+186,Manuela Malasaña,https://wikidata.org/entity/Q2484947,Plaza,,Sol de 9001,SN,S/N,28938,4,Salamanca,https://wikidata.org/entity/Q1773521,426690,4462623
+187,Plaza de Castilla,https://wikidata.org/entity/Q2463399,Paseo,de la,Castellana,N,189,28046,6,Tetuán,https://wikidata.org/entity/Q1773540,441684,4480016
+188,Plaza de Castilla,https://wikidata.org/entity/Q2463399,Paseo,de la,Castellana,N,189,28046,5,Chamartín,https://wikidata.org/entity/Q1766348,441688,4480016
+189,Villaverde Bajo-Cruce,https://wikidata.org/entity/Q2056616,Avda,de,Andalucía,N,38,28021,17,Villaverde,https://wikidata.org/entity/Q919536,441289,4467142
+190,Estación de Chamartín,https://wikidata.org/entity/Q19950924,Calle,de,Agustín de Foxá,N,40,28036,5,Chamartín,https://wikidata.org/entity/Q1766348,442247,4480589
+191,Begoña,https://wikidata.org/entity/Q2482166,Paseo,de la,Castellana,N,261,28046,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,441978,4481514
+192,Marqués de la Valdavia,https://wikidata.org/entity/Q3849824,Calle,del,Marqués de la Valdavia,BLQ,21,28100,1,Centro,https://wikidata.org/entity/Q1763376,446134,4488211
+193,Baunatal,https://wikidata.org/entity/Q3636954,Avda,de las,Lomas del Rey,N,2,,1,Centro,https://wikidata.org/entity/Q1763376,446336,4489697
+194,Mirasierra,https://wikidata.org/entity/Q3858791,Avda,del,Ventisquero de la Condesa,N,28,28035,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,439402,4482720
+195,Sainz de Baranda,https://wikidata.org/entity/Q2004752,Calle,del,Doctor Esquerdo,N,103,28007,3,Retiro,https://wikidata.org/entity/Q2002296,443307,4474246
+196,Sainz de Baranda,https://wikidata.org/entity/Q2004752,Calle,del,Doctor Esquerdo,N,103,28007,3,Retiro,https://wikidata.org/entity/Q2002296,443307,4474250
+197,Ascao,https://wikidata.org/entity/Q2481405,Calle,de,Ascao,N,29,28017,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,445734,4475912
+198,Pirámides,https://wikidata.org/entity/Q2056493,Paseo,del,Doctor Vallejo Nágera,N,37,28005,2,Arganzuela,https://wikidata.org/entity/Q2000929,439744,4472894
+199,Leganés Central,https://wikidata.org/entity/Q10948997,Calle,,Virgen del Camino,N,1,28913,1,Centro,https://wikidata.org/entity/Q1763376,434568,4464765
+200,Alcorcón,https://wikidata.org/entity/Q3585564,Avda,de,Móstoles,N,12,28922,1,Centro,https://wikidata.org/entity/Q1763376,429473,4467154
+201,El Casar,https://wikidata.org/entity/Q2778422,Avda,del,Casar,N,2,28903,2,Arganzuela,https://wikidata.org/entity/Q2000929,439799,4463572
+202,Goya,https://wikidata.org/entity/Q955699,Calle,de,Goya,N,68,28001,4,Salamanca,https://wikidata.org/entity/Q1773521,442693,4475336
+203,Príncipe de Vergara,https://wikidata.org/entity/Q582040,Calle,del,Príncipe de Vergara,N,12,28001,4,Salamanca,https://wikidata.org/entity/Q1773521,442405,4475268
+204,Gregorio Marañón,https://wikidata.org/entity/Q2056442,Calle,de,Miguel Ángel,N,29,28010,7,Chamberí,https://wikidata.org/entity/Q1763370,441481,4476758
+205,Arganzuela-Planetario,https://wikidata.org/entity/Q2056461,Calle,del,Bronce,N,1,28045,2,Arganzuela,https://wikidata.org/entity/Q2000929,441666,4471824
+206,Carabanchel Alto,https://wikidata.org/entity/Q2482617,Avda,de,Carabanchel Alto,N,40,28054,11,Carabanchel,https://wikidata.org/entity/Q1001991,436276,4469526
+207,Avenida de Guadalajara,https://wikidata.org/entity/Q955065,Avda,de,Guadalajara,N,110,28032,20,San Blas,https://wikidata.org/entity/Q2001937,448187,4475028
+208,Las Rosas,https://wikidata.org/entity/Q3827253,Paseo,de,Ginebra,N,35,28022,20,San Blas,https://wikidata.org/entity/Q2001937,448931,4475173
+209,La Peseta,https://wikidata.org/entity/Q2484416,Calle,de,Salvador Allende,N,3,28054,11,Carabanchel,https://wikidata.org/entity/Q1001991,435845,4468666
+210,Lucero,https://wikidata.org/entity/Q957660,Calle,de las,Higueras,N,47,28011,10,Latina,https://wikidata.org/entity/Q794954,436865,4473195
+211,Lacoma,https://wikidata.org/entity/Q2482146,Calle,de,Riscos de Polanco,N,3,28035,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,438829,4482050
+212,Avenida de la Ilustración,https://wikidata.org/entity/Q2482086,Calle,de las,Islas Cíes,N,23,28035,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,439218,4481501
+213,Valdezarza,https://wikidata.org/entity/Q2482098,Calle,de,San Restituto,N,70,28039,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,439410,4479804
+214,Colombia,https://wikidata.org/entity/Q2462831,Calle,del,Príncipe de Vergara,N,258,28016,5,Chamartín,https://wikidata.org/entity/Q1766348,442722,4478836
+215,Diego de León,https://wikidata.org/entity/Q2055658,Calle,de,Juan Bravo,N,58,28006,4,Salamanca,https://wikidata.org/entity/Q1773521,442919,4476172
+216,Moncloa,https://wikidata.org/entity/Q2449141,Plaza,de la,Moncloa,N,1,28008,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,439089,4476498
+217,Manoteras,https://wikidata.org/entity/Q3844841,Calle,de,Bacares,N,24,28033,16,Hortaleza,https://wikidata.org/entity/Q1928529,443920,4481106
+218,Congosto,https://wikidata.org/entity/Q934059,Calle,del,Congosto,N,48,28031,18,Villa de Vallecas,https://wikidata.org/entity/Q1947988,447573,4469481
+219,Barajas,https://wikidata.org/entity/Q2474414,Cmno,,Viejo de Hortaleza,N,10,28042,21,Barajas,https://wikidata.org/entity/Q807230,450732,4480936
+220,Pacífico,https://wikidata.org/entity/Q2479769,Calle,de,Andalucía,N,2,28007,3,Retiro,https://wikidata.org/entity/Q2002296,442928,4472810
+221,Hospital Severo Ochoa,https://wikidata.org/entity/Q2485068,Avda,,Orellana,N,3,28914,1,Centro,https://wikidata.org/entity/Q1763376,434864,4463962
+222,Puerta del Sur,https://wikidata.org/entity/Q2484406,Avda,de,Leganés,N,52,28924,2,Arganzuela,https://wikidata.org/entity/Q2000929,431106,4466622
+223,Reyes Católicos,https://wikidata.org/entity/Q2059004,Avda,de la,Plaza de Toros,N,7,28701,1,Centro,https://wikidata.org/entity/Q1763376,447326,4489241
+224,Manuel de Falla,https://wikidata.org/entity/Q580146,Calle,,Manuel de Falla,N,59,28100,1,Centro,https://wikidata.org/entity/Q1763376,445338,4489267
+225,La Granja,https://wikidata.org/entity/Q8779955,Calle,de,Sepúlveda,N,1,28108,1,Centro,https://wikidata.org/entity/Q1763376,444327,4486734
+226,Hospital Infanta Sofía,https://wikidata.org/entity/Q2243993,Paseo,,Europa,N,11,28702,1,Centro,https://wikidata.org/entity/Q1763376,448344,4490276
+227,República Argentina,https://wikidata.org/entity/Q2479342,Calle,de,Joaquín Costa,N,24,28002,5,Chamartín,https://wikidata.org/entity/Q1766348,442098,4477448
+228,Nuevos Ministerios Station,https://wikidata.org/entity/Q2705508,Paseo,de la,Castellana,N,65,28046,6,Tetuán,https://wikidata.org/entity/Q1773540,441392,4477760
+229,Estación de Chamartín,https://wikidata.org/entity/Q19950924,Calle,de,Agustín de Foxá,N,40,28036,5,Chamartín,https://wikidata.org/entity/Q1766348,442247,4480581
+230,Vicálvaro - Rey Juan Carlos University,https://wikidata.org/entity/Q2479859,Calle,de,San Cipriano,N,11,28032,19,Vicálvaro,https://wikidata.org/entity/Q589403,448445,4473008
+231,Coslada Central,https://wikidata.org/entity/Q10948094,Calle,del,Doctor Fleming,N,41,28821,1,Centro,https://wikidata.org/entity/Q1763376,452504,4475148
+232,Barrio de la Concepción,https://wikidata.org/entity/Q2696985,Calle,de,Martínez Villergas,N,1,28027,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,444813,4476906
+233,Antón Martín,https://wikidata.org/entity/Q2473940,Calle,de,Atocha,N,50,28012,1,Centro,https://wikidata.org/entity/Q1763376,440772,4473981
+234,Alonso Cano,https://wikidata.org/entity/Q2481218,Calle,de,José Abascal,N,18,28010,7,Chamberí,https://wikidata.org/entity/Q1763370,440805,4476857
+235,Francos Rodríguez,https://wikidata.org/entity/Q774677,Avda,de,Pablo Iglesias,N,87,28039,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,439707,4478875
+236,Antonio Machado,https://wikidata.org/entity/Q2482040,Calle,de,Valderrodrigo,N,55,28039,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,439269,4480404
+237,Arganda del Rey,https://wikidata.org/entity/Q2055844,Paseo,de la,Estación,N,37,28500,1,Centro,https://wikidata.org/entity/Q1763376,462079,4461766
+238,Barrio del Pilar,https://wikidata.org/entity/Q2463533,Calle,de,Ginzo de Limia,N,22,28029,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,440507,4481134
+239,Cuatro Vientos,https://wikidata.org/entity/Q2060846,Col,,Militar de Cuatro Vientos,N,6,28024,10,Latina,https://wikidata.org/entity/Q794954,432919,4470188
+240,Concha Espina,https://wikidata.org/entity/Q2464246,Calle,del,Príncipe de Vergara,N,210,28002,5,Chamartín,https://wikidata.org/entity/Q1766348,442671,4478293
+241,Ventilla,https://wikidata.org/entity/Q3192875,Avda,de,Asturias,N,39,28029,6,Tetuán,https://wikidata.org/entity/Q1773540,441118,4480302
+242,Duque de Pastrana,https://wikidata.org/entity/Q927753,Calle,de,Mateo Inurria,N,41,28036,5,Chamartín,https://wikidata.org/entity/Q1766348,442533,4480090
+243,Mar de Cristal,https://wikidata.org/entity/Q2597956,Gta,de,Mar de Cristal,N,1,28033,16,Hortaleza,https://wikidata.org/entity/Q1928529,445997,4480260
+244,Argüelles,https://wikidata.org/entity/Q1890537,Calle,de,Alberto Aguilera,N,72,28015,7,Chamberí,https://wikidata.org/entity/Q1763370,439381,4476005
+245,Hospital del Henares,https://wikidata.org/entity/Q3786852,Cmno,del,Tiro,N,S/N,28822,2,Arganzuela,https://wikidata.org/entity/Q2000929,454761,4474454
+246,Argüelles,https://wikidata.org/entity/Q1890537,Calle,de,Alberto Aguilera,N,72,28015,1,Centro,https://wikidata.org/entity/Q1763376,439381,4475997
+247,Callao,https://wikidata.org/entity/Q2055072,Plaza,del,Callao,N,3,28013,1,Centro,https://wikidata.org/entity/Q1763376,440245,4474836
+248,Parque de las Avenidas,https://wikidata.org/entity/Q2480862,Avda,de,Bruselas,N,56,28028,4,Salamanca,https://wikidata.org/entity/Q1773521,443883,4476952
+249,Chueca,https://wikidata.org/entity/Q3676061,Plaza,de,Chueca,N,7,28004,1,Centro,https://wikidata.org/entity/Q1763376,440930,4475141
+250,Tribunal,https://wikidata.org/entity/Q2479844,Calle,de la,Palma,N,5,28004,1,Centro,https://wikidata.org/entity/Q1763376,440554,4475484
+251,La Rambla,https://wikidata.org/entity/Q2244064,Calle,,Honduras,N,2,28823,2,Arganzuela,https://wikidata.org/entity/Q2000929,453630,4475298
+252,Barrio del Puerto,https://wikidata.org/entity/Q2244272,Avda,de,España,N,8,28821,1,Centro,https://wikidata.org/entity/Q1763376,451824,4475015
+253,San Fernando,https://wikidata.org/entity/Q2058644,Calle,de,Gonzalo de Córdoba,N,24,28830,1,Centro,https://wikidata.org/entity/Q1763376,454691,4475210
+254,Henares,https://wikidata.org/entity/Q2059021,Avda,de,Algorta,N,12,28830,1,Centro,https://wikidata.org/entity/Q1763376,455385,4474468
+255,Cruz del Rayo,https://wikidata.org/entity/Q2004333,Calle,del,Príncipe de Vergara,N,138,28002,5,Chamartín,https://wikidata.org/entity/Q1766348,442594,4477497
+256,Menéndez Pelayo,https://wikidata.org/entity/Q2479001,Avda,de la,Ciudad de Barcelona,N,23,28007,3,Retiro,https://wikidata.org/entity/Q2002296,442325,4473079
+257,Ciudad de los Ángeles,https://wikidata.org/entity/Q2042482,Avda,de,Andalucía,N,38,28041,17,Villaverde,https://wikidata.org/entity/Q919536,441213,4468107
+258,San Cristóbal,https://wikidata.org/entity/Q2056478,Avda,de,Andalucía,N,81,28021,17,Villaverde,https://wikidata.org/entity/Q919536,441235,4466104
+259,San Bernardo,https://wikidata.org/entity/Q2055810,Gta,de,Ruiz Jiménez,N,5,28015,7,Chamberí,https://wikidata.org/entity/Q1763370,440252,4475894
+260,Bilbao,https://wikidata.org/entity/Q2479784,Calle,de,Sagasta,N,5,28004,7,Chamberí,https://wikidata.org/entity/Q1763370,440636,4475801
+261,Alonso Martínez,https://wikidata.org/entity/Q2481198,Calle,de,Almagro,N,4,28010,7,Chamberí,https://wikidata.org/entity/Q1763370,441155,4475734
+262,Acacias / Embajadores,https://wikidata.org/entity/Q2305840,Gta,de,Embajadores,N,10,28012,1,Centro,https://wikidata.org/entity/Q1763376,440485,4473168
+263,Moncloa,https://wikidata.org/entity/Q2449141,Paseo,de,Moret,N,1,28008,9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,439089,4476492
+264,Aluche,https://wikidata.org/entity/Q2058531,Calle,de,Valmojado,N,293,28047,10,Latina,https://wikidata.org/entity/Q794954,435534,4471045
+265,Acacias,https://wikidata.org/entity/Q2483969,Paseo,de las,Acacias,N,20,28005,2,Arganzuela,https://wikidata.org/entity/Q2000929,440147,4473032
+266,Legazpi,https://wikidata.org/entity/Q2056839,Plaza,de,Legazpi,N,2,28045,2,Arganzuela,https://wikidata.org/entity/Q2000929,441120,4471613
+267,Legazpi,https://wikidata.org/entity/Q2056839,Plaza,de,Legazpi,N,2,28045,2,Arganzuela,https://wikidata.org/entity/Q2000929,441114,4471612
+268,Méndez Álvaro,https://wikidata.org/entity/Q2479775,Calle,del,Ombu,N,16,28045,2,Arganzuela,https://wikidata.org/entity/Q2000929,442559,4472070
+269,Oporto,https://wikidata.org/entity/Q2057416,Gta,del,Valle de Oro,N,13,28019,11,Carabanchel,https://wikidata.org/entity/Q1001991,438039,4471339
+270,Oporto,https://wikidata.org/entity/Q2057416,Gta,del,Valle de Oro,N,2,28019,11,Carabanchel,https://wikidata.org/entity/Q1001991,438044,4471339
+271,Serrano,https://wikidata.org/entity/Q2481179,Calle,de,Goya,N,19,28001,4,Salamanca,https://wikidata.org/entity/Q1773521,441864,4475412
+272,Diego de León,https://wikidata.org/entity/Q2055658,Calle,de,Diego de León,N,69,28028,4,Salamanca,https://wikidata.org/entity/Q1773521,442862,4476430
+273,Montecarmelo,https://wikidata.org/entity/Q2058996,Avda,de,Monasterio de Silos,N,63,28049,8,Fuencarral-El Pardo,https://wikidata.org/entity/Q656196,441160,4484278
+274,Alfonso XIII,https://wikidata.org/entity/Q2481187,Calle,de,López de Hoyos,N,190,28002,5,Chamartín,https://wikidata.org/entity/Q1766348,443471,4477932
+275,Avenida de la Paz,https://wikidata.org/entity/Q526358,Avda,de,Ramón y Cajal,N,107,28043,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,444046,4478515
+276,Esperanza,https://wikidata.org/entity/Q2481243,Calle,de,Andorra,N,51,28043,16,Hortaleza,https://wikidata.org/entity/Q1928529,445354,4479161
+277,Mar de Cristal,https://wikidata.org/entity/Q2597956,Gta,del,Mar de Cristal,N,1,28033,16,Hortaleza,https://wikidata.org/entity/Q1928529,445997,4480264
+278,San Lorenzo,https://wikidata.org/entity/Q2481355,Avda,de la,Barranquilla,N,9,28033,16,Hortaleza,https://wikidata.org/entity/Q1928529,445895,4480825
+279,Canillejas,https://wikidata.org/entity/Q930999,Calle,de,Alcalá,N,631,28022,20,San Blas,https://wikidata.org/entity/Q2001937,448539,4478026
+280,Torre Arias,https://wikidata.org/entity/Q2056497,Calle,de,Alcalá,N,557,28027,20,San Blas,https://wikidata.org/entity/Q2001937,447785,4477401
+281,Suanzes,https://wikidata.org/entity/Q2481009,Calle,de,Alcalá,N,527,28037,20,San Blas,https://wikidata.org/entity/Q2001937,446948,4477085
+282,Quintana,https://wikidata.org/entity/Q2480845,Calle,de la,Virgen del Sagrario,N,2,28027,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,445202,4476291
+283,El Carmen,https://wikidata.org/entity/Q2480869,Calle,de,Raquel Méller,N,2,28027,15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,444334,4476110
+284,Núñez de Balboa,https://wikidata.org/entity/Q782924,Calle,de,Juan Bravo,N,20,28006,4,Salamanca,https://wikidata.org/entity/Q1773521,442214,4476225
+285,Rubén Darío,https://wikidata.org/entity/Q2056886,Paseo,de,Eduardo Dato,N,33,28010,7,Chamberí,https://wikidata.org/entity/Q1763370,441624,4476271
+286,Bilbao,https://wikidata.org/entity/Q2479784,Calle,de,Sagasta,N,2,28004,7,Chamberí,https://wikidata.org/entity/Q1763370,440548,4475824
+287,Marqués de Vadillo,https://wikidata.org/entity/Q2056948,Gta,del,Marqués de Vadillo,N,4,28019,11,Carabanchel,https://wikidata.org/entity/Q1001991,439351,4472315
+288,Urgel,https://wikidata.org/entity/Q2696501,Calle,del,Camino Viejo de Leganés,N,1,28019,11,Carabanchel,https://wikidata.org/entity/Q1001991,438698,4471876
+289,Vista Alegre,https://wikidata.org/entity/Q616210,Calle,de la,Oca,N,74,28025,11,Carabanchel,https://wikidata.org/entity/Q1001991,437318,4471387

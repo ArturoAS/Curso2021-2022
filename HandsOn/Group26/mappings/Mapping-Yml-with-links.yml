@@ -1,0 +1,109 @@
+prefixes:
+  admingeo: http://data.ordnancesurvey.co.uk/ontology/admingeo/
+  dc: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#
+  owl: http://www.w3.org/2002/07/owl#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  schema: http://schema.org/
+  ssn: http://www.w3.org/ns/ssn/#
+  time: https://www.w3.org/TR/owl-time/#time:#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  ns: http://smartcity.linkeddata.es/ontology/TerrazasMadrid/
+  nsp: http://smartcity.linkeddata.es/ontology/TerrazasMadrid#
+  owl: http://www.w3.org/2002/07/owl#
+  
+mappings:
+  LocalBusiness:
+    sources:
+      - [csv-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/ontology/TerrazasMadrid/Terraza/$(id_local)
+    po:
+      - [a, schema:LocalBusiness]
+      - [nsp:hasID,$(id_local), xsd:integer]
+      - [dc:title, $(rotulo), xsd:string]
+      - [nsp:status, $(desc_situacion_local), xsd:string]
+      - [nsp:terraceUbication, $(desc_ubicacion_terraza), xsd:string]
+      - [nsp:tablesSeasonal, $(mesas_es), xsd:string]
+      - [nsp:tablesUnseasonal, $(mesas_ra), xsd:string]
+      - [nsp:WeekdaySeasonalOpen , $(hora_ini_LJ_es), xsd:string]
+      - [nsp:WeekdaySeasonalClose, $(hora_fin_LJ_es), xsd:string]
+      - [nsp:WeekendSeasonalOpen, $(hora_ini_VS_es), xsd:string]
+      - [nsp:WeekendSeasonalClose, $(hora_fin_VS_es), xsd:string]
+      - [nsp:WeekdayUnseasonalOpen, $(hora_ini_LJ_ra), xsd:string]
+      - [nsp:WeekdayUnseasonalClose, $(hora_fin_LJ_ra), xsd:string]
+      - [nsp:WeekendUnseasonalOpen, $(hora_ini_VS_ra), xsd:string]
+      - [nsp:WeekdayUnseasonalClose, $(hora_fin_VS_ra), xsd:string]
+      - [ns:LocalBusiness, http://smartcity.linkeddata.es/ontology/TerrazasMadrid/Terraza#$(id_local)~iri]
+      - p: nsp:hasLocation
+        o:
+        - mapping: GeoCoordinates
+          condition: 
+            function: equal
+            parameters:
+                - [str1, $(id_coordenadas)]
+                - [str2, $(id_coordenadas)]
+    
+      - p: nsp:containedIn
+        o:
+        - mapping: Barrio
+          condition:
+              function: equal
+              parameters:
+                - [str1, $(desc_barrio_local)]
+                - [str2, $(desc_barrio_local)]
+
+      - p: schema:adress
+        o:
+        - mapping: Address
+          condition: 
+            function: equal
+            parameters:
+                - [str1, $(id_direccion)]
+                - [str2, $(id_direccion)]
+
+
+  GeoCoordinates:
+    sources:
+      - [csv-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/ontology/TerrazasMadrid/Geocoordinates/$(id_coordenadas)
+    po:
+      - [a, schema:GeoCoordinates]
+      - [nsp:GeoCoordinatesID, $(id_coordenadas), xsd:string]
+      - [schema:longitude, $(coordenada_x_local), xsd:string]
+      - [schema:latitude, $(coordenada_y_local), xsd:string]
+
+  Address:
+    sources:
+    - [csv-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/ontology/TerrazasMadrid/Address/$(id_direccion)
+    po:
+    - [a, schema:PostalAddress]
+    - [schema:streetAddress, $(direccion), xsd:string]
+    - [schema:postalCode, $(Cod_Postal), xsd:string]
+
+  Barrio:
+    sources:
+      - [csv-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/ontology/TerrazasMadrid/Barrio/$(desc_barrio_local)
+    po:
+      - [a, ns:Neighborhood]
+      - [rdf:label, $(desc_barrio_local), xsd:string]
+      - [owl:sameAs, $(barrios_wikidata)~iri]
+      - [ns:Neighborhood, http://smartcity.linkeddata.es/ontology/TerrazasMadrid#$(desc_barrio_local)~iri]
+      - p: nsp:locatedIn
+        o:
+        - mapping: District
+          condition: 
+            function: equal
+            parameters:
+              - [str1, $(desc_distrito_local)]
+              - [str2, $(desc_distrito_local)]
+  District:
+    sources:
+      - [csv-with-links.csv~csv]
+    s: http://smartcity.linkeddata.es/ontology/TerrazasMadrid/District/$(desc_distrito_local)
+    po:
+      - [a, admingeo:District]
+      - [rdf:label, $(desc_distrito_local), xsd:string]
+      - [owl:sameAs, $(distritos_wikidata)~iri]
+      - [admingeo:District, http://smartcity.linkeddata.es/ontology/TerrazasMadrid#$(desc_distrito_local)~iri]

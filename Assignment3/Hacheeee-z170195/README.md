@@ -1,0 +1,2 @@
+# Assignment 3
+Los archivos correspondientes al código de las consultas SPARQL se encuentran en la carpeta "queries" con la extensión *.rq, mientras que los resultados se encuentran almacenados en la carpeta "responses" en formato CSV. Los archivos llamados queryX_dbpedia usan la clase Politician de dbpedia y están probados en https://es.dbpedia.org/sparql , mientras que los llamados queryX_wikidata usan la clase Politian de Wikidata (Q82955) y están probados en https://query.wikidata.org/ (siendo X el número de la cola SPARQL expuesta en el enunciado).

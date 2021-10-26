@@ -1,0 +1,592 @@
+<!doctype html>
+<html>
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <title>analysis</title>
+</head>
+
+<body>
+    <h1>Analysing the Data Source</h1>
+    <div>
+        <p>
+            For Accidentes de tráfico de la Ciudad de Madrid (2021) we identified different aspects that required
+            attention:
+
+        <table cellspacing="0" border="0">
+            <colgroup width="187"></colgroup>
+            <colgroup width="149"></colgroup>
+            <colgroup width="306"></colgroup>
+            <colgroup width="358"></colgroup>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="center" valign=bottom bgcolor="#5B9BD5">
+                    <font color="#000000">COLUMN</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="center" valign=bottom bgcolor="#5B9BD5">
+                    <font color="#000000">TYPE</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="center" valign=bottom bgcolor="#5B9BD5">
+                    <font color="#000000">COMMENTS/RANGE</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="center" valign=bottom bgcolor="#5B9BD5">
+                    <font color="#000000">PROBLEMS</font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">N&ordm; EXPEDIENTE</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Id numbers, not unique</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">FECHA</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">DATE</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">2021-01-01 &mdash;&nbsp;2021-12-06</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">HORA</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">0:00 - 24:00</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">CALLE</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Names of streets, not unique</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">NUMERO</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">DECIMAL</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">0.0 - 910.0, empty values</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">If the number has a letter, it doesn't detect it</font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">DISTRITO</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Names of districts, not unique, empty values</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">TIPO ACCIDENTE</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Types of traffic accidents, empty values</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">ESTADO METEREOLOGICO</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Types of weather, empty values</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">TIPO VEHICULO</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Types of vehicles, empty values</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">TIPO PERSONA</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Types of person, empty values</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">RANGO DE EDAD</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">0 - more than 74</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">There are fields that have an unknown range of age</font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">SEXO</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Man or woman, empty values</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">LESIVIDAD</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">INT</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom sdnum="1033;1033;MMM-YY">
+                    <font color="#000000">1.0 - 15.0, empty values</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+        </table>
+        </p>
+    </div>
+    <br>
+    <div>
+        <p>
+            For Barrios municipales de Madrid we identified different aspects that required attention:
+        <table cellspacing="0" border="0">
+            <colgroup width="134"></colgroup>
+            <colgroup width="106"></colgroup>
+            <colgroup width="509"></colgroup>
+            <colgroup width="188"></colgroup>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="center" valign=bottom bgcolor="#5B9BD5">
+                    <font color="#000000">COLUMN</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="center" valign=bottom bgcolor="#5B9BD5">
+                    <font color="#000000">TYPE</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="center" valign=bottom bgcolor="#5B9BD5">
+                    <font color="#000000">COMMENTS/RANGE</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="center" valign=bottom bgcolor="#5B9BD5">
+                    <font color="#000000">PROBLEMS</font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">OBJECTID_1</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">INT</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">0.0 - 140.0</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">NOMDIS</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Names of districts, not unique</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">NOMBRE</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Names of neighborhoods, unique</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"></font>Special characters unrecognized
+                </td>
+
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">Shape_Leng</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">DECIMAL</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">2000.00 - 88000.00</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">Shape_Area</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">DECIMAL</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">250000.00 - 190000000.00</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">COD_DIS</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">INT</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom sdnum="1033;1033;MMM-YY">
+                    <font color="#000000">Code of the district, 1.0 - 22.0</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">COD_DIS_TX</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">INT</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom sdnum="1033;1033;MMM-YY">
+                    <font color="#000000">Duplicate of COD_DIS</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">BARRIO_MAY</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Unique, duplicate of NOMBRE in capital letters</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"></font>Special characters unrecognized
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">COD_DISBAR</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">INT</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">10.0 - 220.0</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">COD_BAR</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">INT</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Duplicate of COD_DISBAR</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">NUM_BAR</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">INT</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">1.00 - 9.0</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">BARRIO_MT</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Unique, duplicate of NOMBRE in capital letters</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"></font>Special characters unrecognized
+                </td>
+            </tr>
+            <tr>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    height="21" align="left" valign=bottom>
+                    <font color="#000000">COD_DISB</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">STRING</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000">Unique</font>
+                </td>
+                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                    align="left" valign=bottom>
+                    <font color="#000000"><br></font>
+                </td>
+            </tr>
+        </table>
+        </p>
+    </div>
+    <br>
+
+    <h1>Licensing of the Data Source</h1>
+    <div>
+        <p>
+            The license that we are going to use in all our datasets comes from the open data source of
+            Ayuntamiento de Madrid, which have a Creative Commons license and is used for commercial and
+            non-commercial purposes.
+        </p>
+        <h2>Accidentes de tráfico de la Ciudad de Madrid (2021)</h2>
+        <ul>
+
+            <li><b>Rightsholder:</b> Dirección General de la Policía Municipal</li>
+            <li><b>Publisher:</b> Ayuntamiento de madrid</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Barrios municipales de Madrid</h2>
+        <ul>
+            <li><b>Rightsholder:</b> Dirección General de Planificación Estratégica</li>
+            <li><b>Publisher:</b> Ayuntamiento de Madrid</li>
+        </ul>
+    </div>
+    <br>
+    
+    <h1>Defining our Resource Naming Strategy</h1>
+    <p>
+        First of all, since our datasets are small, we are going to use hash URIs.<br>
+        The URI domain that we are going to use is:
+    
+        <ul><b>http://safemadrid.linkeddata.es/</b></ul>
+    </p>
+    <p>
+        In our ontology, we will have different forms for our classes, properties and instances. These forms are:
+    <ul>
+        <li><b>Classes:</b><br>
+            http://safemadrid.linkeddata.es/ontology/&lt;ontologyName&gt;#&lt;className&gt;<br>
+        </li>
+        <br>
+        <li><b>Properties:</b><br>
+            http://safemadrid.linkeddata.es/ontology/&lt;ontologyName&gt;#&lt;propertyName&gt;<br>
+        </li>
+        <br>
+        <li><b>Instances:</b><br>
+            http://safemadrid.linkeddata.es/resource/&lt;className&gt;/&lt;identifier&gt;<br>
+        </li>
+    </ul>
+    </p>
+</body>
+</html>

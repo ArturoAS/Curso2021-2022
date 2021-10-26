@@ -1,0 +1,29 @@
+PREFIX dbo: <http://www.traffic-accidents.linkeddata.es/Accidentes#>
+
+SELECT DISTINCT ?accidente
+WHERE{
+    ?accidente rdf:type dbo:Accidente.
+    ?accidente dbo:Date "6/12/21". 
+    ?accidente dbo:District "RETIRO". 
+}
+
+SELECT DISTINCT ?accidente
+WHERE{
+    ?accidente rdf:type dbo:Accidente.
+    ?accidente dbo:Date "6/12/21". 
+    ?accidente dbo:District "RETIRO". 
+}
+
+SELECT DISTINCT ?accidente
+WHERE{
+    ?accidente rdf:type dbo:Accidente.
+    ?accidente dbo:Address "CALL. ALMAGRO". 
+    ?accidente dbo:Weather "Despejado". 
+}
+
+SELECT DISTINCT ?accidente
+WHERE{
+    ?accidente rdf:type dbo:Accidente.
+    ?accidente dbo:AccidentType "Colisión fronto-lateral". 
+    ?accidente dbo:District "CIUDAD LINEAL". 
+}

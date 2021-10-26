@@ -1,0 +1,1383 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1",
+    "expression": "value.replace(\"Pza.\",\"Plaza\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 using expression value.replace(\"Pza.\",\"Plaza\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "N",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Direccion 1 by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1",
+    "expression": "value.replace(\"Av.\",\"Avenida\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 using expression value.replace(\"Av.\",\"Avenida\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1",
+    "expression": "value.replace(\"Alcala CV\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 using expression value.replace(\"Alcala CV\",\"\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "FTE.",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Direccion 1 1 by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value.replace(\"Plaza \",\"PLAZA DE \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 1 using expression value.replace(\"Plaza \",\"PLAZA DE \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value.replace(\"Callede\",\"Calle\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 1 using expression value.replace(\"Callede\",\"Calle\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value.replace(\"Calle de \",\"Calle \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 1 using expression value.replace(\"Calle de \",\"Calle \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value.replace(\"Calle\",\"CALLE DE\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 1 using expression value.replace(\"Calle\",\"CALLE DE\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value.replace(\"C \",\"CALLE DE\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 1 using expression value.replace(\"C \",\"CALLE DE\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value.replace(\"Avenida \",\"AVENIDA DE \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 1 using expression value.replace(\"Avenida \",\"AVENIDA DE \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value.replace(\"C/\",\"CALLE DE\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 1 using expression value.replace(\"C/\",\"CALLE DE\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value.replace(\"P \",\"PASEO DE \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 1 using expression value.replace(\"P \",\"PASEO DE \")"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Direccion 1 1 1 to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "PLAZA DE Mercurio ",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PLAZA DE Mercurio \" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "PLAZA DE Mercurio ",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PLAZA DE Mercurio \" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "PLAZA DE Mercurio ",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PLAZA DE Mercurio \" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Direccion 1 1 1",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "URL",
+    "columnInsertIndex": 3,
+    "description": "Create column URL at index 3 based on column Direccion 1 1 1 using expression grel:value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "URL",
+    "description": "Remove column URL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Manuel Machado CV Alcalde Luis Marichalar",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Manuel Machado CV Alcalde Luis Marichalar\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Penya Gorbea ",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Penya Gorbea \" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Jose Del Hierro ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29910699",
+      "name": "Calle de José del Hierro, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de José del Hierro, Madrid (Q29910699) for cells containing \"Jose Del Hierro \" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "AVENIDA DE Moratalaz ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q104778384",
+      "name": "Avenida de Moratalaz",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Moratalaz (Q104778384) for cells containing \"AVENIDA DE Moratalaz \" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": " AVENIDA DE Institucion Libre Ensenyanza",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \" AVENIDA DE Institucion Libre Ensenyanza\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "San Cipriano",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10367387",
+      "name": "San Cipriano",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Cipriano (Q10367387) for cells containing \"San Cipriano\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "PASEO DE  Alberto Palacios ",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PASEO DE  Alberto Palacios \" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Villablanca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de Villablanca"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Calle de Villablanca",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Calle de Villablanca\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Glorieta Alsacia",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Glorieta Alsacia\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Cipriano CV Jardin De La Duquesa"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Jardín de la Duquesa"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Calle Jardín de la Duquesa",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Calle Jardín de la Duquesa\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALLE DE De Vinateros"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE DE Vinateros"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "CALLE DE Vinateros",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28935892",
+      "name": "Calle Camino de los Vinateros",
+      "types": [
+        "Q79007"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle Camino de los Vinateros (Q28935892) for cells containing \"CALLE DE Vinateros\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "PLAZA DE Cristina Arce Y Rocio Onya",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PLAZA DE Cristina Arce Y Rocio Onya\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Santillana Del Mar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Santillana del Mar"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Calle Santillana del Mar",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Calle Santillana del Mar\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Villardondiego Biblioteca Municipal",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Villardondiego Biblioteca Municipal\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Estacion Cercanias Asamblea De Madrid",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Estacion Cercanias Asamblea De Madrid\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Calle de Virgen De La Alegria ",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Calle de Virgen De La Alegria \" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "PASEO DE  Polideportivo",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PASEO DE  Polideportivo\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Paseo de Artilleros",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Paseo de Artilleros\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Ascao ",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Ascao \" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "San Cipriano "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de San Cipriano"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Bahia De Gando S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Bahía de Gando"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Calle de San Cipriano",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Calle de San Cipriano\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Calle Bahía de Gando",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Calle Bahía de Gando\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Virgen De La Alegria "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle Virgen de la Alegría"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Gran Via",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1324163",
+      "name": "Gran Vía",
+      "types": [
+        "Q79007"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item Gran Vía (Q1324163) for cells containing \"Gran Via\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "PLAZA DE De Armeria",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PLAZA DE De Armeria\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Calle Virgen de la Alegría",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Calle Virgen de la Alegría\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Reina Cristina",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29051319",
+      "name": "Paseo de la Reina Cristina, Madrid",
+      "types": [
+        "Q787113"
+      ],
+      "score": 82
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de la Reina Cristina, Madrid (Q29051319) for cells containing \"Reina Cristina\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pz Colon Fla.58"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza de Colón"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Plaza de Colón",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Plaza de Colón\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Doctor Esquerdo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5741005",
+      "name": "Calle del Doctor Esquerdo, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Doctor Esquerdo, Madrid (Q5741005) for cells containing \"Doctor Esquerdo\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Alcala Farola",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Alcala Farola\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "CALLE DE Ceraceros",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"CALLE DE Ceraceros\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Josep Pla CV Lopez De Hoyos"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle de López de Hoyos"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Calle de López de Hoyos",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Calle de López de Hoyos\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Juan Bravo ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28054647",
+      "name": "Calle de Juan Bravo, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Juan Bravo, Madrid (Q28054647) for cells containing \"Juan Bravo \" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Sevilla 2 CV PLAZA DE de Canalejas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLAZA DE Canalejas"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Gta. Valle Del Oro "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Glorieta Valle de Oro"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "PLAZA DE Canalejas",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"PLAZA DE Canalejas\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Glorieta Valle de Oro",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Glorieta Valle de Oro\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "AVENIDA DE Mendez Pelayo",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"AVENIDA DE Mendez Pelayo\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "similarValue": "Via Dublin",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Via Dublin\" in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Alcala 75"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Alcala"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PLAZA DE De Armeria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLAZA DE Armeria"
+      }
+    ],
+    "description": "Mass edit cells in column Direccion 1 1 1"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipoResiduo",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q51049922",
+        "name": "village"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column tipoResiduo to type Q51049922"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tipoResiduo",
+    "similarValue": "envases",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20012782",
+      "name": "Envase",
+      "types": [
+        ""
+      ],
+      "score": 46
+    },
+    "shareNewTopics": false,
+    "description": "Match item Envase (Q20012782) for cells containing \"envases\" in column tipoResiduo"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Direccion 1 1 2",
+    "description": "Remove column Direccion 1 1 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Direccion 1 3",
+    "description": "Remove column Direccion 1 3"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q928830",
+        "name": "metro station"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Direccion 2 to type Q928830"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Direccion 1 2",
+    "newColumnName": "Number",
+    "description": "Rename column Direccion 1 2 to Number"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Metro La Elipa",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1766021",
+      "name": "La Elipa",
+      "types": [
+        "Q928830",
+        "Q22808403"
+      ],
+      "score": 73
+    },
+    "shareNewTopics": false,
+    "description": "Match item La Elipa (Q1766021) for cells containing \"Metro La Elipa\" in column Direccion 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Metro Alsacia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3613056",
+      "name": "Alsacia",
+      "types": [
+        "Q928830",
+        "Q22808403"
+      ],
+      "score": 72
+    },
+    "shareNewTopics": false,
+    "description": "Match item Alsacia (Q3613056) for cells containing \"Metro Alsacia\" in column Direccion 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Centro De Salud Torito",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Centro De Salud Torito\" in column Direccion 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Metro Vicalvaro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2479859",
+      "name": "Vicálvaro - Rey Juan Carlos University",
+      "types": [
+        "Q928830",
+        "Q22808403"
+      ],
+      "score": 81
+    },
+    "shareNewTopics": false,
+    "description": "Match item Vicálvaro - Rey Juan Carlos University (Q2479859) for cells containing \"Metro Vicalvaro\" in column Direccion 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Metro Alto Del Arenal",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2479465",
+      "name": "Alto del Arenal",
+      "types": [
+        "Q928830",
+        "Q22808403"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item Alto del Arenal (Q2479465) for cells containing \"Metro Alto Del Arenal\" in column Direccion 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Metro San Cipriano",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2479793",
+      "name": "San Cipriano",
+      "types": [
+        "Q928830",
+        "Q22808403"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Cipriano (Q2479793) for cells containing \"Metro San Cipriano\" in column Direccion 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Centro De Salud",
+    "judgment": "matched",
+    "match": {
+      "id": "Q569500",
+      "name": "community health center",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item community health center (Q569500) for cells containing \"Centro De Salud\" in column Direccion 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Centro Comercial",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11315",
+      "name": "shopping center",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item shopping center (Q11315) for cells containing \"Centro Comercial\" in column Direccion 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Metro Banco De Espanya",
+    "judgment": "new",
+    "shareNewTopics": true,
+    "description": "Mark to create one single new item for all cells containing \"Metro Banco De Espanya\" in column Direccion 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Metro/Cercanias",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1766008",
+      "name": "Sol",
+      "types": [
+        "Q928830",
+        "Q55488",
+        "Q22808403"
+      ],
+      "score": 38
+    },
+    "shareNewTopics": false,
+    "description": "Match item Sol (Q1766008) for cells containing \"Metro/Cercanias\" in column Direccion 2"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "similarValue": "Metro La Peseta",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2484416",
+      "name": "La Peseta",
+      "types": [
+        "Q928830",
+        "Q22808403"
+      ],
+      "score": 75
+    },
+    "shareNewTopics": false,
+    "description": "Match item La Peseta (Q2484416) for cells containing \"Metro La Peseta\" in column Direccion 2"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Direccion 1 1 1",
+    "expression": "grel:\"https://wikidata.org/entry/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_calle",
+    "columnInsertIndex": 3,
+    "description": "Create column same_as_wikidata_calle at index 3 based on column Direccion 1 1 1 using expression grel:\"https://wikidata.org/entry/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 1 1 1",
+    "expression": "value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 1 1 1 using expression value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion 2",
+    "expression": "value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion 2 using expression value.replace(\" \",\"_\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "same_as_wikidata_calle",
+    "newColumnName": "same_as_wikidata_Direccion",
+    "description": "Rename column same_as_wikidata_calle to same_as_wikidata_Direccion"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Direccion 1 1 1",
+    "newColumnName": "Direccion",
+    "description": "Rename column Direccion 1 1 1 to Direccion"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Direccion 2",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "same_as_wikidata_Direccion_2",
+    "columnInsertIndex": 6,
+    "description": "Create column same_as_wikidata_Direccion_2 at index 6 based on column Direccion 2 using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "same_as_wikidata_Direccion",
+    "expression": "value.replace(\"entry\",\"entity\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column same_as_wikidata_Direccion using expression value.replace(\"entry\",\"entity\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Direccion 2",
+    "newColumnName": "Direccion_2",
+    "description": "Rename column Direccion 2 to Direccion_2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "value.replace(\" \",\"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion using expression value.replace(\" \",\"_\")"
+  }
+]

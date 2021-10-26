@@ -1,0 +1,35 @@
+prefixes:
+owl: <http://www.w3.org/2002/07/owl#> .
+rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+xsd: <http://www.w3.org/2001/XMLSchema#> .
+rr: <http://www.w3.org/ns/r2rml#>.
+rml: <http://semweb.mmlab.be/ns/rml#>.
+rc: <http://smartcity.smartbins.es/lcc/ontology/recycle#> .
+
+mappings:
+  Bin:
+    sources:
+      - [papeleras_madrid_update.csv~csv]
+    s: http://smartcity.smartbins.es/lcc/resource/Bin/$(id)
+    po:
+      - [a, rc:Bin]
+      - [rc:hasAlarm, $(alarm)]
+      - [rc:hasType, $(Bin)]
+      - [rc:hasDate, $(date)]
+      - [rc:levelOfFullnes, $(levelOfFullnes)]
+      - [rc:hasLon, $(lon)]
+      - [rc:hasLat, $(lat)]
+      - [rc:hasLocationName, $(Place)]
+
+  Product:
+    sources:
+      - [products.csv~csv]
+    s: http://smartcity.smartbins.es/lcc/resource/Product/$(id)
+    po:
+      - [a, rc:Product]
+      - [rc:hasType, $(Product)]
+      - [rc:hasName, $(WasteType)]
+      - p: rc:recycledIn
+        o:
+          mapping: Bin

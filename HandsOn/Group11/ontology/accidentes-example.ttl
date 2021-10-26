@@ -1,0 +1,27 @@
+@prefix : <http://safemadrid.linkeddata.es/ontology/accidentalidad#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://safemadrid.linkeddata.es/ontology/accidentalidad#> .
+
+<http://safemadrid.linkeddata.es/ontology/accidentalidad#> rdf:type owl:Ontology .
+
+<http://safemadrid.linkeddata.es/Accidente/94> rdf:type :accidente ;
+    :hasCALLE "PLAZA. INDEPENDENCIA" ;
+    :hasDISTRITO "SALAMANCA" ;
+    :hasFECHA "2021-02-01T18:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :hasLESIVIDAD "7"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    :hasNUMERO "3"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    :hasNUM_EXPEDIENTE "2021S000062" ;
+    :hasRANGO_EDAD "DE 30 A 34 AÑOS" ;
+    :hasSEXO "Hombre" ;
+    :hasTIPO_ACCIDENTE "Caída" ;
+    :hasTIPO_PERSONA "Conductor" ;
+    :ocurreEN <http://safemadrid.linkeddata.es/Barrio/62> ;
+    :ocurreEN <http://safemadrid.linkeddata.es/Barrio/73> ;
+    :ocurreEN <http://safemadrid.linkeddata.es/Barrio/65> ;
+    :ocurreEN <http://safemadrid.linkeddata.es/Barrio/80> ;
+    :ocurreEN <http://safemadrid.linkeddata.es/Barrio/67> ;
+    :ocurreEN <http://safemadrid.linkeddata.es/Barrio/71> .

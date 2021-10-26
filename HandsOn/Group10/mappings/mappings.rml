@@ -1,0 +1,154 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix vocab: <http://www.reciclamadrid.es/recycle/>.
+@base <http://www.reciclamadrid.es/>.
+
+<#RecyclePoint> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/RecyclePoint.csv" ;
+    rml:referenceFormulation ql:CSV
+];
+  rr:subjectMap [
+    rr:template "http://www.reciclamadrid.es/recycle/RecyclePoint/{NAME}";
+    rr:class vocab:RecyclePoint
+];
+  
+	rr:predicateObjectMap [
+    rr:predicate vocab:hasAddress ;
+    rr:objectMap [
+      rr:parentTriplesMap <#Address>
+  ]
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:hasCoordinates ;
+    rr:objectMap [
+      rr:parentTriplesMap <#Coordinates>
+  ]
+];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:NAME;
+    rr:objectMap [
+      rml:reference "NAME";
+	    rr:datatype xsd:string;
+  ]
+];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:DATA_TYPE;
+    rr:objectMap [
+      rml:reference "DATA_TYPE";
+	    rr:datatype xsd:string;
+  ]
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:CENTER;
+    rr:objectMap [
+      rml:reference "CENTER";
+	    rr:datatype xsd:string;
+  ]
+];
+  
+	rr:predicateObjectMap [
+    rr:predicate vocab:SCHEDULE;
+    rr:objectMap [
+      rml:reference "SCHEDULE";
+	    rr:datatype xsd:string;
+  ]
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:WASTE;
+    rr:objectMap [
+      rml:reference "WASTE";
+	    rr:datatype xsd:string;
+  ]
+].
+
+<#Address> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/RecyclePoint.csv" ;
+    rml:referenceFormulation ql:CSV
+];
+  rr:subjectMap [
+    rml:template "http://www.reciclamadrid.es/recycle/Address/{NAME}";
+    rr:class vocab:Address
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:ROAD_TYPE;
+    rr:objectMap [
+      rml:reference "ROAD_TYPE";
+	    rr:datatype xsd:string;
+  ]
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:ROAD_NAME;
+    rr:objectMap [
+      rml:reference "ROAD_NAME";
+	    rr:datatype xsd:string;
+  ]
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:NUM_TYPE;
+    rr:objectMap [
+      rml:reference "NUM_TYPE";
+	    rr:datatype xsd:string;
+  ]
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:NUM;
+    rr:objectMap [
+      rml:reference "NUM";
+	    rr:datatype xsd:integer;
+  ]
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:DISTRICT_CODE;
+    rr:objectMap [
+      rml:reference "DISTRICT_CODE";
+	    rr:datatype xsd:integer;
+  ]
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:DISTRICT;
+    rr:objectMap [
+      rml:reference "DISTRICT";
+	    rr:datatype xsd:string;
+  ]
+].
+  
+<#Coordinates> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/RecyclePoint.csv" ;
+    rml:referenceFormulation ql:CSV
+];
+  rr:subjectMap [
+    rml:template "http://www.reciclamadrid.es/recycle/Coordinates/{NAME}";
+    rr:class vocab:Coordinates
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:UTMX;
+    rr:objectMap [
+      rml:reference "UTMX";
+	    rr:datatype xsd:float;
+  ]
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:UTMY;
+    rr:objectMap [
+      rml:reference "UTMY";
+	    rr:datatype xsd:float;
+  ]
+].

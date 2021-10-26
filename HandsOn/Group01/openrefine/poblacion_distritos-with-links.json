@@ -1,0 +1,387 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "a",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column rango_edad by separator"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "De ",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column rango_edad 1 by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "rango_edad 1 1",
+    "description": "Remove column rango_edad 1 1"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "rango_edad 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " años",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column rango_edad 2 by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "rango_edad 2 2",
+    "description": "Remove column rango_edad 2 2"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "rango_edad 1 2",
+    "newColumnName": "min_edad",
+    "description": "Rename column rango_edad 1 2 to min_edad"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "rango_edad 2 1",
+    "newColumnName": "max_edad",
+    "description": "Rename column rango_edad 2 1 to max_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "min_edad",
+          "columnName": "min_edad",
+          "query": "100",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "min_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "100 y más "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "100"
+      }
+    ],
+    "description": "Mass edit cells in column min_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "min_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "100"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": 100
+      }
+    ],
+    "description": "Mass edit cells in column min_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "max_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ños"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "199"
+      }
+    ],
+    "description": "Mass edit cells in column max_edad"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "max_edad",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "199"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": 199
+      }
+    ],
+    "description": "Mass edit cells in column max_edad"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "poblacion_empadronada",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column poblacion_empadronada using expression grel:value.toNumber()"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio_nombre",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/es/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2074737",
+        "name": "municipio de España"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column municipio_nombre to type Q2074737"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "municipio_nombre: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "municipio_nombre",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "municipio_nombre",
+    "similarValue": "Arroyomolinos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1778172",
+      "name": "Arroyomolinos",
+      "types": [
+        "Q2074737"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Arroyomolinos (Q1778172) for cells containing \"Arroyomolinos\" in column municipio_nombre"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "municipio_nombre: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "municipio_nombre",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "municipio_nombre",
+    "similarValue": "Molar (El)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1915119",
+      "name": "El Molar",
+      "types": [
+        "Q2074737"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Molar (Q1915119) for cells containing \"Molar (El)\" in column municipio_nombre"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "municipio_nombre: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "municipio_nombre",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "municipio_nombre",
+    "similarValue": "Navas del Rey",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1772241",
+      "name": "Navas del Rey",
+      "types": [
+        "Q2074737"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Navas del Rey (Q1772241) for cells containing \"Navas del Rey\" in column municipio_nombre"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "municipio_nombre: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "municipio_nombre",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "municipio_nombre",
+    "similarValue": "Valdepiélagos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1980542",
+      "name": "Valdepiélagos",
+      "types": [
+        "Q2074737"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valdepiélagos (Q1980542) for cells containing \"Valdepiélagos\" in column municipio_nombre"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "municipio_nombre: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "municipio_nombre",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "municipio_nombre",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "municipio_wikidata",
+    "columnInsertIndex": 2,
+    "description": "Create column municipio_wikidata at index 2 based on column municipio_nombre using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

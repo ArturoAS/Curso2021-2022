@@ -1,0 +1,48 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo: <http://smartcity.linkeddata.es/transport/Ontology/>
+PREFIX dboa: <http://smartcity.linkeddata.es/transport/Ontology/Bici>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dboDistrito: <http://smartcity.linkeddata.es/transport/Ontology/distrito/>
+PREFIX dboPcarga: <http://smartcity.linkeddata.es/transport/Ontology/PCarga/>
+
+
+SELECT ?s ?o
+WHERE {
+  ## busqueda de todas las relaciones sameAs
+  ?s owl:sameAs ?o.
+ 
+}
+LIMIT 100
+
+
+SELECT ?o
+where{
+ dboDistrito:Centro owl:sameAs ?o.
+}
+
+
+SELECT ?s ?o ?p
+WHERE {
+  ## busqueda de todas las relaciones sameAs
+  ## todos los barrio Arcos y de tipo Aparcamiento
+ ?s owl:sameAs "https://wikidata.org/entity/Q9627876".
+ ?s rdf:type dbo:Aparcamiento.
+}
+LIMIT 100
+
+
+SELECT ?x ?o
+where{
+   ?x owl:sameAs "https://wikidata.org/entity/Q794954".
+    ?x rdf:type ?o.
+}
+
+
+SELECT ?s ?o ?p
+WHERE {
+  ## busqueda de todas las relaciones sameAs
+  ## todos los barrio prosperidad y todas tripletas
+ ?s owl:sameAs "https://wikidata.org/entity/Q4776".
+ ?s ?o ?p.
+}
+LIMIT 100

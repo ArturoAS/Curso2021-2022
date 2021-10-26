@@ -1,0 +1,28 @@
+@prefix : <http://www.semanticweb.org/grupo8/medio-ambiente/calidad-aire#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/grupo8/medio-ambiente/calidad-aire#> .
+
+<http:://datosMadrid.org/recurso/medio-ambiente/calidad-aire/estacion/4/dioxido_de_azufre>
+:"Plaza España" rdf:type dbo:Estacion;
+	:id_Estacion 4;
+	:fechaAlta 01/12/1998;
+	:longitud -37.122.567;
+	:latitud 404.238.823;
+	:magnitud 1;
+	:valor_de_medicion 6;
+
+
+<http:://datosMadrid.org/recurso/medio-ambiente/calidad-aire/estacion/8/monoxido_de_carbono>
+:"Escuelas Aguirre" rdf:type dbo:Estacion;
+	:id_Estacion 8;
+	:fechaAlta 01/12/1998;
+	:longitud -36.823.158;
+	:latitud 404.215.533;
+	:magnitud 6;
+	:valor_de_medicion 000.9;	
+	
+	

@@ -1,0 +1,50 @@
+StationNumber,Gis_X,Gis_Y,DistrictCode,DistrictName,same_as_wikidata_distrito,NeighborhoodCode,NeighborhoodName,same_as_wikidata_barrio,Address,same_as_wikidata_street,Number,Capacity,Longitude,Latitude
+2,"440134,83","4474678,23",1,Centro,https://wikidata.org/entity/Q1763376,15,Universidad,https://wikidata.org/entity/Q10387767,"CALLE DE MIGUEL MOYA,1",,1,24,-37.056.739,4.042.058
+17,"440263,35","4474964,43",1,Centro,https://wikidata.org/entity/Q1763376,15,Universidad,https://wikidata.org/entity/Q10387767,"PLAZA DE CARLOS CAMBRONERO,2",,2,24,-37.041.859,404.231.675
+67,"441190,08","4473587,45",1,Centro,https://wikidata.org/entity/Q1763376,13,Cortes,https://wikidata.org/entity/Q2535637,"CALLE DE ALMADEN,28",,28,24,-36.931.349,40.410.829
+68,"441358,92","4473802,81",3,Retiro,https://wikidata.org/entity/Q2002296,35,Jerónimos,https://wikidata.org/entity/Q10306766,"CALLE DE ESPALTER,1",,1,21,-36.911.649,40.412.781
+71,"442816,22","4474149,49",3,Retiro,https://wikidata.org/entity/Q2002296,36,Niño Jesús,https://wikidata.org/entity/Q3773746,"CALLE DEL DOCE DE OCTUBRE,28",,28,24,-3.674.021,404.160.054
+73,"443229,99","4473642,11",3,Retiro,https://wikidata.org/entity/Q2002296,33,Estrella,https://wikidata.org/entity/Q3773738,"PLAZA DE LOS ASTROS,",,,24,-3.669.099,40.411.463
+78,"442755,86","4472436,57",3,Retiro,https://wikidata.org/entity/Q2002296,32,Adelfas,https://wikidata.org/entity/Q3774001,"CALLE DEL CERRO DE LA PLATA,2",,2,24,-36.745.783,404.005.704
+83,"442770,38","4473844,96",3,Retiro,https://wikidata.org/entity/Q2002296,36,Niño Jesús,https://wikidata.org/entity/Q3773746,"CALLE DE PIO BAROJA,8 B",,8 B,24,-36.745.339,404.132.589
+98,"442705,5","4475058,99",4,Salamanca,https://wikidata.org/entity/Q1773521,42,Goya,https://wikidata.org/entity/Q3814578,"AVENIDA DE FELIPE II,5",,5,24,-36.754.079,404.241.911
+108,"443111,6","4475416,83",4,Salamanca,https://wikidata.org/entity/Q1773521,42,Goya,https://wikidata.org/entity/Q3814578,"CALLE DE LAS MARTIRES CONCEPCIONISTAS,2",,2,27,-3.670.653,404.274.425
+115,"439181,48","4475218,76",9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,92,Argüelles,https://wikidata.org/entity/Q64874,"PLAZA DEL MARQUES DE CERRALBO,",,,24,-37.169.626,404.253.802
+118,"441605,64","4472470,47",2,Arganzuela,https://wikidata.org/entity/Q2000929,26,Palos de Moguer,https://wikidata.org/entity/Q521009,"CALLE DE JUAN MARTIN EL EMPECINADO,16",,16,24,-3.688.135,404.007.959
+120,"441043,78","4472723,55",2,Arganzuela,https://wikidata.org/entity/Q2000929,26,Palos de Moguer,https://wikidata.org/entity/Q521009,"CALLE DE PALOS DE LA FRONTERA,27",,27,24,-36.947.791,404.030.362
+133,"440637,08","4477625,61",6,Tetuán,https://wikidata.org/entity/Q1773540,62,Cuatro Caminos,https://wikidata.org/entity/Q5824684,"CALLE DE DULCINEA,3",,3,24,-37.000.292,404.471.673
+139,"441442,67","4476752,13",5,Chamartín,https://wikidata.org/entity/Q1766348,51,Valdepeñas Ciudad Real,https://wikidata.org/entity/Q4778,"CALLE DE JOSE GUTIERREZ ABASCAL,",,,24,-36.904.495,404.393.558
+146,"442435,7","4477286,68",5,Chamartín,https://wikidata.org/entity/Q1766348,51,Valdepeñas Ciudad Real,https://wikidata.org/entity/Q4778,"CALLE DE MARIA FRANCISCA,1",,1,18,-367.879,404.442.406
+160,"442630,95","4478723,71",5,Chamartín,https://wikidata.org/entity/Q1766348,54,Hispanoamérica,https://wikidata.org/entity/Q3814573,"CALLE DE COLOMBIA,7",,7,24,-36.766.176,404.571.995
+162,"439688,47","4472787,76",2,Arganzuela,https://wikidata.org/entity/Q2000929,22,Las Acacias,https://wikidata.org/entity/Q3319190,"PASEO DE LOS OLMOS,28",,28,24,-37.107.559,404.035.176
+175,"440738,79","4471974,72",2,Arganzuela,https://wikidata.org/entity/Q2000929,23,La Chopera,https://wikidata.org/entity/Q3773750,"CALLE DE JAIME EL CONQUISTADOR,30",,30,21,-36.983.033,403.962.687
+176,"441133,61","4471746,54",2,Arganzuela,https://wikidata.org/entity/Q2000929,25,Las Delicias,https://wikidata.org/entity/Q3773736,"CALLE DE ALICANTE,3",,3,24,-36.936.302,403.942.411
+178,"442391,73","4472711,75",3,Retiro,https://wikidata.org/entity/Q2002296,31,Pacífico,https://wikidata.org/entity/Q3773753,"CALLE DE LEON GIL DE PALACIO,1",,1,24,-36.788.939,404.030.242
+184,"443563,66","4475253,54",4,Salamanca,https://wikidata.org/entity/Q1773521,43,Fuente del Berro,https://wikidata.org/entity/Q3814564,"PASEO DEL MARQUES DE ZAFRA,24",,24,24,-36.653.095,404.260.023
+185,"443883,24","4475147,45",4,Salamanca,https://wikidata.org/entity/Q1773521,43,Fuente del Berro,https://wikidata.org/entity/Q3814564,"GLORIETA DEL MARQUES DE ZAFRA,4",,4,24,-3.661.533,404.250.682
+187,"443691,7","4475711,36",4,Salamanca,https://wikidata.org/entity/Q1773521,43,Fuente del Berro,https://wikidata.org/entity/Q3814564,"CALLE DE ALEJANDRO GONZALEZ,1",,1,24,-36.638.407,404.301.353
+189,"444399,55","4476248,37",15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,154,Concepción,https://wikidata.org/entity/Q11915156,"CALLE DE LA VIRGEN DE LA ALEGRIA,18",,18,24,-36.555.431,404.350.206
+191,"442830,66","4476215,36",4,Salamanca,https://wikidata.org/entity/Q1773521,44,La Guindalera,https://wikidata.org/entity/Q3814559,"CALLE DE ALONSO HEREDIA,1",,1,18,-36.740.365,404.346.168
+195,"442711,2","4476730,39",5,Chamartín,https://wikidata.org/entity/Q1766348,52,Prosperidad,https://wikidata.org/entity/Q4776,"CALLE DEL PADRE INDALECIO HERNANDEZ,1",,1,24,-36.754.913,404.392.483
+203,"439411,53","4477034,58",7,Chamberí,https://wikidata.org/entity/Q1763370,76,Vallehermoso,https://wikidata.org/entity/Q6122685,"CALLE DEL GENERAL AMPUDIA,2",,2,24,-37.144.239,404.417.547
+204,"440286,36","4477683,16",6,Tetuán,https://wikidata.org/entity/Q1773540,61,Bellas Vistas,https://wikidata.org/entity/Q11908929,"CALLE DEL DOCTOR SANTERO,1",,1,24,-37.041.702,404.476.606
+214,"444286,32","4477179,51",15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,155,San Pascual,https://wikidata.org/entity/Q165612,"CALLE DE LA CONDESA DE VENADITO,2",,2,24,-36.569.597,404.434.012
+215,"445631,32","4475647,64",15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,152,Pueblo Nuevo,https://wikidata.org/entity/Q71753,"CALLE DE GUTIERRE DE CETINA,77",,77,24,-36.409.697,404.296.903
+216,"438158,91","4473969,7",10,Latina,https://wikidata.org/entity/Q794954,12,Barrio de Puerta del Ángel,https://wikidata.org/entity/Q31142,"PLAZA DE LA PUERTA DEL ANGEL,3",,3,24,-37.288.948,404.140.528
+220,"444725,09","4473041,7",14,Moratalaz,https://wikidata.org/entity/Q2076109,144,Media Legua,https://wikidata.org/entity/Q9031035,"CALLE DEL ARROYO DE LAS PILILLAS,4",,4,24,-36.514.264,404.061.548
+222,"440362,66","4471479,61",12,Usera,https://wikidata.org/entity/Q953368,125,Moscardó,https://wikidata.org/entity/Q11937679,"CALLE DE EUGENIO CAXES,5",,5,24,-37.026.887,403.917.816
+224,438160,"4473395,7",10,Latina,https://wikidata.org/entity/Q794954,12,Barrio de Puerta del Ángel,https://wikidata.org/entity/Q31142,"CALLE DE CARAMUEL,52",,52,24,-37.288.262,40.408.882
+225,"443978,28","4472656,95",13,Puente de Vallecas,https://wikidata.org/entity/Q2003054,136,Numancia,https://wikidata.org/entity/Q10338144,"CALLE DE LA SIERRA TOLEDANA,33",,33,24,-36.601.933,404.026.388
+228,"439910,49","4471772,12",11,Carabanchel,https://wikidata.org/entity/Q1001991,111,Comillas,https://wikidata.org/entity/Q955844,"CALLE DE SAN DELFIN,9",,9,24,-37.080.437,403.943.842
+230,"444952,82","4477207,59",15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,155,San Pascual,https://wikidata.org/entity/Q165612,"CALLE DE CARLOTA O'NEILL,32",,32,24,-36.491.034,404.436.986
+231,"444380,2","4476773,28",15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,155,San Pascual,https://wikidata.org/entity/Q165612,"CALLE DE LOS DERECHOS HUMANOS,14",,14,24,-36.558.172,40.439.748
+232,"444989,2","4476001,54",15,Ciudad Lineal,https://wikidata.org/entity/Q1763694,151,Ventas,https://wikidata.org/entity/Q71762,"CALLE DE JOSE MARIA PEREDA,1",,1,24,-36.485.701,404.328.362
+235,"441336,7","4471161,52",2,Arganzuela,https://wikidata.org/entity/Q2000929,24,Legazpi,https://wikidata.org/entity/Q3773990,"CALLE DEL SODIO,1 B",,1 B,24,-36.911.834,403.889.853
+236,"439149,84","4473225,71",2,Arganzuela,https://wikidata.org/entity/Q2000929,21,Imperial,https://wikidata.org/entity/Q3773740,"PASEO IMPERIAL,20",,20,24,-37.171.449,404.074.236
+237,"439751,68","4478101,98",6,Tetuán,https://wikidata.org/entity/Q1773540,61,Bellas Vistas,https://wikidata.org/entity/Q11908929,"CALLE DE FRANCISCO BALSEIRO,",,,24,-37.105.146,40.451.395
+240,"443939,09","4476439,76",4,Salamanca,https://wikidata.org/entity/Q1773521,44,La Guindalera,https://wikidata.org/entity/Q3814559,"AVENIDA DE BRASILIA,9",,9,24,-36.609.886,404.367.138
+241,"443363,99","4476559,86",4,Salamanca,https://wikidata.org/entity/Q1773521,44,La Guindalera,https://wikidata.org/entity/Q3814559,"AVENIDA DE CAMILO JOSE CELA,23",,23,24,-36.677.796,404.377.568
+252,"442025,04","4480322,99",5,Chamartín,https://wikidata.org/entity/Q1766348,56,Castilla,https://wikidata.org/entity/Q3813735,"CALLE DE RODRIGUEZ JAEN,",,,24,-36.839.094,404.715.645
+257,"438063,25","4476718,06",9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,93,Ciudad Universitaria,https://wikidata.org/entity/Q3319235,"AVENIDA DE JUAN DE HERRERA,1",,1,24,-373.029,40.438.804
+259,"438344,78","4477338,89",9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,93,Ciudad Universitaria,https://wikidata.org/entity/Q3319235,"PLAZA DE RAMON Y CAJAL,",,,24,-3.727.031,404.444.176
+260,"438328,53","4477762,41",9,Moncloa-Aravaca,https://wikidata.org/entity/Q2017682,93,Ciudad Universitaria,https://wikidata.org/entity/Q3319235,"CALLE DE JOSE ANTONIO NOVAIS,",,,24,-37.272.637,404.482.316

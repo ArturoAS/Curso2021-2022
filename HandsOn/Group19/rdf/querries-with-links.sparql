@@ -1,0 +1,7 @@
+PREFIX mad: http://spainaq.linkeddata.com/28/#
+SELECT ?x ?URI ?imagen
+WHERE {
+    ?x owl:sameAs ?URI.
+    ?URI wdLabel:image ?imagen.
+}
+LIMIT 100

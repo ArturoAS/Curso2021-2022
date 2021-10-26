@@ -1,0 +1,15 @@
+@base <http://www.oeg-upm.net/>
+@prefix class: <http://www.oeg-upm.net/class/>
+@prefix sensor: <http://www.oeg-upm.net/sensor/>
+@prefix computer: <http://www.oeg-upm.net/computer/>
+@prefix measurement: <http://www.oeg-upm.net/measurement/>
+@prefix user: <http://www.oeg-upm.net/user/>
+
+
+: class:01:includes: Sensor029,Computer101.
+: sensor:029:hasMeasurement:Measurement:8401	
+: measurement:8401	:hasTemperature:29;
+					:atTime:2010-06-12T-12:00:12.
+: computer:101:hasowner:User:10A
+: user:10A:hasName:"Pedro".
+

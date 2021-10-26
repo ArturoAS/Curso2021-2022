@@ -248,25 +248,6 @@
     "description": "Rename column TRANSPORTE 2 to hasMetroNear"
   },
   {
-    "op": "core/column-rename",
-    "oldColumnName": "TRANSPORTE 3",
-    "newColumnName": "hasCercaniasNear",
-    "description": "Rename column TRANSPORTE 3 to hasCercaniasNear"
-  },
-  {
-    "op": "core/column-addition",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "baseColumnName": "hasCercaniasNear",
-    "expression": "grel:value.split(\"Tranvia:\")[0]",
-    "onError": "set-to-blank",
-    "newColumnName": "hasTranviaNear",
-    "columnInsertIndex": 6,
-    "description": "Create column hasTranviaNear at index 6 based on column hasCercaniasNear using expression grel:value.split(\"Tranvia:\")[0]"
-  },
-  {
     "op": "rdf-extension/save-rdf-schema",
     "schema": {
       "prefixes": [
@@ -363,32 +344,6 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "hasCercaniasNear",
-    "expression": "value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column hasCercaniasNear using expression value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "hasTranviaNear",
-    "expression": "grel:value.trim()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column hasTranviaNear using expression grel:value.trim()"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
     "columnName": "DESCRIPCION",
     "expression": "value.trim()",
     "onError": "keep-original",
@@ -473,5 +428,113 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column EMAIL using expression value.trim()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE",
+    "newColumnName": "Name",
+    "description": "Rename column NOMBRE to Name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "HORARIO",
+    "newColumnName": "Schedule",
+    "description": "Rename column HORARIO to Schedule"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DESCRIPCION",
+    "newColumnName": "Description",
+    "description": "Rename column DESCRIPCION to Description"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ACCESIBILIDAD",
+    "newColumnName": "Accesibility",
+    "description": "Rename column ACCESIBILIDAD to Accesibility"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CONTENT-URL",
+    "newColumnName": "Url",
+    "description": "Rename column CONTENT-URL to Url"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NOMBRE-VIA",
+    "newColumnName": "StreetName",
+    "description": "Rename column NOMBRE-VIA to StreetName"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CLASE-VIAL",
+    "newColumnName": "StreetType",
+    "description": "Rename column CLASE-VIAL to StreetType"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NUM",
+    "newColumnName": "StreetNumber",
+    "description": "Rename column NUM to StreetNumber"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CODIGO-POSTAL",
+    "newColumnName": "PostalCode",
+    "description": "Rename column CODIGO-POSTAL to PostalCode"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "BARRIO",
+    "newColumnName": "Neighborhood",
+    "description": "Rename column BARRIO to Neighborhood"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DISTRITO",
+    "newColumnName": "District",
+    "description": "Rename column DISTRITO to District"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COORDENADA-X",
+    "newColumnName": "CoorX",
+    "description": "Rename column COORDENADA-X to CoorX"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COORDENADA-Y",
+    "newColumnName": "CoorY",
+    "description": "Rename column COORDENADA-Y to CoorY"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LATITUD",
+    "newColumnName": "Latitude",
+    "description": "Rename column LATITUD to Latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "LONGITUD",
+    "newColumnName": "Longitude",
+    "description": "Rename column LONGITUD to Longitude"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TELEFONO",
+    "newColumnName": "Telephone",
+    "description": "Rename column TELEFONO to Telephone"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "EMAIL",
+    "newColumnName": "Email",
+    "description": "Rename column EMAIL to Email"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPO",
+    "newColumnName": "Public",
+    "description": "Rename column TIPO to Public"
   }
 ]

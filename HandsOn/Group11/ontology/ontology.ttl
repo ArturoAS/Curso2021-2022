@@ -1,430 +1,139 @@
- @prefix dc: <http://purl.org/dc/elements/1.1/> .
- @prefix safeMadrid: <http://safemadrid.linkeddata.es/> .
- @prefix owl: <http://www.w3.org/2002/07/owl#> .
- @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
- @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://safemadrid.linkeddata.es/ontology/accidentalidad#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://safemadrid.linkeddata.es/ontology/accidentalidad#> .
 
+<http://safemadrid.linkeddata.es/ontology/accidentalidad#> rdf:type owl:Ontology ;
+                                                            <http://purl.org/dc/elements/1.1/creator> "Grupo11" ;
+                                                            <http://purl.org/dc/elements/1.1/title> "HandsOn 2" .
 
- safeMadrid: a owl:Ontology ;
-     dc:creator "Grupo11" ;
-     dc:title "HandsOn 2" ;
-    
+#################################################################
+#    Annotation properties
+#################################################################
 
-############################ Classes ###################################################
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
-### ------------------------Accidentes----------------------------------------------
 
- safeMadrid:N_expediente a owl:Class ;
-     rdfs:label "N_expediente" .
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
- safeMadrid:Fecha a owl:Class ;
-     rdfs:label "Fecha" .
 
- safeMadrid:HORA a owl:Class ;
-     rdfs:label "Hora" .
+#################################################################
+#    Object Properties
+#################################################################
 
- safeMadrid:Calle a owl:Class ;
-     rdfs:label "Calle" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#ocurreEN
+:ocurreEN rdf:type owl:ObjectProperty ;
+          rdfs:domain :Accidente ;
+          rdfs:range :Barrio .
 
- safeMadrid:Numero a owl:Class ;
-     rdfs:label "Numero" .
 
- safeMadrid:Distrito a owl:Class ;
-     rdfs:label "Distrito" .
+#################################################################
+#    Data properties
+#################################################################
 
- safeMadrid:Tipo_accidente a owl:Class ;
-     rdfs:label "Tipo_accidente" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasAREA
+:hasAREA rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Barrio ;
+         rdfs:range xsd:float .
 
- safeMadrid:Estado_meteorologico a owl:Class ;
-     rdfs:label "Estado_meteorologico" .
 
- safeMadrid:Tipo_vehiculo a owl:Class ;
-     rdfs:label "Tipo vehiculo" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasBARRIO
+:hasBARRIO rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Barrio ;
+           rdfs:range xsd:string .
 
- safeMadrid:Tipo_persona a owl:Class ;
-     rdfs:label "Tipo persona" .
 
- safeMadrid:Rango_de_edad a owl:Class ;
-     rdfs:label "Rango_de_edad" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasCALLE
+:hasCALLE rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Accidente ;
+          rdfs:range xsd:string .
 
- safeMadrid:Sexo a owl:Class ;
-     rdfs:label "Sexo" .
 
- safeMadrid:Lesividad a owl:Class ;
-     rdfs:label "Lesividad" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasDISTRITO
+:hasDISTRITO rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Accidente ,
+                         :Barrio ;
+             rdfs:range xsd:string .
 
 
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasFECHA
+:hasFECHA rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Accidente ;
+          rdfs:range xsd:dateTime .
 
-### ------------------Barrios-------------------------------------------------------------
- 
- safeMadrid:Objectid a owl:Class ;
-     rdfs:label "Objectid" .
 
- safeMadrid:Nomdis a owl:Class ;
-     rdfs:label "Nomdis" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasID
+:hasID rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Accidente ;
+       rdfs:range xsd:integer .
 
- safeMadrid:Nombre a owl:Class ;
-     rdfs:label "Nombre" .
 
- safeMadrid:Shape_leng a owl:Class ;
-     rdfs:label "Shape leng" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasID_BARRIO
+:hasID_BARRIO rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Barrio ;
+              rdfs:range xsd:integer .
 
- safeMadrid:Shape_area a owl:Class ;
-     rdfs:label "Shape area" .
-    
- safeMadrid:Cod_dis a owl:Class ;
-     rdfs:label "Cod dis" .
 
- safeMadrid:Barrio_may a owl:Class ;
-     rdfs:label "Barrio may" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasLESIVIDAD
+:hasLESIVIDAD rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Accidente ;
+              rdfs:range xsd:integer .
 
- safeMadrid:Cod_dis_bar a owl:Class ;
-     rdfs:label "Cod dis bar" .
 
- safeMadrid:Cod_bar a owl:Class ;
-     rdfs:label "Code bar" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasNUMERO
+:hasNUMERO rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :hasCALLE ;
+           rdfs:domain :Accidente ;
+           rdfs:range xsd:integer .
 
- safeMadrid:Num_bar a owl:Class ;
-     rdfs:label "Num bar" .
 
- safeMadrid:Barrio_mt a owl:Class ;
-     rdfs:label "Barrio mt" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasNUM_EXPEDIENTE
+:hasNUM_EXPEDIENTE rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Accidente ;
+                   rdfs:range xsd:string .
 
- safeMadrid:Cod_disb a owl:Class ;
-     rdfs:label "Cod disb" .
 
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasRANGO_EDAD
+:hasRANGO_EDAD rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Accidente ;
+               rdfs:range xsd:string .
 
-### ------------------Areas mayores e infantiles-----------------------
 
- safeMadrid:Mxassetnum a owl:Class ;
-     rdfs:label "Mxassetnum" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasSEXO
+:hasSEXO rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Accidente ;
+         rdfs:range xsd:string .
 
- safeMadrid:Description a owl:Class ;
-     rdfs:label "Description" .
 
- safeMadrid:Mintdistrict a owl:Class ;
-     rdfs:label "Mintdistrict" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasTIPO_ACCIDENTE
+:hasTIPO_ACCIDENTE rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Accidente ;
+                   rdfs:range xsd:string .
 
- safeMadrid:Nombre_dis a owl:Class ;
-     rdfs:label "Nombre_dis" .
 
- safeMadrid:Mintbarrio a owl:Class ;
-     rdfs:label "Mintbarrio" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#hasTIPO_PERSONA
+:hasTIPO_PERSONA rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Accidente ;
+                 rdfs:range xsd:string .
 
- safeMadrid:Nombre_barrio a owl:Class ;
-     rdfs:label "Nombre_barrio" .
 
- safeMadrid:Installdate a owl:Class ;
-     rdfs:label "Installdate" .
+#################################################################
+#    Classes
+#################################################################
 
- safeMadrid:Minttipovi a owl:Class ;
-     rdfs:label "Minttipovi" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#Accidente
+:Accidente rdf:type owl:Class .
 
- safeMadrid:Mintnombre a owl:Class ;
-     rdfs:label "Mintnombre" .
 
- safeMadrid:Mintnumero a owl:Class ;
-     rdfs:label "Mintnumero" .
+###  http://safemadrid.linkeddata.es/ontology/accidentalidad#Barrio
+:Barrio rdf:type owl:Class .
 
- safeMadrid:Mintndp a owl:Class ;
-     rdfs:label "Mintndp" .
 
- safeMadrid:Mintnumero a owl:Class ;
-     rdfs:label "Mintnumero" .
-
- safeMadrid:Tipo a owl:Class ;
-     rdfs:label "Tipo" .
-
- safeMadrid:Total_elem a owl:Class ;
-     rdfs:label "Total_elem" .
-
- safeMadrid:Estado a owl:Class ;
-     rdfs:label "Estado" .
-
-
-############################ Object Properties ########################################################
-
-### ----------------------------------------Accidentes----------------------------------------
-
- safeMadrid:hasN_Expediente a owl:ObjectProperty ;
-     rdfs:label "has Nº Expediente" .
-
- safeMadrid:hasFecha a owl:ObjectProperty ;
-     rdfs:label "has Fecha" .
-
- safeMadrid:hasHora a owl:ObjectProperty ;
-     rdfs:label "has Hora" .
-
- safeMadrid:hasCalle a owl:ObjectProperty ;
-     rdfs:label "has Calle" .
-
- safeMadrid:hasEstadoMetereologico a owl:ObjectProperty ;
-     rdfs:label "has Estado Metereologico" .
-
- safeMadrid:hasTipoVehiculo a owl:ObjectProperty ;
-     rdfs:label "has Tipo Vehiculo" .
-
- safeMadrid:hasTipoPersona a owl:ObjectProperty ;
-     rdfs:label "has Tipo Persona" .
-
- safeMadrid:hasRangoDeEdad a owl:ObjectProperty ;
-     rdfs:label "has Rango de Edad" .
-
- safeMadrid:hasSexo a owl:ObjectProperty ;
-     rdfs:label "has sexo" .
-
- safeMadrid:hasLesividad a owl:ObjectProperty ;
-     rdfs:label "has lesividad" .
-
-### ------------------Barrios-----------------------------------------------------------------
-
- safeMadrid:hasObjectid a owl:ObjectProperty ;
-     rdfs:label "has bbjectid" .
-
- safeMadrid:hasNomdis a owl:ObjectProperty ;
-     rdfs:label "has nomdis" .
-
- safeMadrid:hasNombre a owl:ObjectProperty ;
-     rdfs:label "has nombre" .
-
- safeMadrid:hasShape_leng a owl:ObjectProperty ;
-     rdfs:label "has shape leng" .
-
- safeMadrid:hasShape_area a owl:ObjectProperty ;
-     rdfs:label "has shape area" .
-    
- safeMadrid:hasCod_dis a owl:ObjectProperty ;
-     rdfs:label "has cod dis" .
-
- safeMadrid:hasBarrio_may a owl:ObjectProperty ;
-     rdfs:label "has barrio may" .
-
- safeMadrid:hasCod_dis_bar a owl:ObjectProperty ;
-     rdfs:label "has cod dis bar" .
-
- safeMadrid:hasCod_bar a owl:ObjectProperty ;
-     rdfs:label "has code bar" .
-
- safeMadrid:hasNum_bar a owl:ObjectProperty ;
-     rdfs:label "has num bar" .
-
- safeMadrid:hasBarrio_mt a owl:ObjectProperty ;
-     rdfs:label "has barrio mt" .
-
- safeMadrid:hasCod_disb a owl:ObjectProperty ;
-     rdfs:label "has cod disb" .
-
-
-### ------------------Areas mayores e infantiles----------------------------------------------
-
- safeMadrid:hasMxassetnum a owl:ObjectProperty ;
-     rdfs:label "has mxassetnum" .
-
- safeMadrid:hasDescription a owl:ObjectProperty ;
-     rdfs:label "has description" .
-
- safeMadrid:hasMintdistric a owl:ObjectProperty ;
-     rdfs:label "has mintdistri" .
-
- safeMadrid:hasNombre_dis a owl:ObjectProperty ;
-     rdfs:label "has nombre_dis" .
-
- safeMadrid:hasMintbarrio a owl:ObjectProperty ;
-     rdfs:label "has mintbarrio" .
-
- safeMadrid:hasNombre_barrio a owl:ObjectProperty ;
-     rdfs:label "has nombre_barrio" .
-
- safeMadrid:hasInstalldate a owl:ObjectProperty ;
-     rdfs:label "has installdate" .
-
- safeMadrid:hasMinttipovi a owl:ObjectProperty ;
-     rdfs:label "has minttipovi" .
-
- safeMadrid:hasMintnombre a owl:ObjectProperty ;
-     rdfs:label "has mintnombre" .
-
- safeMadrid:hasMintnumero a owl:ObjectProperty ;
-     rdfs:label "has mintnumero" .
-
- safeMadrid:hasMintndp a owl:ObjectProperty ;
-     rdfs:label "has mintndp" .
-
- safeMadrid:hasMintnumero a owl:ObjectProperty ;
-     rdfs:label "has mintnumero" .
-
- safeMadrid:hasTipo a owl:ObjectProperty ;
-     rdfs:label "has tipo" .
-
- safeMadrid:hasTotal_elem a owl:ObjectProperty ;
-     rdfs:label "has total_elem" .
-
- safeMadrid:hasEstado a owl:ObjectProperty ;
-     rdfs:label "has estado" .
-
-
-############################ Data Properties ########################################################
-
-### ----------------------------------Accidentes----------------------------------------------
-
- safeMadrid:numero a owl:DatatypeProperty ;
-     rdfs:label "numero" ;
-     rdfs:range xsd:integer .
-
- safeMadrid:distrito a owl:DatatypeProperty ;
-     rdfs:label "distrito" ;
-     rdfs:range xsd:string .
-
- safeMadrid:tipoAccidente a owl:DatatypeProperty ;
-     rdfs:label "tipoAccidente" ;
-     rdfs:range xsd:string .
-
-safeMadrid:calle a owl:DatatypeProperty ;
-     rdfs:label "calle" ;
-     rdfs:range xsd:string .
-
-safeMadrid:hora a owl:DatatypeProperty ;
-     rdfs:label "hora" ;
-     rdfs:range xsd:string .
-
-safeMadrid:fecha a owl:DatatypeProperty ;
-     rdfs:label "fecha" ;
-     rdfs:range xsd:string .
-
-safeMadrid:n_expediente a owl:DatatypeProperty ;
-     rdfs:label "n_expediente" ;
-     rdfs:range xsd:long .
-
-safeMadrid:estado_meteorologico a owl:DatatypeProperty ;
-     rdfs:label "estado_meteorologico" ;
-     rdfs:range xsd:string .
-
-safeMadrid:tipo_vehiculo a owl:DatatypeProperty ;
-     rdfs:label "tipo_vehiculo" ;
-     rdfs:range xsd:string .
-
-safeMadrid:tipo_persona a owl:DatatypeProperty ;
-     rdfs:label "tipo_persona" ;
-     rdfs:range xsd:string .
-
-safeMadrid:rango_de_edad a owl:DatatypeProperty ;
-     rdfs:label "rango_de_edad" ;
-     rdfs:range xsd:string .
-
-safeMadrid:sexo a owl:DatatypeProperty ;
-     rdfs:label "sexo" ;
-     rdfs:range xsd:string .
-
-safeMadrid:lesividad a owl:DatatypeProperty ;
-     rdfs:label "lesividad" ;
-     rdfs:range xsd:int .
-
-
-### ----------------------------Barrios----------------------------------------------
-
-safeMadrid:objectid_1 a owl:DatatypeProperty ;
-     rdfs:label "objectid_1" ;
-     rdfs:range xsd:integer .
-
-safeMadrid:nomdis a owl:DatatypeProperty ;
-     rdfs:label "nomdis" ;
-     rdfs:range xsd:string .
-
-safeMadrid:nombre a owl:DatatypeProperty ;
-     rdfs:label "nombre" ;
-     rdfs:range xsd:string .
-
-safeMadrid:shape_leng a owl:DatatypeProperty ;
-     rdfs:label "shape_leng" ;
-     rdfs:range xsd:decimal .
-     
-safeMadrid:shape_area a owl:DatatypeProperty ;
-     rdfs:label "shape_area" ;
-     rdfs:range xsd:decimal .
-
-safeMadrid:cod_dis a owl:DatatypeProperty ;
-     rdfs:label "cod_dis" ;
-     rdfs:range xsd:integer .
-     
-safeMadrid:cod_dis_tx a owl:DatatypeProperty ;
-     rdfs:label "cod_dis_tx" ;
-     rdfs:range xsd:integer .
-
-safeMadrid:barrio_may a owl:DatatypeProperty ;
-     rdfs:label "barrio_may" ;
-     rdfs:range xsd:string .
-
-safeMadrid:cod_disbar a owl:DatatypeProperty ;
-     rdfs:label "cod_disbar" ;
-     rdfs:range xsd:integer .
-
-safeMadrid:num_bar a owl:DatatypeProperty ;
-     rdfs:label "num_bar" ;
-     rdfs:range xsd:integer .
-
-safeMadrid:barrio_mt a owl:DatatypeProperty ;
-     rdfs:label "barrio_mt" ;
-     rdfs:range xsd:string .
-
-safeMadrid:cod_disb a owl:DatatypeProperty ;
-     rdfs:label "cod_disb" ;
-     rdfs:range xsd:string .
-
-### ----------------------------Areas Mayores e Infantiles----------------------------------------------
-
-
-safeMadrid:mxassetnum a owl:DatatypeProperty ;
-     rdfs:label "mxassetnum" ;
-     rdfs:range xsd:long .
-
-safeMadrid:description a owl:DatatypeProperty ;
-     rdfs:label "description" ;
-     rdfs:range xsd:string .
-
-safeMadrid:mindistrict a owl:DatatypeProperty ;
-     rdfs:label "mindistrict" ;
-     rdfs:range xsd:integer .
-     
-safeMadrid:nombre_dis a owl:DatatypeProperty ;
-     rdfs:label "nombre_dis" ;
-     rdfs:range xsd:string .
-
-safeMadrid:mintbarrio a owl:DatatypeProperty ;
-     rdfs:label "mintbarrio" ;
-     rdfs:range xsd:integer .
-
-safeMadrid:nombre_bar a owl:DatatypeProperty ;
-     rdfs:label "nombre_bar" ;
-     rdfs:range xsd:string .
-
-safeMadrid:installdate a owl:DatatypeProperty ;
-     rdfs:label "installdate" ;
-     rdfs:range xsd:string .
-
-safeMadrid:minttipovi a owl:DatatypeProperty ;
-     rdfs:label "minttipovi" ;
-     rdfs:range xsd:string .
-
-safeMadrid:mintnombre a owl:DatatypeProperty ;
-     rdfs:label "mintnombre" ;
-     rdfs:range xsd:string .
-
-safeMadrid:mintnumero a owl:DatatypeProperty ;
-     rdfs:label "mintnumero" ;
-     rdfs:range xsd:integer .
-
-safeMadrid:mintndp a owl:DatatypeProperty ;
-     rdfs:label "mintndp" ;
-     rdfs:range xsd:long .
-
-safeMadrid:tipo a owl:DatatypeProperty ;
-     rdfs:label "tipo" ;
-     rdfs:range xsd:string .
-
-safeMadrid:total_elem a owl:DatatypeProperty ;
-     rdfs:label "total_elem" ;
-     rdfs:range xsd:integer .
-     
-safeMadrid:estado a owl:DatatypeProperty ;
-     rdfs:label "estado" ;
-     rdfs:range xsd:string .
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

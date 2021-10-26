@@ -102,8 +102,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="col">
+            <br/>
             <div class="row-md-4 card w-100">
                 <div class="card-body">
                     <h2 class="card-title text-center">The licensing of the data source and the potential license</h2>
@@ -124,32 +123,77 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="col">
+            <br/>
             <div class="row-md-4 card w-100">
-                <div class="card-body text-center">
-                    <h2 class="card-title">The resource naming strategy defined</h2>
-
-                </div>
-                <ul>
-                        <li>
-                            <p>Dominio:
-                                <a href="http://www.colegiosapp.org">http://www.colegiosapp.org</a>
-                            </p>
+                <div class="card-body">
+                    <h2 class="card-title text-center">Resource naming strategy</h2>
+                    <p class="card-text">
+                        Para elegir el nombre apropiado de las URIs que manejaremos en nuestra app hemos seguido las
+                        recomendaciones y pautas vistas en clase. En primer lugar hemos seleccionado como dominio base
+                        <strong>http://colegiosapp.org</strong>, a partir del cual hemos separado en diferentes
+                        endpoints la ontología y los recursos.<br />
+                        <br />
+                        Así pues, a partir de <strong>/ontologia</strong> podemos encontrar las clases definidas y las
+                        propiedades. Cabe mencionar que ambas parten de este mismo punto, pues aunque primeramente se
+                        podría pensar que las propiedades deberían ser cada una a partir de una clase no formaría URIs
+                        correctas ya que no existe jerarquía entre las diferentes definiciones. Estas clases irán
+                        precedidas del separador hash #.<br />
+                        <br />
+                        Tras el dominio base se ha definido la ruta <strong>/resource</strong> a partir de la cual
+                        colgarán todos los recursos definidos para este conjunto de datos. Irán precedidos por el
+                        slash /.<br />
+                    </p>
+                    <center>
+                    <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-10-22T21:40:57.728Z\&quot; agent=\&quot;5.0 (X11)\&quot; etag=\&quot;UX-LEj27-JYXyMcLS9Mt\&quot; version=\&quot;15.5.4\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;1wDDqQpoOPQvn7rWAI-O\&quot; name=\&quot;Page-1\&quot;&gt;5VhNc5swFPw1HNMBBNg5xjhu2k6nnfqQs4wEaCp4RMjB9q+vMMJATGw3sfNhz3BA+4Skt28XCQzkJ4uvAmfxTyCUG7ZJFgYaG7ZtObZtlJdJlhUycNwKiAQjulMDTNmKatDU6JwRmnc6SgAuWdYFA0hTGsgOhoWAotstBN6dNcMR3QKmAebb6D0jMq7QoWs2+B1lUVzPbJk6kuC6swbyGBMoWhC6NZAvAGR1lyx8ykvyal6q5ybPRDcLEzSVhzyQ/iiyaEVM+95fOX8esu8TdHc1rEZ5xHyuE9aLlcuaAQHzlNByEMtAoyJmkk4zHJTRQtVcYbFMuA6HkEpdRMsr24xzHziI9VgoCKgbhgrPpYC/tBVBHrpGapKRXhAVki6ezdTa8KeERyGhUixVF/3AUDOuJYc83S6aAnp1meJ28eqqYi2aaDN0w6u60dT+B82DHpo9rqYdEfaobiO5zryCZi0AJyXB6SzPzqJtjiFhKYM6VUXmbCt98RRRvXpo6kL7Jo6lLN8YN2Ud7UkAnEYMcpxlX0BEa7B/rvc1A+YsShXGadgs59TesNGbeuP6Qr1h/kqlKnlk+Mi4GeM3t8Rna5tQ8aUUhy7FrYfY1enbyoancmt9Lrs4u+7f2rCEfJeLL8CzpqA5zIVyWLOj7n95nbtrHedA1w5O5lprt2tb9HsP8/KLZE3sVb5mVh2aTMvLFlUJdbzH6q8Yxec4p/u2wCOscocHXzO6O0ohmQlapeGOP6bSjyBt55DzY5+0nZNJ2/7g0v4tIGOUYPL55d2k0kj8RCs/O6dsXvjv5xT0oqPbN6IyZiELMAFx7K8Ud8Q6w3d1dWkS6Tkn9ErkBecE1Wx+Na5jrR+26PYf&lt;/diagram&gt;&lt;/mxfile&gt;&quot;,&quot;toolbar&quot;:&quot;pages zoom layers lightbox&quot;,&quot;page&quot;:0}"></div>
+                    <script type="text/javascript" src="https://app.diagrams.net/js/viewer-static.min.js"></script>
+                    </center>
+                    <br />
+                    <p class="card-text">
+                        De esta manera, la lista completa de clases y propiedades quedará definida de la siguiente manera:
+                    </p>
+                    <ul>
+                        <li>Dominio: <a href="http://www.colegiosapp.org">http://www.colegiosapp.org</a></li>
+                    </ul>
+                    <ul>
+                        <li>Ruta ontología clases: http://www.colegiosapp.org/ontology#[nombreClase]
+                            <ul>
+                                <li>Municipio: <a href="http://www.colegiosapp.org/ontology#Municipality">http://www.colegiosapp.org/ontology#Municipality</a></li>
+                                <li>Colegio: <a href="http://www.colegiosapp.org/ontology#School">http://www.colegiosapp.org/ontology#School</a></li>
+                                <li>Dirección: <a href="http://www.colegiosapp.org/ontology#Address">http://www.colegiosapp.org/ontology#Address</a></li>
+                                <li>Grupo de residentes: <a href="http://www.colegiosapp.org/ontology#ResidentGroup">http://www.colegiosapp.org/ontology#ResidentGroup</a></li>
+                            </ul>
                         </li>
-                        <li>
-                             <p>Class Path:
-                                 <a href="http://www.colegiosapp.org/ontology#[className]">http://www.colegiosapp.org/ontology#[className]</a>
-                             </p>
+                        </ul>
+                    <ul>
+                        <li>Ruta ontología propiedades: http://www.colegiosapp.org/ontology#[nombrePropiedad]
+                            <ul>
+                                <li>Sexo: <a href="http://www.colegiosapp.org/ontology#hasGender">http://www.colegiosapp.org/ontology#hasGender</a></li>
+                                <li>Nombre: <a href="http://www.colegiosapp.org/ontology#hasName">http://www.colegiosapp.org/ontology#hasName</a></li>
+                                <li>Número: <a href="http://www.colegiosapp.org/ontology#hasNumber">http://www.colegiosapp.org/ontology#hasNumber</a></li>
+                                <li>Código postal: <a href="http://www.colegiosapp.org/ontology#hasPostalCode">http://www.colegiosapp.org/ontology#hasPostalCode</a></li>
+                                <li>Tipo: <a href="http://www.colegiosapp.org/ontology#hasType">http://www.colegiosapp.org/ontology#hasType</a></li>
+                                <li>Edad máxima: <a href="http://www.colegiosapp.org/ontology#maxAge">http://www.colegiosapp.org/ontology#maxAge</a></li>
+                                <li>Edad mínima: <a href="http://www.colegiosapp.org/ontology#minAge">http://www.colegiosapp.org/ontology#minAge</a></li>
+                                <li>Número de personas: <a href="http://www.colegiosapp.org/ontology#numPeople">http://www.colegiosapp.org/ontology#numPeople</a></li>
+                                <li>Propiedad: <a href="http://www.colegiosapp.org/ontology#ownership">http://www.colegiosapp.org/ontology#ownership</a></li>
+                                <li>Coordenada X: <a href="http://www.colegiosapp.org/ontology#xCoordinate">http://www.colegiosapp.org/ontology#xCoordinate</a></li>
+                                <li>Coordenada Y: <a href="http://www.colegiosapp.org/ontology#yCoordinate">http://www.colegiosapp.org/ontology#yCoordinate</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    <ul>
+                        <li>Ruta recursos: http://www.colegiosapp.org/resource/[identificador]
+                            <ul>
+                                <li>Grupo de residentes: <a href="http://www.colegiosapp.org/resource/Group_X_Y_Gender">http://www.colegiosapp.org/resource/Group_X_Y_Gender</a></li>
+                            </ul>
                         </li>
                     </ul>
+                </div>
             </div>
+            <br/>
+            <br/>
         </div>
-
-        <hr>
-
     </div> <!-- /container -->
-
 </main>
 </body>
 </html>

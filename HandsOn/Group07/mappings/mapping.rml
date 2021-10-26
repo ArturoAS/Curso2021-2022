@@ -1,0 +1,82 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix vocab: <http://example.org#> .
+@base <http://example.com/ns#>.
+
+<#FuentesMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./data/fuentes.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://fuent.example.com/fountain/{CODIGO}";
+      rr:class vocab:Fountain
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasAddress;
+    rr:objectMap [
+      rml:reference "DIRECCION";
+        rr:datatype rr:Literal
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasStatus;
+    rr:objectMap [
+      rml:reference "ESTADO";
+        rr:datatype rr:Literal
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasLongitude;
+    rr:objectMap [
+      rml:reference "LONGITUD";
+        rr:datatype xsd:float
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasLatitude;
+    rr:objectMap [
+      rml:reference "LATITUD";
+        rr:datatype xsd:float
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:isInDistrict ;
+    rr:objectMap [
+      rr:parentTriplesMap <#DistrictMap> ;
+      rr:joinCondition [
+        rr:child "DISTRITO";
+        rr:parent "distrito_ind"
+      ]
+    ]
+  ].
+
+
+<#DistrictMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "data/indicadores.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [ 
+    rr:template "http://dist.example.com/district/{distrito_ind}";
+      rr:class vocab:District
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:numHabitantes;
+    rr:objectMap [
+      rml:reference "numHabitantes" ;
+        rr:datatype xsd:float
+    ]
+  ].

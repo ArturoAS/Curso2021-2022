@@ -1,0 +1,319 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix vocab: <http://example.org#> .
+@base <http://example.com/ns#>.
+
+
+<#TriplesMapCalidad> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./csv/informacion_estaciones_red_calidad_aire-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [
+    rr:template "http://cal_aire.example.com/cal_aire/{ESTACION_ID}";
+      rr:class vocab:Calidad
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasAddress;
+    rr:objectMap [
+      rml:reference "DIRECCION";
+        rr:datatype xsd:string
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasNO2;
+    rr:objectMap [
+      rml:reference "NO2";
+        rr:datatype xsd:boolean
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasSO2;
+    rr:objectMap [
+      rml:reference "SO2";
+        rr:datatype xsd:boolean
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasCO;
+    rr:objectMap [
+      rml:reference "CO";
+        rr:datatype xsd:boolean
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasPM10;
+    rr:objectMap [
+      rml:reference "PM10";
+        rr:datatype xsd:boolean
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasPM2_5;
+    rr:objectMap [
+      rml:reference "PM2_5";
+        rr:datatype xsd:boolean
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasO3;
+    rr:objectMap [
+      rml:reference "O3";
+        rr:datatype xsd:boolean
+    ]
+  ];
+
+rr:predicateObjectMap [
+    rr:predicate vocab:hasBTX;
+    rr:objectMap [
+      rml:reference "BTX";
+        rr:datatype xsd:boolean
+    ]
+  ].
+
+<#TriplesMapHorario> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv/horario-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+
+  rr:subjectMap [ 
+    rr:template "http://hor.example.com/horario/{ESTACION}";
+      rr:class vocab:Horario
+  ];
+
+ rr:predicateObjectMap [
+    rr:predicate vocab:anio;
+    rr:objectMap [
+      rml:reference "ANO" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+
+ rr:predicateObjectMap [
+    rr:predicate vocab:mes;
+    rr:objectMap [
+      rml:reference "MES" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+
+ rr:predicateObjectMap [
+    rr:predicate vocab:dia;
+    rr:objectMap [
+      rml:reference "DIA" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getMagnitud;
+    rr:objectMap [
+      rml:reference "MAGNITUD" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt01;
+    rr:objectMap [
+      rml:reference "H01" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt02;
+    rr:objectMap [
+      rml:reference "H02" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt03;
+    rr:objectMap [
+      rml:reference "H03" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt04;
+    rr:objectMap [
+      rml:reference "H04" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt05;
+    rr:objectMap [
+      rml:reference "H05" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt06;
+    rr:objectMap [
+      rml:reference "H06" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt07;
+    rr:objectMap [
+      rml:reference "H07" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt08;
+    rr:objectMap [
+      rml:reference "H08" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt09;
+    rr:objectMap [
+      rml:reference "H09" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt10;
+    rr:objectMap [
+      rml:reference "H10" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt11;
+    rr:objectMap [
+      rml:reference "H11" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt12;
+    rr:objectMap [
+      rml:reference "H12" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt13;
+    rr:objectMap [
+      rml:reference "H13" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt14;
+    rr:objectMap [
+      rml:reference "H14" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt15;
+    rr:objectMap [
+      rml:reference "H15" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt16;
+    rr:objectMap [
+      rml:reference "H16" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt17;
+    rr:objectMap [
+      rml:reference "H17" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt18;
+    rr:objectMap [
+      rml:reference "H18" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt19;
+    rr:objectMap [
+      rml:reference "H19" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt20;
+    rr:objectMap [
+      rml:reference "H20" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt21;
+    rr:objectMap [
+      rml:reference "H21" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt22;
+    rr:objectMap [
+      rml:reference "H22" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt23;
+    rr:objectMap [
+      rml:reference "H23" ;
+        rr:datatype xsd:integer
+    ]
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:getValAt24;
+    rr:objectMap [
+      rml:reference "H24" ;
+        rr:datatype xsd:integer
+    ]
+  ].
+
+

@@ -1,0 +1,118 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix vocab: <http://www.calidadAire.com#> .
+@base <http://example.com/ns#>.
+
+<#TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./calidad_aire_datos_mes-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.calidadAire.com/{provincia}";
+    rr:termType rr:IRI;
+  rr:class vocab:Provincia
+  ];
+  
+  rr:predicateObjectMap [
+	rr:predicate vocab:tieneMunicipio; rr:termType rr:IRI;
+    rr:objectMap [
+      rr:template "http://www.calidadAire.com/{municipio}";
+      rr:termType rr:Literal 
+	]
+  ].
+  
+<#TriplesMap2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./calidad_aire_datos_mes-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.calidadAire.com/{municipio}";
+    rr:termType rr:IRI;
+  rr:class vocab:Municipio
+  ];
+  
+  rr:predicateObjectMap [
+	rr:predicate vocab:tieneEstacion; rr:termType rr:IRI;
+    rr:objectMap [
+      rr:template "http://www.calidadAire.com/{estacion}";
+      rr:termType rr:Literal 
+	]
+  ].
+  
+<#TriplesMap3> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./calidad_aire_datos_mes-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.calidadAire.com/{estacion}";
+    rr:termType rr:IRI;
+  rr:class vocab:Estacion
+  ];
+  
+  rr:predicateObjectMap [
+	rr:predicate vocab:tienePuntoMuestreo; rr:termType rr:IRI;
+    rr:objectMap [
+      rr:template "http://www.calidadAire.com/{punto_muestreo}";
+      rr:termType rr:Literal 
+	]
+  ];
+  
+  rr:predicateObjectMap [
+	rr:predicate vocab:mide; rr:termType rr:IRI;
+    rr:objectMap [
+      rr:template "http://www.calidadAire.com/{magnitud}";
+      rr:termType rr:Literal 
+	]
+  ].
+  
+  
+<#TriplesMap4> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./calidad_aire_datos_mes-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+    rr:subjectMap [
+    rr:template "http://www.calidadAire.com/{punto_muestreo}";
+    rr:termType rr:IRI;
+  rr:class vocab:PuntoMuestreo
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate vocab:tieneMedicion; rr:termType rr:IRI;
+    rr:objectMap [
+      rr:template "http://www.calidadAire.com/{ano}-{mes}-{dia}";
+      rr:termType rr:Literal 
+    ]
+  ].
+  
+<#TriplesMap5> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./calidad_aire_datos_mes-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+    rr:subjectMap [
+    rr:template "http://www.calidadAire.com/{magnitud}";
+    rr:termType rr:IRI;
+  rr:class vocab:Magnitud
+  ].
+
+<#TriplesMap6> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./calidad_aire_datos_mes-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  
+    rr:subjectMap [
+    rr:template "http://www.calidadAire.com/{ano}-{mes}-{dia}";
+    rr:termType rr:IRI;
+  rr:class vocab:Medicion
+  ].

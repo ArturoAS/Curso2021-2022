@@ -1,22 +1,22 @@
 ID_DISTRICT,NOMBRE
-11,Centro
-6,Arganzuela
-9,Retiro
-12,Salamanca
-17,Chamartín
-15,Tetuán
-13,Chamberí
-21,Fuencarral - El Pardo
-16,Moncloa - Aravaca
-7,Latina
-4,Carabanchel
-3,Usera
-5,Puente de Vallecas
-8,Moratalaz
-18,Ciudad Lineal
-20,Hortaleza
-1,Villaverde
-2,Villa de Vallecas
-10,Vicálvaro
-14,San Blas - Canillejas
-19,Barajas
+11,CENTRO
+6,ARGANZUELA
+9,RETIRO
+12,SALAMANCA
+17,CHAMARTIN
+15,TETUAN
+13,CHAMBERI
+21,FUENCARRAL_-_EL_PARDO
+16,MONCLOA_-_ARAVACA
+7,LATINA
+4,CARABANCHEL
+3,USERA
+5,PUENTE_DE_VALLECAS
+8,MORATALAZ
+18,CIUDAD_LINEAL
+20,HORTALEZA
+1,VILLAVERDE
+2,VILLA_DE_VALLECAS
+10,VICALVARO
+14,SAN_BLAS_-_CANILLEJAS
+19,BARAJAS

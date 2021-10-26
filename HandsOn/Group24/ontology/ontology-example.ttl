@@ -1,69 +1,39 @@
 @base <http://www.ontologies.org/ontologies/tarea2/>.
-@prefix  cla: <http://www.ontologies.org/ontologies/class#>.
-@prefix  sen: <http://www.ontologies.org/ontologies/sensor#>.
-@prefix  com: <http://www.ontologies.org/ontologies/computer#>.
-@prefix  use: <http://www.ontologies.org/ontologies/user#>.
-@prefix  mea: <http://www.ontologies.org/ontologies/measurement#>.
-@prefix  xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix dc: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#>.
-@prefix ns: <http://www.example.org/TerrazasMadrid#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix schema: <https://schema.org#>.
-@prefix ssn: <http://www.w3.org/ns/ssn/#>.
-@prefix time: <https://www.w3.org/TR/owl-time/#time:#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#>.
+@prefix ns: <http://smartcity.linkeddata.es/ontology/TerrazasMadrid/#>.
+@prefix nsp: <http://smartcity.linkeddata.es/ontology/TerrazasMadrid##>.
+@prefix rdf: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <https://schema.org#>.
+@prefix admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/#
 
 schema:LocalBusiness01
-	 schema:containedIn schema:Place01;
-         schema:adress schema:PostalAddress01;
-         dc:title "WAGABOO"^^xsd:string;
-         schema:status "Abierta"^^xsd:string;
-         ns:seasonalTime "Anual"^^xsd:string;
-         ns:status "Abierta"^^xsd:string;
-         ns:terraceUbication "Acera"^^xsd:string;
-	 ns:tablesSeasonal  "8"^^xsd:string;
-         ns:tablesUnseasonal  "8"^^xsd:string.
+	  dc:title "HONTANARES"^^xsd:string;
+          nsp:hasID "270403150"^^xsd:integer;
+          schema:status "Abierta"^^xsd:string;
+          nsp:terraceUbication "Acera"^^xsd:string;
+          nsp:tablesSeasonal  "9"^^xsd:string;
+          nsp:tablesUnseasonal  "9"^^xsd:string;
+          nsp:WeekdaySeasonalOpen  "10:00:00"^^xsd:string;
+          nsp:WeekdaySeasonalClose  "1:00:00"^^xsd:string;
+          nsp:WeekendSeasonalOpen  "10:00:00"^^xsd:string;
+	  nsp:WeekendSeasonalClose  "2:30:00"^^xsd:string;
+	  nsp:WeekdayUnseasonalOpen  "10:00:00"^^xsd:string;
+	  nsp:WeekdayUnseasonalClose  "0:00:00"^^xsd:string;
+	  nsp:WeekendUnseasonalOpen  "10:00:00"^^xsd:string;
+	  nsp:WeekendUnseasonalClose  "0:00:00"^^xsd:string;
+	  schema:adress schema:PostalAddress01;
+          nsp:hasLocation schema:GeoCoordinates01;
+	  nsp:containedIn admingeo:District01.
 schema:PostalAddress01
-         schema:streetAdress "14 CALLE AYALA "^^xsd:string;
-         schema:postalCode "28001"^^xsd:string;
-         schema:addressRegion "RECOLETOS"^^xsd:string.
-schema:Place01
-	schema:geo schema:GeoCoordinates01.
-schema:City01
-	admingeo:district "SALAMANCA"^^xsd:string.
+          schema:streetAdress "2 AVENIDA AMERICA "^^xsd:string;
+          schema:postalCode "28028"^^xsd:string.
 schema:GeoCoordinates01
-        schema:latitude "441656,59"^^xsd:string;
-        schema:longitude "4475470,52"^^xsd:string.
-ssn:Observation01
-        ssn:featureOfInterest ssn:FeatureOfInterest01;
-        ssn:observedProperty ssn:Property01;
-        ssn:observationSamplingTime time:Interval01.
-time:Interval01
-        time:inside time:Instant01.
-time:Instant01
-	time:inDateTtime time:GeneralDateTimeDescription01.
-ns:WeekdaySeasonalOpen01
-	time:hour "10"^^xsd:string;
-	time: minute "0"^^xsd:string.
-ns:WeekdaySeasonalClose01
-	time:hour "1"^^xsd:string;
-	time: minute "0"^^xsd:string.
-ns:WeekendSeasonalOpen01
-	time:hour "10"^^xsd:string;
-	time: minute "0"^^xsd:string.
-ns:WeekendSeasonalClose01
-	time:hour "2"^^xsd:string;
-	time: minute "30"^^xsd:string.
-ns:WeekdayUnseasonalOpen01
-	time:hour "10"^^xsd:string;
-	time: minute "0"^^xsd:string.
-ns:WeekdayUnseasonalClose01
-	time:hour "0"^^xsd:string;
-	time: minute "0"^^xsd:string.
-ns:WeekendUnseasonalOpen01
-	time:hour "10"^^xsd:string;
-	time: minute "0"^^xsd:string.
-ns:WeekendUnseasonalClose01
-	time:hour "0"^^xsd:string;
-	time: minute "0"^^xsd:string.
+          schema:latitude "4476524,51"^^xsd:string;
+          schema:longitude "442586,58"^^xsd:string.
+admingeo:District01
+	  rdf:label "Salamanca"^^xsd:string.
+ns:Neighborhood01
+	  rdf:label "La Guindalera"^^xsd:string;
+          nsp:locatedIn admingeo:District01.
+		

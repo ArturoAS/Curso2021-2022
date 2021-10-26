@@ -1,0 +1,376 @@
+[
+    {
+      "op": "core/column-removal",
+      "columnName": "﻿COD_TIPO_DATO",
+      "description": "Remove column ﻿COD_TIPO_DATO"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "IDENTIFICADOR_MINT",
+      "description": "Remove column IDENTIFICADOR_MINT"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "COD_ELEMENTO",
+      "description": "Remove column COD_ELEMENTO"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "COD_NDP",
+      "description": "Remove column COD_NDP"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "DIRECCION_COMPLETA",
+      "description": "Remove column DIRECCION_COMPLETA"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "DIRECCION AUXILIAR",
+      "description": "Remove column DIRECCION AUXILIAR"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "SITUADO",
+      "description": "Remove column SITUADO"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "COD_VIAL",
+      "description": "Remove column COD_VIAL"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "PARTICULAS_VIAL",
+      "description": "Remove column PARTICULAS_VIAL"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "COD_BARRIO",
+      "description": "Remove column COD_BARRIO"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "BARRIO",
+      "description": "Remove column BARRIO"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "LATITUD",
+      "description": "Remove column LATITUD"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "LONGITUD",
+      "description": "Remove column LONGITUD"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "OBSERVACIONES",
+      "description": "Remove column OBSERVACIONES"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "DIR_HORIO",
+      "description": "Remove column DIR_HORIO"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "TIPO_DATO",
+      "newColumnName": "DATA_TYPE",
+      "description": "Rename column TIPO_DATO to DATA_TYPE"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "CENTRO",
+      "newColumnName": "CENTER",
+      "description": "Rename column CENTRO to CENTER"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "HORARIO",
+      "newColumnName": "SCHEDULE",
+      "description": "Rename column HORARIO to SCHEDULE"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "SCHEDULE",
+      "index": 0,
+      "description": "Move column SCHEDULE to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "SCHEDULE",
+      "index": 1,
+      "description": "Move column SCHEDULE to position 1"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "SCHEDULE",
+      "index": 2,
+      "description": "Move column SCHEDULE to position 2"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "SCHEDULE",
+      "expression": "grel:NULL",
+      "onError": "set-to-blank",
+      "newColumnName": "WASTE",
+      "columnInsertIndex": 3,
+      "description": "Create column WASTE at index 3 based on column SCHEDULE using expression grel:NULL"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "CLASE_VIAL",
+      "newColumnName": "ROAD_TYPE",
+      "description": "Rename column CLASE_VIAL to ROAD_TYPE"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "NOMBRE_VIAL",
+      "newColumnName": "ROAD_NAME",
+      "description": "Rename column NOMBRE_VIAL to ROAD_NAME"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "TIPO_NÚMERO",
+      "newColumnName": "NUM_TYPE",
+      "description": "Rename column TIPO_NÚMERO to NUM_TYPE"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "NÚMERO",
+      "newColumnName": "NUM",
+      "description": "Rename column NÚMERO to NUM"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "COD_DISTRITO",
+      "newColumnName": "DISTRICT_CODE",
+      "description": "Rename column COD_DISTRITO to DISTRICT_CODE"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "DISTRITO",
+      "newColumnName": "DISTRICT",
+      "description": "Rename column DISTRITO to DISTRICT"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DATA_TYPE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "contenedor de aceite"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Contenedor de Aceite"
+        }
+      ],
+      "description": "Mass edit cells in column DATA_TYPE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "CENTER",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [],
+          "fromBlank": true,
+          "fromError": false,
+          "to": "Vía Pública"
+        }
+      ],
+      "description": "Mass edit cells in column CENTER"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "WASTE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [],
+          "fromBlank": true,
+          "fromError": false,
+          "to": "Aceite vegetal de cocina"
+        }
+      ],
+      "description": "Mass edit cells in column WASTE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "ROAD_TYPE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "camino"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Camino"
+        }
+      ],
+      "description": "Mass edit cells in column ROAD_TYPE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "NUM_TYPE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "número"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Número"
+        }
+      ],
+      "description": "Mass edit cells in column NUM_TYPE"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "NUM",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column NUM using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT_CODE",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column DISTRICT_CODE using expression value.toNumber()"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Chamartín",
+            "Chamartin"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Chamartín"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "UTMX",
+      "expression": "grel:value.replace(\",\",\".\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column UTMX using expression grel:value.replace(\",\",\".\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "UTMX",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column UTMX using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "UTMY",
+      "expression": "grel:value.replace(\",\",\".\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column UTMY using expression grel:value.replace(\",\",\".\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "UTMY",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column UTMY using expression value.toNumber()"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "DATA_TYPE",
+      "expression": "join ([coalesce(cells['DATA_TYPE'].value,''),coalesce(cells['ROAD_NAME'].value,''),coalesce(cells['NUM'].value,'')],' ')",
+      "onError": "keep-original",
+      "newColumnName": "NAME",
+      "columnInsertIndex": 1,
+      "description": "Create column NAME at index 1 based on column DATA_TYPE using expression join ([coalesce(cells['DATA_TYPE'].value,''),coalesce(cells['ROAD_NAME'].value,''),coalesce(cells['NUM'].value,'')],' ')"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "NAME",
+      "index": 0,
+      "description": "Move column NAME to position 0"
+    }
+  ]

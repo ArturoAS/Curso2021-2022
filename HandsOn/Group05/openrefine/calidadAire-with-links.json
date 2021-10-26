@@ -1,0 +1,572 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "provincia",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q24004405",
+        "name": "Madrid Province"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column provincia to type Q24004405"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "provincia",
+    "similarValue": "28",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24004405",
+      "name": "Madrid Province",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Madrid Province (Q24004405) for cells containing \"28\" in column provincia"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "provincia",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "URI_provincia",
+    "columnInsertIndex": 1,
+    "description": "Create column URI_provincia at index 1 based on column provincia using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q15284",
+        "name": "municipality"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column municipio to type Q15284"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "102",
+    "judgment": "matched",
+    "match": {
+      "id": "Q520988",
+      "name": "Orusco de Tajuña",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Orusco de Tajuña (Q520988) for cells containing \"102\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "120",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3925446",
+      "name": "Puerto de Cotos",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Puerto de Cotos (Q3925446) for cells containing \"120\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "123",
+    "judgment": "matched",
+    "match": {
+      "id": "Q644481",
+      "name": "Rivas-Vaciamadrid",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Rivas-Vaciamadrid (Q644481) for cells containing \"123\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "13",
+    "judgment": "matched",
+    "match": {
+      "id": "Q486792",
+      "name": "Aranjuez",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Aranjuez (Q486792) for cells containing \"13\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "133",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1751908",
+      "name": "San Martín de Valdeiglesias",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Martín de Valdeiglesias (Q1751908) for cells containing \"133\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "14",
+    "judgment": "matched",
+    "match": {
+      "id": "Q497692",
+      "name": "Arganda del Rey",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Arganda del Rey (Q497692) for cells containing \"14\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "148",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24012681",
+      "name": "Torrejón de Ardoz",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Torrejón de Ardoz (Q24012681) for cells containing \"148\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "16",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1772153",
+      "name": "El Atazar",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item El Atazar (Q1772153) for cells containing \"16\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "161",
+    "judgment": "matched",
+    "match": {
+      "id": "Q840373",
+      "name": "Valdemoro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Valdemoro (Q840373) for cells containing \"161\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "171",
+    "judgment": "matched",
+    "match": {
+      "id": "Q320398",
+      "name": "Villa del Prado",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villa del Prado (Q320398) for cells containing \"171\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "180",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24012650",
+      "name": "Villarejo de Salvanés",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Villarejo de Salvanés (Q24012650) for cells containing \"180\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "45",
+    "judgment": "matched",
+    "match": {
+      "id": "Q55480",
+      "name": "Colmenar Viejo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Colmenar Viejo (Q55480) for cells containing \"45\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "47",
+    "judgment": "matched",
+    "match": {
+      "id": "Q735759",
+      "name": "Collado Villalba",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Collado Villalba (Q735759) for cells containing \"47\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "49",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24012750",
+      "name": "Coslada",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Coslada (Q24012750) for cells containing \"49\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "5",
+    "judgment": "matched",
+    "match": {
+      "id": "Q46940",
+      "name": "Alcalá de Henares",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Alcalá de Henares (Q46940) for cells containing \"5\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "58",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24012745",
+      "name": "Fuenlabrada",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuenlabrada (Q24012745) for cells containing \"58\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "6",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24012785",
+      "name": "Alcobendas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Alcobendas (Q24012785) for cells containing \"6\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "65",
+    "judgment": "matched",
+    "match": {
+      "id": "Q8802",
+      "name": "Getafe",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Getafe (Q8802) for cells containing \"65\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "67",
+    "judgment": "matched",
+    "match": {
+      "id": "Q55482",
+      "name": "Guadalix de la Sierra",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Guadalix de la Sierra (Q55482) for cells containing \"67\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "7",
+    "judgment": "matched",
+    "match": {
+      "id": "Q31910385",
+      "name": "Alcorcón",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Alcorcón (Q31910385) for cells containing \"7\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "74",
+    "judgment": "matched",
+    "match": {
+      "id": "Q77433",
+      "name": "Leganés",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Leganés (Q77433) for cells containing \"74\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "80",
+    "judgment": "matched",
+    "match": {
+      "id": "Q427505",
+      "name": "Majadahonda",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Majadahonda (Q427505) for cells containing \"80\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "9",
+    "judgment": "matched",
+    "match": {
+      "id": "Q472604",
+      "name": "Algete",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Algete (Q472604) for cells containing \"9\" in column municipio"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "municipio",
+    "similarValue": "92",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24012719",
+      "name": "Móstoles",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Móstoles (Q24012719) for cells containing \"92\" in column municipio"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "municipio",
+    "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "URI_municipio",
+    "columnInsertIndex": 3,
+    "description": "Create column URI_municipio at index 3 based on column municipio using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+  }
+]

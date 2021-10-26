@@ -1,0 +1,88 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix schema: <http://www.ontologies.org/ontologies/Group06/> .
+@prefix schema3: <http://www.ontologies.org/ontologies/Group06/ontology/> .
+@prefix schema2: <http://schema.org/>.
+@base <http://www.ontologies.org/ontologies/Group06/> .
+
+<#TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv/aparca_bicis_2021.-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.ontologies.org/ontologies/Group06/resource/BycicleParking/{hasIdBycicleParking}";
+    rr:termType rr:IRI; rr:class schema3:BycicleParking
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema2:description; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "description"; rr:termType rr:Literal]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema3:state; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "state"; rr:termType rr:Literal]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema3:installDate; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "installDate"; rr:termType rr:Literal]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema3:bycicleParkingAt; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "PostalAddress"; rr:termType rr:Literal]
+  ].
+ 
+<#TriplesMap2> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "csv/semaforos_bici.-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+   rr:subjectMap [
+    rr:template "http://www.ontologies.org/ontologies/Group06/resource/TrafficLight/{IdTrafficLight}";
+    rr:termType rr:IRI; rr:class schema3:TrafficLight
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema2:longitude; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "longitude"; rr:termType rr:Literal]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema2:latitude; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "latitude"; rr:termType rr:Literal]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema3:installDate; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "installDate"; rr:termType rr:Literal]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema3:trafficLightAt; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "IdCross"; rr:termType rr:Literal]
+  ].
+
+<#TriplesMap3> a rr:TriplesMap;
+ rml:logicalSource [
+    rml:source "csv/bases_bicimad.-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.ontologies.org/ontologies/Group06/resource/BaseBiciMad/{IdBiciMad}";
+    rr:termType rr:IRI; rr:class schema3:BaseBiciMad
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema3:numPlaces; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "numPlaces"; rr:termType rr:Literal]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema2:longitude; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "longitude"; rr:termType rr:Literal]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema2:latitude; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "latitude"; rr:termType rr:Literal]
+  ];
+  rr:predicateObjectMap [
+    rr:predicateMap [ rr:constant schema3:biciMadAt; rr:termType rr:IRI ];
+    rr:objectMap [ rml:reference "PostalAddress"; rr:termType rr:Literal]
+  ].

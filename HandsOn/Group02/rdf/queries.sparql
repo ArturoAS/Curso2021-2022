@@ -3,15 +3,31 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX vocab: <http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#>
 
-SELECT DISTINCT
-        ?Object 
-    WHERE {
-        ?Accident vocab:hasWeather ?Object.
-    }
+Query 1: Número de accidentes con rango de edad entre 21 y 24 años
 
-(rdflib.term.Literal('Despejado'),)
-(rdflib.term.Literal(''),)
-(rdflib.term.Literal('Nublado'),)
-(rdflib.term.Literal('Lluvia débil'),)
-(rdflib.term.Literal('Se desconoce'),)
-(rdflib.term.Literal('LLuvia intensa'),)
+	SELECT (count(?Accident) as ?count) WHERE {
+      {
+        ?Accident ns:hasRangeAge ?edad.
+        FILTER (?edad="De 21 a 24 años").
+      }
+    }
+	
+(rdflib.term.Literal('30', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#integer')),)
+
+
+
+
+
+
+Query 2: Géneros de las víctimas
+    SELECT ?gender (count(?gender) as ?count) WHERE {
+      {
+        ?Accident ns:hasVictim ?Person.
+        ?Person ns:hasGender ?gender.
+      }
+    }
+    GROUP BY ?gender
+	
+(rdflib.term.Literal('Hombre'), rdflib.term.Literal('361', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#integer')))
+(rdflib.term.Literal('Mujer'), rdflib.term.Literal('100', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#integer')))
+(rdflib.term.Literal('Desconocido'), rdflib.term.Literal('9', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#integer')))

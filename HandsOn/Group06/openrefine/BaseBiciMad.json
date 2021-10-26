@@ -1,15 +1,9 @@
 [
   {
     "op": "core/column-rename",
-    "oldColumnName": "Fecha de Alta",
-    "newColumnName": "installDate",
-    "description": "Rename column Fecha de Alta to installDate"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Número",
+    "oldColumnName": "﻿Número",
     "newColumnName": "IdBiciMad",
-    "description": "Rename column Número to IdBiciMad"
+    "description": "Rename column ﻿Número to IdBiciMad"
   },
   {
     "op": "core/text-transform",
@@ -35,17 +29,22 @@
     "description": "Remove column Gis_Y"
   },
   {
+    "op": "core/column-removal",
+    "columnName": "Fecha de Alta",
+    "description": "Remove column Fecha de Alta"
+  },
+  {
     "op": "core/text-transform",
     "engineConfig": {
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "Direccion",
+    "columnName": "IdBiciMad",
     "expression": "value.toString()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column Direccion using expression value.toString()"
+    "description": "Text transform on cells in column IdBiciMad using expression value.toString()"
   },
   {
     "op": "core/column-removal",
@@ -143,10 +142,17 @@
     "description": "Text transform on cells in column Direccion using expression value.toString()"
   },
   {
-    "op": "core/column-rename",
-    "oldColumnName": "Direccion",
-    "newColumnName": "PostaAddress",
-    "description": "Rename column Direccion to PostaAddress"
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "grel:value.substring(value.indexOf(\",\")+2,value.lastIndexOf(\",\")) +\" \"+ value.substring(0,value.indexOf(\",\"))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion using expression grel:value.substring(value.indexOf(\",\")+2,value.lastIndexOf(\",\")) +\" \"+ value.substring(0,value.indexOf(\",\"))"
   },
   {
     "op": "core/text-transform",
@@ -154,11 +160,95 @@
       "facets": [],
       "mode": "row-based"
     },
-    "columnName": "PostaAddress",
-    "expression": "grel:value",
+    "columnName": "Direccion",
+    "expression": "grel:value.substring(0,value.indexOf(\",\")) + value.substring(value.indexOf(\",\")+4,1000)",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column PostaAddress using expression grel:value"
+    "description": "Text transform on cells in column Direccion using expression grel:value.substring(0,value.indexOf(\",\")) + value.substring(value.indexOf(\",\")+4,1000)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "grel:value.replace(\"AVENIDAL\",\"AVENIDA\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion using expression grel:value.replace(\"AVENIDAL\",\"AVENIDA\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "grel:value.replace(\"CALLEL\",\"CALLE\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion using expression grel:value.replace(\"CALLEL\",\"CALLE\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "grel:value.replace(\"GLORIETAL\",\"GLORIETA\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion using expression grel:value.replace(\"GLORIETAL\",\"GLORIETA\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "grel:value.replace(\"PASEOL\",\"PASEO\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion using expression grel:value.replace(\"PASEOL\",\"PASEO\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Direccion",
+    "expression": "grel:value.replace(\"PLAZAL\",\"PLAZA\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Direccion using expression grel:value.replace(\"PLAZAL\",\"PLAZA\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Direccion",
+    "newColumnName": "PostalAddress",
+    "description": "Rename column Direccion to PostalAddress"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PostalAddress using expression value.toString()"
   }
 ]

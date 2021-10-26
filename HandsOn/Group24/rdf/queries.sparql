@@ -1,52 +1,19 @@
-PREFIX admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  schema: <http://schema.org/>
-PREFIX  ssn: <http://www.w3.org/ns/ssn/#>
-PREFIX  time: <https://www.w3.org/TR/owl-time/#time:#>
-PREFIX  xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX ad: <http://schemas.talis.com/2005/address/schema#>
 PREFIX admin: <http://webns.net/mvcb/>
+PREFIX ad: <http://schemas.talis.com/2005/address/schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ns:  <http://smartcity.linkeddata.es/ontology/TerrazasMadrid/>
+PREFIX admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/>
 
-SELECT ?title ?terraceUbication FROM <http://smartcity.linkeddata.es/ontology/TerrazasMadrid/Address/$(id_direccion)>
+SELECT ?district
 WHERE{
-	FILTER regex (schema:postalCode, "28021", xsd:string)
+	?district rdf:type admingeo:District.
 }
-SELECT DISTINCT ?city
-	WHERE{
-		?district rdfs:label admingeo:district 
-	}
-SELECT DISTINCT ?street 
-	WHERE{
-		?street owl:sameAs <https://www.wikidata.org/wiki/Q29903983>
-	}
-SELECT DISTINCT ?city
-	WHERE{
-		?district rdfs:label admingeo:district ?city.
-	}
 
-SELECT ?title ?terraceUbication 
-WHERE{
-  ?seasonime ns:seasonalTime "Anual"
-}ORDER BY ?title
-SELECT COUNT(DISTINCT ?title) ?title ?status ?terraceUbication
-WHERE
-  { 
-    ?title		rdf:type	do:title ;
-    			    #ont:tieneDistrito	?district_csv .
-
-    ?status	
-    			    rdfs:label	?district ;
-              owl:sameAs  ?district
-  }
-
-SELECT DISTINCT ?title
-	WHERE {
-		?title rdf:type <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-		?title owl:sameAs <http://www.w3.org/2002/07/owl#>.
-	}
-SELECT COUNT ?title FROM ?LocalBusiness 
-WHERE {
-	?LocalBusiness ns:seasonalTime: "Anual"
+SELECT DISTINCT ?distrito ?nombre
+	WHERE{
+  ?distrito rdf:type admingeo:District.
+  ?distrito rdf:label ?nombre. 
+  FILTER (?nombre = "CHAMARTIN").
 }
-ORDER BY ?title

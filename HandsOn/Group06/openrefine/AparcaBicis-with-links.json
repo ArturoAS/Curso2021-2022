@@ -1,0 +1,2406 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "MXASSETNUM,C,12",
+    "newColumnName": "hasIdBycicleParking",
+    "description": "Rename column MXASSETNUM,C,12 to hasIdBycicleParking"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hasIdBycicleParking",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hasIdBycicleParking using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "DESCRIPTIO,C,105",
+    "newColumnName": "description",
+    "description": "Rename column DESCRIPTIO,C,105 to description"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "description",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column description using expression value.toString()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTDISTRI,C,20",
+    "description": "Remove column MINTDISTRI,C,20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOMBRE_DIS,C,20",
+    "description": "Remove column NOMBRE_DIS,C,20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTBARRIO,C,10",
+    "description": "Remove column MINTBARRIO,C,10"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NOMBRE_BAR,C,50",
+    "description": "Remove column NOMBRE_BAR,C,50"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTADO,C,50",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ESTADO,C,50 using expression value.toString()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESTADO,C,50",
+    "newColumnName": "state",
+    "description": "Rename column ESTADO,C,50 to state"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "INSTALLDAT,D",
+    "newColumnName": "installDate",
+    "description": "Rename column INSTALLDAT,D to installDate"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "installDate",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column installDate using expression value.toDate()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTNUMERO,C,25",
+    "description": "Remove column MINTNUMERO,C,25"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MINTNDP,C,20",
+    "description": "Remove column MINTNDP,C,20"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "MODELO,C,254",
+    "description": "Remove column MODELO,C,254"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "MINTTIPOVI,C,15",
+    "expression": "join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')",
+    "onError": "keep-original",
+    "newColumnName": "PostalAddress",
+    "columnInsertIndex": 5,
+    "description": "Create column PostalAddress at index 5 based on column MINTTIPOVI,C,15 using expression join ([coalesce(cells['MINTTIPOVI,C,15'].value,''),coalesce(cells['MINTNOMBRE,C,254'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "hasIdBycicleParking",
+      "description",
+      "state",
+      "installDate",
+      "PostalAddress"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hasIdBycicleParking",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hasIdBycicleParking using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "description",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column description using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "state",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column state using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "installDate",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column installDate using expression value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column PostalAddress using expression value.toString()"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PostalAddress to type Q79007"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO ACACIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q55947263",
+      "name": "Paseo de las Acacias, Madrid",
+      "types": [
+        "Q787113"
+      ],
+      "score": 79
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de las Acacias, Madrid (Q55947263) for cells containing \"PASEO ACACIAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO PONTONES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26737156",
+      "name": "Paseo de los Pontones",
+      "types": [
+        "Q79007"
+      ],
+      "score": 80
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de los Pontones (Q26737156) for cells containing \"PASEO PONTONES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "RONDA ATOCHA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26831149",
+      "name": "Ronda de Atocha",
+      "types": [
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ronda de Atocha (Q26831149) for cells containing \"RONDA ATOCHA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE JUAN ESPLANDIU",
+    "judgment": "matched",
+    "match": {
+      "id": "Q57719867",
+      "name": "Calle de Juan Esplandiu, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Juan Esplandiu, Madrid (Q57719867) for cells containing \"CALLE JUAN ESPLANDIU\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PLAZA INDEPENDENCIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16620041",
+      "name": "Plaza Independencia",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item Plaza Independencia (Q16620041) for cells containing \"PLAZA INDEPENDENCIA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE LAGASCA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28064981",
+      "name": "Lagasca Street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Lagasca Street (Q28064981) for cells containing \"CALLE LAGASCA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE GOYA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28015873",
+      "name": "Calle de Goya",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Goya (Q28015873) for cells containing \"CALLE GOYA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA TOREROS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29918658",
+      "name": "Avenida de los Toreros, Madrid",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 81
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de los Toreros, Madrid (Q29918658) for cells containing \"AVENIDA TOREROS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO CASTELLANA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1473674",
+      "name": "Paseo de la Castellana",
+      "types": [
+        "Q83620",
+        "Q79007",
+        "Q787113"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de la Castellana (Q1473674) for cells containing \"PASEO CASTELLANA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE PRINCIPE DE VERGARA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5741020",
+      "name": "calle del Príncipe de Vergara",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle del Príncipe de Vergara (Q5741020) for cells containing \"CALLE PRINCIPE DE VERGARA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE SERRANO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740879",
+      "name": "Serrano Street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Serrano Street (Q5740879) for cells containing \"CALLE SERRANO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE JUAN BRAVO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28054647",
+      "name": "Calle de Juan Bravo, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Juan Bravo, Madrid (Q28054647) for cells containing \"CALLE JUAN BRAVO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA PLANETARIO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q17622122",
+      "name": "Avenida del Planetario",
+      "types": [
+        "Q79007",
+        "Q7543083"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida del Planetario (Q17622122) for cells containing \"AVENIDA PLANETARIO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO DELICIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6065662",
+      "name": "Paseo de las Delicias, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de las Delicias, Madrid (Q6065662) for cells containing \"PASEO DELICIAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO EXTREMADURA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6065619",
+      "name": "Paseo de Extremadura",
+      "types": [
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de Extremadura (Q6065619) for cells containing \"PASEO EXTREMADURA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE GENERAL LACY",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27243347",
+      "name": "Calle del General Lacy, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del General Lacy, Madrid (Q27243347) for cells containing \"CALLE GENERAL LACY\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA PABLO IGLESIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28045035",
+      "name": "avenida de Pablo Iglesias",
+      "types": [
+        "Q79007",
+        "Q7543083"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item avenida de Pablo Iglesias (Q28045035) for cells containing \"AVENIDA PABLO IGLESIAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE GOLONDRINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q104145330",
+      "name": "Calle Las Golondrinas",
+      "types": [
+        "Q79007"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle Las Golondrinas (Q104145330) for cells containing \"CALLE GOLONDRINA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE SINESIO DELGADO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q52245452",
+      "name": "Sinesio Delgado Street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Sinesio Delgado Street (Q52245452) for cells containing \"CALLE SINESIO DELGADO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA MONFORTE DE LEMOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q52683954",
+      "name": "Avenida de Monforte de Lemos, Madrid",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Monforte de Lemos, Madrid (Q52683954) for cells containing \"AVENIDA MONFORTE DE LEMOS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE MIRA EL RIO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56121016",
+      "name": "Calle de Mira el Río, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Mira el Río, Madrid (Q56121016) for cells containing \"CALLE MIRA EL RIO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE SOLEDAD CAZORLA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29405102",
+      "name": "Calle de Soledad Cazorla, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Soledad Cazorla, Madrid (Q29405102) for cells containing \"CALLE SOLEDAD CAZORLA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE BLAS CABRERA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29405139",
+      "name": "calle de Blas Cabrera",
+      "types": [
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Blas Cabrera (Q29405139) for cells containing \"CALLE BLAS CABRERA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA POBLADOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26795575",
+      "name": "avenida de los Poblados",
+      "types": [
+        "Q7543083",
+        "Q79007"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item avenida de los Poblados (Q26795575) for cells containing \"AVENIDA POBLADOS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA ASTURIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q30300905",
+      "name": "Avenida de Asturias",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Asturias (Q30300905) for cells containing \"AVENIDA ASTURIAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO DIRECCION",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27043701",
+      "name": "paseo de la Dirección",
+      "types": [
+        "Q787113",
+        "Q79007"
+      ],
+      "score": 83
+    },
+    "shareNewTopics": false,
+    "description": "Match item paseo de la Dirección (Q27043701) for cells containing \"PASEO DIRECCION\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE INFANTA MERCEDES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27044192",
+      "name": "Calle de Infanta Mercedes, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Infanta Mercedes, Madrid (Q27044192) for cells containing \"CALLE INFANTA MERCEDES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE NUESTRA SEÑORA DEL CARMEN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q101419063",
+      "name": "Calle Nuestra Señora Del Carmen",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle Nuestra Señora Del Carmen (Q101419063) for cells containing \"CALLE NUESTRA SEÑORA DEL CARMEN\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA GENERAL PERON",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26761632",
+      "name": "Avenida del General Perón",
+      "types": [
+        "Q79007",
+        "Q7543083"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida del General Perón (Q26761632) for cells containing \"AVENIDA GENERAL PERON\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE GENERAL MOSCARDO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28004664",
+      "name": "Calle de Edgar Neville, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Edgar Neville, Madrid (Q28004664) for cells containing \"CALLE GENERAL MOSCARDO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE MAUDES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26742863",
+      "name": "Calle de Maudes, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 89
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Maudes, Madrid (Q26742863) for cells containing \"CALLE MAUDES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA FILIPINAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28024292",
+      "name": "Avenida de Filipinas, Madrid",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Filipinas, Madrid (Q28024292) for cells containing \"AVENIDA FILIPINAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO SAN FRANCISCO DE SALES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27267304",
+      "name": "Paseo de San Francisco de Sales, Madrid",
+      "types": [
+        "Q79007",
+        "Q787113"
+      ],
+      "score": 95
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de San Francisco de Sales, Madrid (Q27267304) for cells containing \"PASEO SAN FRANCISCO DE SALES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE ISAAC PERAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26791245",
+      "name": "calle de Isaac Peral",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Isaac Peral (Q26791245) for cells containing \"CALLE ISAAC PERAL\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE MELENDEZ VALDES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27031533",
+      "name": "Calle de Meléndez Valdés",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Meléndez Valdés (Q27031533) for cells containing \"CALLE MELENDEZ VALDES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO PINTOR ROSALES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6065691",
+      "name": "Paseo del Pintor Rosales",
+      "types": [
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo del Pintor Rosales (Q6065691) for cells containing \"PASEO PINTOR ROSALES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE SAN BERNARDO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740864",
+      "name": "San Bernardo street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item San Bernardo street (Q5740864) for cells containing \"CALLE SAN BERNARDO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO GENERAL MARTINEZ CAMPOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26792155",
+      "name": "paseo del General Martínez Campos",
+      "types": [
+        "Q79007"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item paseo del General Martínez Campos (Q26792155) for cells containing \"PASEO GENERAL MARTINEZ CAMPOS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE ALMAGRO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26844339",
+      "name": "Calle de Almagro, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Almagro, Madrid (Q26844339) for cells containing \"CALLE ALMAGRO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE MARQUES DE LEGANES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24541576",
+      "name": "Calle del Marqués de Leganés, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Marqués de Leganés, Madrid (Q24541576) for cells containing \"CALLE MARQUES DE LEGANES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE LIBREROS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740961",
+      "name": "Calle de los Libreros, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de los Libreros, Madrid (Q5740961) for cells containing \"CALLE LIBREROS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE VALVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20639924",
+      "name": "calle de Valverde",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Valverde (Q20639924) for cells containing \"CALLE VALVERDE\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO RECOLETOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2550870",
+      "name": "Paseo de Recoletos",
+      "types": [
+        "Q787113"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de Recoletos (Q2550870) for cells containing \"PASEO RECOLETOS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PLAZA SANTO DOMINGO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28502622",
+      "name": "Fuente de la plaza de Santo Domingo",
+      "types": [
+        ""
+      ],
+      "score": 35
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuente de la plaza de Santo Domingo (Q28502622) for cells containing \"PLAZA SANTO DOMINGO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CUESTA SANTO DOMINGO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5794008",
+      "name": "Cuesta de Santo Domingo, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Cuesta de Santo Domingo, Madrid (Q5794008) for cells containing \"CUESTA SANTO DOMINGO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PLAZA SAN MARTIN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6079805",
+      "name": "Plaza San Martín",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Match item Plaza San Martín (Q6079805) for cells containing \"PLAZA SAN MARTIN\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PLAZA ISABEL II",
+    "judgment": "matched",
+    "match": {
+      "id": "Q38506871",
+      "name": "Plaza de Isabel II",
+      "types": [
+        ""
+      ],
+      "score": 45.5
+    },
+    "shareNewTopics": false,
+    "description": "Match item Plaza de Isabel II (Q38506871) for cells containing \"PLAZA ISABEL II\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE SANTA CLARA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q66309888",
+      "name": "Calle Santa Clara",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle Santa Clara (Q66309888) for cells containing \"CALLE SANTA CLARA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE MAYOR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1149052",
+      "name": "Calle Mayor",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle Mayor (Q1149052) for cells containing \"CALLE MAYOR\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE BAILEN",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740811",
+      "name": "calle de Bailén",
+      "types": [
+        "Q79007"
+      ],
+      "score": 89
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Bailén (Q5740811) for cells containing \"CALLE BAILEN\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA GRAN VIA DE SAN FRANCISCO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q32035437",
+      "name": "Gran Vía de San Francisco",
+      "types": [
+        "Q7543083",
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item Gran Vía de San Francisco (Q32035437) for cells containing \"AVENIDA GRAN VIA DE SAN FRANCISCO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PLAZA SANTA ANA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6010427",
+      "name": "Mercado Central (Santa Ana)",
+      "types": [
+        ""
+      ],
+      "score": 30
+    },
+    "shareNewTopics": false,
+    "description": "Match item Mercado Central (Santa Ana) (Q6010427) for cells containing \"PLAZA SANTA ANA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE VALENCIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26810468",
+      "name": "calle de Valencia",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Valencia (Q26810468) for cells containing \"CALLE VALENCIA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE SANTA ISABEL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2882669",
+      "name": "calle de Santa Isabel",
+      "types": [
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Santa Isabel (Q2882669) for cells containing \"CALLE SANTA ISABEL\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE CARLOS ARNICHES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q25410886",
+      "name": "Calle de Carlos Arniches, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Carlos Arniches, Madrid (Q25410886) for cells containing \"CALLE CARLOS ARNICHES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "RONDA VALENCIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16626200",
+      "name": "Ronda de Valencia",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Ronda de Valencia (Q16626200) for cells containing \"RONDA VALENCIA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE MARQUES DE CUBAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q19304646",
+      "name": "calle del Marqués de Cubas",
+      "types": [
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle del Marqués de Cubas (Q19304646) for cells containing \"CALLE MARQUES DE CUBAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE HUERTAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2364997",
+      "name": "Calle de las Huertas, Madrid",
+      "types": [
+        "Q83620",
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de las Huertas, Madrid (Q2364997) for cells containing \"CALLE HUERTAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA ALBUFERA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5714221",
+      "name": "Avenida de la Albufera",
+      "types": [
+        "Q79007",
+        "Q7543083"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de la Albufera (Q5714221) for cells containing \"AVENIDA ALBUFERA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA PABLO NERUDA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q63986285",
+      "name": "Avenida de Pablo Neruda, Madrid",
+      "types": [
+        "Q207934",
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Pablo Neruda, Madrid (Q63986285) for cells containing \"AVENIDA PABLO NERUDA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE TOLOSA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24546100",
+      "name": "calle de las Navas de Tolosa",
+      "types": [
+        "Q79007"
+      ],
+      "score": 65
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de las Navas de Tolosa (Q24546100) for cells containing \"CALLE TOLOSA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE EUGENIA DE MONTIJO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q52833570",
+      "name": "Calle de Eugenia de Montijo, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Eugenia de Montijo, Madrid (Q52833570) for cells containing \"CALLE EUGENIA DE MONTIJO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE ALCOCER",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26833742",
+      "name": "avenida de Alberto Alcocer",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 70
+    },
+    "shareNewTopics": false,
+    "description": "Match item avenida de Alberto Alcocer (Q26833742) for cells containing \"CALLE ALCOCER\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA ANDALUCIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5714182",
+      "name": "Avenida de Andalucía",
+      "types": [
+        "Q79007"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Andalucía (Q5714182) for cells containing \"AVENIDA ANDALUCIA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA SAN LUIS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q54370814",
+      "name": "Avenida de San Luis, Madrid",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de San Luis, Madrid (Q54370814) for cells containing \"AVENIDA SAN LUIS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA ANDES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28997223",
+      "name": "Avenida de los Andes",
+      "types": [
+        "Q7543083",
+        "Q79007"
+      ],
+      "score": 79
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de los Andes (Q28997223) for cells containing \"AVENIDA ANDES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE TELLEZ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740885",
+      "name": "calle de Téllez",
+      "types": [
+        "Q79007"
+      ],
+      "score": 89
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Téllez (Q5740885) for cells containing \"CALLE TELLEZ\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA CIUDAD DE BARCELONA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5714227",
+      "name": "Avenida de la Ciudad de Barcelona, Madrid",
+      "types": [
+        "Q7543083",
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de la Ciudad de Barcelona, Madrid (Q5714227) for cells containing \"AVENIDA CIUDAD DE BARCELONA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO VIRGEN DEL PUERTO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6065659",
+      "name": "Paseo de la Virgen del Puerto, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 88
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de la Virgen del Puerto, Madrid (Q6065659) for cells containing \"PASEO VIRGEN DEL PUERTO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO IMPERIAL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q63229872",
+      "name": "Category:Centro de Salud Paseo Imperial, Madrid",
+      "types": [
+        ""
+      ],
+      "score": 23.5
+    },
+    "shareNewTopics": false,
+    "description": "Match item Category:Centro de Salud Paseo Imperial, Madrid (Q63229872) for cells containing \"PASEO IMPERIAL\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO CHOPERA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27044458",
+      "name": "Paseo de la Chopera, Madrid",
+      "types": [
+        "Q79007",
+        "Q787113"
+      ],
+      "score": 81
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de la Chopera, Madrid (Q27044458) for cells containing \"PASEO CHOPERA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE CORAZON DE MARIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28940875",
+      "name": "Calle del Corazón de María, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Corazón de María, Madrid (Q28940875) for cells containing \"CALLE CORAZON DE MARIA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA CONCHA ESPINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27137943",
+      "name": "avenida de Concha Espina",
+      "types": [
+        "Q79007",
+        "Q7543083"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item avenida de Concha Espina (Q27137943) for cells containing \"AVENIDA CONCHA ESPINA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA DOCTOR FEDERICO RUBIO Y GALI",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26821160",
+      "name": "Avenida del Doctor Federico Rubio y Galí, Madrid",
+      "types": [
+        "Q79007",
+        "Q7543083"
+      ],
+      "score": 95
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida del Doctor Federico Rubio y Galí, Madrid (Q26821160) for cells containing \"AVENIDA DOCTOR FEDERICO RUBIO Y GALI\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE CLAUDIO MOYANO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5794001",
+      "name": "Cuesta de Moyano, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Cuesta de Moyano, Madrid (Q5794001) for cells containing \"CALLE CLAUDIO MOYANO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE ALFONSO XII",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5659170",
+      "name": "Calle de Alfonso XII",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Alfonso XII (Q5659170) for cells containing \"CALLE ALFONSO XII\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO FLORIDA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5576961",
+      "name": "Paseo de la Florida, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 81
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de la Florida, Madrid (Q5576961) for cells containing \"PASEO FLORIDA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE CONDE DE ARANDA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q39585810",
+      "name": "Calle del Conde de Aranda, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Conde de Aranda, Madrid (Q39585810) for cells containing \"CALLE CONDE DE ARANDA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE TRIBULETE",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20021648",
+      "name": "calle del Tribulete",
+      "types": [
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle del Tribulete (Q20021648) for cells containing \"CALLE TRIBULETE\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA SANTO ANGEL DE LA GUARDA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56086839",
+      "name": "Avenida del Santo Ángel de la Guarda, Madrid",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida del Santo Ángel de la Guarda, Madrid (Q56086839) for cells containing \"AVENIDA SANTO ANGEL DE LA GUARDA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO SANTA MARIA DE LA CABEZA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6065630",
+      "name": "Paseo de Santa María de la Cabeza",
+      "types": [
+        "Q79007",
+        "Q787113"
+      ],
+      "score": 95
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de Santa María de la Cabeza (Q6065630) for cells containing \"PASEO SANTA MARIA DE LA CABEZA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA LAS AGUILAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29405114",
+      "name": "Avenida de Las Águilas, Madrid",
+      "types": [
+        "Q7543083",
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Las Águilas, Madrid (Q29405114) for cells containing \"AVENIDA LAS AGUILAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE DUQUE DE NAJERA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q87069512",
+      "name": "Calle del Duque de Nájera",
+      "types": [
+        "Q79007"
+      ],
+      "score": 91
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Duque de Nájera (Q87069512) for cells containing \"CALLE DUQUE DE NAJERA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA MORATALAZ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q104778384",
+      "name": "Avenida de Moratalaz",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Moratalaz (Q104778384) for cells containing \"AVENIDA MORATALAZ\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA LAS FUERZAS ARMADAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29353164",
+      "name": "Avenida de las Fuerzas Armadas, Madrid",
+      "types": [
+        "Q7543083",
+        "Q79007"
+      ],
+      "score": 95
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de las Fuerzas Armadas, Madrid (Q29353164) for cells containing \"AVENIDA LAS FUERZAS ARMADAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PASEO GINEBRA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q56155535",
+      "name": "Paseo de Ginebra, Madrid",
+      "types": [
+        "Q787113"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Paseo de Ginebra, Madrid (Q56155535) for cells containing \"PASEO GINEBRA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE GUADALAJARA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q52063521",
+      "name": "Avenida de Guadalajara, Madrid",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 78
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Guadalajara, Madrid (Q52063521) for cells containing \"CALLE GUADALAJARA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "Avenida Poblados",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26795575",
+      "name": "avenida de los Poblados",
+      "types": [
+        "Q7543083",
+        "Q79007"
+      ],
+      "score": 84
+    },
+    "shareNewTopics": false,
+    "description": "Match item avenida de los Poblados (Q26795575) for cells containing \"Avenida Poblados\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE CAVA ALTA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28051271",
+      "name": "Calle de la Cava Alta, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de la Cava Alta, Madrid (Q28051271) for cells containing \"CALLE CAVA ALTA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE HERNAN CORTES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q25118677",
+      "name": "calle de Hernán Cortés",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Hernán Cortés (Q25118677) for cells containing \"CALLE HERNAN CORTES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE FARMACIA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26809719",
+      "name": "calle de la Farmacia",
+      "types": [
+        "Q79007"
+      ],
+      "score": 85
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de la Farmacia (Q26809719) for cells containing \"CALLE FARMACIA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE SANTA BRIGIDA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27525845",
+      "name": "calle de Santa Brígida",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Santa Brígida (Q27525845) for cells containing \"CALLE SANTA BRIGIDA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE SAN BARTOLOME",
+    "judgment": "matched",
+    "match": {
+      "id": "Q105136626",
+      "name": "Calle de San Bartolomé",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de San Bartolomé (Q105136626) for cells containing \"CALLE SAN BARTOLOME\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE MAGDALENA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q17181780",
+      "name": "Magdalena street",
+      "types": [
+        "Q79007"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item Magdalena street (Q17181780) for cells containing \"CALLE MAGDALENA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CARRERA SAN FRANCISCO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24526469",
+      "name": "carrera de San Francisco",
+      "types": [
+        "Q79007"
+      ],
+      "score": 93
+    },
+    "shareNewTopics": false,
+    "description": "Match item carrera de San Francisco (Q24526469) for cells containing \"CARRERA SAN FRANCISCO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "COSTANILLA CAPUCHINOS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20014268",
+      "name": "Costanilla de los Capuchinos",
+      "types": [
+        "Q79007"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item Costanilla de los Capuchinos (Q20014268) for cells containing \"COSTANILLA CAPUCHINOS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE REINA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28492319",
+      "name": "Calle de la Reina, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 80
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de la Reina, Madrid (Q28492319) for cells containing \"CALLE REINA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE INFANTAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q21004010",
+      "name": "Calle de las Infantas, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 85
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de las Infantas, Madrid (Q21004010) for cells containing \"CALLE INFANTAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE CASINO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q26248358",
+      "name": "Calle del Casino, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Casino, Madrid (Q26248358) for cells containing \"CALLE CASINO\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE FELIPE V",
+    "judgment": "matched",
+    "match": {
+      "id": "Q27050720",
+      "name": "Calle de Felipe V, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle de Felipe V, Madrid (Q27050720) for cells containing \"CALLE FELIPE V\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA AMERICA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q54485645",
+      "name": "Avenida de América",
+      "types": [
+        "Q7543083"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de América (Q54485645) for cells containing \"AVENIDA AMERICA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE GONZALO DE CORDOBA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28733317",
+      "name": "calle de Gonzalo de Córdoba",
+      "types": [
+        "Q79007"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Gonzalo de Córdoba (Q28733317) for cells containing \"CALLE GONZALO DE CORDOBA\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "PLAZA PUERTA DE MOROS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28502422",
+      "name": "Fuente de la plaza de Puerta de Moros",
+      "types": [
+        ""
+      ],
+      "score": 36
+    },
+    "shareNewTopics": false,
+    "description": "Match item Fuente de la plaza de Puerta de Moros (Q28502422) for cells containing \"PLAZA PUERTA DE MOROS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "AVENIDA VALLADOLID",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29903461",
+      "name": "Avenida de Valladolid, Madrid",
+      "types": [
+        "Q7543083",
+        "Q79007"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item Avenida de Valladolid, Madrid (Q29903461) for cells containing \"AVENIDA VALLADOLID\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE AMANIEL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24694982",
+      "name": "calle de Amaniel",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Amaniel (Q24694982) for cells containing \"CALLE AMANIEL\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE CARRETAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5740952",
+      "name": "calle de Carretas",
+      "types": [
+        "Q79007"
+      ],
+      "score": 90
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de Carretas (Q5740952) for cells containing \"CALLE CARRETAS\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE REYES",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20908841",
+      "name": "calle de los Reyes",
+      "types": [
+        "Q79007"
+      ],
+      "score": 76
+    },
+    "shareNewTopics": false,
+    "description": "Match item calle de los Reyes (Q20908841) for cells containing \"CALLE REYES\" in column PostalAddress"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PostalAddress",
+    "similarValue": "CALLE OLIVAR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20021057",
+      "name": "Calle del Olivar, Madrid",
+      "types": [
+        "Q79007"
+      ],
+      "score": 86
+    },
+    "shareNewTopics": false,
+    "description": "Match item Calle del Olivar, Madrid (Q20021057) for cells containing \"CALLE OLIVAR\" in column PostalAddress"
+  }
+]

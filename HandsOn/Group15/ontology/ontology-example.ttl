@@ -15,6 +15,7 @@
 	:neighborhoodName "01-01-PALACIO"^^xsd:string .
 
 "Via_CALLE-DE-LAS-AGUAS" rdf:type class:Via ; 
-	:ViaName "CALLE-DE-LAS-AGUAS"^^xsd:string .
+	:viaName "CALLE-DE-LAS-AGUAS"^^xsd:string ;
+	:viaNumber "1" ^^xsd:integer .
 
 

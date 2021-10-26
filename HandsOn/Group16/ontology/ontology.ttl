@@ -1,123 +1,106 @@
-@prefix : <http://www.reciclajemadrid.com/Ontology/> .
+@prefix cls: <http://www.reciclajemadrid.com#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.reciclajemadrid.com/Ontology/> .
+@prefix vocab: <http://www.reciclajemadrid.com/resources/> .
+@base <http://www.reciclajemadrid.com> .
 
-<http://www.reciclajemadrid.com/Ontology/> rdf:type owl:Ontology .
+<http://www.reciclajemadrid.com> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.reciclajemadrid.com/Ontology/tieneCoordenadas
-:tieneCoordenadas rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Contenedor ,
-                              :PuntoLimpioFijo ,
-                              :PuntoLimpioMovil .
+###  http://www.reciclajemadrid.com/resources/tieneCoordenadas
+vocab:tieneCoordenadas rdf:type owl:ObjectProperty ;
+                       rdfs:domain :RecogidaResiduos .
 
 
-###  http://www.reciclajemadrid.com/Ontology/tieneDireccion
-:tieneDireccion rdf:type owl:ObjectProperty ;
-                rdfs:domain :Contenedor ,
-                            :PuntoLimpioFijo ,
-                            :PuntoLimpioMovil .
+###  http://www.reciclajemadrid.com/resources/tieneDireccion
+vocab:tieneDireccion rdf:type owl:ObjectProperty ;
+                     rdfs:domain :RecogidaResiduos .
 
 
-###  http://www.reciclajemadrid.com/Ontology/tieneHorario
-:tieneHorario rdf:type owl:ObjectProperty ;
-              rdfs:domain :PuntoLimpioFijo ,
-                          :PuntoLimpioMovil .
+###  http://www.reciclajemadrid.com/resources/tieneHorario
+vocab:tieneHorario rdf:type owl:ObjectProperty ;
+                   rdfs:domain :PuntoLimpio .
 
 
-###  http://www.reciclajemadrid.com/Ontology/tipoResiduo
-:tipoResiduo rdf:type owl:ObjectProperty ;
-             rdfs:domain :Contenedor .
+###  http://www.reciclajemadrid.com/resources/tipoResiduo
+vocab:tipoResiduo rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Contenedor .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.reciclajemadrid.com/Ontology/codigoInterno
-:codigoInterno rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Contenedor ;
+###  http://www.reciclajemadrid.com/resources/codigoInterno
+vocab:codigoInterno rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Contenedor ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.reciclajemadrid.com/resources/coordX
+vocab:coordX rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RecogidaResiduos ;
+             rdfs:range xsd:double .
+
+
+###  http://www.reciclajemadrid.com/resources/coordY
+vocab:coordY rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RecogidaResiduos ;
+             rdfs:range xsd:double .
+
+
+###  http://www.reciclajemadrid.com/resources/dirCompleta
+vocab:dirCompleta rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :PuntoLimpioMovil ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.reciclajemadrid.com/resources/distrito
+vocab:distrito rdf:type owl:DatatypeProperty ;
+               rdfs:domain :RecogidaResiduos ;
                rdfs:range xsd:string .
 
 
-###  http://www.reciclajemadrid.com/Ontology/coordX
-:coordX rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Contenedor ,
-                    :PuntoLimpioFijo ,
-                    :PuntoLimpioMovil ;
-        rdfs:range xsd:double .
+###  http://www.reciclajemadrid.com/resources/horario
+vocab:horario rdf:type owl:DatatypeProperty ;
+              rdfs:domain :PuntoLimpio ;
+              rdfs:range xsd:string .
 
 
-###  http://www.reciclajemadrid.com/Ontology/coordY
-:coordY rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Contenedor ,
-                    :PuntoLimpioFijo ,
-                    :PuntoLimpioMovil ;
-        rdfs:range xsd:double .
+###  http://www.reciclajemadrid.com/resources/nombreVia
+vocab:nombreVia rdf:type owl:DatatypeProperty ;
+                rdfs:domain :RecogidaResiduos ;
+                rdfs:range xsd:string .
 
 
-###  http://www.reciclajemadrid.com/Ontology/dirCompleta
-:dirCompleta rdf:type owl:DatatypeProperty ;
-             rdfs:domain :PuntoLimpioMovil ;
-             rdfs:range xsd:string .
+###  http://www.reciclajemadrid.com/resources/numeroVia
+vocab:numeroVia rdf:type owl:DatatypeProperty ;
+                rdfs:domain :RecogidaResiduos ;
+                rdfs:range xsd:string .
 
 
-###  http://www.reciclajemadrid.com/Ontology/distrito
-:distrito rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Contenedor ,
-                      :PuntoLimpioFijo ,
-                      :PuntoLimpioMovil ;
-          rdfs:range xsd:string .
-
-
-###  http://www.reciclajemadrid.com/Ontology/horario
-:horario rdf:type owl:DatatypeProperty ;
-         rdfs:domain :PuntoLimpioFijo ,
-                     :PuntoLimpioMovil ;
+###  http://www.reciclajemadrid.com/resources/pk
+vocab:pk rdf:type owl:DatatypeProperty ;
+         rdfs:domain :PuntoLimpioFijo ;
          rdfs:range xsd:string .
 
 
-###  http://www.reciclajemadrid.com/Ontology/nombreVia
-:nombreVia rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Contenedor ,
-                       :PuntoLimpioFijo ,
-                       :PuntoLimpioMovil ;
-           rdfs:range xsd:string .
+###  http://www.reciclajemadrid.com/resources/residuo
+vocab:residuo rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Contenedor ;
+              rdfs:range xsd:string .
 
 
-###  http://www.reciclajemadrid.com/Ontology/numeroVia
-:numeroVia rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Contenedor ,
-                       :PuntoLimpioFijo ,
-                       :PuntoLimpioMovil ;
-           rdfs:range xsd:string .
-
-
-###  http://www.reciclajemadrid.com/Ontology/pk
-:pk rdf:type owl:DatatypeProperty ;
-    rdfs:domain :PuntoLimpioFijo ;
-    rdfs:range xsd:string .
-
-
-###  http://www.reciclajemadrid.com/Ontology/residuo
-:residuo rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Contenedor ;
-         rdfs:range xsd:string .
-
-
-###  http://www.reciclajemadrid.com/Ontology/tipoVia
-:tipoVia rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Contenedor ,
-                     :PuntoLimpioFijo ,
-                     :PuntoLimpioMovil ;
-         rdfs:range xsd:string .
+###  http://www.reciclajemadrid.com/resources/tipoVia
+vocab:tipoVia rdf:type owl:DatatypeProperty ;
+              rdfs:domain :RecogidaResiduos ;
+              rdfs:range xsd:string .
 
 
 ###  http://www.w3.org/2002/07/owl#topDataProperty
@@ -131,22 +114,28 @@ owl:topDataProperty rdfs:domain :Contenedor ,
 #    Classes
 #################################################################
 
-###  http://www.reciclajemadrid.com/Ontology/Contenedor
-:Contenedor rdf:type owl:Class .
+###  http://www.reciclajemadrid.com#Contenedor
+cls:Contenedor rdf:type owl:Class ;
+            rdfs:subClassOf :RecogidaResiduos .
 
 
-###  http://www.reciclajemadrid.com/Ontology/PuntoLimpio
-:PuntoLimpio rdf:type owl:Class .
+###  http://www.reciclajemadrid.com#PuntoLimpio
+cls:PuntoLimpio rdf:type owl:Class ;
+             rdfs:subClassOf :RecogidaResiduos .
 
 
-###  http://www.reciclajemadrid.com/Ontology/PuntoLimpioFijo
-:PuntoLimpioFijo rdf:type owl:Class ;
+###  http://www.reciclajemadrid.com#PuntoLimpioFijo
+cls:PuntoLimpioFijo rdf:type owl:Class ;
                  rdfs:subClassOf :PuntoLimpio .
 
 
-###  http://www.reciclajemadrid.com/Ontology/PuntoLimpioMovil
-:PuntoLimpioMovil rdf:type owl:Class ;
+###  http://www.reciclajemadrid.com#PuntoLimpioMovil
+cls:PuntoLimpioMovil rdf:type owl:Class ;
                   rdfs:subClassOf :PuntoLimpio .
+
+
+###  http://www.reciclajemadrid.com#RecogidaResiduos
+cls:RecogidaResiduos rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

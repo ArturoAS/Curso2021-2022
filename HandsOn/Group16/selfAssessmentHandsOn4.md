@@ -1,22 +1,31 @@
-# Hands-on assignment 1 – Self assessment
+# Hands-on assignment 4 – Self assessment
 
 ## Checklist
 
-**The “README.md” file:**
+**Every RDF file:**
 
-- [x] Includes the names and GitHub users of all the members of the group
+- [X] Uses the .nt extension
+- [X] Is serialized in the NTriples format
+- [X] Follows the resource naming strategy
+- [X] Uses class and property URIs that are the same as those used in the ontology
 
-**The "csv" directory:**
+**Every URI in the RDF files:**
 
-- [x] Contains at least one CSV file
-- [x] The CSV files belong to one of the selected domains
+- [X] Is "readable" and has some meaning (e.g., it is not an auto-increased integer) 
+- [ ] Is not encoded as a string
+- [X] Does not contain a double slash (i.e., “//”)
 
-**The "datasetRequirements.html" file:**
+**Every individual in the RDF files:**
 
-- [x] Identifies the licenses of all the selected datasets
-- [x] Identifies those entities in the selected datasets that can be linked with entities in other datasets
-- [x] Identifies those entities in other datasets that can be linked with entities in the selected datasets
+- [X] Has a label with the name of the individual
+- [X] Has a type
 
-**The "applicationRequirements.html” file:**
+**Every value in the RDF files:**
 
-- [x] Includes a description of the application user interface
+- [X] Is trimmed
+- [ ] Is properly encoded (e.g., dates, booleans)
+- [X] Includes its datatype
+- [ ] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
+
+## Comments on the self-assessment
+No hemos podido hacer el mapping con el csv de contenedores, porque cuando intentabamos hacer mas de 250-300 a la vez no nos sacaba nada por la salida (y esperamos alrededor de media hora a que acabara). Tenemos alrededor de 35000 filas en el csv, por lo que es inviable ir haciendolo poco a poco. Querriamos verlo mañana en clase si fuera posible.

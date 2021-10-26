@@ -1,0 +1,165 @@
+@base <http://parquimetrosdemadrid.com/>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ex: <http://example.org#> .
+@prefix prop: <http://parquimetrosdemadrid.com/Properties#>.
+@prefix class: <http://parquimetrosdemadrid.com/Classes#>.
+
+
+
+<#ParkingMeterMap1> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./data/parquimetros-update2.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+
+    rr:subjectMap [
+        rr:template "http://parquimetrosdemadrid.com/ParkingMeter#{matricula}";
+        rr:termType rr:IRI;
+        rr:class class:ParkingMeter
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant prop:locatedDistrict;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:parentTriplesMap <#ParkingMeterMap2>;
+            rr:joinCondition [
+                rr:child "matricula"; rr:parent "matricula";
+                ]
+            ]
+            ];
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant prop:locatedNeighborhood;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:parentTriplesMap <#ParkingMeterMap3>;
+            rr:joinCondition [
+                rr:child "matricula"; rr:parent "matricula";
+                ]
+            ]
+            ];
+
+    rr:predicateObjectMap [
+        rr:predicateMap [
+            rr:constant prop:locatedVia;
+            rr:termType rr:IRI
+        ];
+        rr:objectMap [
+            rr:parentTriplesMap <#ParkingMeterMap4>;
+            rr:joinCondition [
+                rr:child "matricula"; rr:parent "matricula";
+                ]
+            ]
+            ];
+
+
+
+
+    rr:predicateObjectMap [
+       rr:predicate prop:gis_X;
+        rr:objectMap [
+            rml:reference "gis_x"; 
+            rr:datatype xsd:float;
+        ]
+    ];
+
+    rr:predicateObjectMap [
+       rr:predicate prop:gis_Y;
+        rr:objectMap [
+            rml:reference "gis_y"; 
+            rr:datatype xsd:float;
+        ]
+    ];
+
+
+    rr:predicateObjectMap [
+       rr:predicate prop:releaseData;
+        rr:objectMap [
+            rml:reference "fecha_alta"; 
+             rr:datatype xsd:date;
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate prop:licensePlate; 
+        rr:objectMap [
+            rml:reference "matricula"; 
+            rr:datatype xsd:string;
+        ]
+    ].
+
+
+
+<#ParkingMeterMap2> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./data/parquimetros-update2.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "http://parquimetrosdemadrid.com/District#{distrito}";
+        rr:termType rr:IRI;
+        rr:class class:District
+    ];
+
+    rr:predicateObjectMap [
+       rr:predicate prop:locatedDistrict ;
+        rr:objectMap [
+            rml:reference "distrito"; 
+            rr:datatype xsd:string;
+        ]
+    ].
+
+<#ParkingMeterMap3> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./data/parquimetros-update2.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "http://parquimetrosdemadrid.com/Neighborhood#{barrio}";
+        rr:termType rr:IRI;
+        rr:class class:Neighborhood
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate prop:neighborhoodName; 
+        rr:objectMap [
+            rml:reference "barrio"; 
+            rr:datatype xsd:string;
+        ]
+    ].
+
+<#ParkingMeterMap4> a rr:TriplesMap;
+    rml:logicalSource [
+        rml:source "./data/parquimetros-update2.csv" ;
+        rml:referenceFormulation ql:CSV 
+    ];
+    rr:subjectMap [
+        rr:template "http://parquimetrosdemadrid.com/Via#{via}";
+        rr:termType rr:IRI;
+        rr:class class:Via
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate prop:viaName;
+        rr:objectMap [
+            rml:reference "via"; 
+            rr:datatype xsd:string;
+        ]
+    ];
+
+rr:predicateObjectMap [
+        rr:predicate prop:viaNumber; 
+        rr:objectMap [
+            rml:reference "num_finca"; 
+            rr:datatype xsd:string;
+        ]
+    ].

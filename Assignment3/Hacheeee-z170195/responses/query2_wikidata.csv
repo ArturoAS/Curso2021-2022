@@ -1,0 +1,48 @@
+property,propertyname
+http://www.wikidata.org/entity/P18,imagen
+http://www.wikidata.org/entity/P19,lugar de nacimiento
+http://www.wikidata.org/entity/P21,sexo o género
+http://www.wikidata.org/entity/P22,padre
+http://www.wikidata.org/entity/P25,madre
+http://www.wikidata.org/entity/P26,cónyuge
+http://www.wikidata.org/entity/P27,país de nacionalidad
+http://www.wikidata.org/entity/P39,cargo ocupado
+http://www.wikidata.org/entity/P40,hijo o hija
+http://www.wikidata.org/entity/P69,educado en
+http://www.wikidata.org/entity/P101,campo de trabajo
+http://www.wikidata.org/entity/P102,miembro del partido político
+http://www.wikidata.org/entity/P103,lengua materna
+http://www.wikidata.org/entity/P106,ocupación
+http://www.wikidata.org/entity/P140,religión
+http://www.wikidata.org/entity/P166,premio recibido
+http://www.wikidata.org/entity/P172,etnia
+http://www.wikidata.org/entity/P463,miembro de
+http://www.wikidata.org/entity/P512,grado académico
+http://www.wikidata.org/entity/P551,residencia
+http://www.wikidata.org/entity/P552,lateralidad
+http://www.wikidata.org/entity/P569,fecha de nacimiento
+http://www.wikidata.org/entity/P570,fecha de fallecimiento
+http://www.wikidata.org/entity/P742,seudónimo
+http://www.wikidata.org/entity/P768,circunscripción electoral
+http://www.wikidata.org/entity/P793,evento significativo
+http://www.wikidata.org/entity/P856,página web oficial
+http://www.wikidata.org/entity/P937,lugar de trabajo
+http://www.wikidata.org/entity/P968,correo electrónico
+http://www.wikidata.org/entity/P973,descrito en la URL
+http://www.wikidata.org/entity/P1038,pariente
+http://www.wikidata.org/entity/P1411,nominado a
+http://www.wikidata.org/entity/P1412,"lenguas habladas, escritas o signadas"
+http://www.wikidata.org/entity/P1449,sobrenombre
+http://www.wikidata.org/entity/P1559,nombre en el idioma nativo
+http://www.wikidata.org/entity/P1581,blog oficial
+http://www.wikidata.org/entity/P1814,nombre en kana
+http://www.wikidata.org/entity/P1853,grupo sanguíneo
+http://www.wikidata.org/entity/P1889,diferente de
+http://www.wikidata.org/entity/P1971,número de hijos
+http://www.wikidata.org/entity/P2002,nombre de usuario en Twitter
+http://www.wikidata.org/entity/P2003,nombre de usuario de Instagram
+http://www.wikidata.org/entity/P2013,identificador en Facebook
+http://www.wikidata.org/entity/P2048,altura
+http://www.wikidata.org/entity/P2067,masa
+http://www.wikidata.org/entity/P3373,hermano o hermana
+http://www.wikidata.org/entity/P3602,candidato en la elección

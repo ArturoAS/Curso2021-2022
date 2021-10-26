@@ -1,0 +1,901 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "desc_distrito_local",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column desc_distrito_local to type Q3032114"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "desc_barrio_local",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column desc_barrio_local to type Q10267336"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "desc_barrio_local",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CASCO-H.BARAJAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASCO-HISTORICO-BARAJAS"
+      }
+    ],
+    "description": "Mass edit cells in column desc_barrio_local"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "desc_barrio_local",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CASCO-H.VICALVARO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASCO-HISTORICO-VICALVARO"
+      }
+    ],
+    "description": "Mass edit cells in column desc_barrio_local"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "desc_barrio_local",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CASCO-H.VALLECAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CASCO-HISTORICO-VALLECAS"
+      }
+    ],
+    "description": "Mass edit cells in column desc_barrio_local"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "desc_barrio_local",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wdreconcile.toolforge.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column desc_barrio_local to type Q10267336"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "desc_barrio_local",
+    "similarValue": "CASCO-HISTORICO-VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544370",
+      "name": "Casco Histórico de Vallecas",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Vallecas (Q16544370) for cells containing \"CASCO-HISTORICO-VALLECAS\" in column desc_barrio_local"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "desc_barrio_local",
+          "expression": "value",
+          "columnName": "desc_barrio_local",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CASCO-HISTORICO-VICALVARO",
+                "l": "CASCO-HISTORICO-VICALVARO"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "desc_barrio_local",
+    "similarValue": "CASCO-HISTORICO-VICALVARO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544374",
+      "name": "Casco Histórico de Vicálvaro",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Vicálvaro (Q16544374) for cells containing \"CASCO-HISTORICO-VICALVARO\" in column desc_barrio_local"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "desc_barrio_local",
+          "expression": "value",
+          "columnName": "desc_barrio_local",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CASCO-HISTORICO-BARAJAS",
+                "l": "CASCO-HISTORICO-BARAJAS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "desc_barrio_local",
+    "similarValue": "CASCO-HISTORICO-BARAJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q9701730",
+      "name": "Casco Histórico de Barajas",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 94
+    },
+    "shareNewTopics": false,
+    "description": "Match item Casco Histórico de Barajas (Q9701730) for cells containing \"CASCO-HISTORICO-BARAJAS\" in column desc_barrio_local"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "desc_barrio_local: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "desc_barrio_local",
+          "from": 50,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "list",
+          "name": "desc_barrio_local",
+          "expression": "value",
+          "columnName": "desc_barrio_local",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "CASCO-HISTORICO-BARAJAS",
+                "l": "CASCO-HISTORICO-BARAJAS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "desc_distrito_local",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" +cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "distritos_wikidata",
+    "columnInsertIndex": 2,
+    "description": "Create column distritos_wikidata at index 2 based on column desc_distrito_local using expression grel:\"https://www.wikidata.org/wiki/\" +cell.recon.match.id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "distritos_wikidata",
+    "description": "Remove column distritos_wikidata"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "desc_distrito_local",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" +cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "distritos_wikidata",
+    "columnInsertIndex": 2,
+    "description": "Create column distritos_wikidata at index 2 based on column desc_distrito_local using expression grel:\"https://www.wikidata.org/wiki/\" +cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "hora_ini_LJ_ra",
+          "expression": "isBlank(value)",
+          "columnName": "hora_ini_LJ_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "mesas_ra",
+          "expression": "isBlank(value)",
+          "columnName": "mesas_ra",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "barrios_wikidata",
+          "expression": "value",
+          "columnName": "barrios_wikidata",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "desc_barrio_local",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" +cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "barrios_wikidata",
+    "columnInsertIndex": 4,
+    "description": "Create column barrios_wikidata at index 4 based on column desc_barrio_local using expression grel:\"https://www.wikidata.org/wiki/\" +cell.recon.match.id"
+  }
+]

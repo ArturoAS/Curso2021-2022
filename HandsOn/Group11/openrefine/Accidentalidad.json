@@ -1,0 +1,584 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "FECHA",
+    "expression": "join ([coalesce(cells['FECHA'].value,''),coalesce(cells['HORA'].value,'')],'-')",
+    "onError": "keep-original",
+    "newColumnName": "FECHA/HORA",
+    "columnInsertIndex": 2,
+    "description": "Create column FECHA/HORA at index 2 based on column FECHA using expression join ([coalesce(cells['FECHA'].value,''),coalesce(cells['HORA'].value,'')],'-')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FECHA/HORA",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FECHA/HORA using expression value.toDate()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "FECHA",
+    "description": "Remove column FECHA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "HORA",
+    "description": "Remove column HORA"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº  EXPEDIENTE",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº  EXPEDIENTE using expression value.toString()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Nº  EXPEDIENTE",
+    "newColumnName": "NUM_ EXPEDIENTE",
+    "description": "Rename column Nº  EXPEDIENTE to NUM_ EXPEDIENTE"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CALLE using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NÚMERO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NÚMERO using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRITO using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO ACCIDENTE",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO ACCIDENTE using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTADO METEREOLÓGICO",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ESTADO METEREOLÓGICO using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO VEHÍCULO",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO VEHÍCULO using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO PERSONA",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO PERSONA using expression value.toString()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "RANGO DE EDAD",
+    "newColumnName": "RANGO EDAD",
+    "description": "Rename column RANGO DE EDAD to RANGO EDAD"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RANGO EDAD",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RANGO EDAD using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SEXO",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column SEXO using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LESIVIDAD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LESIVIDAD using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUM_ EXPEDIENTE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NUM_ EXPEDIENTE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "FECHA/HORA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column FECHA/HORA using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CALLE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NÚMERO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column NÚMERO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRITO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO ACCIDENTE",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO ACCIDENTE using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESTADO METEREOLÓGICO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ESTADO METEREOLÓGICO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO VEHÍCULO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO VEHÍCULO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPO PERSONA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column TIPO PERSONA using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RANGO EDAD",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RANGO EDAD using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SEXO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column SEXO using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LESIVIDAD",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LESIVIDAD using expression value.trim()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NUM_ EXPEDIENTE",
+    "newColumnName": "NUM_EXPEDIENTE",
+    "description": "Rename column NUM_ EXPEDIENTE to NUM_EXPEDIENTE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPO ACCIDENTE",
+    "newColumnName": "TIPO_ACCIDENTE",
+    "description": "Rename column TIPO ACCIDENTE to TIPO_ACCIDENTE"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESTADO METEREOLÓGICO",
+    "newColumnName": "ESTADO_METEREOLÓGICO",
+    "description": "Rename column ESTADO METEREOLÓGICO to ESTADO_METEREOLÓGICO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPO VEHÍCULO",
+    "newColumnName": "TIPO_VEHÍCULO",
+    "description": "Rename column TIPO VEHÍCULO to TIPO_VEHÍCULO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPO PERSONA",
+    "newColumnName": "TIPO_PERSONA",
+    "description": "Rename column TIPO PERSONA to TIPO_PERSONA"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "RANGO EDAD",
+    "newColumnName": "RANGO_EDAD",
+    "description": "Rename column RANGO EDAD to RANGO_EDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NÚMERO",
+    "newColumnName": "NUMERO",
+    "description": "Rename column NÚMERO to NUMERO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ESTADO_METEREOLÓGICO",
+    "newColumnName": "ESTADO_METEREOLOGICO",
+    "description": "Rename column ESTADO_METEREOLÓGICO to ESTADO_METEREOLOGICO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "TIPO_VEHÍCULO",
+    "newColumnName": "TIPO_VEHICULO",
+    "description": "Rename column TIPO_VEHÍCULO to TIPO_VEHICULO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "FECHA/HORA",
+    "newColumnName": "FECHA",
+    "description": "Rename column FECHA/HORA to FECHA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ESTADO_METEREOLOGICO",
+    "description": "Remove column ESTADO_METEREOLOGICO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO_VEHICULO",
+    "description": "Remove column TIPO_VEHICULO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LESIVIDAD",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": 0
+      }
+    ],
+    "description": "Mass edit cells in column LESIVIDAD"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUMERO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "-"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": 0
+      }
+    ],
+    "description": "Mass edit cells in column NUMERO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SEXO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "Desconocido"
+      }
+    ],
+    "description": "Mass edit cells in column SEXO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CALLE",
+    "expression": "value.replace(\",\",\".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CALLE using expression value.replace(\",\",\".\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "id",
+    "newColumnName": "ID",
+    "description": "Rename column id to ID"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value.replace(\"Á\",\"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRITO using expression value.replace(\"Á\",\"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value.replace(\"Í\",\"I\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DISTRITO using expression value.replace(\"Í\",\"I\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FUENCARRAL-EL PARDO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FUENCARRAL - EL PARDO"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MONCLOA-ARAVACA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MONCLOA - ARAVACA"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SAN BLAS-CANILLEJAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SAN BLAS - CANILLEJAS"
+      }
+    ],
+    "description": "Mass edit cells in column DISTRITO"
+  }
+]

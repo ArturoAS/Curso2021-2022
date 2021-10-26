@@ -492,4 +492,16 @@
     },
     "description": "Remove rows"
   }
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número",
+    "newColumnName": "Numero",
+    "description": "Rename column Número to Numero"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Tipo Vía",
+    "newColumnName": "Tipo Via",
+    "description": "Rename column Tipo Vía to Tipo Via"
+  }
 ]

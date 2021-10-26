@@ -1,0 +1,635 @@
+[
+    {
+        "op": "core/column-removal",
+        "columnName": "img_id",
+        "description": "Remove column img_id"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "img_width",
+        "description": "Remove column img_width"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "img_height",
+        "description": "Remove column img_height"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "img_file",
+        "description": "Remove column img_file"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "cat_id",
+        "description": "Remove column cat_id"
+    },
+    {
+        "op": "core/column-move",
+        "columnName": "ann_id",
+        "index": 0,
+        "description": "Move column ann_id to position 0"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "x",
+        "description": "Remove column x"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "y",
+        "description": "Remove column y"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "width",
+        "description": "Remove column width"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "height",
+        "description": "Remove column height"
+    },
+    {
+        "op": "core/column-removal",
+        "columnName": "area",
+        "description": "Remove column area"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value.replace(/\\bBottle cap\\b/,\"Envase\")",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column supercategory using expression value.replace(/\\bBottle cap\\b/,\"Envase\")"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value.replace(/\\bBottle\\b/,\"Envase\")",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column supercategory using expression value.replace(/\\bBottle\\b/,\"Envase\")"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value.replace(/\\bEnvase\\b/,\"Plastic\")",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column supercategory using expression value.replace(/\\bEnvase\\b/,\"Plastic\")"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Plastic bag & wrapper"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plastic"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Other plastic"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plastic"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Plastic container"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plastic"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Aluminium foil"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Battery"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Blister pack"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Broken glass"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Can"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Carton"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Cigarette"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Cup"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Food waste"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Glass jar"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Lid"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Paper"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Paper bag"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Plastic glooves"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plastic"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Plastic utensils"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "Plastic"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Pop tab"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Rope & strings"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Scrap metal"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Shoe"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Squeezable tube"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Straw"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Styrofoam piece"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/mass-edit",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "supercategory",
+        "expression": "value",
+        "edits": [
+            {
+                "from": [
+                    "Unlabeled litter"
+                ],
+                "fromBlank": false,
+                "fromError": false,
+                "to": "General"
+            }
+        ],
+        "description": "Mass edit cells in column supercategory"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "supercategory",
+        "newColumnName": "WasteType",
+        "description": "Rename column supercategory to WasteType"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "cat_name",
+        "newColumnName": "Product",
+        "description": "Rename column cat_name to Product"
+    },
+    {
+        "op": "core/column-rename",
+        "oldColumnName": "ann_id",
+        "newColumnName": "id",
+        "description": "Rename column ann_id to id"
+    }
+]

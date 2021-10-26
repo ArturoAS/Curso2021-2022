@@ -1,0 +1,188 @@
+[
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "PROVINCIA",
+      "newColumnName": "id_provincia",
+      "description": "Rename column PROVINCIA to id_provincia"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "id_provincia",
+      "expression": "grel:\"Comunidad de Madrid\"",
+      "onError": "set-to-blank",
+      "newColumnName": "PROVINCIA",
+      "columnInsertIndex": 2,
+      "description": "Create column PROVINCIA at index 2 based on column id_provincia using expression grel:\"Comunidad de Madrid\""
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "MUNICIPIO",
+      "newColumnName": "id_municipio",
+      "description": "Rename column MUNICIPIO to id_municipio"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "id_municipio",
+      "expression": "grel:\"Madrid\"",
+      "onError": "set-to-blank",
+      "newColumnName": "MUNICIPIO",
+      "columnInsertIndex": 4,
+      "description": "Create column MUNICIPIO at index 4 based on column id_municipio using expression grel:\"Madrid\""
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "ESTACION",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column ESTACION using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "id_municipio",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column id_municipio using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "id_provincia",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column id_provincia using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "MAGNITUD",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column MAGNITUD using expression value.toNumber()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DATE",
+      "expression": "value.toDate()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column DATE using expression value.toDate()"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "D01",
+      "expression": "value.toNumber()",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column D01 using expression value.toNumber()"
+    },
+    {
+      "op": "core/recon",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "MUNICIPIO",
+      "config": {
+        "mode": "standard-service",
+        "service": "https://wdreconcile.toolforge.org/en/api",
+        "identifierSpace": "http://www.wikidata.org/entity/",
+        "schemaSpace": "http://www.wikidata.org/prop/direct/",
+        "type": {
+          "id": "Q2074737",
+          "name": "municipality of Spain"
+        },
+        "autoMatch": true,
+        "columnDetails": [],
+        "limit": 0
+      },
+      "description": "Reconcile cells in column MUNICIPIO to type Q2074737"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "MUNICIPIO",
+      "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+      "onError": "set-to-blank",
+      "newColumnName": "same_as_wikidata_municipio",
+      "columnInsertIndex": 5,
+      "description": "Create column same_as_wikidata_municipio at index 5 based on column MUNICIPIO using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    },
+    {
+      "op": "core/recon",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "PROVINCIA",
+      "config": {
+        "mode": "standard-service",
+        "service": "https://wdreconcile.toolforge.org/en/api",
+        "identifierSpace": "http://www.wikidata.org/entity/",
+        "schemaSpace": "http://www.wikidata.org/prop/direct/",
+        "type": {
+          "id": "Q10742",
+          "name": "autonomous community of Spain"
+        },
+        "autoMatch": true,
+        "columnDetails": [],
+        "limit": 0
+      },
+      "description": "Reconcile cells in column PROVINCIA to type Q10742"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "PROVINCIA",
+      "expression": "grel:\"https://wikidata.org/entity/\"+cell.recon.match.id",
+      "onError": "set-to-blank",
+      "newColumnName": "same_as_wikidata_provincia",
+      "columnInsertIndex": 3,
+      "description": "Create column same_as_wikidata_provincia at index 3 based on column PROVINCIA using expression grel:\"https://wikidata.org/entity/\"+cell.recon.match.id"
+    }
+  ]

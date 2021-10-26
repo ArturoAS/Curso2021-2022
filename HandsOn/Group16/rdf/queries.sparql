@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cls: <http://www.reciclajemadrid.com#>
+PREFIX vocab: <http://www.reciclajemadrid.com/resources/>
+
+SELECT DISTINCT ?residuo  WHERE {
+  ?contenedor vocab:residuo ?residuo.
+} 
+
+SELECT ?pk  WHERE {
+  ?pFijo vocab:pk ?pk.
+} 
+
+SELECT ?dirCompleta  WHERE {
+  ?pMovil vocab:dirCompleta ?dirCompleta.
+} 

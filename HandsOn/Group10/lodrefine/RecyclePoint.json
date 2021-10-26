@@ -1,0 +1,619 @@
+[
+    {
+      "op": "core/row-removal",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "DATA_TYPE",
+            "expression": "value",
+            "columnName": "DATA_TYPE",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "DATA_TYPE",
+                  "l": "DATA_TYPE"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "description": "Remove rows"
+    },
+    {
+      "op": "core/row-removal",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "DATA_TYPE",
+            "expression": "value",
+            "columnName": "DATA_TYPE",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [],
+            "selectBlank": true,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "description": "Remove rows"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "CENTER",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Centro Deportivo Municipal  Marqués de Samaranch",
+            "Centro Deportivo Municipal \"Marqués de Samaranch\""
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Centro Deportivo Municipal Marqués de Samaranch"
+        },
+        {
+          "from": [
+            "Vía Pública",
+            "Vía pública"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Vía Pública"
+        },
+        {
+          "from": [
+            "Centro Integrado Teresa De Calcuta",
+            "Centro Integrado Teresa de Calcuta"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Centro Integrado Teresa De Calcuta"
+        },
+        {
+          "from": [
+            "Centro Cultural \"Alfredo Kraus\"",
+            "Centro Cultural Alfredo Kraus"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Centro Cultural \"Alfredo Kraus\""
+        }
+      ],
+      "description": "Mass edit cells in column CENTER"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "ROAD_TYPE",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Avenida",
+            "AVENIDA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Avenida"
+        },
+        {
+          "from": [
+            "Paseo",
+            "PASEO"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Paseo"
+        },
+        {
+          "from": [
+            "Calle",
+            "CALLE"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Calle"
+        }
+      ],
+      "description": "Mass edit cells in column ROAD_TYPE"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "ROAD_NAME",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "TOMAS REDONDO",
+            "Tomas Redondo",
+            "Tomás Redondo"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Tomas Redondo"
+        },
+        {
+          "from": [
+            "Cristo de la Victoria",
+            "CRISTO DE LA VICTORIA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Cristo de la Victoria"
+        },
+        {
+          "from": [
+            "JOSE PAULETE",
+            "José Paulete"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "José Paulete"
+        },
+        {
+          "from": [
+            "Sepiolita",
+            "SEPIOLITA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Sepiolita"
+        },
+        {
+          "from": [
+            "Arroyo de la Media Legua",
+            "ARROYO DE LA MEDIA LEGUA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Arroyo de la Media Legua"
+        },
+        {
+          "from": [
+            "Estrella Denébola",
+            "ESTRELLA DENEBOLA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Estrella Denébola"
+        },
+        {
+          "from": [
+            "Monseñor Oscar Romero",
+            "Monseñor Óscar Romero"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Monseñor Óscar Romero"
+        },
+        {
+          "from": [
+            "Alhaurín",
+            "ALHAURIN"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Alhaurín"
+        },
+        {
+          "from": [
+            "Luis I",
+            "LUIS I"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Luis I"
+        },
+        {
+          "from": [
+            "San Cugat del Valles",
+            "San Cugat del Vallés"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "San Cugat del Vallés"
+        },
+        {
+          "from": [
+            "Daroca",
+            "DAROCA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Daroca"
+        },
+        {
+          "from": [
+            "Jose del hierro",
+            "Jose del Hierro"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Jose del Hierro"
+        },
+        {
+          "from": [
+            "Ramón Perez de Ayala",
+            "Ramón Pérez de Ayala"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Ramón Pérez de Ayala"
+        },
+        {
+          "from": [
+            "ANGEL SANZ BRIZ",
+            "Ángel Sanz Briz"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Ángel Sanz Briz"
+        },
+        {
+          "from": [
+            "Senda Del Rey",
+            "SENDA DEL REY"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Senda Del Rey"
+        },
+        {
+          "from": [
+            "Alfonso XIII",
+            "ALFONSO XIII"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Alfonso XIII"
+        },
+        {
+          "from": [
+            "Francos Rodríguez",
+            "Francos Rodriguez"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Francos Rodríguez"
+        },
+        {
+          "from": [
+            "Cidro",
+            "CIDRO"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Cidro"
+        },
+        {
+          "from": [
+            "San Romualdo",
+            "SAN ROMUALDO"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "San Romualdo"
+        },
+        {
+          "from": [
+            "Úbeda",
+            "UBEDA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Úbeda"
+        },
+        {
+          "from": [
+            "Enrique García Alvarez",
+            "Enrique García Álvarez"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Enrique García Álvarez"
+        },
+        {
+          "from": [
+            "Navio",
+            "Navío"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Navío"
+        },
+        {
+          "from": [
+            "Marques de Lozoya",
+            "Marqués de Lozoya"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Marqués de Lozoya"
+        },
+        {
+          "from": [
+            "Bascuñuelos",
+            "BASCUÑUELOS"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Bascuñuelos"
+        }
+      ],
+      "description": "Mass edit cells in column ROAD_NAME"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "DISTRICT",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Vicalvaro",
+            "Vicálvaro",
+            "VICALVARO"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Vicálvaro"
+        },
+        {
+          "from": [
+            "Latina",
+            "LATINA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Latina"
+        },
+        {
+          "from": [
+            "Moratalaz",
+            "MORATALAZ"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Moratalaz"
+        },
+        {
+          "from": [
+            "Puente de Vallecas",
+            "PUENTE DE VALLECAS"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Puente de Vallecas"
+        },
+        {
+          "from": [
+            "Ciudad Lineal",
+            "CIUDAD LINEAL"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Ciudad Lineal"
+        },
+        {
+          "from": [
+            "Usera",
+            "USERA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Usera"
+        },
+        {
+          "from": [
+            "Villaverde",
+            "VILLAVERDE"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Villaverde"
+        },
+        {
+          "from": [
+            "Arganzuela",
+            "ARGANZUELA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Arganzuela"
+        },
+        {
+          "from": [
+            "Carabanchel",
+            "CARABANCHEL"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Carabanchel"
+        },
+        {
+          "from": [
+            "Villa Vallecas",
+            "Villa vallecas"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Villa Vallecas"
+        },
+        {
+          "from": [
+            "Moncloa-Aravaca",
+            "MONCLOA-ARAVACA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Moncloa-Aravaca"
+        },
+        {
+          "from": [
+            "Fuencarral-El Pardo",
+            "FUENCARRAL-EL PARDO"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Fuencarral-El Pardo"
+        },
+        {
+          "from": [
+            "Hortaleza",
+            "HORTALEZA"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Hortaleza"
+        },
+        {
+          "from": [
+            "Chamartín",
+            "CHAMARTIN"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Chamartín"
+        },
+        {
+          "from": [
+            "Barajas",
+            "BARAJAS"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Barajas"
+        },
+        {
+          "from": [
+            "Villa de Vallecas",
+            "VILLA DE VALLECAS"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Villa de Vallecas"
+        },
+        {
+          "from": [
+            "San Blas-Canillejas",
+            "SAN BLAS-CANILLEJAS"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "San Blas-Canillejas"
+        }
+      ],
+      "description": "Mass edit cells in column DISTRICT"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "NAME",
+      "expression": "value.replace(/\\bContenedor de Aceite\\b/,\"CA\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column NAME using expression value.replace(/\\bContenedor de Aceite\\b/,\"CA\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "NAME",
+      "expression": "value.replace(/\\bPunto Limpio Fijo del Ayuntamiento de Madrid\\.\\b/,\"PLF\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column NAME using expression value.replace(/\\bPunto Limpio Fijo del Ayuntamiento de Madrid\\.\\b/,\"PLF\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "NAME",
+      "expression": "value.replace(\"Punto Limpio Fijo del Ayuntamiento de Madrid.\",\"PLF\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column NAME using expression value.replace(\"Punto Limpio Fijo del Ayuntamiento de Madrid.\",\"PLF\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "NAME",
+      "expression": "value.replace(\"Punto Limpio de Proximidad\",\"PLP\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column NAME using expression value.replace(\"Punto Limpio de Proximidad\",\"PLP\")"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "NAME",
+      "expression": "value.replace(\"Contenedor de ropa\",\"CR\")",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column NAME using expression value.replace(\"Contenedor de ropa\",\"CR\")"
+    },
+    {
+      "op": "core/row-removal",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "NAME",
+            "expression": "value",
+            "columnName": "NAME",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [],
+            "selectBlank": true,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "description": "Remove rows"
+    }
+  ]
