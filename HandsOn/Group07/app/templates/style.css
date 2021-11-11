@@ -1,0 +1,34 @@
+html, body, #wrapper { 
+    width:100%;
+    height: 100%;
+}
+select{
+    width: 600px;
+    text-overflow: ellipsis;
+	font-size: large;
+}
+#wrapper {
+    background: url("images/accesspic.jpeg");
+    overflow: auto;
+}
+.searchbar{
+	width: 400px;
+	margin-right: 10px;
+}
+.layer-admin {
+	background-color: rgba(255, 255, 255, 0.3);
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.layer {
+	background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
