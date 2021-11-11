@@ -22,19 +22,8 @@ app.config["CACHE_TYPE"] = "null"
 # RDFLIB
 
 g = Graph()
-g.namespace_manager.bind('rr', Namespace("http://www.w3.org/ns/r2rml#"), override=False)
-g.namespace_manager.bind('rml', Namespace("http://semweb.mmlab.be/ns/rml#"), override=False)
-g.namespace_manager.bind('ql', Namespace("http://semweb.mmlab.be/ns/ql#"), override=False)
-g.namespace_manager.bind('transit', Namespace("http://vocab.org/transit/terms/"), override=False)
-g.namespace_manager.bind('xsd', Namespace("http://www.w3.org/2001/XMLSchema#"), override=False)
-g.namespace_manager.bind('wgs84_pos', Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#"), override=False)
-g.namespace_manager.bind('vocab', Namespace("http://example.org#"), override=False)
-g.namespace_manager.bind('owl', Namespace("http://www.w3.org/2002/07/owl#"), override=False)
-
-ns = Namespace("http://fuent.example.com/fountain")
-ns2 = Namespace("http://dist.example.com/district")
-owl = Namespace("http://www.w3.org/2002/07/owl#")
-g.parse("./rdf/output.nt", format="nt")
+g.namespace_manager.bind('fountain', Namespace("http://www.smartCityParks.es/group07/resource/Fountain/"), override=False)
+path = g.parse("./rdf/output.nt", format="nt")
 
 
 # MAIN Y METODOS PARA MOSTRAR PAGINAS
@@ -86,39 +75,17 @@ def busqueda():
         wikiDataLink=None
 
         # SPARQL query
-        query = "select distinct ?Object " \
-                " where{ { ?Object <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://group11.com/ontology#MovileRecyclePoint>. " \
-                " ?Object ?Property ?Subject. " \
-                " ?Subject <http://group11.com/ontology#districtName> " + '"' + _districName + '".' + "} }"
-        queryWikidata="select distinct ?Object " \
-                      "where{ ?Subject <http://group11.com/ontology#districtName> " + '"' + _districName+'".'\
-                        "?Subject <http://www.w3.org/2002/07/owl#sameAs> ?Object}"
-        qWikidata=prepareQuery(queryWikidata)
-        for rwikidata in g.query(queryWikidata):
-            wikiDataLink=str(rwikidata[0])
-        q3 = prepareQuery(query)
-        for r in g.query(q3):
-            tojson = {'id': str(r[0])}
-            query2 = "select distinct ?Property " \
-                     "where { ?m ?Property ?Object .}"
-            q4 = prepareQuery(query2)
-            for r2 in g.query(q4, initBindings={"m": r[0]}):
-                # print(r[0], r2[0])
-                query3 = "select distinct ?Object " \
-                         "where { ?m ?p ?Object .}"
-                q5 = prepareQuery(query3)
-                for r3 in g.query(q5, initBindings={"m": r[0], "p": r2[0]}):
-                    propiedad = str(r2[0])
-                    objeto = str(r3[0])
-                if propiedad != "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":
-                    tojson[propiedad.replace("http://group11.com/ontology#", "")] = objeto
-            # break
-            _jsonList.append(tojson)
-        # END SPARQL query
-        with open("./static/query.json", "w", encoding='utf-8') as file:
-            json.dump(_jsonList, file)
-        #os.rename("./static/query.json", "./static/{}.json".format(hora))
-        #return json.dumps(_jsonList)
+
+        g.parse(path, format="turtle")
+
+        q1 = prepareQuery('''
+        SELECT ?p
+        WHERE {
+        ?p <http://ww.smartCityParks.es/group07/ontology/Font#isInDistrict> <http://www.smartCityParks.es/group07/resource/District/PUENTE-DE-VALLECAS> 
+        }
+        '''
+)       fountainList = g.query(q1) #LISTA CON LA QUERY
+
         if(len(_jsonList)==0):
             return render_template("error.html",error="El distrito introducido no es correcto o no existe")
         return render_template("results.html",distrito=_districName,enlace=wikiDataLink)
