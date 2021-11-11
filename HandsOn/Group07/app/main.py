@@ -28,21 +28,20 @@ g.namespace_manager.bind('ql', Namespace("http://semweb.mmlab.be/ns/ql#"), overr
 g.namespace_manager.bind('transit', Namespace("http://vocab.org/transit/terms/"), override=False)
 g.namespace_manager.bind('xsd', Namespace("http://www.w3.org/2001/XMLSchema#"), override=False)
 g.namespace_manager.bind('wgs84_pos', Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#"), override=False)
-g.namespace_manager.bind('', Namespace("http://group11.com/"), override=False)
-g.namespace_manager.bind('rml', Namespace("http://semweb.mmlab.be/ns/rml#"), override=False)
+g.namespace_manager.bind('vocab', Namespace("http://example.org#"), override=False)
 g.namespace_manager.bind('owl', Namespace("http://www.w3.org/2002/07/owl#"), override=False)
 
-ns = Namespace("http://group11.com/ontology#")
-ns2 = Namespace("http://group11.com/resource/District/")
+ns = Namespace("http://fuent.example.com/fountain")
+ns2 = Namespace("http://dist.example.com/district")
 owl = Namespace("http://www.w3.org/2002/07/owl#")
-g.parse("./rdf/data-with-links-V4.nt", format="nt")
+g.parse("./rdf/output.nt", format="nt")
 
 
 # MAIN Y METODOS PARA MOSTRAR PAGINAS
 
 @app.route("/")
 def main():
-    return render_template('search.html')
+    return render_template('index.html')
 @app.route("/results", methods=['POST', 'GET'])
 def results():
     return render_template("results.html")
